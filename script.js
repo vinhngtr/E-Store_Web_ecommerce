@@ -1,5 +1,4 @@
 
-
 // !START FUNCTION1--------------//
 const reviewWrap = document.getElementById("reviewWrap");
 const leftArrow = document.getElementById("leftArrow");
