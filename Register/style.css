@@ -181,10 +181,10 @@ body{
     justify-content: center;
     align-items: center; */
 }
+
 .registration-form{
     margin: 70px auto;
     width: 424px;
-    /* height: 750px; */
     display: grid;
     grid-template-rows: auto auto;
     flex-shrink: 0;

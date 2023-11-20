@@ -103,12 +103,13 @@
         </div>
         <!-- !END NAVIGATION -->
 
-        <!-- BODY-PAGE -->
 
+        <!-- !-------------BODY-PAGE ------------------------->
         <div class="body-page">
             <div class="registration-form">
                 <h2 ">Đăng ký tài khoản</h2>
-                <form id="signupForm" onsubmit="validateForm(event)">
+                <!-- onsubmit="validateForm(e)" -->
+                <form id="signupForm" action="reg.php" method="POST">
                     <div class="inputItem">
                         <label for="fullName">Họ và tên:</label>
                         <input type="text" id="fullName" name="fullName" required>
@@ -134,14 +135,15 @@
                             Tôi chấp nhận điều khoản đăng ký.
                         </label>
                     </div>
-                    <button  style="display: inline-block;" type="submit">Đăng ký</button>
+                    <button  style="display: inline-block;" type="submit" name="btn-reg">Đăng ký</button>
                 </form>
                 <p>Bạn đã có tài khoản? <a href="#">Đăng nhập</a></p>
             </div>
         </div>
 
 
-        <!-- !END BODY-PAGE -->
+        <!--! -------------END BODY-PAGE----------- -->
+
         <div class="footer">
             <div class="top-footer">
 
@@ -259,5 +261,7 @@
         </div>
 
     </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
