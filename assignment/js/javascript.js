@@ -17,3 +17,17 @@ function openContent(evt, content) {
 }
 
 document.getElementById("defaultOpen").click();
+
+function openPayment(evt, PaymentMethod) {
+  var i, PaymentContent, paymentlinks;
+  PaymentContent = document.getElementsByClassName("PaymentContent");
+  for (i = 0; i < PaymentContent.length; i++) {
+    PaymentContent[i].style.display = "none";
+  }
+  paymentlinks = document.getElementsByClassName("paymentlinks");
+  for (i = 0; i < paymentlinks.length; i++) {
+    paymentlinks[i].className = paymentlinks[i].className.replace(" active", "");
+  }
+  document.getElementById(PaymentMethod).style.display = "block";
+  evt.currentTarget.className += " active";
+}
