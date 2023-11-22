@@ -185,6 +185,7 @@ body{
 .registration-form{
     margin: 70px auto;
     width: 424px;
+    /* padding: 32px; */
     display: grid;
     grid-template-rows: auto auto;
     flex-shrink: 0;
@@ -306,4 +307,20 @@ form button{
     align-items: center;
     justify-content: center;
     box-shadow: 0px 1px 0px 0px #303639 inset;
+}
+p a:hover{
+    color: #fff;
+}
+.body-research a{
+    color: #fff;
+    display: flex; 
+    padding: 6px 12px;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #303639;
+}
+.body-research a:hover{
+    background-color: #303639;
+    border: 2px solid #fff;
 }

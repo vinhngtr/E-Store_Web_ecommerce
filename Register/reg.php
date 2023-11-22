@@ -33,8 +33,8 @@ if (isset($_POST['btn-reg'])) {
     $sql = "INSERT INTO `account_user` (`FullName`, `Email`, `Password`)  VALUES ('$fullName', '$email', '$password')";
     if ($conn->query($sql) === TRUE) {
         // header(): chuyển đến trang thông báo đăng kí tài khoản thành công OR PAGE ĐĂNG NHẬP
-        header("Location: ../SignIn/index.html");
-        echo "Đăng kí người dùng thành công!";
+        header("Location: ../SignIn/login.php");
+        // echo "Đăng kí người dùng thành công!";
     } else {
         echo "Có lỗi xảy ra!";
     }

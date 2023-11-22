@@ -184,41 +184,48 @@ body{
 
 .registration-form{
     margin: 70px auto;
-    width: 424px;
+    width: 430px;
+    padding: 32px;
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    row-gap: 24px;
     flex-shrink: 0;
     border-radius: 4px;
     border: 1px solid  #E4E7E9;
     background: #FFF;
     box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.12);
 }
-.registration-form h2{
+.registration-form p{
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+}
+.heading{
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 12px;
+    justify-items: center;
+    align-items: center;
     text-align: center;
-    padding: 16px 0;
-    text-transform: uppercase;
-    /* Body/XL/600 */
-    font-family: Public Sans;
+}
+.heading h3{
     font-size: 25px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 28px;
-    box-shadow: 0 -1px #E4E7E9 inset;
-}
-.registration-form p{
-    padding: 20px 24px;
-    text-align: center;
-    color: #5F6C72;
-    font-size: 17px;
-}
-.registration-form p a{
-    color: #0a99e0;
     font-weight: 600;
-    font-style: normal;
-    /* line-height: 12; */
+    line-height: 28px; 
 }
-.registration-form p a:hover{
-    color: #FA8232;
+.heading p{
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+form{
+    /* padding: 24px 32px; */
+    display: grid;
+    grid-template-rows: auto  auto;
+    row-gap: 24px;
+    /* box-shadow: 0 -1px #E4E7E9 inset; */
 }
 label{
     display: block;
@@ -245,13 +252,6 @@ label{
     background:  #FFF;
     font-size: 16px;
 }
-form{
-    padding: 24px 32px;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr auto auto;
-    row-gap: 16px;
-    box-shadow: 0 -1px #E4E7E9 inset;
-}
 form button{
     margin-top: 15px;
     outline: none;
@@ -263,6 +263,26 @@ form button{
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+form button:hover{
+    background-color: #E4E7E9;
+    color: #FA8232;
+}
+.infoMore{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 8px;
+}
+.infoMore p a{
+    display: inline-block;
+    padding-left: 5px;
+    color: #0a99e0;
+    font-weight: 600;
+    font-style: normal;
+}
+.infoMore p a:hover{
+    color: #FA8232;
 }
 
 /* !---- FOOTER -------------- */
@@ -308,7 +328,7 @@ form button{
     box-shadow: 0px 1px 0px 0px #303639 inset;
 }
 p a:hover{
-    color: white;
+    color: #fff;
 }
 .body-research a{
     color: #fff;
