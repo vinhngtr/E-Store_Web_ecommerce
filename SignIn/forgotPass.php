@@ -43,14 +43,8 @@ if (isset($_POST['btn-verify'])) {
     $subject = "Xác nhận email";
     $message = "Mã xác nhận của bạn là: $codeVerify";
     $headers = "From: vinhtrong782002@gmail.com";
-    if (mail($to, $subject, $message, $headers)) {
-        echo "Gửi mail thành công:";
-        echo "mã đã gửi là: $to";
-        exit();
-    } else {
-        echo "Gửi thất bại";
-        exit();
-    }
+    header("Location: ../Error/error.html");
+    exit();
     // header("Location: verify.php");
     $conn->close();
     $stmt->close();

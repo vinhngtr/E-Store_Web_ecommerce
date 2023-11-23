@@ -177,7 +177,58 @@ body{
 }
 .main{
     width: 1398px;
-    
+    margin: 40px auto;
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 100px;
+    justify-items: center;
+}
+.image-error{
+    width: 412px;
+    height: 338px;
+    flex-shrink: 0;
+}
+.content-error{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    row-gap: 18px;
+    justify-items: center;
+}
+.content-error h2{
+    text-align: center;
+    /* Display/05 */
+    font-family: Public Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px;
+}
+.content-error p{
+    width: 536px;
+    text-align: center;
+    /* Body/Medium/400 */
+    font-family: Public Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: #475156;
+}
+.content-error a{
+    outline: none;
+    border-radius: 2px;
+    border: 2px solid #FFE7D6;
+    padding: 15px 15px;
+    background-color: #fff;
+    color: #FA8232;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.content-error a:hover{
+    background-color: #FA8232;
+    color: #fff;
 }
 
 

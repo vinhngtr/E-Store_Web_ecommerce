@@ -1,13 +1,56 @@
+<?php
+if (isset($_POST['btn-log'])) {
+    $email_log = $_POST['email'];
+    $pass_log = $_POST['password'];
+
+    // ! tạo kết nối database để xác thực password và email nhập vào so với CSDL:
+    $db_host = "localhost";
+    $db_user = "trongvinh";
+    $db_pass = "vinhtrong782002";
+    $db_name = "list_user";
+    $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+    if (!$conn) {
+        die("Kết nối DB không thành công: " . mysqli_connect_error());
+        exit();
+    }
+    // Chuẩn bị câu lệnh truy vấn
+    $stmt = $conn->prepare("SELECT * FROM account_user WHERE email = ?");
+    // assign return in array POST to parameter;
+    $stmt->bind_param("s", $email_log);
+    // excutive
+    $stmt->execute();
+    // assign value return to variable result
+    $result = $stmt->get_result();
+    if ($result->num_rows > 0) {
+        $user = $result->fetch_assoc();
+        if (password_verify($pass_log, $user['password'])) {
+            // ! tạo 1 page thông báo đăng nhập thành công -> button back về Home:
+            header("Location: ../index.html");
+            exit();
+        } else {
+            echo "Mật khẩu nhập vào không chính xác";
+            exit();
+        }
+    } else {
+        echo "Không tìm thấy người dùng với tài khoản này!";
+    }
+    $stmt->close();
+    $conn->close();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <title>Đăng kí tài khoản</title>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>Đăng nhập tài khoản</title>
 </head>
+
 <body>
     <div class="container">
         <div class="navigation">
@@ -18,23 +61,23 @@
                     </div>
                     <div class="top-right">
                         Follow us:
-                       <span>
-                        <a href="https://www.facebook.com/vinh.nguyentrong.1291" style="color: white;"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#" style="color: white;"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/" style="color: white;"><i class="fa-brands fa-youtube"></i></a>
-                       </span>
+                        <span>
+                            <a href="https://www.facebook.com/vinh.nguyentrong.1291" style="color: white;"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" style="color: white;"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/" style="color: white;"><i class="fa-brands fa-youtube"></i></a>
+                        </span>
                     </div>
                 </div>
                 <div class="midd-navi">
                     <div class="logo">
-                        <a href="../index.html"  style="color: white; text-decoration: none;">
+                        <a href="../index.html" style="color: white; text-decoration: none;">
                             <span style="font-size: 50px; font-weight: bold; padding-right: 3px;">E</span>
                             <span style="font-size: 40px; font-weight: bold; padding-right: 3px;">-</span>
                             <span style="font-size: 32px; font-weight: bold;">STORE</span>
                         </a>
                     </div>
                     <div class="search">
-                        <input  type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm...">
+                        <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm...">
                         <button><i class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
                     <div class="info-user" style="display: grid; grid-template-columns: auto auto auto; column-gap: 24px;">
@@ -54,7 +97,7 @@
                 <div class="left-side" style="font-size: 18px;">
                     <div class="category" style="margin-right: 24px; ">
                         <button style="display: inline-block; padding: 14px 24px; font-family: 'Public Sans', sans-serif; font-size: 18px;">
-                            Danh mục sản phẩm  
+                            Danh mục sản phẩm
                             <i class="fa-solid fa-caret-down" style="padding-left: 3px;"></i>
                         </button>
                         <ul class="list-btnCate">
@@ -69,26 +112,26 @@
                         </ul>
                     </div>
                     <div class="home" style="margin-right: 24px;">
-                        <a href="../index.html" style="text-decoration: none;">
+                        <a href="#" style="text-decoration: none;">
                             <i class="fa-solid fa-house" style="padding-right: 5px;"></i>
                             <span>Trang chủ</span>
                         </a>
                     </div>
                     <div class="blogger" style="margin-right: 24px;">
                         <a href="#" style="text-decoration: none;">
-                            <i class="fa-brands fa-blogger"  style="padding-right: 5px;"></i>
+                            <i class="fa-brands fa-blogger" style="padding-right: 5px;"></i>
                             <span>Blog</span>
                         </a>
                     </div>
                     <div class="about" style="margin-right: 24px;">
                         <a href="#" style="text-decoration: none;">
-                            <i class="fa-solid fa-circle-info"  style="padding-right: 5px;"></i>
+                            <i class="fa-solid fa-circle-info" style="padding-right: 5px;"></i>
                             <span>Giới thiệu</span>
-                        </a> 
+                        </a>
                     </div>
                     <div class="contact">
-                        <a href="" style="text-decoration: none;">
-                            <i class="fa-solid fa-address-card"  style="padding-right: 5px;"></i>
+                        <a href="#" style="text-decoration: none;">
+                            <i class="fa-solid fa-address-card" style="padding-right: 5px;"></i>
                             <span>Liên hệ</span>
                         </a>
                     </div>
@@ -101,54 +144,27 @@
             </div>
             <div class="hr1" style="width: 100vw; background-color: #E4E7E9; height: 1px;"></div>
         </div>
-        <!-- !END NAVIGATION -->
-
-
-        <!-- !-------------BODY-PAGE ------------------------->
         <div class="body-page">
-            <div class="registration-form">
-                <h2>Đăng ký tài khoản</h2>
-                <!-- onsubmit="validateForm(e)" -->
-                <form id="signupForm" action="reg.php" method="POST">
-                    <div class="inputItem">
-                        <label for="fullName">Họ và tên:</label>
-                        <input type="text" id="fullName" name="fullName" required>
-                    </div>
-        
-                    <div class="inputItem">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="inputItem">
-                        <label for="password">Mật khẩu:</label>
-                        <input type="password" id="password" name="password" required>
-                    </div>
-
-                    <div class="inputItem">
-                        <label for="confirmPassword">Nhắc lại mật khẩu:</label>
-                        <input type="password" id="confirmPassword" name="confirmPassword" required>
-                    </div>
-                    
-                    <div class="checking" style="display: flex;align-items: center;">
-                        <input style="display: inline-block; width: 20px;height: 20px;padding: 3px;" type="checkbox" id="acceptTerms" name="acceptTerms" required >
-                        <label for="acceptTerms" style="display: inline-block; padding-left: 10px; font-style: italic;">
-                            Tôi chấp nhận điều khoản đăng ký.
-                        </label>
-                    </div>
-                    <button  style="display: inline-block;" type="submit" name="btn-reg">Đăng ký</button>
-                </form>
-                <p>Bạn đã có tài khoản? <a href="../SignIn/login.php">Đăng nhập</a></p>
-            </div>
+            <div class="main">
+                <div class="image-error">
+                    <img src="../images/404-error.jpg" style="width:100%;height: 100%;object-fit: cover;" alt="">
+                </div>
+                <div class="content-error">
+                    <h2>404, Page not found</h2>
+                    <p>
+                        Có điều gì đó không ổn. Kính mong bạn quay trở lại trang vào khoảng thời gian tới gần nhất, rất xin lỗi bạn vì sự bất tiện này.
+                    </p>
+                    <a style="display: block;" class="btn-home" href="../index.html"><i class="fa-solid fa-house" style="padding-right: 5px;"></i> Về trang chủ</a>
+                </div>
+           </div>
         </div>
 
-
-        <!--! -------------END BODY-PAGE----------- -->
-
+        <!-- !FOOTER PAGE -->
         <div class="footer">
             <div class="top-footer">
                 <div class="info-shop">
                     <div class="name-shop">
-                        <a href="#"  style="color: white; text-decoration: none;">
+                        <a href="../index.html" style="color: white; text-decoration: none;">
                             <span style="font-size: 50px; font-weight: bold; padding-right: 3px;">E</span>
                             <span style="font-size: 40px; font-weight: bold; padding-right: 3px;">-</span>
                             <span style="font-size: 32px; font-weight: bold;">STORE</span>
@@ -160,7 +176,7 @@
                             <p style="color: #fff;font-size: 18px;">(84) 0969379924</p>
                         </div>
                         <div class="address">
-                        <span style="color: #ADB7BC;font-size: 16px;
+                            <span style="color: #ADB7BC;font-size: 16px;
                         font-style: normal;
                         font-weight: 400;
                         line-height: 24px; "> ĐH BK HCM, TP. Thủ Đức, Hồ Chí Minh</span>
@@ -170,7 +186,7 @@
                             font-weight: 500;
                             line-height: 24px; " href="mailto:vinhtrong782002@gmail.com">vinhtrong782002@gmail.com</a>
                         </div>
-                    </div>  
+                    </div>
                 </div>
 
                 <div class="cate-shop">
@@ -188,7 +204,7 @@
                         <p style="padding: 8px 0;" class="itemOfFooter"><a href="#">Tai nghe</a></p>
                         <p style="padding: 8px 0;" class="itemOfFooter"><a href="#">Chuột</a></p>
                         <p style="padding: 8px 0;" class="itemOfFooter"><a href="#">Bàn phím</a></p>
-                        <p style="padding: 8px 0;" class="itemOfFooter "><a class="showAll" style="color:#EBC80C ;" href="#">Xem tất cả sản phẩm <i class="fa-solid fa-arrow-right" style="padding-left: 5px;"></i></a></p>
+                        <p style="padding: 8px 0;" class="itemOfFooter"><a style="color:#EBC80C ;" href="#">Xem tất cả sản phẩm <i class="fa-solid fa-arrow-right" style="padding-left: 5px;"></i></a></p>
                     </div>
                 </div>
 
@@ -260,7 +276,6 @@
         </div>
 
     </div>
-
-    <script src="./script.js"></script>
 </body>
+
 </html>

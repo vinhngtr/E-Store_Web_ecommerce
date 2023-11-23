@@ -5,10 +5,11 @@
 }
 a:link{
     text-decoration: none;
-    color: black;
+    color: #191C1F;
 }
 a:visited{
-    color: black;
+    color: #191C1F;
+    text-decoration: none;
 }
 
 body{
@@ -175,13 +176,215 @@ body{
 .body-page{
     width: 100%;
 }
-.main{
+.banner-about{
     width: 1398px;
-    
+    height: 540px;
+    margin: 72px auto;
+    margin-bottom: 124px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 136px;
+}
+.col-left{
+    padding: 45px 0;
+    display: grid;
+    grid-template-rows: 1fr auto auto ;
+    row-gap: 24px;
+    align-items: flex-start;
+}
+.content1{
+    display: grid;
+    /* flex-direction: column; */
+    grid-template-rows: auto auto;
+    row-gap: 12px;
+}
+.title{
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    /* line-height: 48px; */
+}
+.bagde{
+    display: flex;
+    width: 25%;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    background-color: #2DA5F3;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+.content2{
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: #475156;
+}
+.content3 span{
+    display: block;
+    font-size: 17px;
+    color: #0a99e0;
+}
+.content3 span i{
+    color: #2DB324;
+    padding-right: 5px;
+}
+.content3{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 16px;
+}
+/*! ----------------END---------------- */
+
+.our-team{
+    width: 1398px;
+    padding: 72px 0px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 40px;
+    box-shadow: 0px 1px 0px 0px #E4E7E9 inset;
+    /* box-shadow: 0px -1px 0px 0px #E4E7E9 inset; */
+}
+.our-team h2{
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+}
+.listMember{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 24px;
+}
+.member{
+    padding: 24px;
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    column-gap: 16px;
+    align-items: center;
+    border-radius: 3px;
+    border: 1px solid  #E4E7E9;
+    background: #FFF;
+}
+.infor-mem{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.img-mem{
+    width: 64px;
+    height: 64px;
+}
+.infor-mem h3{
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; 
+}
+.infor-mem span{
+    display: block;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+/* -------------------- */
+
+.background-our,
+.content-our:before {
+  background: url(../images/bgr1.avif) no-repeat fixed 0 0 / cover;
+}
+.background-our{
+    padding: 88px 300px;
+}
+.content-our{
+    padding: 40px 30px;
+    color: #fff;
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 22px;
+    position: relative;
+    z-index: 0;
+}
+.content-our::before{
+    content: '';
+    filter: blur(20px);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
 }
 
+.content-our h2{
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+} 
+blockquote{
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 24px;
+    color: #E4E7E9;
+    word-spacing: 3px;
+}
+/* !------------- END BLOCKQUOTE------------------ */
 
-
+.topProduct{
+    width: 100%;
+    padding: 120px 300px;
+}
+.bodyContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 24px;
+}
+.productItem{
+    display: grid;
+    grid-template-rows: auto 1fr 1fr 1fr;
+    row-gap: 16px;
+}
+.productItem h2{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+.product{
+    padding: 12px;
+    border-radius: 3px;
+    border: 1px solid  #E4E7E9;
+    background:  #FFF;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    column-gap: 12px;
+    align-items: center;
+}
+.infoProduct{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.infoProduct a{
+    color: #191C1F;
+}
+.infoProduct a:hover{
+    color: #FA8232;
+}
+.infoProduct span{
+    color: #2DA5F3;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}
 /* !---- FOOTER -------------- */
 .footer{
     width: 100%;
