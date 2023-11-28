@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./fonts/fontawesome-free-6.4.2-web/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>E-Store</title>
 </head>
 <body>
     <div class="app">
@@ -17,6 +18,20 @@
 
         <div class="app__container">
            <div class="grid">
+            <div class="breadcrumb">
+                <div class="breadcrumb-item">
+                    <i class="breadcrumb-icon fa-solid fa-house"></i>
+                    <div class="breadcrumb-text">Home</div>
+                </div>
+                <span><i class="breadcrumb-icon fa-solid fa-chevron-right"></i></span>
+                <div class="breadcrumb-item">
+                    <div class="breadcrumb-text">Tất cả sản phẩm</div>
+                </div>
+                <span><i class="breadcrumb-icon fa-solid fa-chevron-right"></i></span>
+                <div class="breadcrumb-item">
+                    <div class="breadcrumb-text breadcrumb-active">Màn hình PC</div>
+                </div>
+            </div>
             <div class="grid__row" style="display: flex;">
                 <div class="grid__column-2">
                     
@@ -29,64 +44,64 @@
                                 <label class="classify-item-icon">
                                     <input type="radio" checked="checked" name="classify">
                                     <span class="checkmark-classify"></span>
-                                  </label>
-                                <div class="classify-item-text">Màn hình PC</div>
+                                    <div class="classify-item-text">Màn hình PC</div>
+                                </label>
                             </li>
                             <li class="classify-item">
                                 <label class="classify-item-icon">
                                     <input type="radio" name="classify">
                                     <span class="checkmark-classify"></span>
-                                  </label>
-                                <div class="classify-item-text">SDD & HDD</div>
+                                    <div class="classify-item-text">SDD & HDD</div>
+                                </label>
                             </li>
                             <li class="classify-item">
                                 <label class="classify-item-icon">
                                     <input type="radio" name="classify">
                                     <span class="checkmark-classify"></span>
-                                  </label>
-                                <div class="classify-item-text">RAM</div>
+                                    <div class="classify-item-text">RAM</div>
+                                </label>
                             </li>
                             <li class="classify-item">
                                 <label class="classify-item-icon">
                                     <input type="radio" name="classify">
                                     <span class="checkmark-classify"></span>
-                                  </label>
-                                <div class="classify-item-text">ROM</div>
+                                    <div class="classify-item-text">ROM</div>
+                                </label>
                             </li>
                             <li class="classify-item">
                                 <label class="classify-item-icon">
                                     <input type="radio" name="classify">
                                     <span class="checkmark-classify"></span>
-                                  </label>
-                                <div class="classify-item-text">Headphone</div>
+                                    <div class="classify-item-text">Headphone</div>
+                                </label>
                             </li>
                             <li class="classify-item">
                                 <label class="classify-item-icon">
                                     <input type="radio" name="classify">
                                     <span class="checkmark-classify"></span>
-                                  </label>
-                                <div class="classify-item-text">Chuột gaming</div>
+                                    <div class="classify-item-text">Chuột gaming</div>
+                                </label>
                             </li>
                             <li class="classify-item">
                                 <label class="classify-item-icon">
                                     <input type="radio" name="classify">
                                     <span class="checkmark-classify"></span>
-                                  </label>
-                                <div class="classify-item-text">Card màn hình</div>
+                                    <div class="classify-item-text">Card màn hình</div>
+                                </label>
                             </li>
                             <li class="classify-item">
                                 <label class="classify-item-icon">
                                     <input type="radio" name="classify">
                                     <span class="checkmark-classify"></span>
-                                  </label>
-                                <div class="classify-item-text">Bàn phím gaming</div>
+                                    <div class="classify-item-text">Bàn phím gaming</div>
+                                </label>
                             </li>
                             <li class="classify-item">
                                 <label class="classify-item-icon">
                                     <input type="radio" name="classify">
                                     <span class="checkmark-classify"></span>
-                                  </label>
-                                <div class="classify-item-text">Tản nhiệt máy tính</div>
+                                    <div class="classify-item-text">Tản nhiệt máy tính</div>
+                                </label>
                             </li>
                         </ul>
                     </div>
@@ -100,43 +115,47 @@
                                 <label class="price-range-item-icon">
                                     <input type="radio" checked="checked" name="radio">
                                     <span class="checkmark-price-range"></span>
-                                  </label>
-                                <div href="" class="price-range-item-text">Toàn bộ mức giá</div>
+                                    <div href="#" class="price-range-item-text">Toàn bộ mức giá</div>
+                                </label>
                             </li>
                             <li class="price-range-item">
                                 <label class="price-range-item-icon">
                                     <input type="radio" name="radio">
                                     <span class="checkmark-price-range"></span>
-                                  </label>
-                                <div href="" class="price-range-item-text">Dưới 200.000đ</div>
+                                    <div href="" class="price-range-item-text">Dưới 200.000đ</div>
+                                </label>
                             </li>
                             <li class="price-range-item">
                                 <label class="price-range-item-icon">
                                     <input type="radio" name="radio">
                                     <span class="checkmark-price-range"></span>
-                                  </label>
-                                <div href="" class="price-range-item-text">200.000đ - 500.000đ</div>
+                                    <div href="" class="price-range-item-text">200.000đ - 500.000đ</div>
+                                </label>
+                                
                             </li>
                             <li class="price-range-item">
                                 <label class="price-range-item-icon">
                                     <input type="radio" name="radio">
                                     <span class="checkmark-price-range"></span>
-                                  </label>
-                                <div href="" class="price-range-item-text">500.000đ - 1.500.000đ</div>
+                                    <div href="" class="price-range-item-text">500.000đ - 1.500.000đ</div>
+                                </label>
+                                
                             </li>
                             <li class="price-range-item">
                                 <label class="price-range-item-icon">
                                     <input type="radio" name="radio">
                                     <span class="checkmark-price-range"></span>
-                                  </label>
-                                <div href="" class="price-range-item-text" style="text-wrap: nowrap;">1.500.000đ - 2.500.000đ</div>
+                                    <div href="" class="price-range-item-text" style="text-wrap: nowrap;">1.500.000đ - 2.500.000đ</div>
+                                </label>
+                                
                             </li>
                             <li class="price-range-item">
                                 <label class="price-range-item-icon">
                                     <input type="radio" name="radio">
                                     <span class="checkmark-price-range"></span>
-                                  </label>
-                                <div href="" class="price-range-item-text">Trên 2.500.000đ</div>
+                                    <div href="" class="price-range-item-text">Trên 2.500.000đ</div>
+                                </label>
+                                
                             </li>
                             <div class="price-range-apply">
                                 <div class="price-range-apply-text">Áp dụng</div>
@@ -155,63 +174,69 @@
                                         <label class="high-brands__item-icon">
                                             <input type="checkbox" checked="checked">
                                             <span class="checkmark"></span>
+                                            <div class="high-brands__item-text">Apple</div>
                                         </label>
                                     </div>
-                                    <div class="high-brands__item-text">Apple</div>
                                 </div>
                                 <div class="high-brands__item">
                                     <div class="high-brands__item-icon">
                                         <label class="high-brands__item-icon">
                                             <input type="checkbox" checked="checked">
                                             <span class="checkmark"></span>
+                                            <div class="high-brands__item-text">Microsoft</div>
                                         </label>
                                     </div>
-                                    <div class="high-brands__item-text">Microsoft</div>
+                                    
                                 </div>
                                 <div class="high-brands__item">
                                     <div class="high-brands__item-icon">
                                         <label class="high-brands__item-icon">
                                             <input type="checkbox" checked="checked">
                                             <span class="checkmark"></span>
+                                            <div class="high-brands__item-text">Dell</div>
                                         </label>
                                     </div>
-                                    <div class="high-brands__item-text">Dell</div>
+                                    
                                 </div>
                                 <div class="high-brands__item">
                                     <div class="high-brands__item-icon">
                                         <label class="high-brands__item-icon">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
+                                            <div class="high-brands__item-text">Symphony</div>
                                         </label>
                                     </div>
-                                    <div class="high-brands__item-text">Symphony</div>
+                                    
                                 </div>
                                 <div class="high-brands__item">
                                     <div class="high-brands__item-icon">
                                         <label class="high-brands__item-icon">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
+                                            <div class="high-brands__item-text">Sony</div>
                                         </label>
                                     </div>
-                                    <div class="high-brands__item-text">Sony</div>
+                                    
                                 </div>
                                 <div class="high-brands__item">
                                     <div class="high-brands__item-icon">
                                         <label class="high-brands__item-icon">
                                             <input type="checkbox" checked="checked">
                                             <span class="checkmark"></span>
+                                            <div class="high-brands__item-text">LG</div>
                                         </label>
                                     </div>
-                                    <div class="high-brands__item-text">LG</div>
+                                    
                                 </div>
                                 <div class="high-brands__item">
                                     <div class="high-brands__item-icon">
                                         <label class="high-brands__item-icon">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
+                                            <div class="high-brands__item-text">One Plus</div>
                                         </label>
                                     </div>
-                                    <div class="high-brands__item-text">One Plus</div>
+                                    
                                 </div>
                             </div>
                             <!-- high-brands-right -->
@@ -221,54 +246,60 @@
                                         <label class="high-brands__item-icon">
                                             <input type="checkbox" checked="checked">
                                             <span class="checkmark"></span>
+                                            <div class="high-brands__item-text">Google</div>
                                         </label>
                                     </div>
-                                    <div class="high-brands__item-text">Google</div>
+                                    
                                 </div>
                                 <div class="high-brands__item">
                                     <div class="high-brands__item-icon">
                                         <label class="high-brands__item-icon">
                                             <input type="checkbox" checked="checked">
                                             <span class="checkmark"></span>
+                                            <div class="high-brands__item-text">Samsung</div>
                                         </label>
                                     </div>
-                                    <div class="high-brands__item-text">Samsung</div>
+                                    
                                 </div>
                                 <div class="high-brands__item">
                                     <div class="high-brands__item-icon">
                                         <label class="high-brands__item-icon">
                                             <input type="checkbox" checked="checked">
                                             <span class="checkmark"></span>
+                                            <div class="high-brands__item-text">HP</div>
                                         </label>
                                     </div>
-                                    <div class="high-brands__item-text">HP</div>
+                                    
                                 </div>
                                 <div class="high-brands__item">
                                     <div class="high-brands__item-icon">
                                         <label class="high-brands__item-icon">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
+                                            <div class="high-brands__item-text">Xiaomi</div>
                                         </label>
                                     </div>
-                                    <div class="high-brands__item-text">Xiaomi</div>
+                                    
                                 </div>
                                 <div class="high-brands__item">
                                     <div class="high-brands__item-icon">
                                         <label class="high-brands__item-icon">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
+                                            <div class="high-brands__item-text">Panasonic</div>
                                         </label>
                                     </div>
-                                    <div class="high-brands__item-text">Panasonic</div>
+                                    
                                 </div>
                                 <div class="high-brands__item">
                                     <div class="high-brands__item-icon">
                                         <label class="high-brands__item-icon">
                                             <input type="checkbox" checked="checked">
                                             <span class="checkmark"></span>
+                                            <div class="high-brands__item-text">Intel</div>
                                         </label>
                                     </div>
-                                    <div class="high-brands__item-text">Intel</div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -365,8 +396,8 @@
 
                     <div class="product-list">
                         <div class="grid__row" style="display: flex;">
-                            <div class="grid__column-2-5">
-                                <!--Product Items-->
+                            <!--Một sản phẩm-->
+                            <div class="grid__column-2-5 m-4">
                                 <div class="product-list-item">
                                     <div class="product-list-item__img" style="background-image: url(./img/1.png);"></div>
                                     <div class="product-list-item__name">Màn hình Dell G3223Q 32</div>
@@ -385,8 +416,8 @@
                                     <div class="product-list-item__price">2.500.000đ</div>
                                 </div>
                             </div>
-                            <div class="grid__column-2-5">
-                                <!--Product Items-->
+                            <!--Một sản phẩm-->
+                            <div class="grid__column-2-5 m-4">
                                 <div class="product-list-item">
                                     <div class="product-list-item__img" style="background-image: url(./img/1.png);"></div>
                                     <div class="product-list-item__name">Màn hình Dell G3223Q 32</div>
@@ -405,8 +436,8 @@
                                     <div class="product-list-item__price">2.500.000đ</div>
                                 </div>
                             </div>
-                            <div class="grid__column-2-5">
-                                <!--Product Items-->
+                            <!--Một sản phẩm-->
+                            <div class="grid__column-2-5 m-4">
                                 <div class="product-list-item">
                                     <div class="product-list-item__img" style="background-image: url(./img/1.png);"></div>
                                     <div class="product-list-item__name">Màn hình Dell G3223Q 32</div>
@@ -425,8 +456,8 @@
                                     <div class="product-list-item__price">2.500.000đ</div>
                                 </div>
                             </div>
-                            <div class="grid__column-2-5">
-                                <!--Product Items-->
+                            <!--Một sản phẩm-->
+                            <div class="grid__column-2-5 m-4">
                                 <div class="product-list-item">
                                     <div class="product-list-item__img" style="background-image: url(./img/1.png);"></div>
                                     <div class="product-list-item__name">Màn hình Dell G3223Q 32</div>
@@ -445,11 +476,8 @@
                                     <div class="product-list-item__price">2.500.000đ</div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="grid__row" style="display: flex;">
-                            <div class="grid__column-2-5">
-                                <!--Product Items-->
+                             <!--Một sản phẩm-->
+                             <div class="grid__column-2-5 m-4">
                                 <div class="product-list-item">
                                     <div class="product-list-item__img" style="background-image: url(./img/1.png);"></div>
                                     <div class="product-list-item__name">Màn hình Dell G3223Q 32</div>
@@ -468,380 +496,8 @@
                                     <div class="product-list-item__price">2.500.000đ</div>
                                 </div>
                             </div>
-                            <div class="grid__column-2-5">
-                                <!--Product Items-->
-                                <div class="product-list-item">
-                                    <div class="product-list-item__img" style="background-image: url(./img/1.png);"></div>
-                                    <div class="product-list-item__name">Màn hình Dell G3223Q 32</div>
-                                    <div class="product-list-item__rate">
-                                        <div class="product-list-item__rate-icon">
-                                            <svg width="80" height="16" viewBox="0 0 80 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M8.275 11.9188L11.425 13.9188C11.8312 14.175 12.3312 13.7938 12.2125 13.325L11.3 9.73752C11.2753 9.63807 11.2792 9.53369 11.3113 9.43638C11.3434 9.33907 11.4023 9.2528 11.4812 9.18752L14.3062 6.83127C14.675 6.52502 14.4875 5.90627 14.0062 5.87502L10.3187 5.63752C10.2181 5.63166 10.1214 5.59663 10.0404 5.53669C9.95935 5.47675 9.89754 5.39451 9.8625 5.30002L8.4875 1.83752C8.4511 1.73745 8.38479 1.65102 8.29758 1.58994C8.21037 1.52886 8.10647 1.49609 8 1.49609C7.89352 1.49609 7.78963 1.52886 7.70241 1.58994C7.6152 1.65102 7.54889 1.73745 7.5125 1.83752L6.1375 5.30002C6.10245 5.39451 6.04064 5.47675 5.95962 5.53669C5.87859 5.59663 5.78186 5.63166 5.68125 5.63752L1.99375 5.87502C1.5125 5.90627 1.325 6.52502 1.69375 6.83127L4.51875 9.18752C4.59771 9.2528 4.65661 9.33907 4.68868 9.43638C4.72075 9.53369 4.72467 9.63807 4.7 9.73752L3.85625 13.0625C3.7125 13.625 4.3125 14.0813 4.79375 13.775L7.725 11.9188C7.8072 11.8665 7.90259 11.8387 8 11.8387C8.09741 11.8387 8.1928 11.8665 8.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M24.275 11.9188L27.425 13.9188C27.8312 14.175 28.3312 13.7938 28.2125 13.325L27.3 9.73752C27.2753 9.63807 27.2792 9.53369 27.3113 9.43638C27.3434 9.33907 27.4023 9.2528 27.4812 9.18752L30.3062 6.83127C30.675 6.52502 30.4875 5.90627 30.0062 5.87502L26.3187 5.63752C26.2181 5.63166 26.1214 5.59663 26.0404 5.53669C25.9594 5.47675 25.8975 5.39451 25.8625 5.30002L24.4875 1.83752C24.4511 1.73745 24.3848 1.65102 24.2976 1.58994C24.2104 1.52886 24.1065 1.49609 24 1.49609C23.8935 1.49609 23.7896 1.52886 23.7024 1.58994C23.6152 1.65102 23.5489 1.73745 23.5125 1.83752L22.1375 5.30002C22.1025 5.39451 22.0406 5.47675 21.9596 5.53669C21.8786 5.59663 21.7819 5.63166 21.6812 5.63752L17.9937 5.87502C17.5125 5.90627 17.325 6.52502 17.6937 6.83127L20.5187 9.18752C20.5977 9.2528 20.6566 9.33907 20.6887 9.43638C20.7207 9.53369 20.7247 9.63807 20.7 9.73752L19.8562 13.0625C19.7125 13.625 20.3125 14.0813 20.7937 13.775L23.725 11.9188C23.8072 11.8665 23.9026 11.8387 24 11.8387C24.0974 11.8387 24.1928 11.8665 24.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M40.275 11.9188L43.425 13.9188C43.8312 14.175 44.3312 13.7938 44.2125 13.325L43.3 9.73752C43.2753 9.63807 43.2792 9.53369 43.3113 9.43638C43.3434 9.33907 43.4023 9.2528 43.4812 9.18752L46.3062 6.83127C46.675 6.52502 46.4875 5.90627 46.0062 5.87502L42.3187 5.63752C42.2181 5.63166 42.1214 5.59663 42.0404 5.53669C41.9594 5.47675 41.8975 5.39451 41.8625 5.30002L40.4875 1.83752C40.4511 1.73745 40.3848 1.65102 40.2976 1.58994C40.2104 1.52886 40.1065 1.49609 40 1.49609C39.8935 1.49609 39.7896 1.52886 39.7024 1.58994C39.6152 1.65102 39.5489 1.73745 39.5125 1.83752L38.1375 5.30002C38.1025 5.39451 38.0406 5.47675 37.9596 5.53669C37.8786 5.59663 37.7819 5.63166 37.6812 5.63752L33.9937 5.87502C33.5125 5.90627 33.325 6.52502 33.6937 6.83127L36.5187 9.18752C36.5977 9.2528 36.6566 9.33907 36.6887 9.43638C36.7207 9.53369 36.7247 9.63807 36.7 9.73752L35.8562 13.0625C35.7125 13.625 36.3125 14.0813 36.7937 13.775L39.725 11.9188C39.8072 11.8665 39.9026 11.8387 40 11.8387C40.0974 11.8387 40.1928 11.8665 40.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M56.275 11.9188L59.425 13.9188C59.8312 14.175 60.3312 13.7938 60.2125 13.325L59.3 9.73752C59.2753 9.63807 59.2792 9.53369 59.3113 9.43638C59.3434 9.33907 59.4023 9.2528 59.4812 9.18752L62.3062 6.83127C62.675 6.52502 62.4875 5.90627 62.0062 5.87502L58.3187 5.63752C58.2181 5.63166 58.1214 5.59663 58.0404 5.53669C57.9594 5.47675 57.8975 5.39451 57.8625 5.30002L56.4875 1.83752C56.4511 1.73745 56.3848 1.65102 56.2976 1.58994C56.2104 1.52886 56.1065 1.49609 56 1.49609C55.8935 1.49609 55.7896 1.52886 55.7024 1.58994C55.6152 1.65102 55.5489 1.73745 55.5125 1.83752L54.1375 5.30002C54.1025 5.39451 54.0406 5.47675 53.9596 5.53669C53.8786 5.59663 53.7819 5.63166 53.6812 5.63752L49.9937 5.87502C49.5125 5.90627 49.325 6.52502 49.6937 6.83127L52.5187 9.18752C52.5977 9.2528 52.6566 9.33907 52.6887 9.43638C52.7207 9.53369 52.7247 9.63807 52.7 9.73752L51.8562 13.0625C51.7125 13.625 52.3125 14.0813 52.7937 13.775L55.725 11.9188C55.8072 11.8665 55.9026 11.8387 56 11.8387C56.0974 11.8387 56.1928 11.8665 56.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M72.275 11.9188L75.425 13.9188C75.8312 14.175 76.3312 13.7938 76.2125 13.325L75.3 9.73752C75.2753 9.63807 75.2792 9.53369 75.3113 9.43638C75.3434 9.33907 75.4023 9.2528 75.4812 9.18752L78.3062 6.83127C78.675 6.52502 78.4875 5.90627 78.0062 5.87502L74.3187 5.63752C74.2181 5.63166 74.1214 5.59663 74.0404 5.53669C73.9594 5.47675 73.8975 5.39451 73.8625 5.30002L72.4875 1.83752C72.4511 1.73745 72.3848 1.65102 72.2976 1.58994C72.2104 1.52886 72.1065 1.49609 72 1.49609C71.8935 1.49609 71.7896 1.52886 71.7024 1.58994C71.6152 1.65102 71.5489 1.73745 71.5125 1.83752L70.1375 5.30002C70.1025 5.39451 70.0406 5.47675 69.9596 5.53669C69.8786 5.59663 69.7819 5.63166 69.6812 5.63752L65.9937 5.87502C65.5125 5.90627 65.325 6.52502 65.6937 6.83127L68.5187 9.18752C68.5977 9.2528 68.6566 9.33907 68.6887 9.43638C68.7207 9.53369 68.7247 9.63807 68.7 9.73752L67.8562 13.0625C67.7125 13.625 68.3125 14.0813 68.7937 13.775L71.725 11.9188C71.8072 11.8665 71.9026 11.8387 72 11.8387C72.0974 11.8387 72.1928 11.8665 72.275 11.9188Z" fill="#FA8232"/>
-                                                </svg>                                                
-                                        </div>
-                                        <div class="product-list-item__rate-num">(738)</div>
-                                    </div>
-                                    <div class="product-list-item__price">2.500.000đ</div>
-                                </div>
-                            </div>
-                            <div class="grid__column-2-5">
-                                <!--Product Items-->
-                                <div class="product-list-item">
-                                    <div class="product-list-item__img" style="background-image: url(./img/1.png);"></div>
-                                    <div class="product-list-item__name">Màn hình Dell G3223Q 32</div>
-                                    <div class="product-list-item__rate">
-                                        <div class="product-list-item__rate-icon">
-                                            <svg width="80" height="16" viewBox="0 0 80 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M8.275 11.9188L11.425 13.9188C11.8312 14.175 12.3312 13.7938 12.2125 13.325L11.3 9.73752C11.2753 9.63807 11.2792 9.53369 11.3113 9.43638C11.3434 9.33907 11.4023 9.2528 11.4812 9.18752L14.3062 6.83127C14.675 6.52502 14.4875 5.90627 14.0062 5.87502L10.3187 5.63752C10.2181 5.63166 10.1214 5.59663 10.0404 5.53669C9.95935 5.47675 9.89754 5.39451 9.8625 5.30002L8.4875 1.83752C8.4511 1.73745 8.38479 1.65102 8.29758 1.58994C8.21037 1.52886 8.10647 1.49609 8 1.49609C7.89352 1.49609 7.78963 1.52886 7.70241 1.58994C7.6152 1.65102 7.54889 1.73745 7.5125 1.83752L6.1375 5.30002C6.10245 5.39451 6.04064 5.47675 5.95962 5.53669C5.87859 5.59663 5.78186 5.63166 5.68125 5.63752L1.99375 5.87502C1.5125 5.90627 1.325 6.52502 1.69375 6.83127L4.51875 9.18752C4.59771 9.2528 4.65661 9.33907 4.68868 9.43638C4.72075 9.53369 4.72467 9.63807 4.7 9.73752L3.85625 13.0625C3.7125 13.625 4.3125 14.0813 4.79375 13.775L7.725 11.9188C7.8072 11.8665 7.90259 11.8387 8 11.8387C8.09741 11.8387 8.1928 11.8665 8.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M24.275 11.9188L27.425 13.9188C27.8312 14.175 28.3312 13.7938 28.2125 13.325L27.3 9.73752C27.2753 9.63807 27.2792 9.53369 27.3113 9.43638C27.3434 9.33907 27.4023 9.2528 27.4812 9.18752L30.3062 6.83127C30.675 6.52502 30.4875 5.90627 30.0062 5.87502L26.3187 5.63752C26.2181 5.63166 26.1214 5.59663 26.0404 5.53669C25.9594 5.47675 25.8975 5.39451 25.8625 5.30002L24.4875 1.83752C24.4511 1.73745 24.3848 1.65102 24.2976 1.58994C24.2104 1.52886 24.1065 1.49609 24 1.49609C23.8935 1.49609 23.7896 1.52886 23.7024 1.58994C23.6152 1.65102 23.5489 1.73745 23.5125 1.83752L22.1375 5.30002C22.1025 5.39451 22.0406 5.47675 21.9596 5.53669C21.8786 5.59663 21.7819 5.63166 21.6812 5.63752L17.9937 5.87502C17.5125 5.90627 17.325 6.52502 17.6937 6.83127L20.5187 9.18752C20.5977 9.2528 20.6566 9.33907 20.6887 9.43638C20.7207 9.53369 20.7247 9.63807 20.7 9.73752L19.8562 13.0625C19.7125 13.625 20.3125 14.0813 20.7937 13.775L23.725 11.9188C23.8072 11.8665 23.9026 11.8387 24 11.8387C24.0974 11.8387 24.1928 11.8665 24.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M40.275 11.9188L43.425 13.9188C43.8312 14.175 44.3312 13.7938 44.2125 13.325L43.3 9.73752C43.2753 9.63807 43.2792 9.53369 43.3113 9.43638C43.3434 9.33907 43.4023 9.2528 43.4812 9.18752L46.3062 6.83127C46.675 6.52502 46.4875 5.90627 46.0062 5.87502L42.3187 5.63752C42.2181 5.63166 42.1214 5.59663 42.0404 5.53669C41.9594 5.47675 41.8975 5.39451 41.8625 5.30002L40.4875 1.83752C40.4511 1.73745 40.3848 1.65102 40.2976 1.58994C40.2104 1.52886 40.1065 1.49609 40 1.49609C39.8935 1.49609 39.7896 1.52886 39.7024 1.58994C39.6152 1.65102 39.5489 1.73745 39.5125 1.83752L38.1375 5.30002C38.1025 5.39451 38.0406 5.47675 37.9596 5.53669C37.8786 5.59663 37.7819 5.63166 37.6812 5.63752L33.9937 5.87502C33.5125 5.90627 33.325 6.52502 33.6937 6.83127L36.5187 9.18752C36.5977 9.2528 36.6566 9.33907 36.6887 9.43638C36.7207 9.53369 36.7247 9.63807 36.7 9.73752L35.8562 13.0625C35.7125 13.625 36.3125 14.0813 36.7937 13.775L39.725 11.9188C39.8072 11.8665 39.9026 11.8387 40 11.8387C40.0974 11.8387 40.1928 11.8665 40.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M56.275 11.9188L59.425 13.9188C59.8312 14.175 60.3312 13.7938 60.2125 13.325L59.3 9.73752C59.2753 9.63807 59.2792 9.53369 59.3113 9.43638C59.3434 9.33907 59.4023 9.2528 59.4812 9.18752L62.3062 6.83127C62.675 6.52502 62.4875 5.90627 62.0062 5.87502L58.3187 5.63752C58.2181 5.63166 58.1214 5.59663 58.0404 5.53669C57.9594 5.47675 57.8975 5.39451 57.8625 5.30002L56.4875 1.83752C56.4511 1.73745 56.3848 1.65102 56.2976 1.58994C56.2104 1.52886 56.1065 1.49609 56 1.49609C55.8935 1.49609 55.7896 1.52886 55.7024 1.58994C55.6152 1.65102 55.5489 1.73745 55.5125 1.83752L54.1375 5.30002C54.1025 5.39451 54.0406 5.47675 53.9596 5.53669C53.8786 5.59663 53.7819 5.63166 53.6812 5.63752L49.9937 5.87502C49.5125 5.90627 49.325 6.52502 49.6937 6.83127L52.5187 9.18752C52.5977 9.2528 52.6566 9.33907 52.6887 9.43638C52.7207 9.53369 52.7247 9.63807 52.7 9.73752L51.8562 13.0625C51.7125 13.625 52.3125 14.0813 52.7937 13.775L55.725 11.9188C55.8072 11.8665 55.9026 11.8387 56 11.8387C56.0974 11.8387 56.1928 11.8665 56.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M72.275 11.9188L75.425 13.9188C75.8312 14.175 76.3312 13.7938 76.2125 13.325L75.3 9.73752C75.2753 9.63807 75.2792 9.53369 75.3113 9.43638C75.3434 9.33907 75.4023 9.2528 75.4812 9.18752L78.3062 6.83127C78.675 6.52502 78.4875 5.90627 78.0062 5.87502L74.3187 5.63752C74.2181 5.63166 74.1214 5.59663 74.0404 5.53669C73.9594 5.47675 73.8975 5.39451 73.8625 5.30002L72.4875 1.83752C72.4511 1.73745 72.3848 1.65102 72.2976 1.58994C72.2104 1.52886 72.1065 1.49609 72 1.49609C71.8935 1.49609 71.7896 1.52886 71.7024 1.58994C71.6152 1.65102 71.5489 1.73745 71.5125 1.83752L70.1375 5.30002C70.1025 5.39451 70.0406 5.47675 69.9596 5.53669C69.8786 5.59663 69.7819 5.63166 69.6812 5.63752L65.9937 5.87502C65.5125 5.90627 65.325 6.52502 65.6937 6.83127L68.5187 9.18752C68.5977 9.2528 68.6566 9.33907 68.6887 9.43638C68.7207 9.53369 68.7247 9.63807 68.7 9.73752L67.8562 13.0625C67.7125 13.625 68.3125 14.0813 68.7937 13.775L71.725 11.9188C71.8072 11.8665 71.9026 11.8387 72 11.8387C72.0974 11.8387 72.1928 11.8665 72.275 11.9188Z" fill="#FA8232"/>
-                                                </svg>                                                
-                                        </div>
-                                        <div class="product-list-item__rate-num">(738)</div>
-                                    </div>
-                                    <div class="product-list-item__price">2.500.000đ</div>
-                                </div>
-                            </div>
-                            <div class="grid__column-2-5">
-                                <!--Product Items-->
-                                <div class="product-list-item">
-                                    <div class="product-list-item__img" style="background-image: url(./img/1.png);"></div>
-                                    <div class="product-list-item__name">Màn hình Dell G3223Q 32</div>
-                                    <div class="product-list-item__rate">
-                                        <div class="product-list-item__rate-icon">
-                                            <svg width="80" height="16" viewBox="0 0 80 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M8.275 11.9188L11.425 13.9188C11.8312 14.175 12.3312 13.7938 12.2125 13.325L11.3 9.73752C11.2753 9.63807 11.2792 9.53369 11.3113 9.43638C11.3434 9.33907 11.4023 9.2528 11.4812 9.18752L14.3062 6.83127C14.675 6.52502 14.4875 5.90627 14.0062 5.87502L10.3187 5.63752C10.2181 5.63166 10.1214 5.59663 10.0404 5.53669C9.95935 5.47675 9.89754 5.39451 9.8625 5.30002L8.4875 1.83752C8.4511 1.73745 8.38479 1.65102 8.29758 1.58994C8.21037 1.52886 8.10647 1.49609 8 1.49609C7.89352 1.49609 7.78963 1.52886 7.70241 1.58994C7.6152 1.65102 7.54889 1.73745 7.5125 1.83752L6.1375 5.30002C6.10245 5.39451 6.04064 5.47675 5.95962 5.53669C5.87859 5.59663 5.78186 5.63166 5.68125 5.63752L1.99375 5.87502C1.5125 5.90627 1.325 6.52502 1.69375 6.83127L4.51875 9.18752C4.59771 9.2528 4.65661 9.33907 4.68868 9.43638C4.72075 9.53369 4.72467 9.63807 4.7 9.73752L3.85625 13.0625C3.7125 13.625 4.3125 14.0813 4.79375 13.775L7.725 11.9188C7.8072 11.8665 7.90259 11.8387 8 11.8387C8.09741 11.8387 8.1928 11.8665 8.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M24.275 11.9188L27.425 13.9188C27.8312 14.175 28.3312 13.7938 28.2125 13.325L27.3 9.73752C27.2753 9.63807 27.2792 9.53369 27.3113 9.43638C27.3434 9.33907 27.4023 9.2528 27.4812 9.18752L30.3062 6.83127C30.675 6.52502 30.4875 5.90627 30.0062 5.87502L26.3187 5.63752C26.2181 5.63166 26.1214 5.59663 26.0404 5.53669C25.9594 5.47675 25.8975 5.39451 25.8625 5.30002L24.4875 1.83752C24.4511 1.73745 24.3848 1.65102 24.2976 1.58994C24.2104 1.52886 24.1065 1.49609 24 1.49609C23.8935 1.49609 23.7896 1.52886 23.7024 1.58994C23.6152 1.65102 23.5489 1.73745 23.5125 1.83752L22.1375 5.30002C22.1025 5.39451 22.0406 5.47675 21.9596 5.53669C21.8786 5.59663 21.7819 5.63166 21.6812 5.63752L17.9937 5.87502C17.5125 5.90627 17.325 6.52502 17.6937 6.83127L20.5187 9.18752C20.5977 9.2528 20.6566 9.33907 20.6887 9.43638C20.7207 9.53369 20.7247 9.63807 20.7 9.73752L19.8562 13.0625C19.7125 13.625 20.3125 14.0813 20.7937 13.775L23.725 11.9188C23.8072 11.8665 23.9026 11.8387 24 11.8387C24.0974 11.8387 24.1928 11.8665 24.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M40.275 11.9188L43.425 13.9188C43.8312 14.175 44.3312 13.7938 44.2125 13.325L43.3 9.73752C43.2753 9.63807 43.2792 9.53369 43.3113 9.43638C43.3434 9.33907 43.4023 9.2528 43.4812 9.18752L46.3062 6.83127C46.675 6.52502 46.4875 5.90627 46.0062 5.87502L42.3187 5.63752C42.2181 5.63166 42.1214 5.59663 42.0404 5.53669C41.9594 5.47675 41.8975 5.39451 41.8625 5.30002L40.4875 1.83752C40.4511 1.73745 40.3848 1.65102 40.2976 1.58994C40.2104 1.52886 40.1065 1.49609 40 1.49609C39.8935 1.49609 39.7896 1.52886 39.7024 1.58994C39.6152 1.65102 39.5489 1.73745 39.5125 1.83752L38.1375 5.30002C38.1025 5.39451 38.0406 5.47675 37.9596 5.53669C37.8786 5.59663 37.7819 5.63166 37.6812 5.63752L33.9937 5.87502C33.5125 5.90627 33.325 6.52502 33.6937 6.83127L36.5187 9.18752C36.5977 9.2528 36.6566 9.33907 36.6887 9.43638C36.7207 9.53369 36.7247 9.63807 36.7 9.73752L35.8562 13.0625C35.7125 13.625 36.3125 14.0813 36.7937 13.775L39.725 11.9188C39.8072 11.8665 39.9026 11.8387 40 11.8387C40.0974 11.8387 40.1928 11.8665 40.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M56.275 11.9188L59.425 13.9188C59.8312 14.175 60.3312 13.7938 60.2125 13.325L59.3 9.73752C59.2753 9.63807 59.2792 9.53369 59.3113 9.43638C59.3434 9.33907 59.4023 9.2528 59.4812 9.18752L62.3062 6.83127C62.675 6.52502 62.4875 5.90627 62.0062 5.87502L58.3187 5.63752C58.2181 5.63166 58.1214 5.59663 58.0404 5.53669C57.9594 5.47675 57.8975 5.39451 57.8625 5.30002L56.4875 1.83752C56.4511 1.73745 56.3848 1.65102 56.2976 1.58994C56.2104 1.52886 56.1065 1.49609 56 1.49609C55.8935 1.49609 55.7896 1.52886 55.7024 1.58994C55.6152 1.65102 55.5489 1.73745 55.5125 1.83752L54.1375 5.30002C54.1025 5.39451 54.0406 5.47675 53.9596 5.53669C53.8786 5.59663 53.7819 5.63166 53.6812 5.63752L49.9937 5.87502C49.5125 5.90627 49.325 6.52502 49.6937 6.83127L52.5187 9.18752C52.5977 9.2528 52.6566 9.33907 52.6887 9.43638C52.7207 9.53369 52.7247 9.63807 52.7 9.73752L51.8562 13.0625C51.7125 13.625 52.3125 14.0813 52.7937 13.775L55.725 11.9188C55.8072 11.8665 55.9026 11.8387 56 11.8387C56.0974 11.8387 56.1928 11.8665 56.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M72.275 11.9188L75.425 13.9188C75.8312 14.175 76.3312 13.7938 76.2125 13.325L75.3 9.73752C75.2753 9.63807 75.2792 9.53369 75.3113 9.43638C75.3434 9.33907 75.4023 9.2528 75.4812 9.18752L78.3062 6.83127C78.675 6.52502 78.4875 5.90627 78.0062 5.87502L74.3187 5.63752C74.2181 5.63166 74.1214 5.59663 74.0404 5.53669C73.9594 5.47675 73.8975 5.39451 73.8625 5.30002L72.4875 1.83752C72.4511 1.73745 72.3848 1.65102 72.2976 1.58994C72.2104 1.52886 72.1065 1.49609 72 1.49609C71.8935 1.49609 71.7896 1.52886 71.7024 1.58994C71.6152 1.65102 71.5489 1.73745 71.5125 1.83752L70.1375 5.30002C70.1025 5.39451 70.0406 5.47675 69.9596 5.53669C69.8786 5.59663 69.7819 5.63166 69.6812 5.63752L65.9937 5.87502C65.5125 5.90627 65.325 6.52502 65.6937 6.83127L68.5187 9.18752C68.5977 9.2528 68.6566 9.33907 68.6887 9.43638C68.7207 9.53369 68.7247 9.63807 68.7 9.73752L67.8562 13.0625C67.7125 13.625 68.3125 14.0813 68.7937 13.775L71.725 11.9188C71.8072 11.8665 71.9026 11.8387 72 11.8387C72.0974 11.8387 72.1928 11.8665 72.275 11.9188Z" fill="#FA8232"/>
-                                                </svg>                                                
-                                        </div>
-                                        <div class="product-list-item__rate-num">(738)</div>
-                                    </div>
-                                    <div class="product-list-item__price">2.500.000đ</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="grid__row" style="display: flex;">
-                            <div class="grid__column-2-5">
-                                <!--Product Items-->
-                                <div class="product-list-item">
-                                    <div class="product-list-item__img" style="background-image: url(./img/1.png);"></div>
-                                    <div class="product-list-item__name">Màn hình Dell G3223Q 32</div>
-                                    <div class="product-list-item__rate">
-                                        <div class="product-list-item__rate-icon">
-                                            <svg width="80" height="16" viewBox="0 0 80 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M8.275 11.9188L11.425 13.9188C11.8312 14.175 12.3312 13.7938 12.2125 13.325L11.3 9.73752C11.2753 9.63807 11.2792 9.53369 11.3113 9.43638C11.3434 9.33907 11.4023 9.2528 11.4812 9.18752L14.3062 6.83127C14.675 6.52502 14.4875 5.90627 14.0062 5.87502L10.3187 5.63752C10.2181 5.63166 10.1214 5.59663 10.0404 5.53669C9.95935 5.47675 9.89754 5.39451 9.8625 5.30002L8.4875 1.83752C8.4511 1.73745 8.38479 1.65102 8.29758 1.58994C8.21037 1.52886 8.10647 1.49609 8 1.49609C7.89352 1.49609 7.78963 1.52886 7.70241 1.58994C7.6152 1.65102 7.54889 1.73745 7.5125 1.83752L6.1375 5.30002C6.10245 5.39451 6.04064 5.47675 5.95962 5.53669C5.87859 5.59663 5.78186 5.63166 5.68125 5.63752L1.99375 5.87502C1.5125 5.90627 1.325 6.52502 1.69375 6.83127L4.51875 9.18752C4.59771 9.2528 4.65661 9.33907 4.68868 9.43638C4.72075 9.53369 4.72467 9.63807 4.7 9.73752L3.85625 13.0625C3.7125 13.625 4.3125 14.0813 4.79375 13.775L7.725 11.9188C7.8072 11.8665 7.90259 11.8387 8 11.8387C8.09741 11.8387 8.1928 11.8665 8.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M24.275 11.9188L27.425 13.9188C27.8312 14.175 28.3312 13.7938 28.2125 13.325L27.3 9.73752C27.2753 9.63807 27.2792 9.53369 27.3113 9.43638C27.3434 9.33907 27.4023 9.2528 27.4812 9.18752L30.3062 6.83127C30.675 6.52502 30.4875 5.90627 30.0062 5.87502L26.3187 5.63752C26.2181 5.63166 26.1214 5.59663 26.0404 5.53669C25.9594 5.47675 25.8975 5.39451 25.8625 5.30002L24.4875 1.83752C24.4511 1.73745 24.3848 1.65102 24.2976 1.58994C24.2104 1.52886 24.1065 1.49609 24 1.49609C23.8935 1.49609 23.7896 1.52886 23.7024 1.58994C23.6152 1.65102 23.5489 1.73745 23.5125 1.83752L22.1375 5.30002C22.1025 5.39451 22.0406 5.47675 21.9596 5.53669C21.8786 5.59663 21.7819 5.63166 21.6812 5.63752L17.9937 5.87502C17.5125 5.90627 17.325 6.52502 17.6937 6.83127L20.5187 9.18752C20.5977 9.2528 20.6566 9.33907 20.6887 9.43638C20.7207 9.53369 20.7247 9.63807 20.7 9.73752L19.8562 13.0625C19.7125 13.625 20.3125 14.0813 20.7937 13.775L23.725 11.9188C23.8072 11.8665 23.9026 11.8387 24 11.8387C24.0974 11.8387 24.1928 11.8665 24.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M40.275 11.9188L43.425 13.9188C43.8312 14.175 44.3312 13.7938 44.2125 13.325L43.3 9.73752C43.2753 9.63807 43.2792 9.53369 43.3113 9.43638C43.3434 9.33907 43.4023 9.2528 43.4812 9.18752L46.3062 6.83127C46.675 6.52502 46.4875 5.90627 46.0062 5.87502L42.3187 5.63752C42.2181 5.63166 42.1214 5.59663 42.0404 5.53669C41.9594 5.47675 41.8975 5.39451 41.8625 5.30002L40.4875 1.83752C40.4511 1.73745 40.3848 1.65102 40.2976 1.58994C40.2104 1.52886 40.1065 1.49609 40 1.49609C39.8935 1.49609 39.7896 1.52886 39.7024 1.58994C39.6152 1.65102 39.5489 1.73745 39.5125 1.83752L38.1375 5.30002C38.1025 5.39451 38.0406 5.47675 37.9596 5.53669C37.8786 5.59663 37.7819 5.63166 37.6812 5.63752L33.9937 5.87502C33.5125 5.90627 33.325 6.52502 33.6937 6.83127L36.5187 9.18752C36.5977 9.2528 36.6566 9.33907 36.6887 9.43638C36.7207 9.53369 36.7247 9.63807 36.7 9.73752L35.8562 13.0625C35.7125 13.625 36.3125 14.0813 36.7937 13.775L39.725 11.9188C39.8072 11.8665 39.9026 11.8387 40 11.8387C40.0974 11.8387 40.1928 11.8665 40.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M56.275 11.9188L59.425 13.9188C59.8312 14.175 60.3312 13.7938 60.2125 13.325L59.3 9.73752C59.2753 9.63807 59.2792 9.53369 59.3113 9.43638C59.3434 9.33907 59.4023 9.2528 59.4812 9.18752L62.3062 6.83127C62.675 6.52502 62.4875 5.90627 62.0062 5.87502L58.3187 5.63752C58.2181 5.63166 58.1214 5.59663 58.0404 5.53669C57.9594 5.47675 57.8975 5.39451 57.8625 5.30002L56.4875 1.83752C56.4511 1.73745 56.3848 1.65102 56.2976 1.58994C56.2104 1.52886 56.1065 1.49609 56 1.49609C55.8935 1.49609 55.7896 1.52886 55.7024 1.58994C55.6152 1.65102 55.5489 1.73745 55.5125 1.83752L54.1375 5.30002C54.1025 5.39451 54.0406 5.47675 53.9596 5.53669C53.8786 5.59663 53.7819 5.63166 53.6812 5.63752L49.9937 5.87502C49.5125 5.90627 49.325 6.52502 49.6937 6.83127L52.5187 9.18752C52.5977 9.2528 52.6566 9.33907 52.6887 9.43638C52.7207 9.53369 52.7247 9.63807 52.7 9.73752L51.8562 13.0625C51.7125 13.625 52.3125 14.0813 52.7937 13.775L55.725 11.9188C55.8072 11.8665 55.9026 11.8387 56 11.8387C56.0974 11.8387 56.1928 11.8665 56.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M72.275 11.9188L75.425 13.9188C75.8312 14.175 76.3312 13.7938 76.2125 13.325L75.3 9.73752C75.2753 9.63807 75.2792 9.53369 75.3113 9.43638C75.3434 9.33907 75.4023 9.2528 75.4812 9.18752L78.3062 6.83127C78.675 6.52502 78.4875 5.90627 78.0062 5.87502L74.3187 5.63752C74.2181 5.63166 74.1214 5.59663 74.0404 5.53669C73.9594 5.47675 73.8975 5.39451 73.8625 5.30002L72.4875 1.83752C72.4511 1.73745 72.3848 1.65102 72.2976 1.58994C72.2104 1.52886 72.1065 1.49609 72 1.49609C71.8935 1.49609 71.7896 1.52886 71.7024 1.58994C71.6152 1.65102 71.5489 1.73745 71.5125 1.83752L70.1375 5.30002C70.1025 5.39451 70.0406 5.47675 69.9596 5.53669C69.8786 5.59663 69.7819 5.63166 69.6812 5.63752L65.9937 5.87502C65.5125 5.90627 65.325 6.52502 65.6937 6.83127L68.5187 9.18752C68.5977 9.2528 68.6566 9.33907 68.6887 9.43638C68.7207 9.53369 68.7247 9.63807 68.7 9.73752L67.8562 13.0625C67.7125 13.625 68.3125 14.0813 68.7937 13.775L71.725 11.9188C71.8072 11.8665 71.9026 11.8387 72 11.8387C72.0974 11.8387 72.1928 11.8665 72.275 11.9188Z" fill="#FA8232"/>
-                                                </svg>                                                
-                                        </div>
-                                        <div class="product-list-item__rate-num">(738)</div>
-                                    </div>
-                                    <div class="product-list-item__price">2.500.000đ</div>
-                                </div>
-                            </div>
-                            <div class="grid__column-2-5">
-                                <!--Product Items-->
-                                <div class="product-list-item">
-                                    <div class="product-list-item__img" style="background-image: url(./img/1.png);"></div>
-                                    <div class="product-list-item__name">Màn hình Dell G3223Q 32</div>
-                                    <div class="product-list-item__rate">
-                                        <div class="product-list-item__rate-icon">
-                                            <svg width="80" height="16" viewBox="0 0 80 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M8.275 11.9188L11.425 13.9188C11.8312 14.175 12.3312 13.7938 12.2125 13.325L11.3 9.73752C11.2753 9.63807 11.2792 9.53369 11.3113 9.43638C11.3434 9.33907 11.4023 9.2528 11.4812 9.18752L14.3062 6.83127C14.675 6.52502 14.4875 5.90627 14.0062 5.87502L10.3187 5.63752C10.2181 5.63166 10.1214 5.59663 10.0404 5.53669C9.95935 5.47675 9.89754 5.39451 9.8625 5.30002L8.4875 1.83752C8.4511 1.73745 8.38479 1.65102 8.29758 1.58994C8.21037 1.52886 8.10647 1.49609 8 1.49609C7.89352 1.49609 7.78963 1.52886 7.70241 1.58994C7.6152 1.65102 7.54889 1.73745 7.5125 1.83752L6.1375 5.30002C6.10245 5.39451 6.04064 5.47675 5.95962 5.53669C5.87859 5.59663 5.78186 5.63166 5.68125 5.63752L1.99375 5.87502C1.5125 5.90627 1.325 6.52502 1.69375 6.83127L4.51875 9.18752C4.59771 9.2528 4.65661 9.33907 4.68868 9.43638C4.72075 9.53369 4.72467 9.63807 4.7 9.73752L3.85625 13.0625C3.7125 13.625 4.3125 14.0813 4.79375 13.775L7.725 11.9188C7.8072 11.8665 7.90259 11.8387 8 11.8387C8.09741 11.8387 8.1928 11.8665 8.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M24.275 11.9188L27.425 13.9188C27.8312 14.175 28.3312 13.7938 28.2125 13.325L27.3 9.73752C27.2753 9.63807 27.2792 9.53369 27.3113 9.43638C27.3434 9.33907 27.4023 9.2528 27.4812 9.18752L30.3062 6.83127C30.675 6.52502 30.4875 5.90627 30.0062 5.87502L26.3187 5.63752C26.2181 5.63166 26.1214 5.59663 26.0404 5.53669C25.9594 5.47675 25.8975 5.39451 25.8625 5.30002L24.4875 1.83752C24.4511 1.73745 24.3848 1.65102 24.2976 1.58994C24.2104 1.52886 24.1065 1.49609 24 1.49609C23.8935 1.49609 23.7896 1.52886 23.7024 1.58994C23.6152 1.65102 23.5489 1.73745 23.5125 1.83752L22.1375 5.30002C22.1025 5.39451 22.0406 5.47675 21.9596 5.53669C21.8786 5.59663 21.7819 5.63166 21.6812 5.63752L17.9937 5.87502C17.5125 5.90627 17.325 6.52502 17.6937 6.83127L20.5187 9.18752C20.5977 9.2528 20.6566 9.33907 20.6887 9.43638C20.7207 9.53369 20.7247 9.63807 20.7 9.73752L19.8562 13.0625C19.7125 13.625 20.3125 14.0813 20.7937 13.775L23.725 11.9188C23.8072 11.8665 23.9026 11.8387 24 11.8387C24.0974 11.8387 24.1928 11.8665 24.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M40.275 11.9188L43.425 13.9188C43.8312 14.175 44.3312 13.7938 44.2125 13.325L43.3 9.73752C43.2753 9.63807 43.2792 9.53369 43.3113 9.43638C43.3434 9.33907 43.4023 9.2528 43.4812 9.18752L46.3062 6.83127C46.675 6.52502 46.4875 5.90627 46.0062 5.87502L42.3187 5.63752C42.2181 5.63166 42.1214 5.59663 42.0404 5.53669C41.9594 5.47675 41.8975 5.39451 41.8625 5.30002L40.4875 1.83752C40.4511 1.73745 40.3848 1.65102 40.2976 1.58994C40.2104 1.52886 40.1065 1.49609 40 1.49609C39.8935 1.49609 39.7896 1.52886 39.7024 1.58994C39.6152 1.65102 39.5489 1.73745 39.5125 1.83752L38.1375 5.30002C38.1025 5.39451 38.0406 5.47675 37.9596 5.53669C37.8786 5.59663 37.7819 5.63166 37.6812 5.63752L33.9937 5.87502C33.5125 5.90627 33.325 6.52502 33.6937 6.83127L36.5187 9.18752C36.5977 9.2528 36.6566 9.33907 36.6887 9.43638C36.7207 9.53369 36.7247 9.63807 36.7 9.73752L35.8562 13.0625C35.7125 13.625 36.3125 14.0813 36.7937 13.775L39.725 11.9188C39.8072 11.8665 39.9026 11.8387 40 11.8387C40.0974 11.8387 40.1928 11.8665 40.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M56.275 11.9188L59.425 13.9188C59.8312 14.175 60.3312 13.7938 60.2125 13.325L59.3 9.73752C59.2753 9.63807 59.2792 9.53369 59.3113 9.43638C59.3434 9.33907 59.4023 9.2528 59.4812 9.18752L62.3062 6.83127C62.675 6.52502 62.4875 5.90627 62.0062 5.87502L58.3187 5.63752C58.2181 5.63166 58.1214 5.59663 58.0404 5.53669C57.9594 5.47675 57.8975 5.39451 57.8625 5.30002L56.4875 1.83752C56.4511 1.73745 56.3848 1.65102 56.2976 1.58994C56.2104 1.52886 56.1065 1.49609 56 1.49609C55.8935 1.49609 55.7896 1.52886 55.7024 1.58994C55.6152 1.65102 55.5489 1.73745 55.5125 1.83752L54.1375 5.30002C54.1025 5.39451 54.0406 5.47675 53.9596 5.53669C53.8786 5.59663 53.7819 5.63166 53.6812 5.63752L49.9937 5.87502C49.5125 5.90627 49.325 6.52502 49.6937 6.83127L52.5187 9.18752C52.5977 9.2528 52.6566 9.33907 52.6887 9.43638C52.7207 9.53369 52.7247 9.63807 52.7 9.73752L51.8562 13.0625C51.7125 13.625 52.3125 14.0813 52.7937 13.775L55.725 11.9188C55.8072 11.8665 55.9026 11.8387 56 11.8387C56.0974 11.8387 56.1928 11.8665 56.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M72.275 11.9188L75.425 13.9188C75.8312 14.175 76.3312 13.7938 76.2125 13.325L75.3 9.73752C75.2753 9.63807 75.2792 9.53369 75.3113 9.43638C75.3434 9.33907 75.4023 9.2528 75.4812 9.18752L78.3062 6.83127C78.675 6.52502 78.4875 5.90627 78.0062 5.87502L74.3187 5.63752C74.2181 5.63166 74.1214 5.59663 74.0404 5.53669C73.9594 5.47675 73.8975 5.39451 73.8625 5.30002L72.4875 1.83752C72.4511 1.73745 72.3848 1.65102 72.2976 1.58994C72.2104 1.52886 72.1065 1.49609 72 1.49609C71.8935 1.49609 71.7896 1.52886 71.7024 1.58994C71.6152 1.65102 71.5489 1.73745 71.5125 1.83752L70.1375 5.30002C70.1025 5.39451 70.0406 5.47675 69.9596 5.53669C69.8786 5.59663 69.7819 5.63166 69.6812 5.63752L65.9937 5.87502C65.5125 5.90627 65.325 6.52502 65.6937 6.83127L68.5187 9.18752C68.5977 9.2528 68.6566 9.33907 68.6887 9.43638C68.7207 9.53369 68.7247 9.63807 68.7 9.73752L67.8562 13.0625C67.7125 13.625 68.3125 14.0813 68.7937 13.775L71.725 11.9188C71.8072 11.8665 71.9026 11.8387 72 11.8387C72.0974 11.8387 72.1928 11.8665 72.275 11.9188Z" fill="#FA8232"/>
-                                                </svg>                                                
-                                        </div>
-                                        <div class="product-list-item__rate-num">(738)</div>
-                                    </div>
-                                    <div class="product-list-item__price">2.500.000đ</div>
-                                </div>
-                            </div>
-                            <div class="grid__column-2-5">
-                                <!--Product Items-->
-                                <div class="product-list-item">
-                                    <div class="product-list-item__img" style="background-image: url(./img/1.png);"></div>
-                                    <div class="product-list-item__name">Màn hình Dell G3223Q 32</div>
-                                    <div class="product-list-item__rate">
-                                        <div class="product-list-item__rate-icon">
-                                            <svg width="80" height="16" viewBox="0 0 80 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M8.275 11.9188L11.425 13.9188C11.8312 14.175 12.3312 13.7938 12.2125 13.325L11.3 9.73752C11.2753 9.63807 11.2792 9.53369 11.3113 9.43638C11.3434 9.33907 11.4023 9.2528 11.4812 9.18752L14.3062 6.83127C14.675 6.52502 14.4875 5.90627 14.0062 5.87502L10.3187 5.63752C10.2181 5.63166 10.1214 5.59663 10.0404 5.53669C9.95935 5.47675 9.89754 5.39451 9.8625 5.30002L8.4875 1.83752C8.4511 1.73745 8.38479 1.65102 8.29758 1.58994C8.21037 1.52886 8.10647 1.49609 8 1.49609C7.89352 1.49609 7.78963 1.52886 7.70241 1.58994C7.6152 1.65102 7.54889 1.73745 7.5125 1.83752L6.1375 5.30002C6.10245 5.39451 6.04064 5.47675 5.95962 5.53669C5.87859 5.59663 5.78186 5.63166 5.68125 5.63752L1.99375 5.87502C1.5125 5.90627 1.325 6.52502 1.69375 6.83127L4.51875 9.18752C4.59771 9.2528 4.65661 9.33907 4.68868 9.43638C4.72075 9.53369 4.72467 9.63807 4.7 9.73752L3.85625 13.0625C3.7125 13.625 4.3125 14.0813 4.79375 13.775L7.725 11.9188C7.8072 11.8665 7.90259 11.8387 8 11.8387C8.09741 11.8387 8.1928 11.8665 8.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M24.275 11.9188L27.425 13.9188C27.8312 14.175 28.3312 13.7938 28.2125 13.325L27.3 9.73752C27.2753 9.63807 27.2792 9.53369 27.3113 9.43638C27.3434 9.33907 27.4023 9.2528 27.4812 9.18752L30.3062 6.83127C30.675 6.52502 30.4875 5.90627 30.0062 5.87502L26.3187 5.63752C26.2181 5.63166 26.1214 5.59663 26.0404 5.53669C25.9594 5.47675 25.8975 5.39451 25.8625 5.30002L24.4875 1.83752C24.4511 1.73745 24.3848 1.65102 24.2976 1.58994C24.2104 1.52886 24.1065 1.49609 24 1.49609C23.8935 1.49609 23.7896 1.52886 23.7024 1.58994C23.6152 1.65102 23.5489 1.73745 23.5125 1.83752L22.1375 5.30002C22.1025 5.39451 22.0406 5.47675 21.9596 5.53669C21.8786 5.59663 21.7819 5.63166 21.6812 5.63752L17.9937 5.87502C17.5125 5.90627 17.325 6.52502 17.6937 6.83127L20.5187 9.18752C20.5977 9.2528 20.6566 9.33907 20.6887 9.43638C20.7207 9.53369 20.7247 9.63807 20.7 9.73752L19.8562 13.0625C19.7125 13.625 20.3125 14.0813 20.7937 13.775L23.725 11.9188C23.8072 11.8665 23.9026 11.8387 24 11.8387C24.0974 11.8387 24.1928 11.8665 24.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M40.275 11.9188L43.425 13.9188C43.8312 14.175 44.3312 13.7938 44.2125 13.325L43.3 9.73752C43.2753 9.63807 43.2792 9.53369 43.3113 9.43638C43.3434 9.33907 43.4023 9.2528 43.4812 9.18752L46.3062 6.83127C46.675 6.52502 46.4875 5.90627 46.0062 5.87502L42.3187 5.63752C42.2181 5.63166 42.1214 5.59663 42.0404 5.53669C41.9594 5.47675 41.8975 5.39451 41.8625 5.30002L40.4875 1.83752C40.4511 1.73745 40.3848 1.65102 40.2976 1.58994C40.2104 1.52886 40.1065 1.49609 40 1.49609C39.8935 1.49609 39.7896 1.52886 39.7024 1.58994C39.6152 1.65102 39.5489 1.73745 39.5125 1.83752L38.1375 5.30002C38.1025 5.39451 38.0406 5.47675 37.9596 5.53669C37.8786 5.59663 37.7819 5.63166 37.6812 5.63752L33.9937 5.87502C33.5125 5.90627 33.325 6.52502 33.6937 6.83127L36.5187 9.18752C36.5977 9.2528 36.6566 9.33907 36.6887 9.43638C36.7207 9.53369 36.7247 9.63807 36.7 9.73752L35.8562 13.0625C35.7125 13.625 36.3125 14.0813 36.7937 13.775L39.725 11.9188C39.8072 11.8665 39.9026 11.8387 40 11.8387C40.0974 11.8387 40.1928 11.8665 40.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M56.275 11.9188L59.425 13.9188C59.8312 14.175 60.3312 13.7938 60.2125 13.325L59.3 9.73752C59.2753 9.63807 59.2792 9.53369 59.3113 9.43638C59.3434 9.33907 59.4023 9.2528 59.4812 9.18752L62.3062 6.83127C62.675 6.52502 62.4875 5.90627 62.0062 5.87502L58.3187 5.63752C58.2181 5.63166 58.1214 5.59663 58.0404 5.53669C57.9594 5.47675 57.8975 5.39451 57.8625 5.30002L56.4875 1.83752C56.4511 1.73745 56.3848 1.65102 56.2976 1.58994C56.2104 1.52886 56.1065 1.49609 56 1.49609C55.8935 1.49609 55.7896 1.52886 55.7024 1.58994C55.6152 1.65102 55.5489 1.73745 55.5125 1.83752L54.1375 5.30002C54.1025 5.39451 54.0406 5.47675 53.9596 5.53669C53.8786 5.59663 53.7819 5.63166 53.6812 5.63752L49.9937 5.87502C49.5125 5.90627 49.325 6.52502 49.6937 6.83127L52.5187 9.18752C52.5977 9.2528 52.6566 9.33907 52.6887 9.43638C52.7207 9.53369 52.7247 9.63807 52.7 9.73752L51.8562 13.0625C51.7125 13.625 52.3125 14.0813 52.7937 13.775L55.725 11.9188C55.8072 11.8665 55.9026 11.8387 56 11.8387C56.0974 11.8387 56.1928 11.8665 56.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M72.275 11.9188L75.425 13.9188C75.8312 14.175 76.3312 13.7938 76.2125 13.325L75.3 9.73752C75.2753 9.63807 75.2792 9.53369 75.3113 9.43638C75.3434 9.33907 75.4023 9.2528 75.4812 9.18752L78.3062 6.83127C78.675 6.52502 78.4875 5.90627 78.0062 5.87502L74.3187 5.63752C74.2181 5.63166 74.1214 5.59663 74.0404 5.53669C73.9594 5.47675 73.8975 5.39451 73.8625 5.30002L72.4875 1.83752C72.4511 1.73745 72.3848 1.65102 72.2976 1.58994C72.2104 1.52886 72.1065 1.49609 72 1.49609C71.8935 1.49609 71.7896 1.52886 71.7024 1.58994C71.6152 1.65102 71.5489 1.73745 71.5125 1.83752L70.1375 5.30002C70.1025 5.39451 70.0406 5.47675 69.9596 5.53669C69.8786 5.59663 69.7819 5.63166 69.6812 5.63752L65.9937 5.87502C65.5125 5.90627 65.325 6.52502 65.6937 6.83127L68.5187 9.18752C68.5977 9.2528 68.6566 9.33907 68.6887 9.43638C68.7207 9.53369 68.7247 9.63807 68.7 9.73752L67.8562 13.0625C67.7125 13.625 68.3125 14.0813 68.7937 13.775L71.725 11.9188C71.8072 11.8665 71.9026 11.8387 72 11.8387C72.0974 11.8387 72.1928 11.8665 72.275 11.9188Z" fill="#FA8232"/>
-                                                </svg>                                                
-                                        </div>
-                                        <div class="product-list-item__rate-num">(738)</div>
-                                    </div>
-                                    <div class="product-list-item__price">2.500.000đ</div>
-                                </div>
-                            </div>
-                            <div class="grid__column-2-5">
-                                <!--Product Items-->
-                                <div class="product-list-item">
-                                    <div class="product-list-item__img" style="background-image: url(./img/1.png);"></div>
-                                    <div class="product-list-item__name">Màn hình Dell G3223Q 32</div>
-                                    <div class="product-list-item__rate">
-                                        <div class="product-list-item__rate-icon">
-                                            <svg width="80" height="16" viewBox="0 0 80 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M8.275 11.9188L11.425 13.9188C11.8312 14.175 12.3312 13.7938 12.2125 13.325L11.3 9.73752C11.2753 9.63807 11.2792 9.53369 11.3113 9.43638C11.3434 9.33907 11.4023 9.2528 11.4812 9.18752L14.3062 6.83127C14.675 6.52502 14.4875 5.90627 14.0062 5.87502L10.3187 5.63752C10.2181 5.63166 10.1214 5.59663 10.0404 5.53669C9.95935 5.47675 9.89754 5.39451 9.8625 5.30002L8.4875 1.83752C8.4511 1.73745 8.38479 1.65102 8.29758 1.58994C8.21037 1.52886 8.10647 1.49609 8 1.49609C7.89352 1.49609 7.78963 1.52886 7.70241 1.58994C7.6152 1.65102 7.54889 1.73745 7.5125 1.83752L6.1375 5.30002C6.10245 5.39451 6.04064 5.47675 5.95962 5.53669C5.87859 5.59663 5.78186 5.63166 5.68125 5.63752L1.99375 5.87502C1.5125 5.90627 1.325 6.52502 1.69375 6.83127L4.51875 9.18752C4.59771 9.2528 4.65661 9.33907 4.68868 9.43638C4.72075 9.53369 4.72467 9.63807 4.7 9.73752L3.85625 13.0625C3.7125 13.625 4.3125 14.0813 4.79375 13.775L7.725 11.9188C7.8072 11.8665 7.90259 11.8387 8 11.8387C8.09741 11.8387 8.1928 11.8665 8.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M24.275 11.9188L27.425 13.9188C27.8312 14.175 28.3312 13.7938 28.2125 13.325L27.3 9.73752C27.2753 9.63807 27.2792 9.53369 27.3113 9.43638C27.3434 9.33907 27.4023 9.2528 27.4812 9.18752L30.3062 6.83127C30.675 6.52502 30.4875 5.90627 30.0062 5.87502L26.3187 5.63752C26.2181 5.63166 26.1214 5.59663 26.0404 5.53669C25.9594 5.47675 25.8975 5.39451 25.8625 5.30002L24.4875 1.83752C24.4511 1.73745 24.3848 1.65102 24.2976 1.58994C24.2104 1.52886 24.1065 1.49609 24 1.49609C23.8935 1.49609 23.7896 1.52886 23.7024 1.58994C23.6152 1.65102 23.5489 1.73745 23.5125 1.83752L22.1375 5.30002C22.1025 5.39451 22.0406 5.47675 21.9596 5.53669C21.8786 5.59663 21.7819 5.63166 21.6812 5.63752L17.9937 5.87502C17.5125 5.90627 17.325 6.52502 17.6937 6.83127L20.5187 9.18752C20.5977 9.2528 20.6566 9.33907 20.6887 9.43638C20.7207 9.53369 20.7247 9.63807 20.7 9.73752L19.8562 13.0625C19.7125 13.625 20.3125 14.0813 20.7937 13.775L23.725 11.9188C23.8072 11.8665 23.9026 11.8387 24 11.8387C24.0974 11.8387 24.1928 11.8665 24.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M40.275 11.9188L43.425 13.9188C43.8312 14.175 44.3312 13.7938 44.2125 13.325L43.3 9.73752C43.2753 9.63807 43.2792 9.53369 43.3113 9.43638C43.3434 9.33907 43.4023 9.2528 43.4812 9.18752L46.3062 6.83127C46.675 6.52502 46.4875 5.90627 46.0062 5.87502L42.3187 5.63752C42.2181 5.63166 42.1214 5.59663 42.0404 5.53669C41.9594 5.47675 41.8975 5.39451 41.8625 5.30002L40.4875 1.83752C40.4511 1.73745 40.3848 1.65102 40.2976 1.58994C40.2104 1.52886 40.1065 1.49609 40 1.49609C39.8935 1.49609 39.7896 1.52886 39.7024 1.58994C39.6152 1.65102 39.5489 1.73745 39.5125 1.83752L38.1375 5.30002C38.1025 5.39451 38.0406 5.47675 37.9596 5.53669C37.8786 5.59663 37.7819 5.63166 37.6812 5.63752L33.9937 5.87502C33.5125 5.90627 33.325 6.52502 33.6937 6.83127L36.5187 9.18752C36.5977 9.2528 36.6566 9.33907 36.6887 9.43638C36.7207 9.53369 36.7247 9.63807 36.7 9.73752L35.8562 13.0625C35.7125 13.625 36.3125 14.0813 36.7937 13.775L39.725 11.9188C39.8072 11.8665 39.9026 11.8387 40 11.8387C40.0974 11.8387 40.1928 11.8665 40.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M56.275 11.9188L59.425 13.9188C59.8312 14.175 60.3312 13.7938 60.2125 13.325L59.3 9.73752C59.2753 9.63807 59.2792 9.53369 59.3113 9.43638C59.3434 9.33907 59.4023 9.2528 59.4812 9.18752L62.3062 6.83127C62.675 6.52502 62.4875 5.90627 62.0062 5.87502L58.3187 5.63752C58.2181 5.63166 58.1214 5.59663 58.0404 5.53669C57.9594 5.47675 57.8975 5.39451 57.8625 5.30002L56.4875 1.83752C56.4511 1.73745 56.3848 1.65102 56.2976 1.58994C56.2104 1.52886 56.1065 1.49609 56 1.49609C55.8935 1.49609 55.7896 1.52886 55.7024 1.58994C55.6152 1.65102 55.5489 1.73745 55.5125 1.83752L54.1375 5.30002C54.1025 5.39451 54.0406 5.47675 53.9596 5.53669C53.8786 5.59663 53.7819 5.63166 53.6812 5.63752L49.9937 5.87502C49.5125 5.90627 49.325 6.52502 49.6937 6.83127L52.5187 9.18752C52.5977 9.2528 52.6566 9.33907 52.6887 9.43638C52.7207 9.53369 52.7247 9.63807 52.7 9.73752L51.8562 13.0625C51.7125 13.625 52.3125 14.0813 52.7937 13.775L55.725 11.9188C55.8072 11.8665 55.9026 11.8387 56 11.8387C56.0974 11.8387 56.1928 11.8665 56.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M72.275 11.9188L75.425 13.9188C75.8312 14.175 76.3312 13.7938 76.2125 13.325L75.3 9.73752C75.2753 9.63807 75.2792 9.53369 75.3113 9.43638C75.3434 9.33907 75.4023 9.2528 75.4812 9.18752L78.3062 6.83127C78.675 6.52502 78.4875 5.90627 78.0062 5.87502L74.3187 5.63752C74.2181 5.63166 74.1214 5.59663 74.0404 5.53669C73.9594 5.47675 73.8975 5.39451 73.8625 5.30002L72.4875 1.83752C72.4511 1.73745 72.3848 1.65102 72.2976 1.58994C72.2104 1.52886 72.1065 1.49609 72 1.49609C71.8935 1.49609 71.7896 1.52886 71.7024 1.58994C71.6152 1.65102 71.5489 1.73745 71.5125 1.83752L70.1375 5.30002C70.1025 5.39451 70.0406 5.47675 69.9596 5.53669C69.8786 5.59663 69.7819 5.63166 69.6812 5.63752L65.9937 5.87502C65.5125 5.90627 65.325 6.52502 65.6937 6.83127L68.5187 9.18752C68.5977 9.2528 68.6566 9.33907 68.6887 9.43638C68.7207 9.53369 68.7247 9.63807 68.7 9.73752L67.8562 13.0625C67.7125 13.625 68.3125 14.0813 68.7937 13.775L71.725 11.9188C71.8072 11.8665 71.9026 11.8387 72 11.8387C72.0974 11.8387 72.1928 11.8665 72.275 11.9188Z" fill="#FA8232"/>
-                                                </svg>                                                
-                                        </div>
-                                        <div class="product-list-item__rate-num">(738)</div>
-                                    </div>
-                                    <div class="product-list-item__price">2.500.000đ</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="grid__row" style="display: flex;">
-                            <div class="grid__column-2-5">
-                                <!--Product Items-->
-                                <div class="product-list-item">
-                                    <div class="product-list-item__img" style="background-image: url(./img/1.png);"></div>
-                                    <div class="product-list-item__name">Màn hình Dell G3223Q 32</div>
-                                    <div class="product-list-item__rate">
-                                        <div class="product-list-item__rate-icon">
-                                            <svg width="80" height="16" viewBox="0 0 80 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M8.275 11.9188L11.425 13.9188C11.8312 14.175 12.3312 13.7938 12.2125 13.325L11.3 9.73752C11.2753 9.63807 11.2792 9.53369 11.3113 9.43638C11.3434 9.33907 11.4023 9.2528 11.4812 9.18752L14.3062 6.83127C14.675 6.52502 14.4875 5.90627 14.0062 5.87502L10.3187 5.63752C10.2181 5.63166 10.1214 5.59663 10.0404 5.53669C9.95935 5.47675 9.89754 5.39451 9.8625 5.30002L8.4875 1.83752C8.4511 1.73745 8.38479 1.65102 8.29758 1.58994C8.21037 1.52886 8.10647 1.49609 8 1.49609C7.89352 1.49609 7.78963 1.52886 7.70241 1.58994C7.6152 1.65102 7.54889 1.73745 7.5125 1.83752L6.1375 5.30002C6.10245 5.39451 6.04064 5.47675 5.95962 5.53669C5.87859 5.59663 5.78186 5.63166 5.68125 5.63752L1.99375 5.87502C1.5125 5.90627 1.325 6.52502 1.69375 6.83127L4.51875 9.18752C4.59771 9.2528 4.65661 9.33907 4.68868 9.43638C4.72075 9.53369 4.72467 9.63807 4.7 9.73752L3.85625 13.0625C3.7125 13.625 4.3125 14.0813 4.79375 13.775L7.725 11.9188C7.8072 11.8665 7.90259 11.8387 8 11.8387C8.09741 11.8387 8.1928 11.8665 8.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M24.275 11.9188L27.425 13.9188C27.8312 14.175 28.3312 13.7938 28.2125 13.325L27.3 9.73752C27.2753 9.63807 27.2792 9.53369 27.3113 9.43638C27.3434 9.33907 27.4023 9.2528 27.4812 9.18752L30.3062 6.83127C30.675 6.52502 30.4875 5.90627 30.0062 5.87502L26.3187 5.63752C26.2181 5.63166 26.1214 5.59663 26.0404 5.53669C25.9594 5.47675 25.8975 5.39451 25.8625 5.30002L24.4875 1.83752C24.4511 1.73745 24.3848 1.65102 24.2976 1.58994C24.2104 1.52886 24.1065 1.49609 24 1.49609C23.8935 1.49609 23.7896 1.52886 23.7024 1.58994C23.6152 1.65102 23.5489 1.73745 23.5125 1.83752L22.1375 5.30002C22.1025 5.39451 22.0406 5.47675 21.9596 5.53669C21.8786 5.59663 21.7819 5.63166 21.6812 5.63752L17.9937 5.87502C17.5125 5.90627 17.325 6.52502 17.6937 6.83127L20.5187 9.18752C20.5977 9.2528 20.6566 9.33907 20.6887 9.43638C20.7207 9.53369 20.7247 9.63807 20.7 9.73752L19.8562 13.0625C19.7125 13.625 20.3125 14.0813 20.7937 13.775L23.725 11.9188C23.8072 11.8665 23.9026 11.8387 24 11.8387C24.0974 11.8387 24.1928 11.8665 24.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M40.275 11.9188L43.425 13.9188C43.8312 14.175 44.3312 13.7938 44.2125 13.325L43.3 9.73752C43.2753 9.63807 43.2792 9.53369 43.3113 9.43638C43.3434 9.33907 43.4023 9.2528 43.4812 9.18752L46.3062 6.83127C46.675 6.52502 46.4875 5.90627 46.0062 5.87502L42.3187 5.63752C42.2181 5.63166 42.1214 5.59663 42.0404 5.53669C41.9594 5.47675 41.8975 5.39451 41.8625 5.30002L40.4875 1.83752C40.4511 1.73745 40.3848 1.65102 40.2976 1.58994C40.2104 1.52886 40.1065 1.49609 40 1.49609C39.8935 1.49609 39.7896 1.52886 39.7024 1.58994C39.6152 1.65102 39.5489 1.73745 39.5125 1.83752L38.1375 5.30002C38.1025 5.39451 38.0406 5.47675 37.9596 5.53669C37.8786 5.59663 37.7819 5.63166 37.6812 5.63752L33.9937 5.87502C33.5125 5.90627 33.325 6.52502 33.6937 6.83127L36.5187 9.18752C36.5977 9.2528 36.6566 9.33907 36.6887 9.43638C36.7207 9.53369 36.7247 9.63807 36.7 9.73752L35.8562 13.0625C35.7125 13.625 36.3125 14.0813 36.7937 13.775L39.725 11.9188C39.8072 11.8665 39.9026 11.8387 40 11.8387C40.0974 11.8387 40.1928 11.8665 40.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M56.275 11.9188L59.425 13.9188C59.8312 14.175 60.3312 13.7938 60.2125 13.325L59.3 9.73752C59.2753 9.63807 59.2792 9.53369 59.3113 9.43638C59.3434 9.33907 59.4023 9.2528 59.4812 9.18752L62.3062 6.83127C62.675 6.52502 62.4875 5.90627 62.0062 5.87502L58.3187 5.63752C58.2181 5.63166 58.1214 5.59663 58.0404 5.53669C57.9594 5.47675 57.8975 5.39451 57.8625 5.30002L56.4875 1.83752C56.4511 1.73745 56.3848 1.65102 56.2976 1.58994C56.2104 1.52886 56.1065 1.49609 56 1.49609C55.8935 1.49609 55.7896 1.52886 55.7024 1.58994C55.6152 1.65102 55.5489 1.73745 55.5125 1.83752L54.1375 5.30002C54.1025 5.39451 54.0406 5.47675 53.9596 5.53669C53.8786 5.59663 53.7819 5.63166 53.6812 5.63752L49.9937 5.87502C49.5125 5.90627 49.325 6.52502 49.6937 6.83127L52.5187 9.18752C52.5977 9.2528 52.6566 9.33907 52.6887 9.43638C52.7207 9.53369 52.7247 9.63807 52.7 9.73752L51.8562 13.0625C51.7125 13.625 52.3125 14.0813 52.7937 13.775L55.725 11.9188C55.8072 11.8665 55.9026 11.8387 56 11.8387C56.0974 11.8387 56.1928 11.8665 56.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M72.275 11.9188L75.425 13.9188C75.8312 14.175 76.3312 13.7938 76.2125 13.325L75.3 9.73752C75.2753 9.63807 75.2792 9.53369 75.3113 9.43638C75.3434 9.33907 75.4023 9.2528 75.4812 9.18752L78.3062 6.83127C78.675 6.52502 78.4875 5.90627 78.0062 5.87502L74.3187 5.63752C74.2181 5.63166 74.1214 5.59663 74.0404 5.53669C73.9594 5.47675 73.8975 5.39451 73.8625 5.30002L72.4875 1.83752C72.4511 1.73745 72.3848 1.65102 72.2976 1.58994C72.2104 1.52886 72.1065 1.49609 72 1.49609C71.8935 1.49609 71.7896 1.52886 71.7024 1.58994C71.6152 1.65102 71.5489 1.73745 71.5125 1.83752L70.1375 5.30002C70.1025 5.39451 70.0406 5.47675 69.9596 5.53669C69.8786 5.59663 69.7819 5.63166 69.6812 5.63752L65.9937 5.87502C65.5125 5.90627 65.325 6.52502 65.6937 6.83127L68.5187 9.18752C68.5977 9.2528 68.6566 9.33907 68.6887 9.43638C68.7207 9.53369 68.7247 9.63807 68.7 9.73752L67.8562 13.0625C67.7125 13.625 68.3125 14.0813 68.7937 13.775L71.725 11.9188C71.8072 11.8665 71.9026 11.8387 72 11.8387C72.0974 11.8387 72.1928 11.8665 72.275 11.9188Z" fill="#FA8232"/>
-                                                </svg>                                                
-                                        </div>
-                                        <div class="product-list-item__rate-num">(738)</div>
-                                    </div>
-                                    <div class="product-list-item__price">2.500.000đ</div>
-                                </div>
-                            </div>
-                            <div class="grid__column-2-5">
-                                <!--Product Items-->
-                                <div class="product-list-item">
-                                    <div class="product-list-item__img" style="background-image: url(./img/1.png);"></div>
-                                    <div class="product-list-item__name">Màn hình Dell G3223Q 32</div>
-                                    <div class="product-list-item__rate">
-                                        <div class="product-list-item__rate-icon">
-                                            <svg width="80" height="16" viewBox="0 0 80 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M8.275 11.9188L11.425 13.9188C11.8312 14.175 12.3312 13.7938 12.2125 13.325L11.3 9.73752C11.2753 9.63807 11.2792 9.53369 11.3113 9.43638C11.3434 9.33907 11.4023 9.2528 11.4812 9.18752L14.3062 6.83127C14.675 6.52502 14.4875 5.90627 14.0062 5.87502L10.3187 5.63752C10.2181 5.63166 10.1214 5.59663 10.0404 5.53669C9.95935 5.47675 9.89754 5.39451 9.8625 5.30002L8.4875 1.83752C8.4511 1.73745 8.38479 1.65102 8.29758 1.58994C8.21037 1.52886 8.10647 1.49609 8 1.49609C7.89352 1.49609 7.78963 1.52886 7.70241 1.58994C7.6152 1.65102 7.54889 1.73745 7.5125 1.83752L6.1375 5.30002C6.10245 5.39451 6.04064 5.47675 5.95962 5.53669C5.87859 5.59663 5.78186 5.63166 5.68125 5.63752L1.99375 5.87502C1.5125 5.90627 1.325 6.52502 1.69375 6.83127L4.51875 9.18752C4.59771 9.2528 4.65661 9.33907 4.68868 9.43638C4.72075 9.53369 4.72467 9.63807 4.7 9.73752L3.85625 13.0625C3.7125 13.625 4.3125 14.0813 4.79375 13.775L7.725 11.9188C7.8072 11.8665 7.90259 11.8387 8 11.8387C8.09741 11.8387 8.1928 11.8665 8.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M24.275 11.9188L27.425 13.9188C27.8312 14.175 28.3312 13.7938 28.2125 13.325L27.3 9.73752C27.2753 9.63807 27.2792 9.53369 27.3113 9.43638C27.3434 9.33907 27.4023 9.2528 27.4812 9.18752L30.3062 6.83127C30.675 6.52502 30.4875 5.90627 30.0062 5.87502L26.3187 5.63752C26.2181 5.63166 26.1214 5.59663 26.0404 5.53669C25.9594 5.47675 25.8975 5.39451 25.8625 5.30002L24.4875 1.83752C24.4511 1.73745 24.3848 1.65102 24.2976 1.58994C24.2104 1.52886 24.1065 1.49609 24 1.49609C23.8935 1.49609 23.7896 1.52886 23.7024 1.58994C23.6152 1.65102 23.5489 1.73745 23.5125 1.83752L22.1375 5.30002C22.1025 5.39451 22.0406 5.47675 21.9596 5.53669C21.8786 5.59663 21.7819 5.63166 21.6812 5.63752L17.9937 5.87502C17.5125 5.90627 17.325 6.52502 17.6937 6.83127L20.5187 9.18752C20.5977 9.2528 20.6566 9.33907 20.6887 9.43638C20.7207 9.53369 20.7247 9.63807 20.7 9.73752L19.8562 13.0625C19.7125 13.625 20.3125 14.0813 20.7937 13.775L23.725 11.9188C23.8072 11.8665 23.9026 11.8387 24 11.8387C24.0974 11.8387 24.1928 11.8665 24.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M40.275 11.9188L43.425 13.9188C43.8312 14.175 44.3312 13.7938 44.2125 13.325L43.3 9.73752C43.2753 9.63807 43.2792 9.53369 43.3113 9.43638C43.3434 9.33907 43.4023 9.2528 43.4812 9.18752L46.3062 6.83127C46.675 6.52502 46.4875 5.90627 46.0062 5.87502L42.3187 5.63752C42.2181 5.63166 42.1214 5.59663 42.0404 5.53669C41.9594 5.47675 41.8975 5.39451 41.8625 5.30002L40.4875 1.83752C40.4511 1.73745 40.3848 1.65102 40.2976 1.58994C40.2104 1.52886 40.1065 1.49609 40 1.49609C39.8935 1.49609 39.7896 1.52886 39.7024 1.58994C39.6152 1.65102 39.5489 1.73745 39.5125 1.83752L38.1375 5.30002C38.1025 5.39451 38.0406 5.47675 37.9596 5.53669C37.8786 5.59663 37.7819 5.63166 37.6812 5.63752L33.9937 5.87502C33.5125 5.90627 33.325 6.52502 33.6937 6.83127L36.5187 9.18752C36.5977 9.2528 36.6566 9.33907 36.6887 9.43638C36.7207 9.53369 36.7247 9.63807 36.7 9.73752L35.8562 13.0625C35.7125 13.625 36.3125 14.0813 36.7937 13.775L39.725 11.9188C39.8072 11.8665 39.9026 11.8387 40 11.8387C40.0974 11.8387 40.1928 11.8665 40.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M56.275 11.9188L59.425 13.9188C59.8312 14.175 60.3312 13.7938 60.2125 13.325L59.3 9.73752C59.2753 9.63807 59.2792 9.53369 59.3113 9.43638C59.3434 9.33907 59.4023 9.2528 59.4812 9.18752L62.3062 6.83127C62.675 6.52502 62.4875 5.90627 62.0062 5.87502L58.3187 5.63752C58.2181 5.63166 58.1214 5.59663 58.0404 5.53669C57.9594 5.47675 57.8975 5.39451 57.8625 5.30002L56.4875 1.83752C56.4511 1.73745 56.3848 1.65102 56.2976 1.58994C56.2104 1.52886 56.1065 1.49609 56 1.49609C55.8935 1.49609 55.7896 1.52886 55.7024 1.58994C55.6152 1.65102 55.5489 1.73745 55.5125 1.83752L54.1375 5.30002C54.1025 5.39451 54.0406 5.47675 53.9596 5.53669C53.8786 5.59663 53.7819 5.63166 53.6812 5.63752L49.9937 5.87502C49.5125 5.90627 49.325 6.52502 49.6937 6.83127L52.5187 9.18752C52.5977 9.2528 52.6566 9.33907 52.6887 9.43638C52.7207 9.53369 52.7247 9.63807 52.7 9.73752L51.8562 13.0625C51.7125 13.625 52.3125 14.0813 52.7937 13.775L55.725 11.9188C55.8072 11.8665 55.9026 11.8387 56 11.8387C56.0974 11.8387 56.1928 11.8665 56.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M72.275 11.9188L75.425 13.9188C75.8312 14.175 76.3312 13.7938 76.2125 13.325L75.3 9.73752C75.2753 9.63807 75.2792 9.53369 75.3113 9.43638C75.3434 9.33907 75.4023 9.2528 75.4812 9.18752L78.3062 6.83127C78.675 6.52502 78.4875 5.90627 78.0062 5.87502L74.3187 5.63752C74.2181 5.63166 74.1214 5.59663 74.0404 5.53669C73.9594 5.47675 73.8975 5.39451 73.8625 5.30002L72.4875 1.83752C72.4511 1.73745 72.3848 1.65102 72.2976 1.58994C72.2104 1.52886 72.1065 1.49609 72 1.49609C71.8935 1.49609 71.7896 1.52886 71.7024 1.58994C71.6152 1.65102 71.5489 1.73745 71.5125 1.83752L70.1375 5.30002C70.1025 5.39451 70.0406 5.47675 69.9596 5.53669C69.8786 5.59663 69.7819 5.63166 69.6812 5.63752L65.9937 5.87502C65.5125 5.90627 65.325 6.52502 65.6937 6.83127L68.5187 9.18752C68.5977 9.2528 68.6566 9.33907 68.6887 9.43638C68.7207 9.53369 68.7247 9.63807 68.7 9.73752L67.8562 13.0625C67.7125 13.625 68.3125 14.0813 68.7937 13.775L71.725 11.9188C71.8072 11.8665 71.9026 11.8387 72 11.8387C72.0974 11.8387 72.1928 11.8665 72.275 11.9188Z" fill="#FA8232"/>
-                                                </svg>                                                
-                                        </div>
-                                        <div class="product-list-item__rate-num">(738)</div>
-                                    </div>
-                                    <div class="product-list-item__price">2.500.000đ</div>
-                                </div>
-                            </div>
-                            <div class="grid__column-2-5">
-                                <!--Product Items-->
-                                <div class="product-list-item">
-                                    <div class="product-list-item__img" style="background-image: url(./img/1.png);"></div>
-                                    <div class="product-list-item__name">Màn hình Dell G3223Q 32</div>
-                                    <div class="product-list-item__rate">
-                                        <div class="product-list-item__rate-icon">
-                                            <svg width="80" height="16" viewBox="0 0 80 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M8.275 11.9188L11.425 13.9188C11.8312 14.175 12.3312 13.7938 12.2125 13.325L11.3 9.73752C11.2753 9.63807 11.2792 9.53369 11.3113 9.43638C11.3434 9.33907 11.4023 9.2528 11.4812 9.18752L14.3062 6.83127C14.675 6.52502 14.4875 5.90627 14.0062 5.87502L10.3187 5.63752C10.2181 5.63166 10.1214 5.59663 10.0404 5.53669C9.95935 5.47675 9.89754 5.39451 9.8625 5.30002L8.4875 1.83752C8.4511 1.73745 8.38479 1.65102 8.29758 1.58994C8.21037 1.52886 8.10647 1.49609 8 1.49609C7.89352 1.49609 7.78963 1.52886 7.70241 1.58994C7.6152 1.65102 7.54889 1.73745 7.5125 1.83752L6.1375 5.30002C6.10245 5.39451 6.04064 5.47675 5.95962 5.53669C5.87859 5.59663 5.78186 5.63166 5.68125 5.63752L1.99375 5.87502C1.5125 5.90627 1.325 6.52502 1.69375 6.83127L4.51875 9.18752C4.59771 9.2528 4.65661 9.33907 4.68868 9.43638C4.72075 9.53369 4.72467 9.63807 4.7 9.73752L3.85625 13.0625C3.7125 13.625 4.3125 14.0813 4.79375 13.775L7.725 11.9188C7.8072 11.8665 7.90259 11.8387 8 11.8387C8.09741 11.8387 8.1928 11.8665 8.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M24.275 11.9188L27.425 13.9188C27.8312 14.175 28.3312 13.7938 28.2125 13.325L27.3 9.73752C27.2753 9.63807 27.2792 9.53369 27.3113 9.43638C27.3434 9.33907 27.4023 9.2528 27.4812 9.18752L30.3062 6.83127C30.675 6.52502 30.4875 5.90627 30.0062 5.87502L26.3187 5.63752C26.2181 5.63166 26.1214 5.59663 26.0404 5.53669C25.9594 5.47675 25.8975 5.39451 25.8625 5.30002L24.4875 1.83752C24.4511 1.73745 24.3848 1.65102 24.2976 1.58994C24.2104 1.52886 24.1065 1.49609 24 1.49609C23.8935 1.49609 23.7896 1.52886 23.7024 1.58994C23.6152 1.65102 23.5489 1.73745 23.5125 1.83752L22.1375 5.30002C22.1025 5.39451 22.0406 5.47675 21.9596 5.53669C21.8786 5.59663 21.7819 5.63166 21.6812 5.63752L17.9937 5.87502C17.5125 5.90627 17.325 6.52502 17.6937 6.83127L20.5187 9.18752C20.5977 9.2528 20.6566 9.33907 20.6887 9.43638C20.7207 9.53369 20.7247 9.63807 20.7 9.73752L19.8562 13.0625C19.7125 13.625 20.3125 14.0813 20.7937 13.775L23.725 11.9188C23.8072 11.8665 23.9026 11.8387 24 11.8387C24.0974 11.8387 24.1928 11.8665 24.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M40.275 11.9188L43.425 13.9188C43.8312 14.175 44.3312 13.7938 44.2125 13.325L43.3 9.73752C43.2753 9.63807 43.2792 9.53369 43.3113 9.43638C43.3434 9.33907 43.4023 9.2528 43.4812 9.18752L46.3062 6.83127C46.675 6.52502 46.4875 5.90627 46.0062 5.87502L42.3187 5.63752C42.2181 5.63166 42.1214 5.59663 42.0404 5.53669C41.9594 5.47675 41.8975 5.39451 41.8625 5.30002L40.4875 1.83752C40.4511 1.73745 40.3848 1.65102 40.2976 1.58994C40.2104 1.52886 40.1065 1.49609 40 1.49609C39.8935 1.49609 39.7896 1.52886 39.7024 1.58994C39.6152 1.65102 39.5489 1.73745 39.5125 1.83752L38.1375 5.30002C38.1025 5.39451 38.0406 5.47675 37.9596 5.53669C37.8786 5.59663 37.7819 5.63166 37.6812 5.63752L33.9937 5.87502C33.5125 5.90627 33.325 6.52502 33.6937 6.83127L36.5187 9.18752C36.5977 9.2528 36.6566 9.33907 36.6887 9.43638C36.7207 9.53369 36.7247 9.63807 36.7 9.73752L35.8562 13.0625C35.7125 13.625 36.3125 14.0813 36.7937 13.775L39.725 11.9188C39.8072 11.8665 39.9026 11.8387 40 11.8387C40.0974 11.8387 40.1928 11.8665 40.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M56.275 11.9188L59.425 13.9188C59.8312 14.175 60.3312 13.7938 60.2125 13.325L59.3 9.73752C59.2753 9.63807 59.2792 9.53369 59.3113 9.43638C59.3434 9.33907 59.4023 9.2528 59.4812 9.18752L62.3062 6.83127C62.675 6.52502 62.4875 5.90627 62.0062 5.87502L58.3187 5.63752C58.2181 5.63166 58.1214 5.59663 58.0404 5.53669C57.9594 5.47675 57.8975 5.39451 57.8625 5.30002L56.4875 1.83752C56.4511 1.73745 56.3848 1.65102 56.2976 1.58994C56.2104 1.52886 56.1065 1.49609 56 1.49609C55.8935 1.49609 55.7896 1.52886 55.7024 1.58994C55.6152 1.65102 55.5489 1.73745 55.5125 1.83752L54.1375 5.30002C54.1025 5.39451 54.0406 5.47675 53.9596 5.53669C53.8786 5.59663 53.7819 5.63166 53.6812 5.63752L49.9937 5.87502C49.5125 5.90627 49.325 6.52502 49.6937 6.83127L52.5187 9.18752C52.5977 9.2528 52.6566 9.33907 52.6887 9.43638C52.7207 9.53369 52.7247 9.63807 52.7 9.73752L51.8562 13.0625C51.7125 13.625 52.3125 14.0813 52.7937 13.775L55.725 11.9188C55.8072 11.8665 55.9026 11.8387 56 11.8387C56.0974 11.8387 56.1928 11.8665 56.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M72.275 11.9188L75.425 13.9188C75.8312 14.175 76.3312 13.7938 76.2125 13.325L75.3 9.73752C75.2753 9.63807 75.2792 9.53369 75.3113 9.43638C75.3434 9.33907 75.4023 9.2528 75.4812 9.18752L78.3062 6.83127C78.675 6.52502 78.4875 5.90627 78.0062 5.87502L74.3187 5.63752C74.2181 5.63166 74.1214 5.59663 74.0404 5.53669C73.9594 5.47675 73.8975 5.39451 73.8625 5.30002L72.4875 1.83752C72.4511 1.73745 72.3848 1.65102 72.2976 1.58994C72.2104 1.52886 72.1065 1.49609 72 1.49609C71.8935 1.49609 71.7896 1.52886 71.7024 1.58994C71.6152 1.65102 71.5489 1.73745 71.5125 1.83752L70.1375 5.30002C70.1025 5.39451 70.0406 5.47675 69.9596 5.53669C69.8786 5.59663 69.7819 5.63166 69.6812 5.63752L65.9937 5.87502C65.5125 5.90627 65.325 6.52502 65.6937 6.83127L68.5187 9.18752C68.5977 9.2528 68.6566 9.33907 68.6887 9.43638C68.7207 9.53369 68.7247 9.63807 68.7 9.73752L67.8562 13.0625C67.7125 13.625 68.3125 14.0813 68.7937 13.775L71.725 11.9188C71.8072 11.8665 71.9026 11.8387 72 11.8387C72.0974 11.8387 72.1928 11.8665 72.275 11.9188Z" fill="#FA8232"/>
-                                                </svg>                                                
-                                        </div>
-                                        <div class="product-list-item__rate-num">(738)</div>
-                                    </div>
-                                    <div class="product-list-item__price">2.500.000đ</div>
-                                </div>
-                            </div>
-                            <div class="grid__column-2-5">
-                                <!--Product Items-->
-                                <div class="product-list-item">
-                                    <div class="product-list-item__img" style="background-image: url(./img/1.png);"></div>
-                                    <div class="product-list-item__name">Màn hình Dell G3223Q 32</div>
-                                    <div class="product-list-item__rate">
-                                        <div class="product-list-item__rate-icon">
-                                            <svg width="80" height="16" viewBox="0 0 80 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M8.275 11.9188L11.425 13.9188C11.8312 14.175 12.3312 13.7938 12.2125 13.325L11.3 9.73752C11.2753 9.63807 11.2792 9.53369 11.3113 9.43638C11.3434 9.33907 11.4023 9.2528 11.4812 9.18752L14.3062 6.83127C14.675 6.52502 14.4875 5.90627 14.0062 5.87502L10.3187 5.63752C10.2181 5.63166 10.1214 5.59663 10.0404 5.53669C9.95935 5.47675 9.89754 5.39451 9.8625 5.30002L8.4875 1.83752C8.4511 1.73745 8.38479 1.65102 8.29758 1.58994C8.21037 1.52886 8.10647 1.49609 8 1.49609C7.89352 1.49609 7.78963 1.52886 7.70241 1.58994C7.6152 1.65102 7.54889 1.73745 7.5125 1.83752L6.1375 5.30002C6.10245 5.39451 6.04064 5.47675 5.95962 5.53669C5.87859 5.59663 5.78186 5.63166 5.68125 5.63752L1.99375 5.87502C1.5125 5.90627 1.325 6.52502 1.69375 6.83127L4.51875 9.18752C4.59771 9.2528 4.65661 9.33907 4.68868 9.43638C4.72075 9.53369 4.72467 9.63807 4.7 9.73752L3.85625 13.0625C3.7125 13.625 4.3125 14.0813 4.79375 13.775L7.725 11.9188C7.8072 11.8665 7.90259 11.8387 8 11.8387C8.09741 11.8387 8.1928 11.8665 8.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M24.275 11.9188L27.425 13.9188C27.8312 14.175 28.3312 13.7938 28.2125 13.325L27.3 9.73752C27.2753 9.63807 27.2792 9.53369 27.3113 9.43638C27.3434 9.33907 27.4023 9.2528 27.4812 9.18752L30.3062 6.83127C30.675 6.52502 30.4875 5.90627 30.0062 5.87502L26.3187 5.63752C26.2181 5.63166 26.1214 5.59663 26.0404 5.53669C25.9594 5.47675 25.8975 5.39451 25.8625 5.30002L24.4875 1.83752C24.4511 1.73745 24.3848 1.65102 24.2976 1.58994C24.2104 1.52886 24.1065 1.49609 24 1.49609C23.8935 1.49609 23.7896 1.52886 23.7024 1.58994C23.6152 1.65102 23.5489 1.73745 23.5125 1.83752L22.1375 5.30002C22.1025 5.39451 22.0406 5.47675 21.9596 5.53669C21.8786 5.59663 21.7819 5.63166 21.6812 5.63752L17.9937 5.87502C17.5125 5.90627 17.325 6.52502 17.6937 6.83127L20.5187 9.18752C20.5977 9.2528 20.6566 9.33907 20.6887 9.43638C20.7207 9.53369 20.7247 9.63807 20.7 9.73752L19.8562 13.0625C19.7125 13.625 20.3125 14.0813 20.7937 13.775L23.725 11.9188C23.8072 11.8665 23.9026 11.8387 24 11.8387C24.0974 11.8387 24.1928 11.8665 24.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M40.275 11.9188L43.425 13.9188C43.8312 14.175 44.3312 13.7938 44.2125 13.325L43.3 9.73752C43.2753 9.63807 43.2792 9.53369 43.3113 9.43638C43.3434 9.33907 43.4023 9.2528 43.4812 9.18752L46.3062 6.83127C46.675 6.52502 46.4875 5.90627 46.0062 5.87502L42.3187 5.63752C42.2181 5.63166 42.1214 5.59663 42.0404 5.53669C41.9594 5.47675 41.8975 5.39451 41.8625 5.30002L40.4875 1.83752C40.4511 1.73745 40.3848 1.65102 40.2976 1.58994C40.2104 1.52886 40.1065 1.49609 40 1.49609C39.8935 1.49609 39.7896 1.52886 39.7024 1.58994C39.6152 1.65102 39.5489 1.73745 39.5125 1.83752L38.1375 5.30002C38.1025 5.39451 38.0406 5.47675 37.9596 5.53669C37.8786 5.59663 37.7819 5.63166 37.6812 5.63752L33.9937 5.87502C33.5125 5.90627 33.325 6.52502 33.6937 6.83127L36.5187 9.18752C36.5977 9.2528 36.6566 9.33907 36.6887 9.43638C36.7207 9.53369 36.7247 9.63807 36.7 9.73752L35.8562 13.0625C35.7125 13.625 36.3125 14.0813 36.7937 13.775L39.725 11.9188C39.8072 11.8665 39.9026 11.8387 40 11.8387C40.0974 11.8387 40.1928 11.8665 40.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M56.275 11.9188L59.425 13.9188C59.8312 14.175 60.3312 13.7938 60.2125 13.325L59.3 9.73752C59.2753 9.63807 59.2792 9.53369 59.3113 9.43638C59.3434 9.33907 59.4023 9.2528 59.4812 9.18752L62.3062 6.83127C62.675 6.52502 62.4875 5.90627 62.0062 5.87502L58.3187 5.63752C58.2181 5.63166 58.1214 5.59663 58.0404 5.53669C57.9594 5.47675 57.8975 5.39451 57.8625 5.30002L56.4875 1.83752C56.4511 1.73745 56.3848 1.65102 56.2976 1.58994C56.2104 1.52886 56.1065 1.49609 56 1.49609C55.8935 1.49609 55.7896 1.52886 55.7024 1.58994C55.6152 1.65102 55.5489 1.73745 55.5125 1.83752L54.1375 5.30002C54.1025 5.39451 54.0406 5.47675 53.9596 5.53669C53.8786 5.59663 53.7819 5.63166 53.6812 5.63752L49.9937 5.87502C49.5125 5.90627 49.325 6.52502 49.6937 6.83127L52.5187 9.18752C52.5977 9.2528 52.6566 9.33907 52.6887 9.43638C52.7207 9.53369 52.7247 9.63807 52.7 9.73752L51.8562 13.0625C51.7125 13.625 52.3125 14.0813 52.7937 13.775L55.725 11.9188C55.8072 11.8665 55.9026 11.8387 56 11.8387C56.0974 11.8387 56.1928 11.8665 56.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M72.275 11.9188L75.425 13.9188C75.8312 14.175 76.3312 13.7938 76.2125 13.325L75.3 9.73752C75.2753 9.63807 75.2792 9.53369 75.3113 9.43638C75.3434 9.33907 75.4023 9.2528 75.4812 9.18752L78.3062 6.83127C78.675 6.52502 78.4875 5.90627 78.0062 5.87502L74.3187 5.63752C74.2181 5.63166 74.1214 5.59663 74.0404 5.53669C73.9594 5.47675 73.8975 5.39451 73.8625 5.30002L72.4875 1.83752C72.4511 1.73745 72.3848 1.65102 72.2976 1.58994C72.2104 1.52886 72.1065 1.49609 72 1.49609C71.8935 1.49609 71.7896 1.52886 71.7024 1.58994C71.6152 1.65102 71.5489 1.73745 71.5125 1.83752L70.1375 5.30002C70.1025 5.39451 70.0406 5.47675 69.9596 5.53669C69.8786 5.59663 69.7819 5.63166 69.6812 5.63752L65.9937 5.87502C65.5125 5.90627 65.325 6.52502 65.6937 6.83127L68.5187 9.18752C68.5977 9.2528 68.6566 9.33907 68.6887 9.43638C68.7207 9.53369 68.7247 9.63807 68.7 9.73752L67.8562 13.0625C67.7125 13.625 68.3125 14.0813 68.7937 13.775L71.725 11.9188C71.8072 11.8665 71.9026 11.8387 72 11.8387C72.0974 11.8387 72.1928 11.8665 72.275 11.9188Z" fill="#FA8232"/>
-                                                </svg>                                                
-                                        </div>
-                                        <div class="product-list-item__rate-num">(738)</div>
-                                    </div>
-                                    <div class="product-list-item__price">2.500.000đ</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="grid__row" style="display: flex;">
-                            <div class="grid__column-2-5">
-                                <!--Product Items-->
-                                <div class="product-list-item">
-                                    <div class="product-list-item__img" style="background-image: url(./img/1.png);"></div>
-                                    <div class="product-list-item__name">Màn hình Dell G3223Q 32</div>
-                                    <div class="product-list-item__rate">
-                                        <div class="product-list-item__rate-icon">
-                                            <svg width="80" height="16" viewBox="0 0 80 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M8.275 11.9188L11.425 13.9188C11.8312 14.175 12.3312 13.7938 12.2125 13.325L11.3 9.73752C11.2753 9.63807 11.2792 9.53369 11.3113 9.43638C11.3434 9.33907 11.4023 9.2528 11.4812 9.18752L14.3062 6.83127C14.675 6.52502 14.4875 5.90627 14.0062 5.87502L10.3187 5.63752C10.2181 5.63166 10.1214 5.59663 10.0404 5.53669C9.95935 5.47675 9.89754 5.39451 9.8625 5.30002L8.4875 1.83752C8.4511 1.73745 8.38479 1.65102 8.29758 1.58994C8.21037 1.52886 8.10647 1.49609 8 1.49609C7.89352 1.49609 7.78963 1.52886 7.70241 1.58994C7.6152 1.65102 7.54889 1.73745 7.5125 1.83752L6.1375 5.30002C6.10245 5.39451 6.04064 5.47675 5.95962 5.53669C5.87859 5.59663 5.78186 5.63166 5.68125 5.63752L1.99375 5.87502C1.5125 5.90627 1.325 6.52502 1.69375 6.83127L4.51875 9.18752C4.59771 9.2528 4.65661 9.33907 4.68868 9.43638C4.72075 9.53369 4.72467 9.63807 4.7 9.73752L3.85625 13.0625C3.7125 13.625 4.3125 14.0813 4.79375 13.775L7.725 11.9188C7.8072 11.8665 7.90259 11.8387 8 11.8387C8.09741 11.8387 8.1928 11.8665 8.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M24.275 11.9188L27.425 13.9188C27.8312 14.175 28.3312 13.7938 28.2125 13.325L27.3 9.73752C27.2753 9.63807 27.2792 9.53369 27.3113 9.43638C27.3434 9.33907 27.4023 9.2528 27.4812 9.18752L30.3062 6.83127C30.675 6.52502 30.4875 5.90627 30.0062 5.87502L26.3187 5.63752C26.2181 5.63166 26.1214 5.59663 26.0404 5.53669C25.9594 5.47675 25.8975 5.39451 25.8625 5.30002L24.4875 1.83752C24.4511 1.73745 24.3848 1.65102 24.2976 1.58994C24.2104 1.52886 24.1065 1.49609 24 1.49609C23.8935 1.49609 23.7896 1.52886 23.7024 1.58994C23.6152 1.65102 23.5489 1.73745 23.5125 1.83752L22.1375 5.30002C22.1025 5.39451 22.0406 5.47675 21.9596 5.53669C21.8786 5.59663 21.7819 5.63166 21.6812 5.63752L17.9937 5.87502C17.5125 5.90627 17.325 6.52502 17.6937 6.83127L20.5187 9.18752C20.5977 9.2528 20.6566 9.33907 20.6887 9.43638C20.7207 9.53369 20.7247 9.63807 20.7 9.73752L19.8562 13.0625C19.7125 13.625 20.3125 14.0813 20.7937 13.775L23.725 11.9188C23.8072 11.8665 23.9026 11.8387 24 11.8387C24.0974 11.8387 24.1928 11.8665 24.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M40.275 11.9188L43.425 13.9188C43.8312 14.175 44.3312 13.7938 44.2125 13.325L43.3 9.73752C43.2753 9.63807 43.2792 9.53369 43.3113 9.43638C43.3434 9.33907 43.4023 9.2528 43.4812 9.18752L46.3062 6.83127C46.675 6.52502 46.4875 5.90627 46.0062 5.87502L42.3187 5.63752C42.2181 5.63166 42.1214 5.59663 42.0404 5.53669C41.9594 5.47675 41.8975 5.39451 41.8625 5.30002L40.4875 1.83752C40.4511 1.73745 40.3848 1.65102 40.2976 1.58994C40.2104 1.52886 40.1065 1.49609 40 1.49609C39.8935 1.49609 39.7896 1.52886 39.7024 1.58994C39.6152 1.65102 39.5489 1.73745 39.5125 1.83752L38.1375 5.30002C38.1025 5.39451 38.0406 5.47675 37.9596 5.53669C37.8786 5.59663 37.7819 5.63166 37.6812 5.63752L33.9937 5.87502C33.5125 5.90627 33.325 6.52502 33.6937 6.83127L36.5187 9.18752C36.5977 9.2528 36.6566 9.33907 36.6887 9.43638C36.7207 9.53369 36.7247 9.63807 36.7 9.73752L35.8562 13.0625C35.7125 13.625 36.3125 14.0813 36.7937 13.775L39.725 11.9188C39.8072 11.8665 39.9026 11.8387 40 11.8387C40.0974 11.8387 40.1928 11.8665 40.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M56.275 11.9188L59.425 13.9188C59.8312 14.175 60.3312 13.7938 60.2125 13.325L59.3 9.73752C59.2753 9.63807 59.2792 9.53369 59.3113 9.43638C59.3434 9.33907 59.4023 9.2528 59.4812 9.18752L62.3062 6.83127C62.675 6.52502 62.4875 5.90627 62.0062 5.87502L58.3187 5.63752C58.2181 5.63166 58.1214 5.59663 58.0404 5.53669C57.9594 5.47675 57.8975 5.39451 57.8625 5.30002L56.4875 1.83752C56.4511 1.73745 56.3848 1.65102 56.2976 1.58994C56.2104 1.52886 56.1065 1.49609 56 1.49609C55.8935 1.49609 55.7896 1.52886 55.7024 1.58994C55.6152 1.65102 55.5489 1.73745 55.5125 1.83752L54.1375 5.30002C54.1025 5.39451 54.0406 5.47675 53.9596 5.53669C53.8786 5.59663 53.7819 5.63166 53.6812 5.63752L49.9937 5.87502C49.5125 5.90627 49.325 6.52502 49.6937 6.83127L52.5187 9.18752C52.5977 9.2528 52.6566 9.33907 52.6887 9.43638C52.7207 9.53369 52.7247 9.63807 52.7 9.73752L51.8562 13.0625C51.7125 13.625 52.3125 14.0813 52.7937 13.775L55.725 11.9188C55.8072 11.8665 55.9026 11.8387 56 11.8387C56.0974 11.8387 56.1928 11.8665 56.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M72.275 11.9188L75.425 13.9188C75.8312 14.175 76.3312 13.7938 76.2125 13.325L75.3 9.73752C75.2753 9.63807 75.2792 9.53369 75.3113 9.43638C75.3434 9.33907 75.4023 9.2528 75.4812 9.18752L78.3062 6.83127C78.675 6.52502 78.4875 5.90627 78.0062 5.87502L74.3187 5.63752C74.2181 5.63166 74.1214 5.59663 74.0404 5.53669C73.9594 5.47675 73.8975 5.39451 73.8625 5.30002L72.4875 1.83752C72.4511 1.73745 72.3848 1.65102 72.2976 1.58994C72.2104 1.52886 72.1065 1.49609 72 1.49609C71.8935 1.49609 71.7896 1.52886 71.7024 1.58994C71.6152 1.65102 71.5489 1.73745 71.5125 1.83752L70.1375 5.30002C70.1025 5.39451 70.0406 5.47675 69.9596 5.53669C69.8786 5.59663 69.7819 5.63166 69.6812 5.63752L65.9937 5.87502C65.5125 5.90627 65.325 6.52502 65.6937 6.83127L68.5187 9.18752C68.5977 9.2528 68.6566 9.33907 68.6887 9.43638C68.7207 9.53369 68.7247 9.63807 68.7 9.73752L67.8562 13.0625C67.7125 13.625 68.3125 14.0813 68.7937 13.775L71.725 11.9188C71.8072 11.8665 71.9026 11.8387 72 11.8387C72.0974 11.8387 72.1928 11.8665 72.275 11.9188Z" fill="#FA8232"/>
-                                                </svg>                                                
-                                        </div>
-                                        <div class="product-list-item__rate-num">(738)</div>
-                                    </div>
-                                    <div class="product-list-item__price">2.500.000đ</div>
-                                </div>
-                            </div>
-                            <div class="grid__column-2-5">
-                                <!--Product Items-->
-                                <div class="product-list-item">
-                                    <div class="product-list-item__img" style="background-image: url(./img/1.png);"></div>
-                                    <div class="product-list-item__name">Màn hình Dell G3223Q 32</div>
-                                    <div class="product-list-item__rate">
-                                        <div class="product-list-item__rate-icon">
-                                            <svg width="80" height="16" viewBox="0 0 80 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M8.275 11.9188L11.425 13.9188C11.8312 14.175 12.3312 13.7938 12.2125 13.325L11.3 9.73752C11.2753 9.63807 11.2792 9.53369 11.3113 9.43638C11.3434 9.33907 11.4023 9.2528 11.4812 9.18752L14.3062 6.83127C14.675 6.52502 14.4875 5.90627 14.0062 5.87502L10.3187 5.63752C10.2181 5.63166 10.1214 5.59663 10.0404 5.53669C9.95935 5.47675 9.89754 5.39451 9.8625 5.30002L8.4875 1.83752C8.4511 1.73745 8.38479 1.65102 8.29758 1.58994C8.21037 1.52886 8.10647 1.49609 8 1.49609C7.89352 1.49609 7.78963 1.52886 7.70241 1.58994C7.6152 1.65102 7.54889 1.73745 7.5125 1.83752L6.1375 5.30002C6.10245 5.39451 6.04064 5.47675 5.95962 5.53669C5.87859 5.59663 5.78186 5.63166 5.68125 5.63752L1.99375 5.87502C1.5125 5.90627 1.325 6.52502 1.69375 6.83127L4.51875 9.18752C4.59771 9.2528 4.65661 9.33907 4.68868 9.43638C4.72075 9.53369 4.72467 9.63807 4.7 9.73752L3.85625 13.0625C3.7125 13.625 4.3125 14.0813 4.79375 13.775L7.725 11.9188C7.8072 11.8665 7.90259 11.8387 8 11.8387C8.09741 11.8387 8.1928 11.8665 8.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M24.275 11.9188L27.425 13.9188C27.8312 14.175 28.3312 13.7938 28.2125 13.325L27.3 9.73752C27.2753 9.63807 27.2792 9.53369 27.3113 9.43638C27.3434 9.33907 27.4023 9.2528 27.4812 9.18752L30.3062 6.83127C30.675 6.52502 30.4875 5.90627 30.0062 5.87502L26.3187 5.63752C26.2181 5.63166 26.1214 5.59663 26.0404 5.53669C25.9594 5.47675 25.8975 5.39451 25.8625 5.30002L24.4875 1.83752C24.4511 1.73745 24.3848 1.65102 24.2976 1.58994C24.2104 1.52886 24.1065 1.49609 24 1.49609C23.8935 1.49609 23.7896 1.52886 23.7024 1.58994C23.6152 1.65102 23.5489 1.73745 23.5125 1.83752L22.1375 5.30002C22.1025 5.39451 22.0406 5.47675 21.9596 5.53669C21.8786 5.59663 21.7819 5.63166 21.6812 5.63752L17.9937 5.87502C17.5125 5.90627 17.325 6.52502 17.6937 6.83127L20.5187 9.18752C20.5977 9.2528 20.6566 9.33907 20.6887 9.43638C20.7207 9.53369 20.7247 9.63807 20.7 9.73752L19.8562 13.0625C19.7125 13.625 20.3125 14.0813 20.7937 13.775L23.725 11.9188C23.8072 11.8665 23.9026 11.8387 24 11.8387C24.0974 11.8387 24.1928 11.8665 24.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M40.275 11.9188L43.425 13.9188C43.8312 14.175 44.3312 13.7938 44.2125 13.325L43.3 9.73752C43.2753 9.63807 43.2792 9.53369 43.3113 9.43638C43.3434 9.33907 43.4023 9.2528 43.4812 9.18752L46.3062 6.83127C46.675 6.52502 46.4875 5.90627 46.0062 5.87502L42.3187 5.63752C42.2181 5.63166 42.1214 5.59663 42.0404 5.53669C41.9594 5.47675 41.8975 5.39451 41.8625 5.30002L40.4875 1.83752C40.4511 1.73745 40.3848 1.65102 40.2976 1.58994C40.2104 1.52886 40.1065 1.49609 40 1.49609C39.8935 1.49609 39.7896 1.52886 39.7024 1.58994C39.6152 1.65102 39.5489 1.73745 39.5125 1.83752L38.1375 5.30002C38.1025 5.39451 38.0406 5.47675 37.9596 5.53669C37.8786 5.59663 37.7819 5.63166 37.6812 5.63752L33.9937 5.87502C33.5125 5.90627 33.325 6.52502 33.6937 6.83127L36.5187 9.18752C36.5977 9.2528 36.6566 9.33907 36.6887 9.43638C36.7207 9.53369 36.7247 9.63807 36.7 9.73752L35.8562 13.0625C35.7125 13.625 36.3125 14.0813 36.7937 13.775L39.725 11.9188C39.8072 11.8665 39.9026 11.8387 40 11.8387C40.0974 11.8387 40.1928 11.8665 40.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M56.275 11.9188L59.425 13.9188C59.8312 14.175 60.3312 13.7938 60.2125 13.325L59.3 9.73752C59.2753 9.63807 59.2792 9.53369 59.3113 9.43638C59.3434 9.33907 59.4023 9.2528 59.4812 9.18752L62.3062 6.83127C62.675 6.52502 62.4875 5.90627 62.0062 5.87502L58.3187 5.63752C58.2181 5.63166 58.1214 5.59663 58.0404 5.53669C57.9594 5.47675 57.8975 5.39451 57.8625 5.30002L56.4875 1.83752C56.4511 1.73745 56.3848 1.65102 56.2976 1.58994C56.2104 1.52886 56.1065 1.49609 56 1.49609C55.8935 1.49609 55.7896 1.52886 55.7024 1.58994C55.6152 1.65102 55.5489 1.73745 55.5125 1.83752L54.1375 5.30002C54.1025 5.39451 54.0406 5.47675 53.9596 5.53669C53.8786 5.59663 53.7819 5.63166 53.6812 5.63752L49.9937 5.87502C49.5125 5.90627 49.325 6.52502 49.6937 6.83127L52.5187 9.18752C52.5977 9.2528 52.6566 9.33907 52.6887 9.43638C52.7207 9.53369 52.7247 9.63807 52.7 9.73752L51.8562 13.0625C51.7125 13.625 52.3125 14.0813 52.7937 13.775L55.725 11.9188C55.8072 11.8665 55.9026 11.8387 56 11.8387C56.0974 11.8387 56.1928 11.8665 56.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M72.275 11.9188L75.425 13.9188C75.8312 14.175 76.3312 13.7938 76.2125 13.325L75.3 9.73752C75.2753 9.63807 75.2792 9.53369 75.3113 9.43638C75.3434 9.33907 75.4023 9.2528 75.4812 9.18752L78.3062 6.83127C78.675 6.52502 78.4875 5.90627 78.0062 5.87502L74.3187 5.63752C74.2181 5.63166 74.1214 5.59663 74.0404 5.53669C73.9594 5.47675 73.8975 5.39451 73.8625 5.30002L72.4875 1.83752C72.4511 1.73745 72.3848 1.65102 72.2976 1.58994C72.2104 1.52886 72.1065 1.49609 72 1.49609C71.8935 1.49609 71.7896 1.52886 71.7024 1.58994C71.6152 1.65102 71.5489 1.73745 71.5125 1.83752L70.1375 5.30002C70.1025 5.39451 70.0406 5.47675 69.9596 5.53669C69.8786 5.59663 69.7819 5.63166 69.6812 5.63752L65.9937 5.87502C65.5125 5.90627 65.325 6.52502 65.6937 6.83127L68.5187 9.18752C68.5977 9.2528 68.6566 9.33907 68.6887 9.43638C68.7207 9.53369 68.7247 9.63807 68.7 9.73752L67.8562 13.0625C67.7125 13.625 68.3125 14.0813 68.7937 13.775L71.725 11.9188C71.8072 11.8665 71.9026 11.8387 72 11.8387C72.0974 11.8387 72.1928 11.8665 72.275 11.9188Z" fill="#FA8232"/>
-                                                </svg>                                                
-                                        </div>
-                                        <div class="product-list-item__rate-num">(738)</div>
-                                    </div>
-                                    <div class="product-list-item__price">2.500.000đ</div>
-                                </div>
-                            </div>
-                            <div class="grid__column-2-5">
-                                <!--Product Items-->
-                                <div class="product-list-item">
-                                    <div class="product-list-item__img" style="background-image: url(./img/1.png);"></div>
-                                    <div class="product-list-item__name">Màn hình Dell G3223Q 32</div>
-                                    <div class="product-list-item__rate">
-                                        <div class="product-list-item__rate-icon">
-                                            <svg width="80" height="16" viewBox="0 0 80 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M8.275 11.9188L11.425 13.9188C11.8312 14.175 12.3312 13.7938 12.2125 13.325L11.3 9.73752C11.2753 9.63807 11.2792 9.53369 11.3113 9.43638C11.3434 9.33907 11.4023 9.2528 11.4812 9.18752L14.3062 6.83127C14.675 6.52502 14.4875 5.90627 14.0062 5.87502L10.3187 5.63752C10.2181 5.63166 10.1214 5.59663 10.0404 5.53669C9.95935 5.47675 9.89754 5.39451 9.8625 5.30002L8.4875 1.83752C8.4511 1.73745 8.38479 1.65102 8.29758 1.58994C8.21037 1.52886 8.10647 1.49609 8 1.49609C7.89352 1.49609 7.78963 1.52886 7.70241 1.58994C7.6152 1.65102 7.54889 1.73745 7.5125 1.83752L6.1375 5.30002C6.10245 5.39451 6.04064 5.47675 5.95962 5.53669C5.87859 5.59663 5.78186 5.63166 5.68125 5.63752L1.99375 5.87502C1.5125 5.90627 1.325 6.52502 1.69375 6.83127L4.51875 9.18752C4.59771 9.2528 4.65661 9.33907 4.68868 9.43638C4.72075 9.53369 4.72467 9.63807 4.7 9.73752L3.85625 13.0625C3.7125 13.625 4.3125 14.0813 4.79375 13.775L7.725 11.9188C7.8072 11.8665 7.90259 11.8387 8 11.8387C8.09741 11.8387 8.1928 11.8665 8.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M24.275 11.9188L27.425 13.9188C27.8312 14.175 28.3312 13.7938 28.2125 13.325L27.3 9.73752C27.2753 9.63807 27.2792 9.53369 27.3113 9.43638C27.3434 9.33907 27.4023 9.2528 27.4812 9.18752L30.3062 6.83127C30.675 6.52502 30.4875 5.90627 30.0062 5.87502L26.3187 5.63752C26.2181 5.63166 26.1214 5.59663 26.0404 5.53669C25.9594 5.47675 25.8975 5.39451 25.8625 5.30002L24.4875 1.83752C24.4511 1.73745 24.3848 1.65102 24.2976 1.58994C24.2104 1.52886 24.1065 1.49609 24 1.49609C23.8935 1.49609 23.7896 1.52886 23.7024 1.58994C23.6152 1.65102 23.5489 1.73745 23.5125 1.83752L22.1375 5.30002C22.1025 5.39451 22.0406 5.47675 21.9596 5.53669C21.8786 5.59663 21.7819 5.63166 21.6812 5.63752L17.9937 5.87502C17.5125 5.90627 17.325 6.52502 17.6937 6.83127L20.5187 9.18752C20.5977 9.2528 20.6566 9.33907 20.6887 9.43638C20.7207 9.53369 20.7247 9.63807 20.7 9.73752L19.8562 13.0625C19.7125 13.625 20.3125 14.0813 20.7937 13.775L23.725 11.9188C23.8072 11.8665 23.9026 11.8387 24 11.8387C24.0974 11.8387 24.1928 11.8665 24.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M40.275 11.9188L43.425 13.9188C43.8312 14.175 44.3312 13.7938 44.2125 13.325L43.3 9.73752C43.2753 9.63807 43.2792 9.53369 43.3113 9.43638C43.3434 9.33907 43.4023 9.2528 43.4812 9.18752L46.3062 6.83127C46.675 6.52502 46.4875 5.90627 46.0062 5.87502L42.3187 5.63752C42.2181 5.63166 42.1214 5.59663 42.0404 5.53669C41.9594 5.47675 41.8975 5.39451 41.8625 5.30002L40.4875 1.83752C40.4511 1.73745 40.3848 1.65102 40.2976 1.58994C40.2104 1.52886 40.1065 1.49609 40 1.49609C39.8935 1.49609 39.7896 1.52886 39.7024 1.58994C39.6152 1.65102 39.5489 1.73745 39.5125 1.83752L38.1375 5.30002C38.1025 5.39451 38.0406 5.47675 37.9596 5.53669C37.8786 5.59663 37.7819 5.63166 37.6812 5.63752L33.9937 5.87502C33.5125 5.90627 33.325 6.52502 33.6937 6.83127L36.5187 9.18752C36.5977 9.2528 36.6566 9.33907 36.6887 9.43638C36.7207 9.53369 36.7247 9.63807 36.7 9.73752L35.8562 13.0625C35.7125 13.625 36.3125 14.0813 36.7937 13.775L39.725 11.9188C39.8072 11.8665 39.9026 11.8387 40 11.8387C40.0974 11.8387 40.1928 11.8665 40.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M56.275 11.9188L59.425 13.9188C59.8312 14.175 60.3312 13.7938 60.2125 13.325L59.3 9.73752C59.2753 9.63807 59.2792 9.53369 59.3113 9.43638C59.3434 9.33907 59.4023 9.2528 59.4812 9.18752L62.3062 6.83127C62.675 6.52502 62.4875 5.90627 62.0062 5.87502L58.3187 5.63752C58.2181 5.63166 58.1214 5.59663 58.0404 5.53669C57.9594 5.47675 57.8975 5.39451 57.8625 5.30002L56.4875 1.83752C56.4511 1.73745 56.3848 1.65102 56.2976 1.58994C56.2104 1.52886 56.1065 1.49609 56 1.49609C55.8935 1.49609 55.7896 1.52886 55.7024 1.58994C55.6152 1.65102 55.5489 1.73745 55.5125 1.83752L54.1375 5.30002C54.1025 5.39451 54.0406 5.47675 53.9596 5.53669C53.8786 5.59663 53.7819 5.63166 53.6812 5.63752L49.9937 5.87502C49.5125 5.90627 49.325 6.52502 49.6937 6.83127L52.5187 9.18752C52.5977 9.2528 52.6566 9.33907 52.6887 9.43638C52.7207 9.53369 52.7247 9.63807 52.7 9.73752L51.8562 13.0625C51.7125 13.625 52.3125 14.0813 52.7937 13.775L55.725 11.9188C55.8072 11.8665 55.9026 11.8387 56 11.8387C56.0974 11.8387 56.1928 11.8665 56.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M72.275 11.9188L75.425 13.9188C75.8312 14.175 76.3312 13.7938 76.2125 13.325L75.3 9.73752C75.2753 9.63807 75.2792 9.53369 75.3113 9.43638C75.3434 9.33907 75.4023 9.2528 75.4812 9.18752L78.3062 6.83127C78.675 6.52502 78.4875 5.90627 78.0062 5.87502L74.3187 5.63752C74.2181 5.63166 74.1214 5.59663 74.0404 5.53669C73.9594 5.47675 73.8975 5.39451 73.8625 5.30002L72.4875 1.83752C72.4511 1.73745 72.3848 1.65102 72.2976 1.58994C72.2104 1.52886 72.1065 1.49609 72 1.49609C71.8935 1.49609 71.7896 1.52886 71.7024 1.58994C71.6152 1.65102 71.5489 1.73745 71.5125 1.83752L70.1375 5.30002C70.1025 5.39451 70.0406 5.47675 69.9596 5.53669C69.8786 5.59663 69.7819 5.63166 69.6812 5.63752L65.9937 5.87502C65.5125 5.90627 65.325 6.52502 65.6937 6.83127L68.5187 9.18752C68.5977 9.2528 68.6566 9.33907 68.6887 9.43638C68.7207 9.53369 68.7247 9.63807 68.7 9.73752L67.8562 13.0625C67.7125 13.625 68.3125 14.0813 68.7937 13.775L71.725 11.9188C71.8072 11.8665 71.9026 11.8387 72 11.8387C72.0974 11.8387 72.1928 11.8665 72.275 11.9188Z" fill="#FA8232"/>
-                                                </svg>                                                
-                                        </div>
-                                        <div class="product-list-item__rate-num">(738)</div>
-                                    </div>
-                                    <div class="product-list-item__price">2.500.000đ</div>
-                                </div>
-                            </div>
-                            <div class="grid__column-2-5">
-                                <!--Product Items-->
-                                <div class="product-list-item">
-                                    <div class="product-list-item__img" style="background-image: url(./img/1.png);"></div>
-                                    <div class="product-list-item__name">Màn hình Dell G3223Q 32</div>
-                                    <div class="product-list-item__rate">
-                                        <div class="product-list-item__rate-icon">
-                                            <svg width="80" height="16" viewBox="0 0 80 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M8.275 11.9188L11.425 13.9188C11.8312 14.175 12.3312 13.7938 12.2125 13.325L11.3 9.73752C11.2753 9.63807 11.2792 9.53369 11.3113 9.43638C11.3434 9.33907 11.4023 9.2528 11.4812 9.18752L14.3062 6.83127C14.675 6.52502 14.4875 5.90627 14.0062 5.87502L10.3187 5.63752C10.2181 5.63166 10.1214 5.59663 10.0404 5.53669C9.95935 5.47675 9.89754 5.39451 9.8625 5.30002L8.4875 1.83752C8.4511 1.73745 8.38479 1.65102 8.29758 1.58994C8.21037 1.52886 8.10647 1.49609 8 1.49609C7.89352 1.49609 7.78963 1.52886 7.70241 1.58994C7.6152 1.65102 7.54889 1.73745 7.5125 1.83752L6.1375 5.30002C6.10245 5.39451 6.04064 5.47675 5.95962 5.53669C5.87859 5.59663 5.78186 5.63166 5.68125 5.63752L1.99375 5.87502C1.5125 5.90627 1.325 6.52502 1.69375 6.83127L4.51875 9.18752C4.59771 9.2528 4.65661 9.33907 4.68868 9.43638C4.72075 9.53369 4.72467 9.63807 4.7 9.73752L3.85625 13.0625C3.7125 13.625 4.3125 14.0813 4.79375 13.775L7.725 11.9188C7.8072 11.8665 7.90259 11.8387 8 11.8387C8.09741 11.8387 8.1928 11.8665 8.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M24.275 11.9188L27.425 13.9188C27.8312 14.175 28.3312 13.7938 28.2125 13.325L27.3 9.73752C27.2753 9.63807 27.2792 9.53369 27.3113 9.43638C27.3434 9.33907 27.4023 9.2528 27.4812 9.18752L30.3062 6.83127C30.675 6.52502 30.4875 5.90627 30.0062 5.87502L26.3187 5.63752C26.2181 5.63166 26.1214 5.59663 26.0404 5.53669C25.9594 5.47675 25.8975 5.39451 25.8625 5.30002L24.4875 1.83752C24.4511 1.73745 24.3848 1.65102 24.2976 1.58994C24.2104 1.52886 24.1065 1.49609 24 1.49609C23.8935 1.49609 23.7896 1.52886 23.7024 1.58994C23.6152 1.65102 23.5489 1.73745 23.5125 1.83752L22.1375 5.30002C22.1025 5.39451 22.0406 5.47675 21.9596 5.53669C21.8786 5.59663 21.7819 5.63166 21.6812 5.63752L17.9937 5.87502C17.5125 5.90627 17.325 6.52502 17.6937 6.83127L20.5187 9.18752C20.5977 9.2528 20.6566 9.33907 20.6887 9.43638C20.7207 9.53369 20.7247 9.63807 20.7 9.73752L19.8562 13.0625C19.7125 13.625 20.3125 14.0813 20.7937 13.775L23.725 11.9188C23.8072 11.8665 23.9026 11.8387 24 11.8387C24.0974 11.8387 24.1928 11.8665 24.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M40.275 11.9188L43.425 13.9188C43.8312 14.175 44.3312 13.7938 44.2125 13.325L43.3 9.73752C43.2753 9.63807 43.2792 9.53369 43.3113 9.43638C43.3434 9.33907 43.4023 9.2528 43.4812 9.18752L46.3062 6.83127C46.675 6.52502 46.4875 5.90627 46.0062 5.87502L42.3187 5.63752C42.2181 5.63166 42.1214 5.59663 42.0404 5.53669C41.9594 5.47675 41.8975 5.39451 41.8625 5.30002L40.4875 1.83752C40.4511 1.73745 40.3848 1.65102 40.2976 1.58994C40.2104 1.52886 40.1065 1.49609 40 1.49609C39.8935 1.49609 39.7896 1.52886 39.7024 1.58994C39.6152 1.65102 39.5489 1.73745 39.5125 1.83752L38.1375 5.30002C38.1025 5.39451 38.0406 5.47675 37.9596 5.53669C37.8786 5.59663 37.7819 5.63166 37.6812 5.63752L33.9937 5.87502C33.5125 5.90627 33.325 6.52502 33.6937 6.83127L36.5187 9.18752C36.5977 9.2528 36.6566 9.33907 36.6887 9.43638C36.7207 9.53369 36.7247 9.63807 36.7 9.73752L35.8562 13.0625C35.7125 13.625 36.3125 14.0813 36.7937 13.775L39.725 11.9188C39.8072 11.8665 39.9026 11.8387 40 11.8387C40.0974 11.8387 40.1928 11.8665 40.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M56.275 11.9188L59.425 13.9188C59.8312 14.175 60.3312 13.7938 60.2125 13.325L59.3 9.73752C59.2753 9.63807 59.2792 9.53369 59.3113 9.43638C59.3434 9.33907 59.4023 9.2528 59.4812 9.18752L62.3062 6.83127C62.675 6.52502 62.4875 5.90627 62.0062 5.87502L58.3187 5.63752C58.2181 5.63166 58.1214 5.59663 58.0404 5.53669C57.9594 5.47675 57.8975 5.39451 57.8625 5.30002L56.4875 1.83752C56.4511 1.73745 56.3848 1.65102 56.2976 1.58994C56.2104 1.52886 56.1065 1.49609 56 1.49609C55.8935 1.49609 55.7896 1.52886 55.7024 1.58994C55.6152 1.65102 55.5489 1.73745 55.5125 1.83752L54.1375 5.30002C54.1025 5.39451 54.0406 5.47675 53.9596 5.53669C53.8786 5.59663 53.7819 5.63166 53.6812 5.63752L49.9937 5.87502C49.5125 5.90627 49.325 6.52502 49.6937 6.83127L52.5187 9.18752C52.5977 9.2528 52.6566 9.33907 52.6887 9.43638C52.7207 9.53369 52.7247 9.63807 52.7 9.73752L51.8562 13.0625C51.7125 13.625 52.3125 14.0813 52.7937 13.775L55.725 11.9188C55.8072 11.8665 55.9026 11.8387 56 11.8387C56.0974 11.8387 56.1928 11.8665 56.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M72.275 11.9188L75.425 13.9188C75.8312 14.175 76.3312 13.7938 76.2125 13.325L75.3 9.73752C75.2753 9.63807 75.2792 9.53369 75.3113 9.43638C75.3434 9.33907 75.4023 9.2528 75.4812 9.18752L78.3062 6.83127C78.675 6.52502 78.4875 5.90627 78.0062 5.87502L74.3187 5.63752C74.2181 5.63166 74.1214 5.59663 74.0404 5.53669C73.9594 5.47675 73.8975 5.39451 73.8625 5.30002L72.4875 1.83752C72.4511 1.73745 72.3848 1.65102 72.2976 1.58994C72.2104 1.52886 72.1065 1.49609 72 1.49609C71.8935 1.49609 71.7896 1.52886 71.7024 1.58994C71.6152 1.65102 71.5489 1.73745 71.5125 1.83752L70.1375 5.30002C70.1025 5.39451 70.0406 5.47675 69.9596 5.53669C69.8786 5.59663 69.7819 5.63166 69.6812 5.63752L65.9937 5.87502C65.5125 5.90627 65.325 6.52502 65.6937 6.83127L68.5187 9.18752C68.5977 9.2528 68.6566 9.33907 68.6887 9.43638C68.7207 9.53369 68.7247 9.63807 68.7 9.73752L67.8562 13.0625C67.7125 13.625 68.3125 14.0813 68.7937 13.775L71.725 11.9188C71.8072 11.8665 71.9026 11.8387 72 11.8387C72.0974 11.8387 72.1928 11.8665 72.275 11.9188Z" fill="#FA8232"/>
-                                                </svg>                                                
-                                        </div>
-                                        <div class="product-list-item__rate-num">(738)</div>
-                                    </div>
-                                    <div class="product-list-item__price">2.500.000đ</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="grid__row" style="display: flex;">
-                            <div class="grid__column-2-5">
-                                <!--Product Items-->
-                                <div class="product-list-item">
-                                    <div class="product-list-item__img" style="background-image: url(./img/1.png);"></div>
-                                    <div class="product-list-item__name">Màn hình Dell G3223Q 32</div>
-                                    <div class="product-list-item__rate">
-                                        <div class="product-list-item__rate-icon">
-                                            <svg width="80" height="16" viewBox="0 0 80 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M8.275 11.9188L11.425 13.9188C11.8312 14.175 12.3312 13.7938 12.2125 13.325L11.3 9.73752C11.2753 9.63807 11.2792 9.53369 11.3113 9.43638C11.3434 9.33907 11.4023 9.2528 11.4812 9.18752L14.3062 6.83127C14.675 6.52502 14.4875 5.90627 14.0062 5.87502L10.3187 5.63752C10.2181 5.63166 10.1214 5.59663 10.0404 5.53669C9.95935 5.47675 9.89754 5.39451 9.8625 5.30002L8.4875 1.83752C8.4511 1.73745 8.38479 1.65102 8.29758 1.58994C8.21037 1.52886 8.10647 1.49609 8 1.49609C7.89352 1.49609 7.78963 1.52886 7.70241 1.58994C7.6152 1.65102 7.54889 1.73745 7.5125 1.83752L6.1375 5.30002C6.10245 5.39451 6.04064 5.47675 5.95962 5.53669C5.87859 5.59663 5.78186 5.63166 5.68125 5.63752L1.99375 5.87502C1.5125 5.90627 1.325 6.52502 1.69375 6.83127L4.51875 9.18752C4.59771 9.2528 4.65661 9.33907 4.68868 9.43638C4.72075 9.53369 4.72467 9.63807 4.7 9.73752L3.85625 13.0625C3.7125 13.625 4.3125 14.0813 4.79375 13.775L7.725 11.9188C7.8072 11.8665 7.90259 11.8387 8 11.8387C8.09741 11.8387 8.1928 11.8665 8.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M24.275 11.9188L27.425 13.9188C27.8312 14.175 28.3312 13.7938 28.2125 13.325L27.3 9.73752C27.2753 9.63807 27.2792 9.53369 27.3113 9.43638C27.3434 9.33907 27.4023 9.2528 27.4812 9.18752L30.3062 6.83127C30.675 6.52502 30.4875 5.90627 30.0062 5.87502L26.3187 5.63752C26.2181 5.63166 26.1214 5.59663 26.0404 5.53669C25.9594 5.47675 25.8975 5.39451 25.8625 5.30002L24.4875 1.83752C24.4511 1.73745 24.3848 1.65102 24.2976 1.58994C24.2104 1.52886 24.1065 1.49609 24 1.49609C23.8935 1.49609 23.7896 1.52886 23.7024 1.58994C23.6152 1.65102 23.5489 1.73745 23.5125 1.83752L22.1375 5.30002C22.1025 5.39451 22.0406 5.47675 21.9596 5.53669C21.8786 5.59663 21.7819 5.63166 21.6812 5.63752L17.9937 5.87502C17.5125 5.90627 17.325 6.52502 17.6937 6.83127L20.5187 9.18752C20.5977 9.2528 20.6566 9.33907 20.6887 9.43638C20.7207 9.53369 20.7247 9.63807 20.7 9.73752L19.8562 13.0625C19.7125 13.625 20.3125 14.0813 20.7937 13.775L23.725 11.9188C23.8072 11.8665 23.9026 11.8387 24 11.8387C24.0974 11.8387 24.1928 11.8665 24.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M40.275 11.9188L43.425 13.9188C43.8312 14.175 44.3312 13.7938 44.2125 13.325L43.3 9.73752C43.2753 9.63807 43.2792 9.53369 43.3113 9.43638C43.3434 9.33907 43.4023 9.2528 43.4812 9.18752L46.3062 6.83127C46.675 6.52502 46.4875 5.90627 46.0062 5.87502L42.3187 5.63752C42.2181 5.63166 42.1214 5.59663 42.0404 5.53669C41.9594 5.47675 41.8975 5.39451 41.8625 5.30002L40.4875 1.83752C40.4511 1.73745 40.3848 1.65102 40.2976 1.58994C40.2104 1.52886 40.1065 1.49609 40 1.49609C39.8935 1.49609 39.7896 1.52886 39.7024 1.58994C39.6152 1.65102 39.5489 1.73745 39.5125 1.83752L38.1375 5.30002C38.1025 5.39451 38.0406 5.47675 37.9596 5.53669C37.8786 5.59663 37.7819 5.63166 37.6812 5.63752L33.9937 5.87502C33.5125 5.90627 33.325 6.52502 33.6937 6.83127L36.5187 9.18752C36.5977 9.2528 36.6566 9.33907 36.6887 9.43638C36.7207 9.53369 36.7247 9.63807 36.7 9.73752L35.8562 13.0625C35.7125 13.625 36.3125 14.0813 36.7937 13.775L39.725 11.9188C39.8072 11.8665 39.9026 11.8387 40 11.8387C40.0974 11.8387 40.1928 11.8665 40.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M56.275 11.9188L59.425 13.9188C59.8312 14.175 60.3312 13.7938 60.2125 13.325L59.3 9.73752C59.2753 9.63807 59.2792 9.53369 59.3113 9.43638C59.3434 9.33907 59.4023 9.2528 59.4812 9.18752L62.3062 6.83127C62.675 6.52502 62.4875 5.90627 62.0062 5.87502L58.3187 5.63752C58.2181 5.63166 58.1214 5.59663 58.0404 5.53669C57.9594 5.47675 57.8975 5.39451 57.8625 5.30002L56.4875 1.83752C56.4511 1.73745 56.3848 1.65102 56.2976 1.58994C56.2104 1.52886 56.1065 1.49609 56 1.49609C55.8935 1.49609 55.7896 1.52886 55.7024 1.58994C55.6152 1.65102 55.5489 1.73745 55.5125 1.83752L54.1375 5.30002C54.1025 5.39451 54.0406 5.47675 53.9596 5.53669C53.8786 5.59663 53.7819 5.63166 53.6812 5.63752L49.9937 5.87502C49.5125 5.90627 49.325 6.52502 49.6937 6.83127L52.5187 9.18752C52.5977 9.2528 52.6566 9.33907 52.6887 9.43638C52.7207 9.53369 52.7247 9.63807 52.7 9.73752L51.8562 13.0625C51.7125 13.625 52.3125 14.0813 52.7937 13.775L55.725 11.9188C55.8072 11.8665 55.9026 11.8387 56 11.8387C56.0974 11.8387 56.1928 11.8665 56.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M72.275 11.9188L75.425 13.9188C75.8312 14.175 76.3312 13.7938 76.2125 13.325L75.3 9.73752C75.2753 9.63807 75.2792 9.53369 75.3113 9.43638C75.3434 9.33907 75.4023 9.2528 75.4812 9.18752L78.3062 6.83127C78.675 6.52502 78.4875 5.90627 78.0062 5.87502L74.3187 5.63752C74.2181 5.63166 74.1214 5.59663 74.0404 5.53669C73.9594 5.47675 73.8975 5.39451 73.8625 5.30002L72.4875 1.83752C72.4511 1.73745 72.3848 1.65102 72.2976 1.58994C72.2104 1.52886 72.1065 1.49609 72 1.49609C71.8935 1.49609 71.7896 1.52886 71.7024 1.58994C71.6152 1.65102 71.5489 1.73745 71.5125 1.83752L70.1375 5.30002C70.1025 5.39451 70.0406 5.47675 69.9596 5.53669C69.8786 5.59663 69.7819 5.63166 69.6812 5.63752L65.9937 5.87502C65.5125 5.90627 65.325 6.52502 65.6937 6.83127L68.5187 9.18752C68.5977 9.2528 68.6566 9.33907 68.6887 9.43638C68.7207 9.53369 68.7247 9.63807 68.7 9.73752L67.8562 13.0625C67.7125 13.625 68.3125 14.0813 68.7937 13.775L71.725 11.9188C71.8072 11.8665 71.9026 11.8387 72 11.8387C72.0974 11.8387 72.1928 11.8665 72.275 11.9188Z" fill="#FA8232"/>
-                                                </svg>                                                
-                                        </div>
-                                        <div class="product-list-item__rate-num">(738)</div>
-                                    </div>
-                                    <div class="product-list-item__price">2.500.000đ</div>
-                                </div>
-                            </div>
-                            <div class="grid__column-2-5">
-                                <!--Product Items-->
-                                <div class="product-list-item">
-                                    <div class="product-list-item__img" style="background-image: url(./img/1.png);"></div>
-                                    <div class="product-list-item__name">Màn hình Dell G3223Q 32</div>
-                                    <div class="product-list-item__rate">
-                                        <div class="product-list-item__rate-icon">
-                                            <svg width="80" height="16" viewBox="0 0 80 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M8.275 11.9188L11.425 13.9188C11.8312 14.175 12.3312 13.7938 12.2125 13.325L11.3 9.73752C11.2753 9.63807 11.2792 9.53369 11.3113 9.43638C11.3434 9.33907 11.4023 9.2528 11.4812 9.18752L14.3062 6.83127C14.675 6.52502 14.4875 5.90627 14.0062 5.87502L10.3187 5.63752C10.2181 5.63166 10.1214 5.59663 10.0404 5.53669C9.95935 5.47675 9.89754 5.39451 9.8625 5.30002L8.4875 1.83752C8.4511 1.73745 8.38479 1.65102 8.29758 1.58994C8.21037 1.52886 8.10647 1.49609 8 1.49609C7.89352 1.49609 7.78963 1.52886 7.70241 1.58994C7.6152 1.65102 7.54889 1.73745 7.5125 1.83752L6.1375 5.30002C6.10245 5.39451 6.04064 5.47675 5.95962 5.53669C5.87859 5.59663 5.78186 5.63166 5.68125 5.63752L1.99375 5.87502C1.5125 5.90627 1.325 6.52502 1.69375 6.83127L4.51875 9.18752C4.59771 9.2528 4.65661 9.33907 4.68868 9.43638C4.72075 9.53369 4.72467 9.63807 4.7 9.73752L3.85625 13.0625C3.7125 13.625 4.3125 14.0813 4.79375 13.775L7.725 11.9188C7.8072 11.8665 7.90259 11.8387 8 11.8387C8.09741 11.8387 8.1928 11.8665 8.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M24.275 11.9188L27.425 13.9188C27.8312 14.175 28.3312 13.7938 28.2125 13.325L27.3 9.73752C27.2753 9.63807 27.2792 9.53369 27.3113 9.43638C27.3434 9.33907 27.4023 9.2528 27.4812 9.18752L30.3062 6.83127C30.675 6.52502 30.4875 5.90627 30.0062 5.87502L26.3187 5.63752C26.2181 5.63166 26.1214 5.59663 26.0404 5.53669C25.9594 5.47675 25.8975 5.39451 25.8625 5.30002L24.4875 1.83752C24.4511 1.73745 24.3848 1.65102 24.2976 1.58994C24.2104 1.52886 24.1065 1.49609 24 1.49609C23.8935 1.49609 23.7896 1.52886 23.7024 1.58994C23.6152 1.65102 23.5489 1.73745 23.5125 1.83752L22.1375 5.30002C22.1025 5.39451 22.0406 5.47675 21.9596 5.53669C21.8786 5.59663 21.7819 5.63166 21.6812 5.63752L17.9937 5.87502C17.5125 5.90627 17.325 6.52502 17.6937 6.83127L20.5187 9.18752C20.5977 9.2528 20.6566 9.33907 20.6887 9.43638C20.7207 9.53369 20.7247 9.63807 20.7 9.73752L19.8562 13.0625C19.7125 13.625 20.3125 14.0813 20.7937 13.775L23.725 11.9188C23.8072 11.8665 23.9026 11.8387 24 11.8387C24.0974 11.8387 24.1928 11.8665 24.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M40.275 11.9188L43.425 13.9188C43.8312 14.175 44.3312 13.7938 44.2125 13.325L43.3 9.73752C43.2753 9.63807 43.2792 9.53369 43.3113 9.43638C43.3434 9.33907 43.4023 9.2528 43.4812 9.18752L46.3062 6.83127C46.675 6.52502 46.4875 5.90627 46.0062 5.87502L42.3187 5.63752C42.2181 5.63166 42.1214 5.59663 42.0404 5.53669C41.9594 5.47675 41.8975 5.39451 41.8625 5.30002L40.4875 1.83752C40.4511 1.73745 40.3848 1.65102 40.2976 1.58994C40.2104 1.52886 40.1065 1.49609 40 1.49609C39.8935 1.49609 39.7896 1.52886 39.7024 1.58994C39.6152 1.65102 39.5489 1.73745 39.5125 1.83752L38.1375 5.30002C38.1025 5.39451 38.0406 5.47675 37.9596 5.53669C37.8786 5.59663 37.7819 5.63166 37.6812 5.63752L33.9937 5.87502C33.5125 5.90627 33.325 6.52502 33.6937 6.83127L36.5187 9.18752C36.5977 9.2528 36.6566 9.33907 36.6887 9.43638C36.7207 9.53369 36.7247 9.63807 36.7 9.73752L35.8562 13.0625C35.7125 13.625 36.3125 14.0813 36.7937 13.775L39.725 11.9188C39.8072 11.8665 39.9026 11.8387 40 11.8387C40.0974 11.8387 40.1928 11.8665 40.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M56.275 11.9188L59.425 13.9188C59.8312 14.175 60.3312 13.7938 60.2125 13.325L59.3 9.73752C59.2753 9.63807 59.2792 9.53369 59.3113 9.43638C59.3434 9.33907 59.4023 9.2528 59.4812 9.18752L62.3062 6.83127C62.675 6.52502 62.4875 5.90627 62.0062 5.87502L58.3187 5.63752C58.2181 5.63166 58.1214 5.59663 58.0404 5.53669C57.9594 5.47675 57.8975 5.39451 57.8625 5.30002L56.4875 1.83752C56.4511 1.73745 56.3848 1.65102 56.2976 1.58994C56.2104 1.52886 56.1065 1.49609 56 1.49609C55.8935 1.49609 55.7896 1.52886 55.7024 1.58994C55.6152 1.65102 55.5489 1.73745 55.5125 1.83752L54.1375 5.30002C54.1025 5.39451 54.0406 5.47675 53.9596 5.53669C53.8786 5.59663 53.7819 5.63166 53.6812 5.63752L49.9937 5.87502C49.5125 5.90627 49.325 6.52502 49.6937 6.83127L52.5187 9.18752C52.5977 9.2528 52.6566 9.33907 52.6887 9.43638C52.7207 9.53369 52.7247 9.63807 52.7 9.73752L51.8562 13.0625C51.7125 13.625 52.3125 14.0813 52.7937 13.775L55.725 11.9188C55.8072 11.8665 55.9026 11.8387 56 11.8387C56.0974 11.8387 56.1928 11.8665 56.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M72.275 11.9188L75.425 13.9188C75.8312 14.175 76.3312 13.7938 76.2125 13.325L75.3 9.73752C75.2753 9.63807 75.2792 9.53369 75.3113 9.43638C75.3434 9.33907 75.4023 9.2528 75.4812 9.18752L78.3062 6.83127C78.675 6.52502 78.4875 5.90627 78.0062 5.87502L74.3187 5.63752C74.2181 5.63166 74.1214 5.59663 74.0404 5.53669C73.9594 5.47675 73.8975 5.39451 73.8625 5.30002L72.4875 1.83752C72.4511 1.73745 72.3848 1.65102 72.2976 1.58994C72.2104 1.52886 72.1065 1.49609 72 1.49609C71.8935 1.49609 71.7896 1.52886 71.7024 1.58994C71.6152 1.65102 71.5489 1.73745 71.5125 1.83752L70.1375 5.30002C70.1025 5.39451 70.0406 5.47675 69.9596 5.53669C69.8786 5.59663 69.7819 5.63166 69.6812 5.63752L65.9937 5.87502C65.5125 5.90627 65.325 6.52502 65.6937 6.83127L68.5187 9.18752C68.5977 9.2528 68.6566 9.33907 68.6887 9.43638C68.7207 9.53369 68.7247 9.63807 68.7 9.73752L67.8562 13.0625C67.7125 13.625 68.3125 14.0813 68.7937 13.775L71.725 11.9188C71.8072 11.8665 71.9026 11.8387 72 11.8387C72.0974 11.8387 72.1928 11.8665 72.275 11.9188Z" fill="#FA8232"/>
-                                                </svg>                                                
-                                        </div>
-                                        <div class="product-list-item__rate-num">(738)</div>
-                                    </div>
-                                    <div class="product-list-item__price">2.500.000đ</div>
-                                </div>
-                            </div>
-                            <div class="grid__column-2-5">
-                                <!--Product Items-->
-                                <div class="product-list-item">
-                                    <div class="product-list-item__img" style="background-image: url(./img/1.png);"></div>
-                                    <div class="product-list-item__name">Màn hình Dell G3223Q 32</div>
-                                    <div class="product-list-item__rate">
-                                        <div class="product-list-item__rate-icon">
-                                            <svg width="80" height="16" viewBox="0 0 80 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M8.275 11.9188L11.425 13.9188C11.8312 14.175 12.3312 13.7938 12.2125 13.325L11.3 9.73752C11.2753 9.63807 11.2792 9.53369 11.3113 9.43638C11.3434 9.33907 11.4023 9.2528 11.4812 9.18752L14.3062 6.83127C14.675 6.52502 14.4875 5.90627 14.0062 5.87502L10.3187 5.63752C10.2181 5.63166 10.1214 5.59663 10.0404 5.53669C9.95935 5.47675 9.89754 5.39451 9.8625 5.30002L8.4875 1.83752C8.4511 1.73745 8.38479 1.65102 8.29758 1.58994C8.21037 1.52886 8.10647 1.49609 8 1.49609C7.89352 1.49609 7.78963 1.52886 7.70241 1.58994C7.6152 1.65102 7.54889 1.73745 7.5125 1.83752L6.1375 5.30002C6.10245 5.39451 6.04064 5.47675 5.95962 5.53669C5.87859 5.59663 5.78186 5.63166 5.68125 5.63752L1.99375 5.87502C1.5125 5.90627 1.325 6.52502 1.69375 6.83127L4.51875 9.18752C4.59771 9.2528 4.65661 9.33907 4.68868 9.43638C4.72075 9.53369 4.72467 9.63807 4.7 9.73752L3.85625 13.0625C3.7125 13.625 4.3125 14.0813 4.79375 13.775L7.725 11.9188C7.8072 11.8665 7.90259 11.8387 8 11.8387C8.09741 11.8387 8.1928 11.8665 8.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M24.275 11.9188L27.425 13.9188C27.8312 14.175 28.3312 13.7938 28.2125 13.325L27.3 9.73752C27.2753 9.63807 27.2792 9.53369 27.3113 9.43638C27.3434 9.33907 27.4023 9.2528 27.4812 9.18752L30.3062 6.83127C30.675 6.52502 30.4875 5.90627 30.0062 5.87502L26.3187 5.63752C26.2181 5.63166 26.1214 5.59663 26.0404 5.53669C25.9594 5.47675 25.8975 5.39451 25.8625 5.30002L24.4875 1.83752C24.4511 1.73745 24.3848 1.65102 24.2976 1.58994C24.2104 1.52886 24.1065 1.49609 24 1.49609C23.8935 1.49609 23.7896 1.52886 23.7024 1.58994C23.6152 1.65102 23.5489 1.73745 23.5125 1.83752L22.1375 5.30002C22.1025 5.39451 22.0406 5.47675 21.9596 5.53669C21.8786 5.59663 21.7819 5.63166 21.6812 5.63752L17.9937 5.87502C17.5125 5.90627 17.325 6.52502 17.6937 6.83127L20.5187 9.18752C20.5977 9.2528 20.6566 9.33907 20.6887 9.43638C20.7207 9.53369 20.7247 9.63807 20.7 9.73752L19.8562 13.0625C19.7125 13.625 20.3125 14.0813 20.7937 13.775L23.725 11.9188C23.8072 11.8665 23.9026 11.8387 24 11.8387C24.0974 11.8387 24.1928 11.8665 24.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M40.275 11.9188L43.425 13.9188C43.8312 14.175 44.3312 13.7938 44.2125 13.325L43.3 9.73752C43.2753 9.63807 43.2792 9.53369 43.3113 9.43638C43.3434 9.33907 43.4023 9.2528 43.4812 9.18752L46.3062 6.83127C46.675 6.52502 46.4875 5.90627 46.0062 5.87502L42.3187 5.63752C42.2181 5.63166 42.1214 5.59663 42.0404 5.53669C41.9594 5.47675 41.8975 5.39451 41.8625 5.30002L40.4875 1.83752C40.4511 1.73745 40.3848 1.65102 40.2976 1.58994C40.2104 1.52886 40.1065 1.49609 40 1.49609C39.8935 1.49609 39.7896 1.52886 39.7024 1.58994C39.6152 1.65102 39.5489 1.73745 39.5125 1.83752L38.1375 5.30002C38.1025 5.39451 38.0406 5.47675 37.9596 5.53669C37.8786 5.59663 37.7819 5.63166 37.6812 5.63752L33.9937 5.87502C33.5125 5.90627 33.325 6.52502 33.6937 6.83127L36.5187 9.18752C36.5977 9.2528 36.6566 9.33907 36.6887 9.43638C36.7207 9.53369 36.7247 9.63807 36.7 9.73752L35.8562 13.0625C35.7125 13.625 36.3125 14.0813 36.7937 13.775L39.725 11.9188C39.8072 11.8665 39.9026 11.8387 40 11.8387C40.0974 11.8387 40.1928 11.8665 40.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M56.275 11.9188L59.425 13.9188C59.8312 14.175 60.3312 13.7938 60.2125 13.325L59.3 9.73752C59.2753 9.63807 59.2792 9.53369 59.3113 9.43638C59.3434 9.33907 59.4023 9.2528 59.4812 9.18752L62.3062 6.83127C62.675 6.52502 62.4875 5.90627 62.0062 5.87502L58.3187 5.63752C58.2181 5.63166 58.1214 5.59663 58.0404 5.53669C57.9594 5.47675 57.8975 5.39451 57.8625 5.30002L56.4875 1.83752C56.4511 1.73745 56.3848 1.65102 56.2976 1.58994C56.2104 1.52886 56.1065 1.49609 56 1.49609C55.8935 1.49609 55.7896 1.52886 55.7024 1.58994C55.6152 1.65102 55.5489 1.73745 55.5125 1.83752L54.1375 5.30002C54.1025 5.39451 54.0406 5.47675 53.9596 5.53669C53.8786 5.59663 53.7819 5.63166 53.6812 5.63752L49.9937 5.87502C49.5125 5.90627 49.325 6.52502 49.6937 6.83127L52.5187 9.18752C52.5977 9.2528 52.6566 9.33907 52.6887 9.43638C52.7207 9.53369 52.7247 9.63807 52.7 9.73752L51.8562 13.0625C51.7125 13.625 52.3125 14.0813 52.7937 13.775L55.725 11.9188C55.8072 11.8665 55.9026 11.8387 56 11.8387C56.0974 11.8387 56.1928 11.8665 56.275 11.9188Z" fill="#FA8232"/>
-                                                <path d="M72.275 11.9188L75.425 13.9188C75.8312 14.175 76.3312 13.7938 76.2125 13.325L75.3 9.73752C75.2753 9.63807 75.2792 9.53369 75.3113 9.43638C75.3434 9.33907 75.4023 9.2528 75.4812 9.18752L78.3062 6.83127C78.675 6.52502 78.4875 5.90627 78.0062 5.87502L74.3187 5.63752C74.2181 5.63166 74.1214 5.59663 74.0404 5.53669C73.9594 5.47675 73.8975 5.39451 73.8625 5.30002L72.4875 1.83752C72.4511 1.73745 72.3848 1.65102 72.2976 1.58994C72.2104 1.52886 72.1065 1.49609 72 1.49609C71.8935 1.49609 71.7896 1.52886 71.7024 1.58994C71.6152 1.65102 71.5489 1.73745 71.5125 1.83752L70.1375 5.30002C70.1025 5.39451 70.0406 5.47675 69.9596 5.53669C69.8786 5.59663 69.7819 5.63166 69.6812 5.63752L65.9937 5.87502C65.5125 5.90627 65.325 6.52502 65.6937 6.83127L68.5187 9.18752C68.5977 9.2528 68.6566 9.33907 68.6887 9.43638C68.7207 9.53369 68.7247 9.63807 68.7 9.73752L67.8562 13.0625C67.7125 13.625 68.3125 14.0813 68.7937 13.775L71.725 11.9188C71.8072 11.8665 71.9026 11.8387 72 11.8387C72.0974 11.8387 72.1928 11.8665 72.275 11.9188Z" fill="#FA8232"/>
-                                                </svg>                                                
-                                        </div>
-                                        <div class="product-list-item__rate-num">(738)</div>
-                                    </div>
-                                    <div class="product-list-item__price">2.500.000đ</div>
-                                </div>
-                            </div>
-                            <div class="grid__column-2-5">
-                                <!--Product Items-->
+                             <!--Một sản phẩm-->
+                             <div class="grid__column-2-5 m-4">
                                 <div class="product-list-item">
                                     <div class="product-list-item__img" style="background-image: url(./img/1.png);"></div>
                                     <div class="product-list-item__name">Màn hình Dell G3223Q 32</div>
