@@ -24,14 +24,16 @@ class Request
         else {
             $this->path = substr($uri, 0, $idx);
             $params = substr($uri, $idx + 1);
-            $params = explode("&", $params);
-            foreach ($params as $param) {
-                $param = explode("=", $param);
-                if ($param === 'order')
-                    $this->order = explode(',', $param[1]);
-                else
-                    $this->params[$param[0]] = $param[1];
-            }
+            parse_str($params, $this->params);
+            // $params = explode("&", $params);
+            // foreach ($params as $param) {
+            //     $param = explode("=", $param);
+            //     // if ($param === 'order') {
+            //     // $this->order = explode(',', $param[1]);
+            //     // echo $this->order;
+            //     // } else
+            //     $this->params[$param[0]] = $param[1];
+            // }
         }
 
         $this->method = $method;
@@ -52,6 +54,16 @@ class Request
         array_map(function ($key) {
             $this->conditions[] = $key . "='" . $this->params[$key] . "'";
         }, array_keys($this->params));
+    }
+
+    public function add_condition($key, $operator, $value)
+    {
+        $this->conditions[] = sprintf("%s%s'%s'", $key, $operator, $value);
+    }
+
+    public function add_order(string $order)
+    {
+        $this->order[] = $order;
     }
 
     public function get_conditions(): array
