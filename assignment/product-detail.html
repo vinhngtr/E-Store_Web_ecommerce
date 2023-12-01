@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./fonts/fontawesome-free-6.4.2-web/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Document</title>
+    <title>Detail</title>
 </head>
 <body>
     <div class="app">
@@ -98,39 +98,50 @@
 
                         <div class="product__detail-custom">
                             <div class="product__detail-custom-color">
-                                <div class="product__detail-custom-color-text">Màu sắc:</div>
+                                <div class="product__detail-custom-color-text">
+                                    Màu sắc:
+                                </div>
                                     <div class="product__detail-custom-color-drop">
-                                        <div class="product__detail-custom-color-text">Chọn màu</div>
-                                        <a href="#" class="product__detail-custom-color-drop-icon">
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M13 6L8 11L3 6" stroke="#ADB7BC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>                                        
-                                        </a>
-                                        <ul class="product__detail-custom-color-drop-list">
-                                            <li class="product__detail-custom-color-drop-item">
-                                                <a href="#" class="product__detail-custom-color-link">Xanh đọt chuối</a>
-                                             </li>
-                                            <li class="product__detail-custom-color-drop-item">
-                                                <a href="#" class="product__detail-custom-color-link">Tím mộng mơ</a>
+                                        <div class="color_select-btn">
+                                            <div class="product__detail_custom_color_text">Chọn màu</div>
+                                            <div class="product__detail-custom-color-drop-icon">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13 6L8 11L3 6" stroke="#ADB7BC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                        
+                                            </div>
+                                        </div>
+
+                                        <ul class="product__detail_color_options">
+                                            <li class="product__detail_color_option">
+                                                <span class="product__detail_color_options_text">Xanh</span>
+                                            </li>
+                                            <li class="product__detail_color_option">
+                                                <div class="product__detail_color_options_text">Tím</div>
                                             </li>
                                         </ul>
                                     </div>
-                                </div>
+                            </div>
+                            
                             <div class="product__detail-custom-size">
-                                <div class="product__detail-custom-size-text">Kích thước:</div>
+                                <div class="product__detail-custom-size-text">
+                                    Kích thước:
+                                </div>
                                     <div class="product__detail-custom-size-drop">
-                                        <div class="product__detail-custom-size-text">Kích thước</div>
-                                        <a href="#" class="product__detail-custom-size-drop-icon">
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M13 6L8 11L3 6" stroke="#ADB7BC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>                                        
-                                        </a>
-                                        <ul class="product__detail-custom-size-drop-list">
-                                            <li class="product__detail-custom-size-drop-item">
-                                                <a href="#" class="product__detail-custom-size-link">30 inch</a>
+                                        <div class="size_select-btn">
+                                            <div class="product__detail_custom_size_text">Kích thước</div>
+                                            <div class="product__detail-custom-size-drop-icon">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13 6L8 11L3 6" stroke="#ADB7BC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                        
+                                            </div>
+                                        </div>
+
+                                        <ul class="product__detail_size_options">
+                                            <li class="product__detail_size_option">
+                                                <span class="product__detail_size_options_text">30 inch</span>
                                             </li>
-                                            <li class="product__detail-custom-size-drop-item">
-                                                <a href="#" class="product__detail-custom-size-link">29.5 inch</a>
+                                            <li class="product__detail_size_option">
+                                                <div class="product__detail_size_options_text">29.5 inch</div>
                                             </li>
                                         </ul>
                                     </div>
@@ -140,15 +151,15 @@
 
                         <div class="product__detail-buttons">
                             <div class="product__detail-quantity">
-                                <a href="#" class="product__detail-quantity-minus">
+                                <div class="product__detail-quantity-minus">
                                     <i class="product__detail-quantity-minus-icon fa-solid fa-minus"></i>                                       
-                                </a>
-                                <div class="product__detail-quantity-input">
-                                    <input type="text" id="product-quantity" value="01">
                                 </div>
-                                <a href="#" class="product__detail-quantity-plus">
+                                <div class="product__detail-quantity-input-block">
+                                    <div class="product__detail-quantity-input">01</div>
+                                </div>
+                                <div class="product__detail-quantity-plus">
                                     <i class="product__detail-quantity-plus-icon fa-solid fa-plus"></i>
-                                </a>
+                                </div>
                             </div>
 
                             <div class="product__detail-cart">
@@ -313,5 +324,25 @@
         </footer>
     </div>
     <script src="js/javascript.js"></script>
+    <script>
+        const minus = document.querySelector(".product__detail-quantity-minus"),
+              plus = document.querySelector(".product__detail-quantity-plus"),
+              num = document.querySelector(".product__detail-quantity-input");
+        let a = 1;
+
+        plus.addEventListener("click", () => {
+            a++;
+            a = (a < 10) ? "0" + a : a;
+            num.innerText = a;
+        });
+
+        minus.addEventListener("click", () => {
+            if (a > 1) {
+                a--;
+                a = (a < 10) ? "0" + a : a;
+                num.innerText = a;
+            }
+        });
+    </script>
 </body>
 </html>

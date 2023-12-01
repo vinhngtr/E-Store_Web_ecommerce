@@ -31,3 +31,41 @@ function openPayment(evt, PaymentMethod) {
   document.getElementById(PaymentMethod).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+// Color custom btn
+
+const colorMenu = document.querySelector(".product__detail-custom-color-drop"),
+      colorSelectBtn = colorMenu.querySelector(".color_select-btn"),
+      ColorOptions = colorMenu.querySelectorAll(".product__detail_color_option"),
+      ColorBtn_text = colorMenu.querySelector(".product__detail_custom_color_text");
+
+colorSelectBtn.addEventListener("click", () => colorMenu.classList.toggle("active"));
+
+ColorOptions.forEach(product__detail_color_option => {
+  product__detail_color_option.addEventListener("click", () => {
+    let ColorSelectedOption = product__detail_color_option.querySelector(".product__detail_color_options_text").innerText;
+    console.log(ColorSelectedOption);
+    ColorBtn_text.innerText = ColorSelectedOption;
+
+    colorMenu.classList.remove("active");
+  })
+})
+
+// Size custom btn
+
+const optionMenu = document.querySelector(".product__detail-custom-size-drop"),
+      selectBtn = optionMenu.querySelector(".size_select-btn"),
+      options = optionMenu.querySelectorAll(".product__detail_size_option"),
+      sBtn_text = optionMenu.querySelector(".product__detail_custom_size_text");
+
+selectBtn.addEventListener("click", () => optionMenu.classList.toggle("active"));
+
+options.forEach(product__detail_size_option => {
+  product__detail_size_option.addEventListener("click", () => {
+    let SizeSelectedOption = product__detail_size_option.querySelector(".product__detail_size_options_text").innerText;
+    console.log(SizeSelectedOption);
+    sBtn_text.innerText = SizeSelectedOption;
+
+    optionMenu.classList.remove("active");
+  })
+})

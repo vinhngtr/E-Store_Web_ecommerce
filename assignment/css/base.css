@@ -31,6 +31,8 @@ html {
 
 .grid__full-width {
     width: 100%;
+    display: block;
+    padding: 0;
 }
 
 .grid__row {
@@ -80,6 +82,8 @@ html {
     padding-left: 12px;
     padding-right: 12px;
 }
+
+/* large */
 
 .l-0 {
     display: none;
