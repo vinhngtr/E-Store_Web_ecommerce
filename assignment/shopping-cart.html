@@ -58,15 +58,15 @@
                             </div>
 
                             <div class="shopping-cart-quantity col-3 l-2">
-                                <a href="#" class="shopping-cart-quantity-minus">
+                                <div class="shopping-cart-quantity-minus">
                                     <i class="shopping-cart-quantity-minus-icon fa-solid fa-minus"></i>                                       
-                                </a>
-                                <div class="shopping-cart-quantity-input">
-                                    <input type="text" id="product-quantity-shopping-cart-item-1" class="product-quantity-format" value="01">
                                 </div>
-                                <a href="#" class="shopping-cart-quantity-plus">
+                                <div class="shopping-cart-quantity-input-block">
+                                    <div class="shopping-cart-quantity-input">01</div>
+                                </div>
+                                <div class="shopping-cart-quantity-plus">
                                     <i class="shopping-cart-quantity-plus-icon fa-solid fa-plus"></i>
-                                </a>
+                                </div>
                             </div>
 
                             <div class="shopping-cart-total-price col-3 l-2">
@@ -92,15 +92,15 @@
                             </div>
 
                             <div class="shopping-cart-quantity col-3 l-2">
-                                <a href="#" class="shopping-cart-quantity-minus">
+                                <div class="shopping-cart-quantity-minus">
                                     <i class="shopping-cart-quantity-minus-icon fa-solid fa-minus"></i>                                       
-                                </a>
-                                <div class="shopping-cart-quantity-input">
-                                    <input type="text" id="product-quantity-shopping-cart-item-2" class="product-quantity-format" value="01">
                                 </div>
-                                <a href="#" class="shopping-cart-quantity-plus">
+                                <div class="shopping-cart-quantity-input-block">
+                                    <div class="shopping-cart-quantity-input">01</div>
+                                </div>
+                                <div class="shopping-cart-quantity-plus">
                                     <i class="shopping-cart-quantity-plus-icon fa-solid fa-plus"></i>
-                                </a>
+                                </div>
                             </div>
 
                             <div class="shopping-cart-total-price col-3 l-2">
@@ -209,5 +209,29 @@
         </div>
     </div>
     <script src="js/javascript.js"></script>
+    <script>
+    const ShoppingCartQuantity = document.querySelectorAll(".shopping-cart-quantity");
+    let a = 1;
+
+    ShoppingCartQuantity.forEach((node) => {
+        const itemCount = node.querySelector(".shopping-cart-quantity-input");
+        const add = node.querySelector(".shopping-cart-quantity-plus");
+        const remove = node.querySelector(".shopping-cart-quantity-minus");
+
+        add.addEventListener("click", () => {
+            a++;
+            a = (a < 10) ? "0" + a : a;
+            itemCount.innerText = a;
+        });
+
+        remove.addEventListener("click", () => {
+            if (a > 1){
+                a--;
+                a = (a < 10) ? "0" + a : a;
+                itemCount.innerText = a;
+            }
+        });
+    });
+    </script>
 </body>
 </html>

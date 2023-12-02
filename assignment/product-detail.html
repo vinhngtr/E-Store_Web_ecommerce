@@ -20,28 +20,28 @@
                 <div class="grid__row">
                     <div class="col l-6">
                         <div class="product__preview">
-                        <div class="product__preview-main" style="background-image: url(./img/4.png);">
+                        <div class="product__preview-main" id="main-img" style="background-image: url(./img/AsusRogStrix/1.png);">
                             
                         </div>
                         <div class="product__preview-sub">
                             <div class="row-2">
                                 <div class="col-2 l-2">
-                                    <div class="product__preview-sub-img" style="background-image: url(./img/4.png);"></div>
+                                    <div class="product__preview-sub-img" onclick="changeImage(1)" style="background-image: url(./img/AsusRogStrix/1.png);"></div>
                                 </div>
                                 <div class="col-2 l-2">
-                                    <div class="product__preview-sub-img" style="background-image: url(./img/4.png);"></div>
+                                    <div class="product__preview-sub-img" onclick="changeImage(2)" style="background-image: url(./img/AsusRogStrix/2.png);"></div>
                                 </div>
                                 <div class="col-2 l-2">
-                                    <div class="product__preview-sub-img" style="background-image: url(./img/4.png);"></div>
+                                    <div class="product__preview-sub-img" onclick="changeImage(3)" style="background-image: url(./img/AsusRogStrix/3.png);"></div>
                                 </div>
                                 <div class="col-2 l-2">
-                                    <div class="product__preview-sub-img" style="background-image: url(./img/4.png);"></div>
+                                    <div class="product__preview-sub-img" onclick="changeImage(4)" style="background-image: url(./img/AsusRogStrix/4.png);"></div>
                                 </div>
                                 <div class="col-2 l-2">
-                                    <div class="product__preview-sub-img" style="background-image: url(./img/4.png);"></div>
+                                    <div class="product__preview-sub-img" onclick="changeImage(5)" style="background-image: url(./img/AsusRogStrix/5.png);"></div>
                                 </div>
                                 <div class="col-2 l-2">
-                                    <div class="product__preview-sub-img" style="background-image: url(./img/4.png);"></div>
+                                    <div class="product__preview-sub-img" onclick="changeImage(6)" style="background-image: url(./img/AsusRogStrix/6.png);"></div>
                                 </div>
                             </div>
                         </div>
@@ -343,6 +343,11 @@
                 num.innerText = a;
             }
         });
+    </script>
+    <script>
+        function changeImage(image) {
+            document.getElementById("main-img").style.backgroundImage = "url('./img/AsusRogStrix/" + image + ".png')";
+        }
     </script>
 </body>
 </html>
