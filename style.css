@@ -371,14 +371,14 @@ body{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
-.item{
+#item{
     border: 1px solid #E4E7E9;
     padding: 16px;
     display: grid;
     grid-template-rows: 296px 40px 1fr;
     row-gap: 8px;
 }
-.item .name-item{
+#item .name-item{
     color:  #191C1F;
     font-family: Public Sans;
     font-size: 16px;
@@ -386,7 +386,7 @@ body{
     font-weight: 400;
     line-height: 20px;
 }
-.item .price-item{
+#item .price-item{
     color:  #2DA5F3;
     font-family: Public Sans;
     font-size: 14px;
