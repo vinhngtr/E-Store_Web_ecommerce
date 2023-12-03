@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.rating-container {
+    margin: 50px;
+}
+
+.rating-stars {
+    font-size: 40px;
+}
+
+.star {
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.selected {
+    color: gold;
+}

@@ -1,0 +1,920 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>Trang chủ</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <div id="navBar">
+                <div class="top-navi">
+                    <div class="top-left">
+                        Chào mừng bạn đến với E-Store - cửa hàng linh kiện đi kèm máy tính
+                    </div>
+                    <div class="top-right">
+                        Follow us:
+                       <span>
+                        <a href="https://www.facebook.com/vinh.nguyentrong.1291" style="color: white;"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" style="color: white;"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/" style="color: white;"><i class="fa-brands fa-youtube"></i></a>
+                       </span>
+                    </div>
+                </div>
+                <div class="midd-navi">
+                    <div class="logo">
+                        <a href="#"  style="color: white; text-decoration: none;">
+                            <span style="font-size: 50px; font-weight: bold; padding-right: 3px;">E</span>
+                            <span style="font-size: 40px; font-weight: bold; padding-right: 3px;">-</span>
+                            <span style="font-size: 32px; font-weight: bold;">STORE</span>
+                        </a>
+                    </div>
+                    <div class="search">
+                        <input  type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm...">
+                        <button id="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="info-user" style="display: grid; grid-template-columns: auto auto auto; column-gap: 24px;">
+                        <a href="#" style="width: 32px;height: 32px; display: inline-block;" title="Giỏ hàng">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                        <a href="#" style=" width: 32px;height: 32px; display: inline-block;" title="Sản phẩm yêu thích">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                        <a href="./Register/index.html" style=" width: 32px;height: 32px; display: inline-block;" title="Đăng nhập/Đăng kí">
+                            <i class="fa-regular fa-user"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="bottom-navi">
+                <div class="left-side" style="font-size: 18px;">
+                    <div class="category" style="margin-right: 24px; ">
+                        <button style="display: inline-block; padding: 14px 24px; font-family: 'Public Sans', sans-serif; font-size: 18px;">
+                            Danh mục sản phẩm  
+                            <i class="fa-solid fa-caret-down" style="padding-left: 3px;"></i>
+                        </button>
+                        <ul class="list-btnCate">
+                            <li><a href="#">RAM & ROM</a></li>
+                            <li><a href="#">SSD & HDD</a></li>
+                            <li><a href="#">Màn hình PC</a></li>
+                            <li><a href="#">Headphone</a></li>
+                            <li><a href="#">Bàn phím máy tính</a></li>
+                            <li><a href="#">Chuột gaming</a></li>
+                            <li><a href="#">Card màn hình</a></li>
+                            <li><a href="#">Tản nhiệt laptop</a></li>
+                        </ul>
+                    </div>
+                    <div class="home" style="margin-right: 24px;">
+                        <a href="#" style="text-decoration: none;">
+                            <i class="fa-solid fa-house" style="padding-right: 5px;"></i>
+                            <span>Trang chủ</span>
+                        </a>
+                    </div>
+                    <div class="blogger" style="margin-right: 24px;">
+                        <a href="./Error/error.html" style="text-decoration: none;">
+                            <i class="fa-brands fa-blogger"  style="padding-right: 5px;"></i>
+                            <span>Blog</span>
+                        </a>
+                    </div>
+                    <div class="about" style="margin-right: 24px;">
+                        <a href="./About/index.html" style="text-decoration: none;">
+                            <i class="fa-solid fa-circle-info"  style="padding-right: 5px;"></i>
+                            <span>Giới thiệu</span>
+                        </a> 
+                    </div>
+                    <div class="contact">
+                        <a href="./FAQ/index.html" style="text-decoration: none;">
+                            <i class="fa-solid fa-address-card"  style="padding-right: 5px;"></i>
+                            <span>Liên hệ</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="right-side" style="font-size: 18px;">
+                    <a href="#" style="text-decoration: none;" title="Hotline"><i class="fa-solid fa-phone" style="padding-right: 3px;"></i>
+                        +84 - 969379924
+                    </a>
+                </div>
+            </div>
+            <div class="hr1" style="width: 100vw; background-color: #E4E7E9; height: 1px;"></div>
+        </div>
+
+        <!-- START WIDGET -->
+        <div class="resultSearch">
+
+        </div>
+        <div class="widget">
+            <div class="left-widget">
+                <div class="left-widget">
+                    <div class="ads">
+                        <div class="content-ads">
+                                <span style="font-size: 15px; color: #2484C2; ">Đặc biệt giảm giá</span>
+                                <h3>Màn hình PC</h3>
+                                <div class="space1" style="height: 16px;"></div>
+                                <div class="detail">
+                                    Đặc biệt giảm giá với các dòng màn hình Asus Gaming lên đến 50% đến hết 30/11.
+                                </div>
+                                <div class="space2" style="height: 24px;"></div>
+                                <button class="btn-ads">ĐẾN CỬA HÀNG <i class="fa-solid fa-arrow-right" style="margin-left: 12px;"></i></button>
+                        </div>
+                        <div class="image-ads" style="width: 368.844px;height: 408px;flex-shrink: 0;">
+                            <img src="./images/ads1.jpg" style="width: 100%; height: 100%; object-fit: cover;" alt="">
+                        </div>
+                    </div>
+        
+                    <div class="pagging">
+                        <div class="circle active" style="width: 10px;height: 10px; border-radius: 10px;"></div>
+                        <div class="circle" style="width: 10px;height: 10px; border-radius: 10px;"></div>
+                        <div class="circle" style="width: 10px;height: 10px; border-radius: 10px;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-widget">
+                <div class="ads1-right">
+                    <div class="banner-ads">
+                        <div class="content-right" style="width: 200px; height: 123px;">
+                            <span style="text-transform: uppercase; color: #EBC80C;">Đang giảm giá</span>
+                            <h3 style="text-transform: uppercase; color: white;">Chuột gaming</h3>
+                            <div class="space2" style="height: 18px;"></div>
+                            <button class="btn-ads">ĐẾN CỬA HÀNG <i class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i></button>
+                        </div>
+                        <div class="image-right" style="width: 200px;">
+                            <img src="./images/bnnads1.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="ads2-right">
+                    <div class="image-ads2">
+                        <img src="./images/bnnads2.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="content-ads2">
+                        <h3>Chuột Gaming Có Dây T-WOLF V7</h3>
+                        <div class="space1" style="height: 12px;"></div>
+                        <strong style="color: #2DA5F3; font-size: 18px;font-weight: 600;line-height: 24px; ">500.000đ</strong>
+                        <div class="space2" style="height: 20px;"></div>
+                        <button class="btn-ads">ĐẾN CỬA HÀNG <i class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- END WIDGET -->
+
+        <!-- START FEATURES -->
+        <div class="features" style="width: 1398px; margin: 0 auto; margin-top: 25px;">
+            <div class="feature">
+                <i style="display: inline-block; width: 40px;height: 40px;font-size: 40px;" class="fa-solid fa-cube"></i>
+                <div class="space" style="width: 16px;"></div>
+                <div class="content">
+                    <h4>Giao hàng nhanh chóng</h4>
+                    <p style="padding-top: 10px;">Giao hàng nhanh chóng trong 24h</p>
+                </div>
+            </div>
+            <div class="space-feature" style="width: 1px;height: 56px;background-color: #E4E7E9; margin: 0 28px;"></div>
+            <div class="feature">
+                <i style="display: inline-block; width: 40px;height: 40px;font-size: 40px;" class="fa-solid fa-retweet"></i>
+                <div class="space" style="width: 16px;"></div>
+                <div class="content">
+                    <h4>24h hoàn tiền 100%</h4>
+                    <p style="padding-top: 10px;">100% hoàn trả nếu gặp lỗi</p>
+                </div>
+            </div>
+            <div class="space-feature" style="width: 1px;height: 56px;background-color: #E4E7E9; margin: 0 28px;"></div>
+            <div class="feature">
+                <i style="display: inline-block; width: 40px;height: 40px;font-size: 40px;" class="fa-regular fa-credit-card"></i>
+                <div class="space" style="width: 16px;"></div>
+                <div class="content">
+                    <h4>Thanh toán bảo mật</h4>
+                    <p style="padding-top: 10px;">An toàn cho các giao dịch</p>
+                </div>
+            </div>
+            <div class="space-feature" style="width: 1px;height: 56px;background-color: #E4E7E9; margin: 0 28px;"></div>
+            <div class="feature">
+                <i style="display: inline-block; width: 40px;height: 40px;font-size: 40px;" class="fa-solid fa-headphones"></i>
+                <div class="space" style="width: 16px;"></div>
+                <div class="content">
+                    <h4>Hỗ trợ 24/7</h4>
+                    <p style="padding-top: 10px;">Liên hệ trực tiếp qua SĐT/fanpage</p>
+                </div>
+            </div>
+        </div>
+        <!-- END FEATURE -->
+
+        <!-- PROMOTION CONTAINER -->
+        <div class="promotion">
+            <div class="heading" style="width: 100%;">
+                <div class="newPro" style="display: flex; align-items: center;" >
+                    <h3 style="text-transform: uppercase; font-size: 24px;">giảm giá tốt nhất</h3>
+                    <div class="space2" style="width: 24px;"></div>
+                    <p>kết thúc sau: </p>
+                    <div class="space2" style="width: 12px;"></div>
+                    <div class="time" style="background-color: #F3DE6D; padding: 6px 12px; font-size: 18px;">
+                        <span>16d</span>
+                        <span class="space" style="padding: 0px 6px;">:</span>
+                        <span>21h</span>
+                        <span class="space" style="padding: 0px 6px;">:</span>
+                        <span>57m</span>
+                        <span class="space" style="padding: 0px 6px;">:</span>
+                        <span>23s</span>
+                    </div>
+                </div>
+                <div class="directional">
+                    <a href="#" style="text-decoration: none;">
+                        <span>
+                            Xem toàn bộ sản phẩm
+                            <i class="fa-solid fa-arrow-right" ></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="product" style="margin-top: 24px; width: 100%;">
+                <div class="col1" style="display: grid; grid-template-rows: 420px 1fr 50px; row-gap: 32px;">
+                    <div class="image">
+                        <img style="width: 100%;height: 100%;object-fit: cover;" src="./images/promotion1.jpg" alt="">
+                    </div>
+                    <div class="content" style="display: grid; grid-template-rows: auto auto auto; row-gap: 15px; align-items: center;">
+                        <p class="title" style="align-self: flex-start;">Case ES1 Genshin Impact</p>
+                        <p class="price" style="align-self: flex-start;">
+                            <span style="color: #ADB7BC;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 24px; 
+                                text-decoration-line: line-through; padding-right: 8px;">
+                            2.000.000đ
+                            </span>
+                             <span style="color:  #2DA5F3;
+                             font-size: 16px;
+                             font-style: normal;
+                             font-weight: 600;
+                             line-height: 24px;">
+                             1.200.000đ</span>
+                        </p>
+                        <p class="detail" style="align-self: flex-start;">
+                            Vỏ CASE ESPORT ES1 G-ART Trắng – Liên Minh (Chưa bao gồm Fan)
+                        </p>
+                    </div>
+                    <div class="btn" style="display: grid; grid-template-columns: auto auto auto; column-gap: 8px;" >
+                        <div class="btn-favor" style="height: 50px; padding: 8px;border-radius: 2px;background-color: #FFE7D6; display: flex; align-items: center; justify-content: center;">
+                            <a style="color: black; display: inline-block;"  href="#"><i class="fa-regular fa-heart" style="width: 24px; height: 24px;font-size: 20px;"></i></a>
+                        </div>
+                        <button class="btn-addCart" style="display: inline-block;">
+                            <i class="fa-solid fa-cart-shopping"></i> Thêm vào giỏ hàng
+                        </button>
+                        <div class="btn-view" style="height: 50px; padding: 8px;border-radius: 2px;background-color: #FFE7D6; display: flex; align-items: center; justify-content: center;">
+                            <a  style="color: black; display: inline-block;" href="#"><i class="fa-regular fa-eye" style="width: 24px; height: 24px;font-size: 20px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col2">
+                    <div id="item">
+                        <div class="image-item" style="width: 100%;">
+                            <img src="./images/promotion1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                            <div class="overlay">
+                                <div class="addFavou"><i class="fa-regular fa-heart"></i></div>
+                                <div class="addCart"><i class="fa-solid fa-cart-shopping"></i></div>
+                            </div>
+                        </div>
+                        <a href="#" style="display: inline-block;" class="name-item">Màn hình gaming Asus 2024 24 inch</a>
+                        <p class="price-item" style="align-self: flex-start;">
+                            <span style="color: #ADB7BC;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 24px; 
+                                text-decoration-line: line-through; padding-right: 8px;">
+                            2.000.000đ
+                            </span>
+                             <span style="color:  #2DA5F3;
+                             font-size: 16px;
+                             font-style: normal;
+                             font-weight: 600;
+                             line-height: 24px;">
+                             1.200.000đ</span>
+                        </p>
+                    </div>
+                    <div id="item">
+                        <div class="image-item" style="width: 100%;">
+                            <img src="./images/product/chuot-1.webp" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                            <div class="overlay">
+                                <div class="addFavou"><i class="fa-regular fa-heart"></i></div>
+                                <div class="addCart"><i class="fa-solid fa-cart-shopping"></i></div>
+                            </div>
+                        </div>
+                        <a href="#" style="display: inline-block;" class="name-item">Màn hình gaming Asus 2024 24 inch</a>
+                        <div class="price-item">3.500.000đ</div>
+                    </div>
+                    <div id="item">
+                        <div class="image-item" style="width: 100%;">
+                            <img src="./images/promotion1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                            <div class="overlay">
+                                <div class="addFavou"><i class="fa-regular fa-heart"></i></div>
+                                <div class="addCart"><i class="fa-solid fa-cart-shopping"></i></div>
+                            </div>
+                        </div>
+                        <a href="#" style="display: inline-block;" class="name-item">Màn hình gaming Asus 2024 24 inch</a>
+                        <div class="price-item">3.500.000đ</div>
+                    </div>
+                    <div id="item">
+                        <div class="image-item" style="width: 100%;">
+                            <img src="./images/promotion1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                            <div class="overlay">
+                                <div class="addFavou"><i class="fa-regular fa-heart"></i></div>
+                                <div class="addCart"><i class="fa-solid fa-cart-shopping"></i></div>
+                            </div>
+                        </div>
+                        <a href="#" style="display: inline-block;" class="name-item">Màn hình gaming Asus 2024 24 inch</a>
+                        <p class="price-item" style="align-self: flex-start;">
+                            <span style="color: #ADB7BC;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 24px; 
+                                text-decoration-line: line-through; padding-right: 8px;">
+                            3.200.000đ
+                            </span>
+                             <span style="color:  #2DA5F3;
+                             font-size: 16px;
+                             font-style: normal;
+                             font-weight: 600;
+                             line-height: 24px;">
+                             2.700.000đ</span>
+                        </p>
+                    </div>
+                    <div id="item">
+                        <div class="image-item" style="width: 100%;">
+                            <img src="./images/promotion1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                            <div class="overlay">
+                                <div class="addFavou"><i class="fa-regular fa-heart"></i></div>
+                                <div class="addCart"><i class="fa-solid fa-cart-shopping"></i></div>
+                            </div>
+                        </div>
+                        <a href="#" style="display: inline-block;" class="name-item">Màn hình gaming Asus 2024 24 inch</a>
+                        <div class="price-item">3.500.000đ</div>
+                    </div>
+                    <div id="item">
+                        <div class="image-item" style="width: 100%;">
+                            <img src="./images/promotion1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                            <div class="overlay">
+                                <div class="addFavou"><i class="fa-regular fa-heart"></i></div>
+                                <div class="addCart"><i class="fa-solid fa-cart-shopping"></i></div>
+                            </div>
+                        </div>
+                        <a href="#" style="display: inline-block;" class="name-item">Màn hình gaming Asus 2024 24 inch</a>
+                        <p class="price-item" style="align-self: flex-start;">
+                            <span style="color: #ADB7BC;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 24px; 
+                                text-decoration-line: line-through; padding-right: 8px;">
+                            4.000.000đ
+                            </span>
+                             <span style="color:  #2DA5F3;
+                             font-size: 16px;
+                             font-style: normal;
+                             font-weight: 600;
+                             line-height: 24px;">
+                             3.100.000đ</span>
+                        </p>
+                    </div>
+                    <div id="item">
+                        <div class="image-item" style="width: 100%;">
+                            <img src="./images/promotion1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                            <div class="overlay">
+                                <div class="addFavou"><i class="fa-regular fa-heart"></i></div>
+                                <div class="addCart"><i class="fa-solid fa-cart-shopping"></i></div>
+                            </div>
+                        </div>
+                        <a href="#" style="display: inline-block;" class="name-item">Màn hình gaming Asus 2024 24 inch</a>
+                        <div class="price-item">3.500.000đ</div>
+                    </div>
+                    <div id="item">
+                        <div class="image-item" style="width: 100%;">
+                            <img src="./images/promotion1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                            <div class="overlay">
+                                <div class="addFavou"><i class="fa-regular fa-heart"></i></div>
+                                <div class="addCart"><i class="fa-solid fa-cart-shopping"></i></div>
+                            </div>
+                        </div>
+                        <a href="#" style="display: inline-block;" class="name-item">Màn hình gaming Asus 2024 24 inch</a>
+                        <p class="price-item" style="align-self: flex-start;">
+                            <span style="color: #ADB7BC;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 24px; 
+                                text-decoration-line: line-through; padding-right: 8px;">
+                            5.000.000đ
+                            </span>
+                             <span style="color:  #2DA5F3;
+                             font-size: 16px;
+                             font-style: normal;
+                             font-weight: 600;
+                             line-height: 24px;">
+                             4.200.000đ</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END PROMOTION -->
+
+        <!-- START CATEGORY -->
+        <div class="categoryProduct">
+           <h2 style="display: flex; justify-content: center; align-items: center; text-transform: uppercase; font-size: 32px;">Phân loại sản phẩm đang bán</h2>
+            <div class="categoryList">
+                <div class="directCategory left">
+                    <i class="fa-solid fa-arrow-left" style="font-size: 25px; display: inline-block;"></i>
+                </div>
+                <div class="categoryItem">
+                    <div class="image-category">
+                        <img src="./images/cate-img1.webp" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                    </div>
+                    <div class="title-category">
+                        RAM & ROM
+                    </div>
+                </div>
+                <div class="categoryItem">
+                    <div class="image-category">
+                        <img src="./images/cate-bp.png" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                    </div>
+                    <div class="title-category">
+                        Bàn phím
+                    </div>
+                </div>
+                <div class="categoryItem">
+                    <div class="image-category">
+                        <img src="./images/cate-head.webp" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                    </div>
+                    <div class="title-category">
+                        Headphones
+                    </div>
+                </div>
+                <div class="categoryItem">
+                    <div class="image-category">
+                        <img src="./images/cate-chuọt.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                    </div>
+                    <div class="title-category">
+                        Chuột
+                    </div>
+                </div>
+                <div class="categoryItem">
+                    <div class="image-category">
+                        <img src="./images/cate-ssd.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                    </div>
+                    <div class="title-category">
+                        SSD & HDD
+                    </div>
+                </div>
+                <div class="categoryItem">
+                    <div class="image-category">
+                        <img src="./images/cate-mh.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                    </div>
+                    <div class="title-category">
+                        Màn hình PC
+                    </div>
+                </div>
+                <div class="directCategory right">
+                    <i class="fa-solid fa-arrow-right" style="font-size: 25px; display: inline-block;"></i>
+                </div>
+            </div>
+        </div>
+        <!-- !END CATEGORY LIST -->
+
+        <!-- ! START PRODUCT SHOP -->
+        <div class="productShow">
+            <div class="showBanner">
+                <div class="discountContent" style="display: grid; grid-template-rows: 1fr 1fr 1fr 1fr; ;">
+                    <span class="titleDisc1" style="font-size: 17px; font-weight: 600;" >Màn hình và phụ kiện</span>
+                    <h2 style="font-size: 32px;">32% giảm giá</h2>
+                    <span class="titleDisc2" style="color: #191C1F;font-size: 18px;">cho toàn bộ sản phẩm đang bán</span>
+                    <div class="discount" style="display: grid; grid-template-columns: auto auto; column-gap: 8px;">
+                        <span class="titleDisc3" style="display: inline-block; align-self: center;">
+                            với mã giảm giá:
+                        </span>
+                        <div class="valDisc" style="padding: 6px 12px;text-transform: uppercase; background-color: white; color: #191C1F;">
+                            end of christmas
+                        </div> 
+                    </div>
+                </div>
+                <button class="btnDiscount">Đi đến cửa hàng<i class="fa-solid fa-arrow-right" style="padding-left: 10px;"></i></button>
+                <div class="imgDiscount">
+                    <img src="./images/show.jfif" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                </div>
+            </div>
+            <div class="showProduct">
+                <div class="headingShow" style="display: flex; justify-content: space-between; align-items: center;">
+                    <h3 style="font-size: 30px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 32px;">Sản phẩm đang bán</h3>
+                    <div class="listTitle" style="display: flex; justify-content: center; align-items: center;">
+                        <a href="#" style="display: inline-block; padding: 8px;">Nổi bật</a>
+                        <a href="#" style="display: inline-block; padding: 8px;">Bàn phím</a>
+                        <a href="#" style="display: inline-block; padding: 8px;">Chuột</a>
+                        <a href="#" style="display: inline-block; padding: 8px;">Headphone</a>
+                        <a href="#" style="display: inline-block; padding: 8px;">Màn hình</a>
+                        <div class="gapTitle" style="width: 16px;"></div>
+                        <a href="#" class="directShop" style="display: inline-block; padding: 6px 0px;">Đi đến toàn bộ sản phẩm <i class="fa-solid fa-arrow-right" style="padding-left: 5px;"></i></a>
+                    </div>
+                </div>
+                <div class="listShow">
+                    <div id="item"> 
+                        <div class="image-item" style="width: 100%;"> 
+                            <img src="./images/promotion1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                            <div class="overlay">
+                                <div class="addFavou"><i class="fa-regular fa-heart"></i></div>
+                                <div class="addCart"><i class="fa-solid fa-cart-shopping"></i></div>
+                            </div>
+                        </div>
+                        <a href="#" style="display: inline-block;" class="name-item">Màn hình gaming Asus 2024 24 inch</a>
+                        <div class="price-item">3.500.000đ</div>
+                    </div>
+                    <div id="item">
+                        <div class="image-item" style="width: 100%;">
+                            <img src="./images/promotion1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                            <div class="overlay">
+                                <div class="addFavou"><i class="fa-regular fa-heart"></i></div>
+                                <div class="addCart"><i class="fa-solid fa-cart-shopping"></i></div>
+                            </div>
+                        </div>
+                        <a href="#" style="display: inline-block;" class="name-item">Màn hình gaming Asus 2024 24 inch</a>
+                        <div class="price-item">3.500.000đ</div>
+                    </div>
+                    <div id="item">
+                        <div class="image-item" style="width: 100%;">
+                            <img src="./images/promotion1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                            <div class="overlay">
+                                <div class="addFavou"><i class="fa-regular fa-heart"></i></div>
+                                <div class="addCart"><i class="fa-solid fa-cart-shopping"></i></div>
+                            </div>
+                        </div>
+                        <a href="#" style="display: inline-block;" class="name-item">Màn hình gaming Asus 2024 24 inch</a>
+                        <div class="price-item">3.500.000đ</div>
+                    </div>
+                    <div id="item">
+                        <div class="image-item" style="width: 100%;">
+                            <img src="./images/promotion1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                            <div class="overlay">
+                                <div class="addFavou"><i class="fa-regular fa-heart"></i></div>
+                                <div class="addCart"><i class="fa-solid fa-cart-shopping"></i></div>
+                            </div>
+                        </div>
+                        <a href="#" style="display: inline-block;" class="name-item">Màn hình gaming Asus 2024 24 inch</a>
+                        <div class="price-item">3.500.000đ</div>
+                    </div>
+                    <div id="item">
+                        <div class="image-item" style="width: 100%;">
+                            <img src="./images/promotion1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                            <div class="overlay">
+                                <div class="addFavou"><i class="fa-regular fa-heart"></i></div>
+                                <div class="addCart"><i class="fa-solid fa-cart-shopping"></i></div>
+                            </div>
+                        </div>
+                        <a href="#" style="display: inline-block;" class="name-item">Màn hình gaming Asus 2024 24 inch</a>
+                        <div class="price-item">3.500.000đ</div>
+                    </div>
+                    <div id="item">
+                        <div class="image-item" style="width: 100%;">
+                            <img src="./images/promotion1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                            <div class="overlay">
+                                <div class="addFavou"><i class="fa-regular fa-heart"></i></div>
+                                <div class="addCart"><i class="fa-solid fa-cart-shopping"></i></div>
+                            </div>
+                        </div>
+                        <a href="#" style="display: inline-block;" class="name-item">Màn hình gaming Asus 2024 24 inch</a>
+                        <div class="price-item">3.500.000đ</div>
+                    </div>
+                    <div id="item">
+                        <div class="image-item" style="width: 100%;">
+                            <img src="./images/promotion1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                            <div class="overlay">
+                                <div class="addFavou"><i class="fa-regular fa-heart"></i></div>
+                                <div class="addCart"><i class="fa-solid fa-cart-shopping"></i></div>
+                            </div>
+                        </div>
+                        <a href="#" style="display: inline-block;" class="name-item">Màn hình gaming Asus 2024 24 inch</a>
+                        <div class="price-item">3.500.000đ</div>
+                    </div>
+                    <div id="item">
+                        <div class="image-item" style="width: 100%;">
+                            <img src="./images/promotion1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                            <div class="overlay">
+                                <div class="addFavou"><i class="fa-regular fa-heart"></i></div>
+                                <div class="addCart"><i class="fa-solid fa-cart-shopping"></i></div>
+                            </div>
+                        </div>
+                        <a href="#" style="display: inline-block;" class="name-item">Màn hình gaming Asus 2024 24 inch</a>
+                        <div class="price-item">3.500.000đ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ! END PRODUCTSHOW -->
+
+        <!-- !START BANNER -->
+        <div class="bannerShop">
+            <div class="itemBanner1"> 
+                <div class="contentBnn1" style="display: grid; grid-template-rows: auto auto auto auto; row-gap: 8px;">
+                    <div class="hightlight" style="display: grid; width: 100px;;height: 40px; padding: 6px; background-color: #2DA5F3;color:white; text-transform: uppercase; font-size: 16px; font-weight: 6000;border-radius: 2px;text-align: center;align-items: center;">
+                        Nổi bật
+                    </div>
+                    <h2 style="color: #191C1F; font-size: 32px;font-style: normal;
+                    font-weight: 600;
+                    line-height: 40px;">
+                        New Display PC 2023 AMOLED  
+                    </h2>
+                    <div class="detailBnn1" style="color: #475156;font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px; ">
+                        Samsung 27" Monitor ViewFinity S9 Monitor
+                    </div>
+                    <button class="btn-addCart">Đi đến cửa hàng <i class="fa-solid fa-arrow-right" style="padding-left: 10px;"></i></button>
+                </div>
+                <div class="imgBnn1">
+                    <img src="./images/bnn1.webp" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                </div>
+            </div>
+            <div class="itemBanner2">
+                <div class="leftBnn2">
+                    <div class="hightlight" style="display: grid;  padding: 12px; margin-right: 100px; background-color: #EFD33D;color:#191C1F; text-transform: uppercase; font-size: 16px; font-weight: 6000;border-radius: 2px;text-align: center;align-items: center;">
+                        sản phẩm mới
+                    </div>
+                    <h2 style="color: white; font-size: 32px;font-style: normal;
+                    font-weight: 600;
+                    line-height: 40px;">
+                        NVIDIA Plans GeForce RTX 4060
+                    </h2>
+                    <button class="btn-addCart">Đi đến cửa hàng <i class="fa-solid fa-arrow-right" style="padding-left: 10px;"></i></button>
+                </div>
+                <div class="rightBnn2">
+                    <img src="./images/bnnads2.jpg" style="width: 100%;height: 100%;object-fit: cover;">
+                </div>                    
+            </div>
+        </div>
+        <div class="review-user">
+            <div class="content-wrapper">
+                <h1>Đánh giá người dùng</h1>
+                <div class="blue-line"></div>
+                <div class="wrapper-for-arrows">
+                    <div id="reviewWrap" class="review-wrap">
+                        <div id="imgDiv" class="">
+                        </div>
+                        <div id="personName"></div>
+                        <div id="profession"></div>
+                        <div id="description">
+                        </div>
+                    </div>
+                    <div class="left-arrow-wrap arrow-wrap">
+                        <div class="arrow" id="leftArrow"></div>
+                    </div>
+                    <div class="right-arrow-wrap arrow-wrap">
+                        <div class="arrow" id="rightArrow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--! END TOP REVIEW -->
+
+        <!-- ! START TOP BRAND -->
+        <div class="top-brand">
+            <div class="item-brand"><img src="./images/brand/AMD_Logo.svg.png" style="width: 100%;height: 100%;object-fit: cover;" alt=""></div>
+            <div class="item-brand"><img src="./images/brand/Asus-Logo.png" style="width: 100%;height: 100%;object-fit: cover;" alt=""></div>
+            <div class="item-brand"><img src="./images/brand/Lenovo-Logo-2003.png" style="width: 100%;height: 100%;object-fit: cover;" alt=""></div>
+            <div class="item-brand"><img src="./images/brand/Dell_logo.svg.png" style="width: 100%;height: 100%;object-fit: cover;" alt=""></div>
+            <div class="item-brand"><img src="./images/brand/1024px-HP_logo_2012.svg.png" style="width: 100%;height: 100%;object-fit: cover;" alt=""></div>
+        </div>
+        <!-- ! END TOP BRAND -->
+
+        <!-- ! START BLOGGER -->
+        <div class="blog">
+            <div class="container-blog">
+                <h2 style="font-size: 40px;font-weight: 700; text-transform: uppercase;text-align: center;line-height: 40p;font-style: normal;color: #191C1F;">Bảng tin công nghệ</h2>
+                <div class="list-blog">
+                    <div class="item-blog">
+                        <div class="img-blog"><img src="./images/cate-img1.webp" style="width: 100%;height: 100%;object-fit: cover;" alt=""></div>
+                        <div class="content-blog">
+                            <div class="header-content">
+                                <div class="info-blog">
+                                    <div class="name-blog">
+                                        <i class="fa-regular fa-circle-user icon-blog"></i>
+                                        <span>Huy Hoàng</span>
+                                    </div>
+                                    <div class="time-blog">
+                                        <i class="fa-regular fa-calendar icon-blog"></i>
+                                        <span>19 Oct, 2023</span>
+                                    </div>
+                                    <div class="comment-blog">
+                                        <i class="fa-regular fa-comment icon-blog"></i>
+                                        <span>456</span>
+                                    </div>
+                                </div>
+                                <div class="title-blog">
+                                    <a href="#"> <h3>ROM là gì? Phân biệt RAM và ROM</h3></a>
+                                </div>
+                            </div>
+                            <div class="body-content">
+                                Ram và Rom là hai khái niệm dễ bị nhầm lẫn nhất khi sử dụng máy tính. Nhiều người chỉ mơ hồ biết rằng chúng đều liên quan đến bộ nhớ ...
+                            </div>
+                        </div>
+                        <div class="read-more">
+                            <button>Đọc thêm<i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="item-blog">
+                        <div class="img-blog"><img src="./images/cate-bp.png" style="width: 100%;height: 100%;object-fit: cover;" alt=""></div>
+                        <div class="content-blog">
+                            <div class="header-content">
+                                <div class="info-blog">
+                                    <div class="name-blog">
+                                        <i class="fa-regular fa-circle-user icon-blog"></i>
+                                        <span>Huy Hoàng</span>
+                                    </div>
+                                    <div class="time-blog">
+                                        <i class="fa-regular fa-calendar icon-blog"></i>
+                                        <span>19 Oct, 2023</span>
+                                    </div>
+                                    <div class="comment-blog">
+                                        <i class="fa-regular fa-comment icon-blog"></i>
+                                        <span>456</span>
+                                    </div>
+                                </div>
+                                <div class="title-blog">
+                                    <a href="#"><h3>Tìm hiểu về Blue-switch, Brown-switch và Red-switch</h3></a>
+                                </div>
+                            </div>
+                            <div class="body-content">
+                                Ram và Rom là hai khái niệm dễ bị nhầm lẫn nhất khi sử dụng máy tính. Nhiều người chỉ mơ hồ biết rằng chúng đều liên quan đến bộ nhớ ...
+                            </div>
+                        </div>
+                        <div class="read-more">
+                            <button>Đọc thêm<i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="item-blog">
+                        <div class="img-blog"><img src="./images/cate-ssd.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt=""></div>
+                        <div class="content-blog">
+                            <div class="header-content">
+                                <div class="info-blog">
+                                    <div class="name-blog">
+                                        <i class="fa-regular fa-circle-user icon-blog"></i>
+                                        <span>Huy Hoàng</span>
+                                    </div>
+                                    <div class="time-blog">
+                                        <i class="fa-regular fa-calendar icon-blog"></i>
+                                        <span>19 Oct, 2023</span>
+                                    </div>
+                                    <div class="comment-blog">
+                                        <i class="fa-regular fa-comment icon-blog"></i>
+                                        <span>456</span>
+                                    </div>
+                                </div>
+                                <div class="title-blog">
+                                    <a href="#"><h3>Tìm hiểu về các loại ổ cứng tốt nhất 2023</h3></a>
+                                </div>
+                            </div>
+                            <div class="body-content">
+                                Ram và Rom là hai khái niệm dễ bị nhầm lẫn nhất khi sử dụng máy tính. Nhiều người chỉ mơ hồ biết rằng chúng đều liên quan đến bộ nhớ ...
+                            </div>
+                        </div>
+                        <div class="read-more">
+                            <button>Đọc thêm<i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ! END BLOGGER -->
+
+
+        <!-- ! START FOOTER -->
+        <div class="footer">
+            <div class="top-footer">
+                <div class="info-shop">
+                    <div class="name-shop">
+                        <a href="#"  style="color: white; text-decoration: none;">
+                            <span style="font-size: 50px; font-weight: bold; padding-right: 3px;">E</span>
+                            <span style="font-size: 40px; font-weight: bold; padding-right: 3px;">-</span>
+                            <span style="font-size: 32px; font-weight: bold;">STORE</span>
+                        </a>
+                    </div>
+                    <div class="detailInfoShop">
+                        <div class="hotline">
+                            <span style="display: inline-block; color: #77878F; font-size: 16px; margin-bottom: 5px;">Hotline hỗ trợ trực tuyến:</span>
+                            <p style="color: #fff;font-size: 18px;">(84) 0969379924</p>
+                        </div>
+                        <div class="address">
+                        <span style="color: #ADB7BC;font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px; "> ĐH BK HCM, TP. Thủ Đức, Hồ Chí Minh</span>
+                        </div>
+                        <div class="gmail">
+                            <a style="color: #fff;font-style: normal;
+                            font-weight: 500;
+                            line-height: 24px; " href="mailto:vinhtrong782002@gmail.com">vinhtrong782002@gmail.com</a>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="cate-shop">
+                    <div class="title-cate">
+                        <h2 style="font-size: 23px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 24px;
+                        text-transform: uppercase; color: #fff;">
+                            TOP SẢN PHẨM
+                        </h2>
+                    </div>
+                    <div class="body-cate" style="display: grid; grid-template-rows: 1fr 1fr 1fr 1fr 1fr;">
+                        <p style="padding: 8px 0;" class="itemOfFooter"><a href="#">Màn hình PC</a></p>
+                        <p style="padding: 8px 0;" class="itemOfFooter"><a href="#">Tai nghe</a></p>
+                        <p style="padding: 8px 0;" class="itemOfFooter"><a href="#">Chuột</a></p>
+                        <p style="padding: 8px 0;" class="itemOfFooter"><a href="#">Bàn phím</a></p>
+                        <p style="padding: 8px 0;" class="itemOfFooter"><a style="color:#EBC80C ;" href="#">Xem tất cả sản phẩm <i class="fa-solid fa-arrow-right" style="padding-left: 5px;"></i></a></p>
+                    </div>
+                </div>
+
+                <div class="menu-shop">
+                    <div class="title-menu">
+                        <h2 style="font-size: 23px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 24px;
+                        text-transform: uppercase; color: #fff;">
+                            Menu
+                        </h2>
+                    </div>
+                    <div class="body-menu" style="display: grid; grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;">
+                        <p style="padding: 8px 0;" class="itemOfFooter"><a href="./index.html">Trang chủ</a></p>
+                        <p style="padding: 8px 0;" class="itemOfFooter"><a href="#">Tất cả sản phẩm</a></p>
+                        <p style="padding: 8px 0;" class="itemOfFooter"><a href="#">Tài khoản của bạn</a></p>
+                        <p style="padding: 8px 0;" class="itemOfFooter"><a href="#">Đơn hàng của bạn</a></p>
+                        <p style="padding: 8px 0;" class="itemOfFooter"><a href="#">Bảng tin</a></p>
+                        <p style="padding: 8px 0;" class="itemOfFooter"><a href="./About/index.html">Về chúng tôi</a></p>
+                    </div>
+                </div>
+
+                <div class="research-shop">
+                    <div class="title-research">
+                        <h2 style="font-size: 23px;
+                        display: inline-block;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 24px;
+                        text-transform: uppercase; color: #fff;">
+                            Tìm kiếm phổ biến
+                        </h2>
+                    </div>
+                    <div class="body-research" style="display: flex;width: 270px; flex-wrap: wrap; gap: 8px;">
+                        <a href="#">
+                            <span>Headphone</span>
+                        </a>
+                        <a  href="#">
+                            <span>Chuột</span>
+                        </a>
+                        <a  href="#">
+                            <span>Asus</span>
+                        </a>
+                        <a  href="#" >
+                            <span>Bàn phím</span>
+                        </a>
+                        <a  href="#" >
+                            <span>SSD</span>
+                        </a>
+                        <a  href="#" >
+                            <span>Graphics card</span>
+                        </a>
+                        <a  href="#" >
+                            <span>RAM</span>
+                        </a>
+                        <a  href="#">
+                            <span>ROM</span>
+                        </a>
+                        <a  href="#" >
+                            <span>Màn hình PC</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="coppyright">
+                <p style="color: white; text-align: center;">E-STORE &#169; 2023. Design by GROUP-WEB-HCMUT</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <!-- <script src="./bootstrap.bundle.min.js"></script> -->
+	<script src="./script.js"></script>
+</body>
+</html>

@@ -166,6 +166,7 @@ CL-N001-PL14BU-A, màu Đen.", "", 8, 17),
 quạt - Tương thích với laptop đến 17 inch - Bảo hành 5 năm - Hỗ trợ PC, \
 Mac, PS5, PS4, Xbox One - Màu Đen Xanh.", "", 8, 18);
 
+
 -- ==================================================
 -- PRODUCT IMAGE
 -- ==================================================
@@ -293,7 +294,6 @@ INSERT INTO productImage (productId, image) VALUES
 (20, "https://m.media-amazon.com/images/I/41Oqk2WzfFL._AC_US40_.jpg"),
 (20, "https://m.media-amazon.com/images/I/51Rkv4PP70L._AC_US40_.jpg"),
 (20, "https://m.media-amazon.com/images/I/512SsDSc7oL._AC_US40_.jpg");
-
 
 
 
@@ -461,7 +461,6 @@ INSERT INTO productColorSize (color, size, productId, colorName, quantity, unitP
 ("0000FF", "Q20M", 20, "Blue", 10, 1320000),
 ("0000FF", "Q20X", 20, "Blue", 10, 1890000),
 ("0000FF", "Q302A", 20, "Blue", 10, 2720000);
-
 
 -- ==================================================
 -- USER
