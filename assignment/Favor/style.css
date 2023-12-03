@@ -1,0 +1,119 @@
+.favor-product__title {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    padding: 1.2rem;
+    /* border: 1px solid #e4e7e9;
+    border-bottom: none;
+    border-radius: 2px; */
+}
+
+.favor-product__header {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    padding: 1.2rem;
+    border: 1px solid #e4e7e9;
+    background-color: #f2f4f5;
+    color: #475156;
+}
+
+.favor-product__general {
+    text-align: center;
+}
+
+.favor-product__img {
+    height: 72px;
+    width: 72px;
+    /* padding-top: 100%; */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /* border-radius: 2px;
+    overflow: hidden; */
+}
+
+.favor-product__name {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: 400;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.favor-product__price {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: 400;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.favor-product__action {
+    text-align: center;
+}
+
+.favor-product__status {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: 600;
+    align-items: center;
+    display: flex;
+    text-transform: uppercase;
+    color: #2db224;
+}
+
+.favor-product__add {
+    display: flex;
+    margin: 16px;
+    text-align: center;
+    align-items: center;
+    border: 1px solid #fa8232;
+    border-radius: 2px;
+    background-color: #fa8232;
+    color: #fff;
+}
+
+.favor-product__add-text {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    padding-right: 8px;
+    flex-wrap: nowrap;
+    font-weight: 600;
+}
+
+.favor-product__add-icon {
+    font-size: 1.4rem;
+}
+
+.favor-product__add:hover {
+    background-color: #2db224;
+    color: #fff;
+    cursor: pointer;
+}
+
+.favor-product__delete-block {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 4.5rem;
+    align-items: center;
+}
+
+.favor-product__delete-icon:hover {
+    color: red;
+}
+
+.favor-product__delete-block:hover {
+    cursor: pointer;
+}
+
+.favor-product__table {
+    border-left: 1px solid #e4e7e9;
+    border-right: 1px solid #e4e7e9;
+}
+
+.favor-product__table:last-child {
+    border-bottom: 1px solid #e4e7e9;
+}

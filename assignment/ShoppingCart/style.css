@@ -1,0 +1,352 @@
+.shopping-cart-title {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    text-transform: uppercase;
+    padding: 1.2rem;
+}
+
+.shopping-cart-header {
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    text-transform: uppercase;
+    padding: 1.2rem;
+    border: 1px solid #e4e7e9;
+    background-color: #f2f4f5;
+    color: #475156;
+    font-weight: 500;
+}
+
+.shopping-cart-img {
+    height: 72px;
+    width: 72px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.shopping-cart-name {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: 400;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shopping-cart-price {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: 400;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Shopping cart quantity  */
+
+.shopping-cart-quantity {
+    display: flex;
+    width: auto;
+    align-items: center;
+    text-align: center;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.shopping-cart-quantity-minus,
+.shopping-cart-quantity-plus {
+    height: auto;
+    border: 1px solid #e4e7e9;
+    text-align: center;
+}
+
+.shopping-cart-quantity-minus-icon,
+.shopping-cart-quantity-plus-icon {
+    font-size: 1.6rem;
+    color: black;
+    padding: 8px;
+}
+
+.shopping-cart-quantity-minus-icon:hover,
+.shopping-cart-quantity-plus-icon:hover {
+    background-color: #fa8232;
+    color: #fff;
+    cursor: pointer;
+}
+
+.shopping-cart-quantity-input {
+    width: 36px;
+    padding: 8px;
+    height: auto;
+    border: none;
+    border-top: 1px solid #e4e7e9;
+    border-bottom: 1px solid #e4e7e9;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+    pointer-events: none;
+}
+
+
+/* end shopping cart quantity */
+
+.shopping-cart-quantity-minus-icon:hover,
+.shopping-cart-quantity-plus-icon:hover {
+    background-color: #fa8232;
+    color: #fff;
+}
+
+.shopping-cart-total-price {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    font-weight: 600;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shopping-cart-delete-block {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 3.5rem;
+    align-items: center;
+}
+
+.shopping-cart-delete-icon:hover {
+    color: red;
+}
+
+.shopping-cart-delete-block:hover {
+    cursor: pointer;
+}
+
+.shopping-cart-title,
+.shopping-cart-header,
+.shopping-cart-table,
+.shopping-cart-buttons {
+    border-left: 1px solid #e4e7e9;
+    border-right: 1px solid #e4e7e9;
+}
+
+.shopping-cart-block {
+    border-top: 1px solid #e4e7e9;
+    /* border-left: 1px solid #e4e7e9;
+    border-right: 1px solid #e4e7e9; */
+}
+
+.shopping-cart-table:last-child {
+    border-bottom: 1px solid #e4e7e9;
+}
+
+.shopping-cart-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+    border-bottom: 1px solid #e4e7e9;
+}
+
+.back-to-store {
+    /* display: flex; */
+    padding: 8px;
+    text-align: center;
+    border: 2px solid #2da5f3;
+    border-radius: 2px;
+    color: #2da5f3;
+    justify-content: space-around;
+}
+
+.back-to-store-text {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    flex-wrap: nowrap;
+    font-weight: 600;
+}
+
+.back-to-store:hover {
+    background-color: #2da5f3;
+    color: #fff;
+    cursor: pointer;
+}
+
+.back-to-store-icon {
+    font-size: 1.6rem;
+}
+
+.update-cart {
+    display: flex;
+    padding: 8px;
+    text-align: center;
+    border: 2px solid #2da5f3;
+    border-radius: 2px;
+    color: #2da5f3;
+    flex: 0 0 20%;
+    max-width: 20%;
+    justify-content: center;
+}
+
+.update-cart-text {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    flex-wrap: nowrap;
+    font-weight: 600;
+}
+
+.update-cart:hover {
+    background-color: #2da5f3;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Discount code */
+
+.discount-code-title {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    text-transform: uppercase;
+    padding: 1.2rem;
+    border-bottom: 1px solid #e4e7e9;
+}
+
+.discount-code-apply-button {
+    display: flex;
+    margin: 0 36px;
+    padding: 8px;
+    text-align: center;
+    border: 2px solid #2da5f3;
+    border-radius: 5px;
+    color: #2da5f3;
+    justify-content: center;
+    align-items: center;
+}
+
+.discount-code-apply-button-text {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    flex-wrap: nowrap;
+    font-weight: 600;
+}
+
+.discount-code-apply-button:hover {
+    background-color: #2da5f3;
+    color: #fff;
+    cursor: pointer;
+}
+
+.discount-code {
+    border: 1px solid #e4e7e9;
+    border-radius: 3px;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+}
+
+.discount-code-input-field {
+    padding: 8px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.discount-code-input {
+    width: 60%;
+    padding: 9px;
+    height: auto;
+    border: 1px solid #e4e7e9;
+    outline: none;
+    font-size: 1.4rem;
+    border-radius: 5px;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+.total-price-pay-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-quantity-format {
+    width: 36px;
+    padding: 9px;
+    height: auto;
+    border: none;
+    border-top: 1px solid #e4e7e9;
+    border-bottom: 1px solid #e4e7e9;
+    outline: none;
+    font-size: 1.22rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.total-price-pay-title {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    text-transform: uppercase;
+    padding: 1.2rem;
+}
+
+.total-price-pay-divider {
+    width: 100%;
+    height: 2px;
+    background-color: #e4e7e9;
+}
+
+.total-price-pay-text,
+.total-price-pay-final-text {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: #5f6c72;
+}
+
+.total-price-pay-value,
+.total-price-pay-final-value {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    font-weight: 600;
+}
+
+.total-price-pay-item {
+    padding: 8px 12px 8px 12px;
+}
+
+.total-price-pay-final {
+    padding: 12px;
+}
+
+.total-price-pay-block {
+    padding-top: 12px;
+}
+
+.total-price-pay-button {
+    margin: 0 12px;
+    padding: 8px;
+    justify-content: center;
+    border: 2px solid #fa8232;
+    color: #fa8232;
+    border-radius: 3px;
+    align-items: center;
+}
+
+.total-price-pay-button-text {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    padding-right: 8px;
+    font-weight: 800;
+}
+
+.total-price-pay-icon {
+    font-size: 2rem;
+}
+
+.total-price-pay-button:hover {
+    color: #fff;
+    background-color: #fa8232;
+    cursor: pointer;
+}
+
+.total-price-pay {
+    border: 1px solid #e4e7e9;
+    border-radius: 2px;
+    padding-bottom: 2rem;
+}
