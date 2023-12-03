@@ -124,25 +124,25 @@ if (isset($_POST['btn-verify'])) {
                         </ul>
                     </div>
                     <div class="home" style="margin-right: 24px;">
-                        <a href="#" style="text-decoration: none;">
+                        <a href="../index.html" style="text-decoration: none;">
                             <i class="fa-solid fa-house" style="padding-right: 5px;"></i>
                             <span>Trang chủ</span>
                         </a>
                     </div>
                     <div class="blogger" style="margin-right: 24px;">
-                        <a href="#" style="text-decoration: none;">
+                        <a href="../Error/error.html" style="text-decoration: none;">
                             <i class="fa-brands fa-blogger" style="padding-right: 5px;"></i>
                             <span>Blog</span>
                         </a>
                     </div>
                     <div class="about" style="margin-right: 24px;">
-                        <a href="#" style="text-decoration: none;">
+                        <a href="../About/index.html" style="text-decoration: none;">
                             <i class="fa-solid fa-circle-info" style="padding-right: 5px;"></i>
                             <span>Giới thiệu</span>
                         </a>
                     </div>
                     <div class="contact">
-                        <a href="#" style="text-decoration: none;">
+                        <a href="../FAQ/index.html" style="text-decoration: none;">
                             <i class="fa-solid fa-address-card" style="padding-right: 5px;"></i>
                             <span>Liên hệ</span>
                         </a>

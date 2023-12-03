@@ -125,3 +125,22 @@ window.addEventListener("resize", () => {
 
 // !--------- END FUNCTION1-----------//
 
+const listProduct = document.querySelectorAll('.name-item');
+const btnSearch = document.querySelector('#btn-search');
+btnSearch.addEventListener('click', function () {
+	let valSearch = document.getElementById('searchInput');
+	
+})
+for (let i = 0; i < listProduct.length; i++){
+	// console.log(listProduct[i].innerHTML);
+}
+
+// FETCH API SP VỀ FRONTEND
+// fetch('getAPI.php')
+// 	.then(res => res.json())
+// 	.then(data => {
+// 		generateListSP(data);
+// 	})
+// 	.catch(err => {
+// 		console.log("Error")
+// 	})

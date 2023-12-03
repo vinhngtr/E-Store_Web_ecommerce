@@ -63,6 +63,7 @@ body{
     align-items: center;
     padding: 20px 300px;
     background-color: #1B6392;
+
 }
 .search{
     background-color: white;
@@ -177,6 +178,11 @@ body{
 
 
 /* -------------- WIDGET------------------------ */
+.resultSearch{
+    display: none;
+    width: 1398px;
+    margin: 5px auto;
+}
 .widget{
     width: 1398px;
     /* height: 520px; */
@@ -570,7 +576,65 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 12px;
 }
+.addCart, .addFavou{
+    padding: 12px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.addCart:hover, .addFavou:hover{
+    background-color: #FA8232;
+    color: #fff;
+}
+.addCart i{
+    display: block;
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+}
+.addFavou i{
+    display: block;
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+}
+.image-item{
+    position: relative;
+    cursor: pointer;
+}
+.image-item .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Điều chỉnh màu nền và độ trong suốt */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 10px;
+    color: black; 
+}
+.image-item:hover .overlay{
+    display: flex;
+}
+
+.listShow .item{
+    /* position: relative; */
+    cursor: pointer;
+}
+.listShow .item:hover{
+    /* background-color: rebeccapurple; */
+    box-shadow: 0px 8px 24px 0px rgba(25, 28, 31, 0.12);
+}
+
 
 /* !---------- END SHOWPRODUCT--------------- */
 .bannerShop{
