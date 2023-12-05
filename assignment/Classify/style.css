@@ -619,7 +619,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 32px;
+    top: 40px;
     border-radius: 3px;
     background-color: #e4e7e9;
     padding: 8px 0 8px 22px;
@@ -685,15 +685,15 @@
 }
 
 .criteria-item-text {
-    font-size: 1.4rem;
-    line-height: 2rem;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
     color: black;
-    padding-right: 4px;
+    padding-right: 8px;
 }
 
 .criteria-item-icon {
-    width: 12px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
 }
 
 .criteria-item-icon:hover {

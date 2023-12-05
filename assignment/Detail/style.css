@@ -1,3 +1,4 @@
+
 .product__preview {
     height: auto;
 }
@@ -150,7 +151,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 16px;
+    top: 24px;
     border-radius: 3px;
     background-color: #e4e7e9;
     padding: 8px;
@@ -235,7 +236,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 16px;
+    top: 24px;
     border-radius: 3px;
     background-color: #e4e7e9;
     padding: 8px;
