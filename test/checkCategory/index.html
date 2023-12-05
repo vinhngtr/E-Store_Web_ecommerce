@@ -1,0 +1,118 @@
+<html>
+<head>
+<style>
+/* Định dạng cho danh sách checkbox */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Định dạng cho các sản phẩm */
+.product {
+  display: none;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Hiển thị các sản phẩm khi checkbox được chọn */
+:checked ~ .product {
+  display: block;
+}
+</style>
+</head>
+<body>
+<h1>Danh sách mục phân loại sản phẩm</h1>
+<ul>
+  <li><input type="checkbox" id="ram-rom"><label for="ram-rom">RAM & ROM</label>
+    <div class="product">
+      <h3>Sản phẩm 1: RAM 8GB DDR4</h3>
+      <p>Giá: 1.000.000 VNĐ</p>
+      <p>Mô tả: RAM 8GB DDR4 cho máy tính để bàn, tốc độ 2666MHz, bảo hành 3 năm</p>
+    </div>
+    <div class="product">
+      <h3>Sản phẩm 2: ROM 128GB M.2</h3>
+      <p>Giá: 1.500.000 VNĐ</p>
+      <p>Mô tả: ROM 128GB M.2 cho máy tính xách tay, tốc độ đọc ghi cao, bảo hành 5 năm</p>
+    </div>
+  </li>
+  <li><input type="checkbox" id="ssd-hdd"><label for="ssd-hdd">SSD & HDD</label>
+    <div class="product">
+      <h3>Sản phẩm 3: SSD 256GB SATA</h3>
+      <p>Giá: 2.000.000 VNĐ</p>
+      <p>Mô tả: SSD 256GB SATA cho máy tính để bàn hoặc xách tay, tốc độ đọc ghi nhanh, bảo hành 5 năm</p>
+    </div>
+    <div class="product">
+      <h3>Sản phẩm 4: HDD 1TB SATA</h3>
+      <p>Giá: 1.800.000 VNĐ</p>
+      <p>Mô tả: HDD 1TB SATA cho máy tính để bàn hoặc xách tay, dung lượng lưu trữ lớn, bảo hành 3 năm</p>
+    </div>
+  </li>
+  <li><input type="checkbox" id="headphone"><label for="headphone">Headphone</label>
+    <div class="product">
+      <h3>Sản phẩm 5: Headphone không dây Bluetooth</h3>
+      <p>Giá: 800.000 VNĐ</p>
+      <p>Mô tả: Headphone không dây Bluetooth, chất lượng âm thanh tốt, pin sạc lâu, có mic tích hợp</p>
+    </div>
+    <div class="product">
+      <h3>Sản phẩm 6: Headphone có dây 3.5mm</h3>
+      <p>Giá: 300.000 VNĐ</p>
+      <p>Mô tả: Headphone có dây 3.5mm, chất lượng âm thanh khá, dây dài 1.5m, có mic tích hợp</p>
+    </div>
+  </li>
+  <li><input type="checkbox" id="keyboard"><label for="keyboard">Bàn phím máy tính</label>
+    <div class="product">
+      <h3>Sản phẩm 7: Bàn phím cơ RGB</h3>
+      <p>Giá: 1.200.000 VNĐ</p>
+      <p>Mô tả: Bàn phím cơ RGB, có đèn nền đa màu, phím nhạy, chống nước, dây dài 1.8m</p>
+    </div>
+    <div class="product">
+      <h3>Sản phẩm 8: Bàn phím không dây Bluetooth</h3>
+      <p>Giá: 600.000 VNĐ</p>
+      <p>Mô tả: Bàn phím không dây Bluetooth, thiết kế nhỏ gọn, pin sạc lâu, có kết nối với nhiều thiết bị</p>
+    </div>
+  </li>
+  <li><input type="checkbox" id="monitor"><label for="monitor">Màn hình PC</label>
+    <div class="product">
+      <h3>Sản phẩm 9: Màn hình PC 24 inch Full HD</h3>
+      <p>Giá: 3.000.000 VNĐ</p>
+      <p>Mô tả: Màn hình PC 24 inch Full HD, độ phân giải 1920x1080, tần số quét 60Hz, độ sáng 250 nits</p>
+    </div>
+    <div class="product">
+      <h3>Sản phẩm 10: Màn hình PC 27 inch 4K</h3>
+      <p>Giá: 6.000.000 VNĐ</p>
+      <p>Mô tả: Màn hình PC 27 inch 4K, độ phân giải 3840x2160, tần số quét 120Hz, độ sáng 300 nits</p>
+    </div>
+  </li>
+  <li><input type="checkbox" id="mouse"><label for="mouse">Chuột gaming</label>
+    <div class="product">
+      <h3>Sản phẩm 11: Chuột gaming không dây RGB</h3>
+      <p>Giá: 900.000 VNĐ</p>
+      <p>Mô tả: Chuột gaming không dây RGB, có đèn nền đa màu, độ nhạy cao, pin sạc lâu, có nút điều chỉnh DPI</p>
+    </div>
+    <div class="product">
+      <h3>Sản phẩm 12: Chuột gaming có dây RGB</h3>
+      <p>Giá: 500.000 VNĐ</p>
+      <p>Mô tả: Chuột gaming có dây RGB, có đèn nền đa màu, độ nhạy cao, dây dài 1.8m, có nút điều chỉnh DPI</p>
+    </div>
+  </li>
+  <li><input type="checkbox" id="card"><label for="card">Card màn hình</label>
+    <div class="product">
+      <h3>Sản phẩm 13: Card màn hình NVIDIA GeForce RTX 3080</h3>
+      <p>Giá: 25.000.000 VNĐ</p>
+      <p>Mô tả: Card màn hình NVIDIA GeForce RTX 3080, bộ nhớ 10GB GDDR6X, tốc độ xung nhịp 1710MHz, hỗ trợ ray tracing</p>
+    </div>
+    <div class="product">
+      <h3>Sản phẩm 14: Card màn hình AMD Radeon RX 6800 XT</h3>
+      <p>Giá: 22.000.000 VNĐ</p>
+      <p>Mô tả: Card màn hình AMD Radeon RX 6800 XT, bộ nhớ 16GB GDDR6, tốc độ xung nhịp 2015MHz, hỗ trợ ray tracing</p>
+    </div>
+  </li>
+  <li><input type="checkbox" id="cooler"><label for="cooler">Tản nhiệt laptop</label>
+    <div class="product">
+      <h3>Sản phẩm 15: Tản nhiệt laptop Cooler Master NotePal X3</h3>
+      <p>Giá: 400.000 VNĐ</p>
+      <p>Mô tả: Tản nhiệt laptop Cooler Master NotePal X3, có quạt 200mm, có đèn LED xanh, có nút điều chỉnh tốc độ quạt</p>
+    </div>
+    <div class

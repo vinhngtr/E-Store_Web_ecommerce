@@ -371,6 +371,7 @@ body{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
+
 #item{
     border: 1px solid #E4E7E9;
     padding: 16px;
@@ -578,6 +579,7 @@ body{
     grid-template-rows: 1fr 1fr;
     gap: 12px;
 }
+
 .addCart, .addFavou{
     padding: 12px;
     width: 50px;
