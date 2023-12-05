@@ -11,6 +11,7 @@ const error1 = document.querySelector(".Error1");
 const error2 = document.querySelector(".Error2");
 const TextResult = document.querySelector(".resultSearch");
 
+// ? Feature1: tìm kiếm sản phẩm
 function displayError1() {
   Products.style.display = "none";
   error1.style.display = "block";
@@ -37,7 +38,6 @@ function displayResult(arr) {
   }
 }
 
-
 search.addEventListener("click", function () {
   let valueSearch = document.getElementById("search").value.toLowerCase();
   let resultSearch = [];
@@ -63,7 +63,7 @@ search.addEventListener("click", function () {
   }
 });
 
-// ! THÊM EVENT: KEYUP VỚI ENTER CHO INPUT:
+// ! THÊM EVENT: KEYUP VỚI ENTER CHO INPUT searchProduct:
 inputSearch.addEventListener("keyup", function (e) {
   if (e.key === "Enter") {
     let valueSearch = document.getElementById("search").value.toLowerCase();
@@ -86,6 +86,40 @@ inputSearch.addEventListener("keyup", function (e) {
       } else {
         //   console.log(resultSearch);
         displayResult(resultSearch);
+      }
+    }
+  }
+});
+
+//! LỌC VỚI CHECKBOX
+const containerCheckbox = document.querySelector(".listCategory");
+const listCheckbox = containerCheckbox.querySelectorAll(
+  'input[type="checkbox"]'
+);
+console.log(listCheckbox);
+
+containerCheckbox.addEventListener("change", function (e) {
+  // ! lấy danh sách các checkbox được chọn
+  let checkedBoxes = containerCheckbox.querySelectorAll(
+    'input[type="checkbox"]:checked'
+  );
+  //   lấy danh sách giá trị các checkbox ở trên
+  let valChecked = Array.from(checkedBoxes).map((checkbox) => {
+    return checkbox.value;
+  });
+  // console.log(valChecked);
+  if (valChecked.length === 0) {
+    for (let i = 0; i < listItem.length; i++) {
+      listItem[i].style.display = "block";
+    }
+  } else {
+      console.log(valChecked);
+    for (let i = 0; i < listItem.length; i++) {
+      // listItem[i].style.display = "none";
+      if (valChecked.includes(listItem[i].dataset.category)) {
+        listItem[i].style.display = "block";
+      } else {
+        listItem[i].style.display = "none";
       }
     }
   }

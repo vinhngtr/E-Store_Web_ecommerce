@@ -108,14 +108,14 @@
                     <div class="Filter">
                         <h2 class="titleCate" style="text-transform: uppercase;">Phân loại sản phẩm</h2>
                         <ul class="listCategory">
-                            <li><input type="checkbox" id="RAM-ROM"><label for="RAM-ROM">RAM & ROM</label></li>
-                            <li><input type="checkbox" id="SSD-HDD"><label for="SSD-HDD">SSD & HDD</label></li>
-                            <li><input type="checkbox" id="Headphone"><label for="Headphone">Headphone</label></li>
-                            <li><input type="checkbox" id="Keyboard"><label for="Keyboard">Bàn phím máy tính</label></li>
-                            <li><input type="checkbox" id="Monitor"><label for="Monitor">Màn hình PC</label></li>
-                            <li><input type="checkbox" id="Mouse"><label for="Mouse">Chuột gaming</label></li>
-                            <li><input type="checkbox" id="VGA"><label for="VGA">Card màn hình</label></li>
-                            <li><input type="checkbox" id="Cooling"><label for="Cooling">Tản nhiệt laptop</label></li>
+                            <li><input type="checkbox" value="RAM-ROM" id="RAM-ROM"><label for="RAM-ROM">RAM & ROM</label></li>
+                            <li><input type="checkbox" id="SSD-HDD" value="SSD-HDD"><label for="SSD-HDD">SSD & HDD</label></li>
+                            <li><input type="checkbox" id="Headphone" value="Headphone"><label for="Headphone">Headphone</label></li>
+                            <li><input type="checkbox" id="Keyboard" value="Keyboard"><label for="Keyboard">Bàn phím máy tính</label></li>
+                            <li><input type="checkbox" id="Monitor" value="Monitor"><label for="Monitor">Màn hình PC</label></li>
+                            <li><input type="checkbox" id="Mouse" value="Mouse"><label for="Mouse">Chuột gaming</label></li>
+                            <li><input type="checkbox" id="VGA" value="VGA"><label for="VGA">Card màn hình</label></li>
+                            <li><input type="checkbox" id="Cooling" value="Cooling"><label for="Cooling">Tản nhiệt laptop</label></li>
                         </ul>
                     </div>
                     <div class="showBanner">
@@ -132,7 +132,7 @@
                                 </div> 
                             </div>
                         </div>
-                        <button class="btnDiscount">Đi đến cửa hàng<i class="fa-solid fa-arrow-right" style="padding-left: 10px;"></i></button>
+                        <button onclick="window.location.href= './index.html'" class="btnDiscount">Đi đến cửa hàng<i class="fa-solid fa-arrow-right" style="padding-left: 10px;"></i></button>
                         <div class="imgDiscount">
                             <img src="../images/show.jfif" style="width: 100%;height: 100%;object-fit: cover;" alt="">
                         </div>
@@ -159,7 +159,7 @@
                     </div>
 
                     <div class="showProduct">
-                        <div id="item">
+                        <div id="item" data-category = "Monitor">
                             <div class="image-item" style="width: 100%;">
                                 <img src="../images/promotion1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
                                 <div class="overlay">
@@ -170,7 +170,7 @@
                             <a href="#" style="display: inline-block;" class="name-item">Chuột logitech 2023</a>
                             <div class="price-item">3.500.000đ</div>
                         </div>
-                        <div id="item">
+                        <div id="item" data-category = "Monitor">
                             <div class="image-item" style="width: 100%;">
                                 <img src="../images/promotion1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
                                 <div class="overlay">
@@ -181,7 +181,7 @@
                             <a href="#" style="display: inline-block;" class="name-item">Màn hình gaming Asus 2024 24 inch</a>
                             <div class="price-item">3.500.000đ</div>
                         </div>
-                        <div id="item">
+                        <div id="item" data-category = "Monitor">
                             <div class="image-item" style="width: 100%;">
                                 <img src="../images/promotion1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
                                 <div class="overlay">
@@ -192,7 +192,7 @@
                             <a href="#" style="display: inline-block;" class="name-item">Màn hình gaming Asus 2024 24 inch</a>
                             <div class="price-item">3.500.000đ</div>
                         </div>
-                        <div id="item">
+                        <div id="item" data-category = "Monitor">
                             <div class="image-item" style="width: 100%;">
                                 <img src="../images/promotion1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
                                 <div class="overlay">
@@ -203,7 +203,7 @@
                             <a href="#" style="display: inline-block;" class="name-item">Màn hình gaming Asus 2024 24 inch</a>
                             <div class="price-item">3.500.000đ</div>
                         </div>
-                        <div id="item">
+                        <div id="item" data-category = "Monitor">
                             <div class="image-item" style="width: 100%;">
                                 <img src="../images/promotion1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
                                 <div class="overlay">
@@ -214,7 +214,7 @@
                             <a href="#" style="display: inline-block;" class="name-item">Màn hình gaming Asus 2024 24 inch</a>
                             <div class="price-item">3.500.000đ</div>
                         </div>
-                        <div id="item">
+                        <div id="item" data-category = "Keyboard">
                             <div class="image-item" style="width: 100%;">
                                 <img src="../images/promotion1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
                                 <div class="overlay">
@@ -225,7 +225,7 @@
                             <a href="#" style="display: inline-block;" class="name-item">Màn hình gaming Asus 2024 24 inch</a>
                             <div class="price-item">3.500.000đ</div>
                         </div>
-                        <div id="item">
+                        <div id="item" data-category = "RAM-ROM">
                             <div class="image-item" style="width: 100%;">
                                 <img src="../images/promotion1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
                                 <div class="overlay">
@@ -236,7 +236,7 @@
                             <a href="#" style="display: inline-block;" class="name-item">Màn hình gaming Asus 2024 24 inch</a>
                             <div class="price-item">3.500.000đ</div>
                         </div>
-                        <div id="item">
+                        <div id="item" data-category = "SSD-HDD">
                             <div class="image-item" style="width: 100%;">
                                 <img src="../images/promotion1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
                                 <div class="overlay">
@@ -247,7 +247,7 @@
                             <a href="#" style="display: inline-block;" class="name-item">Màn hình gaming Asus 2024 24 inch</a>
                             <div class="price-item">3.500.000đ</div>
                         </div>
-                        <div id="item">
+                        <div id="item" data-category = "Monitor">
                             <div class="image-item" style="width: 100%;">
                                 <img src="../images/promotion1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
                                 <div class="overlay">
@@ -258,7 +258,7 @@
                             <a href="#" style="display: inline-block;" class="name-item">Màn hình gaming Asus 2024 24 inch</a>
                             <div class="price-item">3.500.000đ</div>
                         </div>
-                        <div id="item">
+                        <div id="item" data-category = "VGA">
                             <div class="image-item" style="width: 100%;">
                                 <img src="../images/promotion1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
                                 <div class="overlay">
@@ -269,7 +269,7 @@
                             <a href="#" style="display: inline-block;" class="name-item">Màn hình gaming Asus 2024 24 inch</a>
                             <div class="price-item">3.500.000đ</div>
                         </div>
-                        <div id="item">
+                        <div id="item" data-category = "Cooling">
                             <div class="image-item" style="width: 100%;">
                                 <img src="../images/promotion1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
                                 <div class="overlay">
@@ -280,7 +280,7 @@
                             <a href="#" style="display: inline-block;" class="name-item">Màn hình gaming Asus 2024 24 inch</a>
                             <div class="price-item">3.500.000đ</div>
                         </div>
-                        <div id="item">
+                        <div id="item" data-category = "Mouse">
                             <div class="image-item" style="width: 100%;">
                                 <img src="../images/promotion1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
                                 <div class="overlay">
@@ -291,7 +291,7 @@
                             <a href="#" style="display: inline-block;" class="name-item">Màn hình gaming Asus 2024 24 inch</a>
                             <div class="price-item">3.500.000đ</div>
                         </div>
-                        <div id="item">
+                        <div id="item" data-category = "Mouse">
                             <div class="image-item" style="width: 100%;">
                                 <img src="../images/promotion1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
                                 <div class="overlay">
@@ -302,7 +302,7 @@
                             <a href="#" style="display: inline-block;" class="name-item">Màn hình gaming Asus 2024 24 inch</a>
                             <div class="price-item">3.500.000đ</div>
                         </div>
-                        <div id="item">
+                        <div id="item" data-category = "Mouse">
                             <div class="image-item" style="width: 100%;">
                                 <img src="../images/promotion1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
                                 <div class="overlay">
@@ -313,7 +313,7 @@
                             <a href="#" style="display: inline-block;" class="name-item">Màn hình gaming Asus 2024 24 inch</a>
                             <div class="price-item">3.500.000đ</div>
                         </div>
-                        <div id="item">
+                        <div id="item" data-category = "VGA">
                             <div class="image-item" style="width: 100%;">
                                 <img src="../images/promotion1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
                                 <div class="overlay">
@@ -324,7 +324,7 @@
                             <a href="#" style="display: inline-block;" class="name-item">Màn hình gaming Asus 2024 24 inch</a>
                             <div class="price-item">3.500.000đ</div>
                         </div>
-                        <div id="item">
+                        <div id="item" data-category = "Headphone">
                             <div class="image-item" style="width: 100%;">
                                 <img src="../images/promotion1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
                                 <div class="overlay">
