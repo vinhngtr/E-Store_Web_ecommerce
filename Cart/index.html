@@ -1,43 +1,3 @@
-<?php
-if (isset($_POST['btn-log'])) {
-    $email_log = $_POST['email'];
-    $pass_log = $_POST['password'];
-
-    // ! tạo kết nối database để xác thực password và email nhập vào so với CSDL:
-    $db_host = "localhost";
-    $db_user = "trongvinh";
-    $db_pass = "vinhtrong782002";
-    $db_name = "list_user";
-    $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
-    if (!$conn) {
-        die("Kết nối DB không thành công: " . mysqli_connect_error());
-        exit();
-    }
-    // Chuẩn bị câu lệnh truy vấn
-    $stmt = $conn->prepare("SELECT * FROM account_user WHERE email = ?");
-    // assign return in array POST to parameter;
-    $stmt->bind_param("s", $email_log);
-    // excutive
-    $stmt->execute();
-    // assign value return to variable result
-    $result = $stmt->get_result();
-    if ($result->num_rows > 0) {
-        $user = $result->fetch_assoc();
-        if (password_verify($pass_log, $user['password'])) {
-            // ! tạo 1 page thông báo đăng nhập thành công -> button back về Home:
-            header("Location: ../index.html");
-            exit();
-        } else {
-            echo "Mật khẩu nhập vào không chính xác";
-            exit();
-        }
-    } else {
-        echo "Không tìm thấy người dùng với tài khoản này!";
-    }
-    $stmt->close();
-    $conn->close();
-}
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -48,7 +8,7 @@ if (isset($_POST['btn-log'])) {
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <title>Đăng nhập tài khoản</title>
+    <title>Giỏ hàng</title>
 </head>
 
 <body>
@@ -144,19 +104,69 @@ if (isset($_POST['btn-log'])) {
             </div>
             <div class="hr1" style="width: 100vw; background-color: #E4E7E9; height: 1px;"></div>
         </div>
+
+        <!-- !CONTENT---------------- -->
         <div class="body-page">
-            <div class="main">
-                <div class="image-error">
-                    <img src="../images/404-error.jpg" style="width:100%;height: 100%;object-fit: cover;" alt="">
+            <h2 style="margin-bottom: 20px;">GIỎ HÀNG CỦA TÔI</h2>
+            <div class="modal-body">
+              <div class="cart-row">
+                  <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                  <span class="cart-price cart-header cart-column">Giá</span>
+                  <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+              </div>
+              <div class="cart-items">
+                <div class="cart-row">
+                  <div class="cart-item cart-column">
+                      <img class="cart-item-image" src="../images/cate-head.webp" width="100" height="100">
+                      <span class="cart-item-title">Mũi Hàn 500</span>
+                  </div>
+                  <span class="cart-price cart-column">25.000đ</span>
+                  <div class="cart-quantity cart-column">
+                      <input class="cart-quantity-input" type="number" value="1" min="0">
+                      <button class="btn btn-danger" type="button">Xóa</button>
+                  </div>
                 </div>
-                <div class="content-error">
-                    <h2>404, Page not found</h2>
-                    <p>
-                        Có điều gì đó không ổn. Kính mong bạn quay trở lại trang vào khoảng thời gian tới gần nhất, rất xin lỗi bạn vì sự bất tiện này.
-                    </p>
-                    <a style="display: block;" class="btn-home" href="../index.html"><i class="fa-solid fa-house" style="padding-right: 5px;"></i> Về trang chủ</a>
+                <!-- ! CART-ROW (car-item) == SP THÊM VÀO -->
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="../images/cate-img1.webp" width="100" height="100">
+                        <span class="cart-item-title">Máy Bơm Chìm Hộ Gia Đình QDX 1500W 220VAC 40L/1min H=8m</span>
+                    </div>
+                    <span class="cart-price cart-column">599.000đ</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="1" min="0">
+                        <button class="btn btn-danger" type="button">Xóa</button>
+                    </div>
                 </div>
-           </div>
+              <!-- ! CẬP NHẬT BILL IN HERE -->
+              <div class="cart-final">
+                <div class="directCart">
+                  <button onclick="window.location.href='../Shop/index.html'"" class="btn1 btn-back">Trở lại shop</button>
+                  <button class="btn1 btn-upcost">Cập nhật đơn hàng</button>
+                </div>
+                <div class="cart-total">
+                  <h2 style="text-transform: uppercase;padding: 10px 0px;border-bottom: 1px solid #E4E7E9;">Tổng thanh toán</h2>
+                  <div class="total-cost">
+                    <strong class="cart-total-title">Tổng đơn hàng:</strong>
+                    <span class="cart-total-price"></span>
+                  </div>
+                  <div class="applyShip">
+                    <label for="title-ship">Phí ship là (đ): </label>
+                    <input type="number" placeholder="Tiền vận chuyển..." id="title-ship">
+                  </div>
+                  <div class="applyDiscount">
+                    <label for="title-dis">Khuyến mãi(%): </label>
+                    <input type="number" inputmode="numeric" pattern="[0-9]*" placeholder="% khuyến mãi..." id="title-dis">
+                  </div>
+                  <div class="total">
+                    <strong class="title-pay" style="text-transform: uppercase;">Tổng tiền thanh toán: </strong>
+                    <span class="total-pay"></span>
+                  </div>
+                  <button class="btn1 btn-pay">Thanh toán ngay</button>
+                </div>
+              </div>
+          </div>
+        </div>
         </div>
 
         <!-- !FOOTER PAGE -->
@@ -221,7 +231,7 @@ if (isset($_POST['btn-log'])) {
                     <div class="body-menu" style="display: grid; grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;">
                         <p style="padding: 8px 0;" class="itemOfFooter"><a href="../index.html">Trang chủ</a></p>
                         <p style="padding: 8px 0;" class="itemOfFooter"><a href="../Shop/index.html">Tất cả sản phẩm</a></p>
-                        <p style="padding: 8px 0;" class="itemOfFooter"><a href="#">Tài khoản của bạn</a></p>
+                        <p style="padding: 8px 0;" class="itemOfFooter"><a href="../Error/error.html">Tài khoản của bạn</a></p>
                         <p style="padding: 8px 0;" class="itemOfFooter"><a href="#">Đơn hàng của bạn</a></p>
                         <p style="padding: 8px 0;" class="itemOfFooter"><a href="#">Bảng tin</a></p>
                         <p style="padding: 8px 0;" class="itemOfFooter"><a href="../About/index.html">Về chúng tôi</a></p>
@@ -276,6 +286,8 @@ if (isset($_POST['btn-log'])) {
         </div>
 
     </div>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>

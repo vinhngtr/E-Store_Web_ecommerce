@@ -1,6 +1,7 @@
 const search = document.getElementById("btn-search");
 const inputSearch = document.getElementById("search");
 const Products = document.querySelector(".showProduct");
+const forBack = document.querySelector(".searchWith");
 
 //! truy xuất toàn bộ sản phẩm và tên sản phẩm từ #ITEM LẤY TỪ BACKEND
 const nameProducts = document.querySelectorAll(".name-item");
@@ -17,12 +18,14 @@ function displayError1() {
   error1.style.display = "block";
   error2.style.display = "none";
   TextResult.innerHTML = "0 kết quả tìm được";
+  forBack.innerHTML = `<a href="./index.html">Quay lại cửa hàng</a>`;
 }
 function displayError2() {
   Products.style.display = "none";
   error1.style.display = "none";
   error2.style.display = "block";
   TextResult.innerHTML = "0 kết quả tìm được";
+  forBack.innerHTML = `<a href="./index.html">Quay lại cửa hàng</a>`;
 }
 function displayResult(arr) {
   error1.style.display = "none";
@@ -30,6 +33,7 @@ function displayResult(arr) {
   Products.style.display = "grid";
   let numberProduct = arr.length;
   TextResult.innerHTML = numberProduct + " kết quả tìm được";
+  forBack.innerHTML = `<a href="./index.html">Quay lại cửa hàng</a>`;
   for (let i = 0; i < listItem.length; i++) {
     listItem[i].style.display = "none";
   }
@@ -98,29 +102,38 @@ const listCheckbox = containerCheckbox.querySelectorAll(
 );
 console.log(listCheckbox);
 
+// ! add event to container for checkbox:
 containerCheckbox.addEventListener("change", function (e) {
   // ! lấy danh sách các checkbox được chọn
   let checkedBoxes = containerCheckbox.querySelectorAll(
     'input[type="checkbox"]:checked'
   );
-  //   lấy danh sách giá trị các checkbox ở trên
+  // !  lấy danh sách giá trị các checkboxKed ở trên
   let valChecked = Array.from(checkedBoxes).map((checkbox) => {
     return checkbox.value;
   });
-  // console.log(valChecked);
+
+  let numberProduct = 0;
+  // Validate với danh sách sản phẩm
   if (valChecked.length === 0) {
     for (let i = 0; i < listItem.length; i++) {
       listItem[i].style.display = "block";
     }
+    TextResult.innerHTML = "";
+    forBack.innerHTML = "";
   } else {
-      console.log(valChecked);
+    let numberProduct = 0;
+    //   console.log(valChecked);
     for (let i = 0; i < listItem.length; i++) {
       // listItem[i].style.display = "none";
       if (valChecked.includes(listItem[i].dataset.category)) {
         listItem[i].style.display = "block";
+        numberProduct++;
       } else {
         listItem[i].style.display = "none";
       }
     }
+    TextResult.innerHTML = numberProduct + " kết quả với phân loại này";
+    forBack.innerHTML = `<a href="./index.html">Quay lại cửa hàng</a>`;
   }
 });

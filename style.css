@@ -117,6 +117,9 @@ body{
 .home a:hover, .blogger a:hover, .about a:hover, .contact a:hover{
     color: #FA8232;
 }
+#item .name-item:hover{
+    color: #FA8232;
+}
 .category{
     position: relative;
     display: flex;

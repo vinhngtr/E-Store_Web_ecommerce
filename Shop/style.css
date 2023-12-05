@@ -351,6 +351,16 @@ li label{
     justify-content: space-between;
     align-items: center;
 }
+.searchWith{
+    padding: 5px 8px;
+    text-align: center;
+    font-size: 16px;
+}
+.searchWith a{
+    font-weight: 600;
+    color: #2DA5F3;
+    text-transform: uppercase;
+}
 .resultSearch{
     display: inline-block;
 }
