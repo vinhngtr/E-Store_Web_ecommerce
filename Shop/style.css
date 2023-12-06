@@ -285,7 +285,7 @@ li label{
 }
 
 
-/* ! COLUMN RIGHT of body------------------- */
+/* ! -------------COLUMN RIGHT of body------------------- */
 .colRight{
     display: grid;
     /* grid-template-columns: 1fr 1fr 1fr 1fr; */
@@ -402,9 +402,14 @@ li label{
     font-weight: 600;
     line-height: 20px;
 }
+#item .name-item:hover{
+    color: #FA8232;
+}
 
 
 .addCart, .addFavou{
+    outline: none;
+    border: none;
     padding: 12px;
     width: 50px;
     height: 50px;
@@ -413,6 +418,7 @@ li label{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .addCart:hover, .addFavou:hover{
     background-color: #FA8232;
@@ -518,4 +524,8 @@ p a:hover{
 .body-research a:hover{
     background-color: #303639;
     border: 2px solid #fff;
+}
+.showProduct #item:hover{
+    /* background-color: rebeccapurple; */
+    box-shadow: 0px 8px 24px 0px rgba(25, 28, 31, 0.12);
 }
