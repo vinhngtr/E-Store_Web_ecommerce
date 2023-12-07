@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var stars = document.querySelectorAll(".star");
   var ratingContainer = document.getElementById("ratingContainer");
   var ratingStars = document.getElementById("ratingStars");
-  var selectedRating = document.getElementById("selectedRating");
+  var selectedRating = document.getElementById("rating");
 
   stars.forEach(function (star) {
     star.addEventListener("mouseover", function () {
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     star.addEventListener("click", function () {
       var ratingValue = star.dataset.value;
-      selectedRating.textContent = "Selected rating: " + ratingValue;
+      selectedRating.dataset.value = ratingValue;
       ratingContainer.classList.add("rated");
       clearHighlights();
     });

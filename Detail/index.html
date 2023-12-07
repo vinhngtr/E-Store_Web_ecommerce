@@ -1,0 +1,363 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>Chi tiết sản phẩm</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <div id="navBar">
+                <div class="top-navi">
+                    <div class="top-left">
+                        Chào mừng bạn đến với E-Store - cửa hàng linh kiện đi kèm máy tính
+                    </div>
+                    <div class="top-right">
+                        Follow us:
+                        <span>
+                            <a href="https://www.facebook.com/vinh.nguyentrong.1291" style="color: white;"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" style="color: white;"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/" style="color: white;"><i class="fa-brands fa-youtube"></i></a>
+                        </span>
+                    </div>
+                </div>
+                <div class="midd-navi">
+                    <div class="logo">
+                        <a href="../index.html" style="color: white; text-decoration: none;">
+                            <span style="font-size: 50px; font-weight: bold; padding-right: 3px;">E</span>
+                            <span style="font-size: 40px; font-weight: bold; padding-right: 3px;">-</span>
+                            <span style="font-size: 32px; font-weight: bold;">STORE</span>
+                        </a>
+                    </div>
+                    <div class="search">
+                        <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm...">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="info-user" style="display: grid; grid-template-columns: auto auto auto; column-gap: 24px;">
+                        <a href="#" style="width: 32px;height: 32px; display: inline-block;" title="Giỏ hàng">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                        <a href="#" style=" width: 32px;height: 32px; display: inline-block;" title="Sản phẩm yêu thích">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                        <a href="../Register/index.html" style=" width: 32px;height: 32px; display: inline-block;" title="Đăng nhập/Đăng kí">
+                            <i class="fa-regular fa-user"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-navi">
+                <div class="left-side" style="font-size: 18px;">
+                    <div class="category" style="margin-right: 24px; ">
+                        <button style="display: inline-block; padding: 14px 24px; font-family: 'Public Sans', sans-serif; font-size: 18px;">
+                            Danh mục sản phẩm
+                            <i class="fa-solid fa-caret-down" style="padding-left: 3px;"></i>
+                        </button>
+                        <ul class="list-btnCate">
+                            <li><a href="#">RAM & ROM</a></li>
+                            <li><a href="#">SSD & HDD</a></li>
+                            <li><a href="#">Màn hình PC</a></li>
+                            <li><a href="#">Headphone</a></li>
+                            <li><a href="#">Bàn phím máy tính</a></li>
+                            <li><a href="#">Chuột gaming</a></li>
+                            <li><a href="#">Card màn hình</a></li>
+                            <li><a href="#">Tản nhiệt laptop</a></li>
+                        </ul>
+                    </div>
+                    <div class="home" style="margin-right: 24px;">
+                        <a href="../index.html" style="text-decoration: none;">
+                            <i class="fa-solid fa-house" style="padding-right: 5px;"></i>
+                            <span>Trang chủ</span>
+                        </a>
+                    </div>
+                    <div class="blogger" style="margin-right: 24px;">
+                        <a href="../Error/error.html" style="text-decoration: none;">
+                            <i class="fa-brands fa-blogger" style="padding-right: 5px;"></i>
+                            <span>Blog</span>
+                        </a>
+                    </div>
+                    <div class="about" style="margin-right: 24px;">
+                        <a href="../About/index.html" style="text-decoration: none;">
+                            <i class="fa-solid fa-circle-info" style="padding-right: 5px;"></i>
+                            <span>Giới thiệu</span>
+                        </a>
+                    </div>
+                    <div class="contact">
+                        <a href="../FAQ/index.html" style="text-decoration: none;">
+                            <i class="fa-solid fa-address-card" style="padding-right: 5px;"></i>
+                            <span>Liên hệ</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="right-side" style="font-size: 18px;">
+                    <a href="#" style="text-decoration: none;" title="Hotline"><i class="fa-solid fa-phone" style="padding-right: 3px;"></i>
+                        +84 - 969379924
+                    </a>
+                </div>
+            </div>
+            <div class="hr1" style="width: 100vw; background-color: #E4E7E9; height: 1px;"></div>
+        </div>
+
+        <!-- !CONTENT---------------- -->
+        <div class="body-page">
+            <div class="colLeft">
+                <!-- ! CỘT SHOW ẢNH DETAIL CỦA SẢN PHẨM: -->
+                <button class="imgMain btn-img">
+                    <img style="width: 100%;height: 100%;object-fit: cover;" id="itemMain" src="../images/item3.jpg" alt="">
+                </button>
+                <div class="listImg">
+                    <button class="itemImg btn-img"><img style="width: 100%;height: 100%;object-fit: cover;" class="imgSlider" src="../images/imgMain.webp" alt=""></button>
+                    <button class="itemImg btn-img"><img style="width: 100%;height: 100%;object-fit: cover;" class="imgSlider" src="../images/item1.jpg" alt=""></button>
+                    <button class="itemImg btn-img"><img style="width: 100%;height: 100%;object-fit: cover;" class="imgSlider" src="../images/item2.jpg" alt=""></button>
+                    <button class="itemImg btn-img"><img style="width: 100%;height: 100%;object-fit: cover;" class="imgSlider" src="../images/item3.jpg" alt=""></button>
+                    <button class="itemImg btn-img"><img style="width: 100%;height: 100%;object-fit: cover;" class="imgSlider" src="../images/item4.jpg" alt=""></button>
+                    <button class="itemImg btn-img"><img style="width: 100%;height: 100%;object-fit: cover;" class="imgSlider" src="../images/item5.jpg" alt=""></button>
+                </div>
+            </div>
+            <!-- ! CỘT THÔNG TIN CỤ THỂ VỀ SẢN PHẨM -->
+            <div class="colRight">
+                <div class="contentProduct">
+                    <div class="headerProduct">
+                        <div class="rating-container" id="ratingContainer">
+                            <span class="rating-stars" id="ratingStars">
+                                <span class="star" data-value="1">&#9733;</span>
+                                <span class="star" data-value="2">&#9733;</span>
+                                <span class="star" data-value="3">&#9733;</span>
+                                <span class="star" data-value="4">&#9733;</span>
+                                <span class="star" data-value="5">&#9733;</span>
+                            </span>
+                            <span id="rating" data-value="">3</span>
+                            <span id="user-cmt">(100 đánh giá từ người dùng)</span>
+                        </div>
+                        <h3 class="nameProduct">
+                            Màn hình ASUS ROG Strix XG309CM 30" IPS 220Hz 1ms G-Sync HDR10
+                        </h3>
+                    </div>
+                    <div class="infoProduct">
+                        <div class="statusProduct">
+                            <span style="color: #5F6C72; font-size: 16px;">Tình trạng: </span>
+                            <span style="color: #2DB224; font-size: 18px; font-weight: 600;"  id="inStock">Còn hàng</span>
+                        </div>
+                        <div class="categoryProduct">
+                            <span style="color: #5F6C72; font-size: 16px;">Phân loại: </span>
+                            <span style="color: black; font-size: 18px; font-weight: 600;" id="categoryProd">Màn hình PC</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="priceProduct">
+                    <span id="finalPrice">3.4000.000đ</span>
+                    <span id="initPrice">4.200.200đ</span>
+                    <span id="valDisc">20% OFF</span>
+                </div>
+                <div class="space" style="width: 100%;height: 1px;background-color: #E4E7E9;"></div>
+                <form class="formSelect">
+                    <div class="selectColor">
+                        <label   for="pickColor">Chọn màu:</label>
+                        <div class="listColor">
+                            <div class="colorSelect">
+                                <input type="radio" value="red" name="color" class="pickColor"   id="pickRed">
+                                <label for="pickRed">Đỏ</label>
+                            </div>
+                            <div class="colorSelect">
+                                <input type="radio" value="black" name="color" class="pickColor" id="pickBlack">    
+                                <label for="pickBlack">Đen</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selectSize">
+                        <label  for="pickSize">Chọn kích thước: </label>
+                        <select name="sizeProduct" id="pickSize">
+                            <option value="27inch">27inch</option>
+                            <option value="24inch">24inch</option>
+                            <option value="32inch">32inch</option>
+                        </select>
+                    </div>
+                </form>
+                <div class="checkOut">
+                    <input type="number" name="countProduct" value="1" min="1" >
+                    <button class="btn-cart"><span>Thêm vào giỏ hàng</span> <i class="fa-solid fa-cart-shopping"></i> </button>
+                    <button class="btn-pay">Mua ngay</button>
+                </div>
+            </div>
+        </div>
+        <div class="Desc-comment">
+            <div class="listMenu">
+                <button class="btn-dir">Mô tả</button>
+                <button class="btn-dir">Thông số kỹ thuật</button>
+                <button class="btn-dir">Review</button>
+            </div>
+            <div class="listContent">
+                <div class="content-desc">
+                    <div class="desc-product">
+                        <h3 style="text-transform: uppercase;">Mô tả sản phẩm</h3>
+                        <p class="desc1">
+                            Màn hình chuyên game ASUS ROG Strix XG309CM được thiết kế đặc biệt dựa trên nhu cầu của game thủ chuyên nghiệp, lấy game thủ làm trọng tâm để tạo nên một màn hình máy tính chất lượng. Hãy cùng xem qua siêu phẩm này để xem nó có gì khiến người dùng đứng ngồi không yên nhé. 
+                           <div class="space-desc" style="height: 12px;width: 100%;"></div>
+                           Màn hình ASUS ROG Strix XG309CM sở hữu màn hình kích thước lớn, lên đến 30 inch. Độ phân giải Full HD tiêu chuẩn dưới tấm nền Fast IPS giúp tái tạo hình ảnh chân thật và sống động, bạn sẽ được trải nghiệm hình ảnh rõ nét đến từng chi tiết...
+                        </p>
+                    </div>
+                    <div class="info-promotion">
+                        <h3 style="text-transform: uppercase;">Khuyến mãi</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-snowflake"></i>Miễn phí 1 năm bảo hành</li>
+                            <li><i class="fa-solid fa-snowflake"></i>Ưu đãi vận chuyển nội thành</li>
+                            <li><i class="fa-solid fa-snowflake"></i>Hoàn tiền 100% nếu sản phẩm gặp lỗi</li>
+                            <li><i class="fa-solid fa-snowflake"></i>Hỗi trợ 24/7 qua hotline</li>
+                        </ul>
+                    </div>
+                    <div class="colSpace" style="width: 1px;height: 100%;background-color: #E4E7E9;"></div>
+                    <div class="desc-shipper">
+                        <h3 style="text-transform: uppercase;">Thông tin vận chuyển</h3>
+                        <ul>
+                            <li><strong>Thời gian:</strong> 2-4 ngày, Free ship</li>
+                            <li><strong>Giao hàng nhanh: </strong>trong ngày, phí: 70.000đ</li>
+                            <li><strong>Giao hàng hỏa tốc: </strong>2-4h nội thành, phí: 150.000đ</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="config-infomation" style="display: none;">
+                    <p>Thông tin cấu hình</p>
+                    <ul class="listCofig">
+                        <li class="itemConfig">Loại màn hình: <strong>Phẳng</strong></li>
+                        <li class="itemConfig">Kích thước màn hình: <strong>24 inch</strong>
+                        </li>
+                        <li class="itemConfig">Độ phân giải: <strong>Full HD (1920 x 1080)</strong></li>
+                        <li class="itemConfig">Công suất tiêu thụ điện: <strong>27.5 W</strong></li>
+                        <li class="itemConfig">Kích thước: <strong>Ngang 539 mm - Cao 388.46 ~ 518.46 mm - Dày 21mm<strong> </li>
+                    </ul>
+                </div>
+                <div class="review-content" style="display: none;">
+
+                </div>
+            </div>
+        </div>
+
+        <!-- !FOOTER PAGE -->
+        <div class="footer">
+            <div class="top-footer">
+                <div class="info-shop">
+                    <div class="name-shop">
+                        <a href="../index.html" style="color: white; text-decoration: none;">
+                            <span style="font-size: 50px; font-weight: bold; padding-right: 3px;">E</span>
+                            <span style="font-size: 40px; font-weight: bold; padding-right: 3px;">-</span>
+                            <span style="font-size: 32px; font-weight: bold;">STORE</span>
+                        </a>
+                    </div>
+                    <div class="detailInfoShop">
+                        <div class="hotline">
+                            <span style="display: inline-block; color: #77878F; font-size: 16px; margin-bottom: 5px;">Hotline hỗ trợ trực tuyến:</span>
+                            <p style="color: #fff;font-size: 18px;">(84) 0969379924</p>
+                        </div>
+                        <div class="address">
+                            <span style="color: #ADB7BC;font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px; "> ĐH BK HCM, TP. Thủ Đức, Hồ Chí Minh</span>
+                        </div>
+                        <div class="gmail">
+                            <a style="color: #fff;font-style: normal;
+                            font-weight: 500;
+                            line-height: 24px; " href="mailto:vinhtrong782002@gmail.com">vinhtrong782002@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cate-shop">
+                    <div class="title-cate">
+                        <h2 style="font-size: 23px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 24px;
+                        text-transform: uppercase; color: #fff;">
+                            TOP SẢN PHẨM
+                        </h2>
+                    </div>
+                    <div class="body-cate" style="display: grid; grid-template-rows: 1fr 1fr 1fr 1fr 1fr;">
+                        <p style="padding: 8px 0;" class="itemOfFooter"><a href="#">Màn hình PC</a></p>
+                        <p style="padding: 8px 0;" class="itemOfFooter"><a href="#">Tai nghe</a></p>
+                        <p style="padding: 8px 0;" class="itemOfFooter"><a href="#">Chuột</a></p>
+                        <p style="padding: 8px 0;" class="itemOfFooter"><a href="#">Bàn phím</a></p>
+                        <p style="padding: 8px 0;" class="itemOfFooter"><a style="color:#EBC80C ;" href="../Shop/index.html">Xem tất cả sản phẩm <i class="fa-solid fa-arrow-right" style="padding-left: 5px;"></i></a></p>
+                    </div>
+                </div>
+
+                <div class="menu-shop">
+                    <div class="title-menu">
+                        <h2 style="font-size: 23px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 24px;
+                        text-transform: uppercase; color: #fff;">
+                            Menu
+                        </h2>
+                    </div>
+                    <div class="body-menu" style="display: grid; grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;">
+                        <p style="padding: 8px 0;" class="itemOfFooter"><a href="../index.html">Trang chủ</a></p>
+                        <p style="padding: 8px 0;" class="itemOfFooter"><a href="../Shop/index.html">Tất cả sản phẩm</a></p>
+                        <p style="padding: 8px 0;" class="itemOfFooter"><a href="../Error/error.html">Tài khoản của bạn</a></p>
+                        <p style="padding: 8px 0;" class="itemOfFooter"><a href="#">Đơn hàng của bạn</a></p>
+                        <p style="padding: 8px 0;" class="itemOfFooter"><a href="#">Bảng tin</a></p>
+                        <p style="padding: 8px 0;" class="itemOfFooter"><a href="../About/index.html">Về chúng tôi</a></p>
+                    </div>
+                </div>
+
+                <div class="research-shop">
+                    <div class="title-research">
+                        <h2 style="font-size: 23px;
+                        display: inline-block;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 24px;
+                        text-transform: uppercase; color: #fff;">
+                            Tìm kiếm phổ biến
+                        </h2>
+                    </div>
+                    <div class="body-research" style="display: flex;width: 270px; flex-wrap: wrap; gap: 8px;">
+                        <a href="#">
+                            <span>Headphone</span>
+                        </a>
+                        <a href="#">
+                            <span>Chuột</span>
+                        </a>
+                        <a href="#">
+                            <span>Asus</span>
+                        </a>
+                        <a href="#">
+                            <span>Bàn phím</span>
+                        </a>
+                        <a href="#">
+                            <span>SSD</span>
+                        </a>
+                        <a href="#">
+                            <span>Graphics card</span>
+                        </a>
+                        <a href="#">
+                            <span>RAM</span>
+                        </a>
+                        <a href="#">
+                            <span>ROM</span>
+                        </a>
+                        <a href="#">
+                            <span>Màn hình PC</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="coppyright">
+                <p style="color: white; text-align: center;">E-STORE &#169; 2023. Design by GROUP-WEB-HCMUT</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
