@@ -125,14 +125,12 @@
             <div class="colRight">
                 <div class="contentProduct">
                     <div class="headerProduct">
-                        <div class="rating-container" id="ratingContainer">
-                            <span class="rating-stars" id="ratingStars">
-                                <span class="star" data-value="1">&#9733;</span>
-                                <span class="star" data-value="2">&#9733;</span>
-                                <span class="star" data-value="3">&#9733;</span>
-                                <span class="star" data-value="4">&#9733;</span>
-                                <span class="star" data-value="5">&#9733;</span>
-                            </span>
+                        <div class="product-rating" id="productRating">
+                            <span class="valStar" data-rating="1">&#9733;</span>
+                            <span class="valStar" data-rating="2">&#9733;</span>
+                            <span class="valStar" data-rating="3">&#9733;</span>
+                            <span class="valStar" data-rating="4">&#9733;</span>
+                            <span class="valStar" data-rating="5">&#9733;</span>
                             <span id="rating" data-value="">3</span>
                             <span id="user-cmt">(100 đánh giá từ người dùng)</span>
                         </div>
@@ -189,12 +187,12 @@
         </div>
         <div class="Desc-comment">
             <div class="listMenu">
-                <button class="btn-dir">Mô tả</button>
-                <button class="btn-dir">Thông số kỹ thuật</button>
-                <button class="btn-dir">Review</button>
+                <button value="0" class="btn-dir default">Mô tả</button>
+                <button value="1" class="btn-dir">Thông số kỹ thuật</button>
+                <button value="2" class="btn-dir">Review</button>
             </div>
             <div class="listContent">
-                <div class="content-desc">
+                <div data-value="0" class="itemDesc content-desc">
                     <div class="desc-product">
                         <h3 style="text-transform: uppercase;">Mô tả sản phẩm</h3>
                         <p class="desc1">
@@ -222,7 +220,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="config-infomation" style="display: none;">
+                <div data-value="1" class="itemDesc config-infomation">
                     <p>Thông tin cấu hình</p>
                     <ul class="listCofig">
                         <li class="itemConfig">Loại màn hình: <strong>Phẳng</strong></li>
@@ -233,8 +231,95 @@
                         <li class="itemConfig">Kích thước: <strong>Ngang 539 mm - Cao 388.46 ~ 518.46 mm - Dày 21mm<strong> </li>
                     </ul>
                 </div>
-                <div class="review-content" style="display: none;">
-
+                <div data-value="2" class="itemDesc review-content">
+                    <div class="inputCommentMe">
+                        <h3>Nhập bình luận của bạn</h3>
+                        <form action="#" class="cmtMe">
+                            <input type="text" name="nameCmt" id="nameCmt" placeholder="Tên của bạn..." required>
+                            <textarea name="contentCmt" id="contentCmt" cols="40" rows="10" style="resize: none;" placeholder="Nội dung bình luận..." required>
+                                
+                            </textarea>
+                            <div class="rating-container" id="ratingContainer">
+                                <div class="rating-stars" id="ratingStars">
+                                    <span class="star" data-value="1">&#9733;</span>
+                                    <span class="star" data-value="2">&#9733;</span>
+                                    <span class="star" data-value="3">&#9733;</span>
+                                    <span class="star" data-value="4">&#9733;</span>
+                                    <span class="star" data-value="5">&#9733;</span>
+                                </div>
+                                <p id="selectedRating" data-result="">Selected rating: 0</p>
+                            </div>
+                        </form>
+                        <button name="btn-cmt" class="btn-cmt">Bình luận</button>
+                    </div>
+                    <div class="hrSpace" style="width: 100%;height: 2px;background-color: #E4E7E9;"></div>
+                    <div class="showCmt">
+                        <h3>Phản hồi của người dùng</h3>
+                        <div class="itemCmt">
+                            <div class="product-rating" id="productRating">
+                                <span class="valStar" data-rating="1">&#9733;</span>
+                                <span class="valStar" data-rating="2">&#9733;</span>
+                                <span class="valStar" data-rating="3">&#9733;</span>
+                                <span class="valStar" data-rating="4">&#9733;</span>
+                                <span class="valStar" data-rating="5">&#9733;</span>
+                            </div>
+                            <div id="titleCmt">
+                                <span id="showName">Nguyễn Trọng Vinh</span>
+                                <span id="showTime">6h50, 23/5/2023</span>
+                            </div>
+                            <div id="showContent">
+                                Máy ổn. Dùng khá tốt. Tôi rất thích sử dụng máy này
+                            </div>
+                        </div>
+                        <div class="itemCmt">
+                            <div class="product-rating" id="productRating">
+                                <span class="valStar" data-rating="1">&#9733;</span>
+                                <span class="valStar" data-rating="2">&#9733;</span>
+                                <span class="valStar" data-rating="3">&#9733;</span>
+                                <span class="valStar" data-rating="4">&#9733;</span>
+                                <span class="valStar" data-rating="5">&#9733;</span>
+                            </div>
+                            <div id="titleCmt">
+                                <span id="showName">Nguyễn Trọng Vinh</span>
+                                <span id="showTime">6h50, 23/5/2023</span>
+                            </div>
+                            <div id="showContent">
+                                Máy ổn. Dùng khá tốt. Tôi rất thích sử dụng máy này
+                            </div>
+                        </div>
+                        <div class="itemCmt">
+                            <div class="product-rating" id="productRating">
+                                <span class="valStar" data-rating="1">&#9733;</span>
+                                <span class="valStar" data-rating="2">&#9733;</span>
+                                <span class="valStar" data-rating="3">&#9733;</span>
+                                <span class="valStar" data-rating="4">&#9733;</span>
+                                <span class="valStar" data-rating="5">&#9733;</span>
+                            </div>
+                            <div id="titleCmt">
+                                <span id="showName">Nguyễn Trọng Vinh</span>
+                                <span id="showTime">6h50, 23/5/2023</span>
+                            </div>
+                            <div id="showContent">
+                                Máy ổn. Dùng khá tốt. Tôi rất thích sử dụng máy này
+                            </div>
+                        </div>
+                        <div class="itemCmt">
+                            <div class="product-rating" id="productRating">
+                                <span class="valStar" data-rating="1">&#9733;</span>
+                                <span class="valStar" data-rating="2">&#9733;</span>
+                                <span class="valStar" data-rating="3">&#9733;</span>
+                                <span class="valStar" data-rating="4">&#9733;</span>
+                                <span class="valStar" data-rating="5">&#9733;</span>
+                            </div>
+                            <div id="titleCmt">
+                                <span id="showName">Nguyễn Trọng Vinh</span>
+                                <span id="showTime">6h50, 23/5/2023</span>
+                            </div>
+                            <div id="showContent">
+                                Máy ổn. Dùng khá tốt. Tôi rất thích sử dụng máy này
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

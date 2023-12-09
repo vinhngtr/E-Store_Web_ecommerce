@@ -179,8 +179,6 @@ ul{
 }
 .body-page{
     width: 1350px;
-    /* margin: 40px auto;
-    margin-bottom: 150px; */
     padding: 32px 0px;
     margin: 0 auto;
     display: grid;
@@ -252,8 +250,9 @@ ul{
     line-height: 28px;
 }
 
-.rating-stars {
-    font-size: 20px;
+/*! START USER (SHOW) ------------------------------------ */
+.valStar{
+    font-size: 24px;
 }
 #rating{
     font-size: 18px;
@@ -268,15 +267,17 @@ ul{
     font-weight: 400;
     line-height: 20px; /* 142.857% */
 }
-.star {
-    display: inline-block;
-    cursor: pointer;
-    transition: all 0.2s linear;
-}
 
+.rating-stars {
+    font-size: 24px;
+}
+.star {
+    cursor: pointer;
+}
 .selected {
     color: gold;
 }
+/* ------------------------------- */
 
 .priceProduct{
     display: flex;
@@ -452,6 +453,7 @@ input::-webkit-inner-spin-button {
 
 .Desc-comment{
     width: 1350px;
+    height: 450px;
     /* padding-bottom: 32px; */
     margin: 60px auto;
     margin-bottom: 120px;
@@ -477,6 +479,15 @@ input::-webkit-inner-spin-button {
     line-height: 20px; /* 142.857% */
     text-transform: uppercase;
     cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+ .default{
+    font-weight: 600;
+    box-shadow: 0px -3px 0px 0px #FA8232 inset;
+}
+ .checked{
+    font-weight: 600;
+    box-shadow: 0px -3px 0px 0px #FA8232 inset;
 }
 .btn-dir:hover{
     font-weight: 600;
@@ -489,6 +500,7 @@ input::-webkit-inner-spin-button {
     font-style: normal;
     font-weight: 400;
     line-height: 25px; 
+    overflow-y: scroll;
 }
 /* !DESC1 */
 .content-desc{
@@ -531,6 +543,115 @@ input::-webkit-inner-spin-button {
     font-weight: 500;
 }
 /* !------------ DESC CHO SẢN PHẨM + COMMENT NGƯỜI DÙNG -------------------- */
+.config-infomation{
+    /* display: none; */
+    display: none;
+}
+.config-infomation p{
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 0px;
+}
+.listCofig li{
+    padding: 10px 0px;
+    font-size: 18px;
+    color: #5F6C72;
+}
+.listCofig li strong{
+    color: black;
+}
+
+/* ------------- LIST COMMENT---------------- */
+.review-content{
+    display: none; 
+    flex-direction: column;
+    gap: 30px;
+}
+.inputCommentMe{
+    padding: 10px 0px;
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 20px;
+    justify-items: flex-start
+}
+.inputCommentMe h3{
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.inputCommentMe form{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    padding: 30px;
+    border: 1px solid #E4E7E9;
+}
+.cmtMe input,textarea{
+    outline: none;
+    border-radius: 4px;
+    border: 2px solid #0a99e0;
+}
+#nameCmt{
+    width: 60%;
+    font-size: 16px;
+    padding: 10px 12px;
+}
+#contentCmt{
+    width: 90%;
+    padding: 20px 10px;
+    color: #5F6C72;
+    font-size: 18px;
+}
+.btn-cmt{
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    background-color: red;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.showCmt{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.showCmt h3{
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.itemCmt{
+    border-bottom: 1px solid #E4E7E9;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    row-gap: 10px;
+    font-weight: 500;
+}
+.showCmt .itemCmt:last-of-type{
+    border-bottom: none;
+}
+#titleCmt{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+#showName{
+    font-size: 22px;
+}
+#showTime{
+    color: #5F6C72;
+    font-size: 15px;
+    font-style: italic;
+}
+#showContent{
+    margin-top: 10px;
+    font-size: 18px;
+}
 
 
 /* !---- FOOTER -------------- */
