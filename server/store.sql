@@ -210,72 +210,77 @@ INSERT INTO productImage (productId, image) VALUES
 
 
 INSERT INTO productImage (productId, image) VALUES
-(6, "https://m.media-amazon.com/images/I/81yd9W+0doL._AC_SY300_SX300_.jpg"),
-(6, "https://m.media-amazon.com/images/I/51MDy5YJW6L._AC_US40_.jpg"),
-(6, "https://m.media-amazon.com/images/I/41VJ2FERPOL._AC_US40_.jpg");
+(6, "https://m.media-amazon.com/images/I/71iMPr0C8KL._AC_SL1500_.jpg"),
+(6, "https://m.media-amazon.com/images/I/71WQh5q3egL._AC_SL1500_.jpg"),
+(6, "https://m.media-amazon.com/images/I/61reta-rn-L._AC_SL1500_.jpg");
 
 
 INSERT INTO productImage (productId, image) VALUES
-(7, "https://m.media-amazon.com/images/I/41ikzM0ZbBL._AC_SR38,50_.jpg"),
-(7, "https://m.media-amazon.com/images/I/216nnXDjgiL._AC_SR38,50_.jpg"),
-(7, "https://m.media-amazon.com/images/I/41AgWG1zUvL._AC_SR38,50_.jpg");
+(7, "https://m.media-amazon.com/images/I/61k5baRnzTL._AC_SL1333_.jpg"),
+(7, "https://m.media-amazon.com/images/I/61k5baRnzTL._AC_SL1333_.jpg"),
+(7, "https://m.media-amazon.com/images/I/71NFfDMiLDL._AC_SL1500_.jpg");
 
 INSERT INTO productImage (productId, image) VALUES
-(8, "https://m.media-amazon.com/images/I/31dHVsk8vKL._AC_US40_.jpg"),
-(8, "https://m.media-amazon.com/images/I/41iV6mm5lRS._AC_US40_.jpg"),
-(8, "https://m.media-amazon.com/images/I/41h4T6+KJLS._AC_US40_.jpg");
+(8, "https://m.media-amazon.com/images/I/71RWUesV7ML._AC_SL1500_.jpg"),
+(8, "https://m.media-amazon.com/images/I/714z8ISqjrL._AC_SL1500_.jpg"),
+(8, "https://m.media-amazon.com/images/I/71pdLz+gPYL._AC_SL1500_.jpg");
 
 INSERT INTO productImage (productId, image) VALUES
-(9, "https://m.media-amazon.com/images/I/31w3G-yIZAL._AC_US40_.jpg"),
-(9, "https://m.media-amazon.com/images/I/419LzFml6YL._AC_US40_.jpg"),
-(9, "https://m.media-amazon.com/images/I/41quwLeHk8L._AC_US40_.jpg");
+(9, "https://m.media-amazon.com/images/I/51rpbVmi9XL._AC_SL1200_.jpg"),
+(9, "https://m.media-amazon.com/images/I/81L8FJQd5nL._AC_SL1500_.jpg"),
+(9, "https://m.media-amazon.com/images/I/91hx2gnY0qL._AC_SL1500_.jpg");
 
 INSERT INTO productImage (productId, image) VALUES
-(10, "https://m.media-amazon.com/images/I/5131mT07zUL._AC_US40_.jpg"),
-(10, "https://m.media-amazon.com/images/I/51QHyY8pZrL._AC_US40_.jpg"),
-(10, "https://m.media-amazon.com/images/I/41pX22D0SrL._AC_US40_.jpg");
-
-
-INSERT INTO productImage (productId, image) VALUES
-(11, "https://m.media-amazon.com/images/I/41kRc8qrw7L._AC_US40_.jpg"),
-(11, "https://m.media-amazon.com/images/I/41bWAarf53L._AC_US40_.jpg"),
-(11, "https://m.media-amazon.com/images/I/41abuS8UlQL._AC_US40_.jpg");
-
+(10, "https://m.media-amazon.com/images/I/51K77J9rCjL._AC_SL1500_.jpg"),
+(10, "https://m.media-amazon.com/images/I/51PDgdXX27L._AC_SL1500_.jpg"),
+(10, "https://m.media-amazon.com/images/I/71ygziUmnWL._AC_SL1500_.jpg");
 
 INSERT INTO productImage (productId, image) VALUES
-(12, "https://m.media-amazon.com/images/I/41aAhoXuVhL._AC_US40_.jpg"),
-(12, "https://m.media-amazon.com/images/I/51bzc8RKUQL._AC_US40_.jpg"),
-(12, "https://m.media-amazon.com/images/I/51AY-OZ1LLL._AC_US40_.jpg");
+(11, "https://m.media-amazon.com/images/I/51EZig0rEAL._AC_SL1500_.jpg"),
+(11, "https://m.media-amazon.com/images/I/41Qo8Cps+JL._AC_SL1500_.jpg"),
+(11, "https://m.media-amazon.com/images/I/41dJUFOoWbL._AC_SL1500_.jpg");
 
 
 INSERT INTO productImage (productId, image) VALUES
-(13, "https://m.media-amazon.com/images/I/41V6V1id6lL._AC_US40_.jpg"),
-(13, "https://m.media-amazon.com/images/I/51po7AeX3lL._AC_US40_.jpg"),
-(13, "https://m.media-amazon.com/images/I/51NvR79yiPL._AC_US40_.jpg");
+(12, "https://m.media-amazon.com/images/I/51rtZPimkBL._AC_SL1000_.jpg"),
+(12, "https://m.media-amazon.com/images/I/719PhpYz2qL._AC_SL1500_.jpg"),
+(12, "https://m.media-amazon.com/images/I/81iItGAGS1L._AC_SL1500_.jpg");
 
 
 INSERT INTO productImage (productId, image) VALUES
-(14, "https://m.media-amazon.com/images/I/51hDrk8QdBL._AC_US40_.jpg"),
-(14, "https://m.media-amazon.com/images/I/41UuMZBtsqL._AC_US40_.jpg"),
-(14, "https://m.media-amazon.com/images/I/41FfgIlhl1L._AC_US40_.jpg");
+(13, "https://m.media-amazon.com/images/I/81Wyk9kS01L._AC_SL1500_.jpg"),
+(13, "https://m.media-amazon.com/images/I/81ehPKjp0bL._AC_SL1500_.jpg"),
+(13, "https://m.media-amazon.com/images/I/71HlIc1QxpL._AC_SL1500_.jpg");
 
 
 INSERT INTO productImage (productId, image) VALUES
-(15, "https://m.media-amazon.com/images/I/31+CMjgVyHL._AC_US40_.jpg"),
-(15, "https://m.media-amazon.com/images/I/41i4wtorPjL._AC_US40_.jpg"),
-(15, "https://m.media-amazon.com/images/I/41syo-ZDVhL._AC_US40_.jpg");
+(14, "https://m.media-amazon.com/images/I/8153eBeVpQL._AC_SL1500_.jpg"),
+(14, "https://m.media-amazon.com/images/I/61sMPkaGRwL._AC_SL1500_.jpg"),
+(14, "https://m.media-amazon.com/images/I/6127JUdSB0L._AC_SL1500_.jpg");
 
 
 INSERT INTO productImage (productId, image) VALUES
-(16, "https://m.media-amazon.com/images/I/31F1zwV97TL._AC_US40_.jpg"),
-(16, "https://m.media-amazon.com/images/I/31nldYnTNeL._AC_US40_.jpg"),
-(16, "https://m.media-amazon.com/images/I/31l1ZqINXOL._AC_US40_.jpg");
+(15, "https://m.media-amazon.com/images/I/81yd9W+0doL._AC_SX425_.jpg"),
+(15, "https://m.media-amazon.com/images/I/81QEX6i2K-L._AC_SL1500_.jpg"),
+(15, "https://m.media-amazon.com/images/I/71NmdYbd0mL._AC_SL1500_.jpg");
 
 
 INSERT INTO productImage (productId, image) VALUES
-(17, "https://m.media-amazon.com/images/I/41ei+HkwvPL._AC_US40_.jpg"),
-(17, "https://m.media-amazon.com/images/I/517e2USriPL._AC_US40_.jpg"),
-(17, "https://m.media-amazon.com/images/I/31xP7lejxiL._AC_US40_.jpg");
+(16, "https://m.media-amazon.com/images/I/71yE77UAvxL._AC_SL1500_.jpg"),
+(16, "https://m.media-amazon.com/images/I/61m5pXHc+6L._AC_SL1500_.jpg"),
+(16, "https://m.media-amazon.com/images/I/41GeN4Kf0LL._AC_SL1500_.jpg");
+
+
+INSERT INTO productImage (productId, image) VALUES
+(17, "https://m.media-amazon.com/images/I/8189uwDnMkL._AC_SL1500_.jpg"),
+(17, "https://m.media-amazon.com/images/I/61Vbk62PIjS._AC_SL1500_.jpg"),
+(17, "https://m.media-amazon.com/images/I/61V3921F10S._AC_SL1500_.jpg");
+
+
+INSERT INTO productImage (productId, image) VALUES
+(18, "https://m.media-amazon.com/images/I/61mPlkAdz5L._AC_SL1500_.jpg"),
+(18, "https://m.media-amazon.com/images/I/71vG4lOufkL._AC_SL1500_.jpg"),
+(18, "https://m.media-amazon.com/images/I/71sjT9o51iL._AC_SL1500_.jpg");
 
 
 INSERT INTO productImage (productId, image) VALUES
@@ -285,15 +290,15 @@ INSERT INTO productImage (productId, image) VALUES
 
 
 INSERT INTO productImage (productId, image) VALUES
-(19, "https://m.media-amazon.com/images/I/31RkSDeCwCL._AC_US40_.jpg"),
-(19, "https://m.media-amazon.com/images/I/21BkO4wBPNL._AC_US40_.jpg"),
-(19, "https://m.media-amazon.com/images/I/21u8v-z4JHL._AC_US40_.jpg");
+(19, "https://m.media-amazon.com/images/I/919B55ca9bL._AC_SL1500_.jpg"),
+(19, "https://m.media-amazon.com/images/I/91uSrd3PBKL._AC_SL1500_.jpg"),
+(19, "https://m.media-amazon.com/images/I/61g+xe5SMsL._AC_SL1500_.jpg");
 
 
 INSERT INTO productImage (productId, image) VALUES
-(20, "https://m.media-amazon.com/images/I/41Oqk2WzfFL._AC_US40_.jpg"),
-(20, "https://m.media-amazon.com/images/I/51Rkv4PP70L._AC_US40_.jpg"),
-(20, "https://m.media-amazon.com/images/I/512SsDSc7oL._AC_US40_.jpg");
+(20, "https://m.media-amazon.com/images/I/71GYwojJXzL._AC_SL1500_.jpg"),
+(20, "https://m.media-amazon.com/images/I/71n6KdB8SnL._AC_SL1500_.jpg"),
+(20, "https://m.media-amazon.com/images/I/71lrXNvcf3L._AC_SL1500_.jpg");
 
 
 
