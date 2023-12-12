@@ -30,7 +30,7 @@ class ProductController extends Controller
     {
         parent::validateAuth($this->get, $response);
 
-        $result = Model::get($this->table, $request->get_conditions(), $request->get_order());
+        $result = Model::get($this->table, $request->get_conditions(), $request->get_order(), $request->get_limit());
 
         if ($result) {
             $result = array_map(function ($row) {
