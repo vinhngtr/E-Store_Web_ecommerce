@@ -2,8 +2,7 @@
 
 namespace Controller;
 
-use Utils\{Auth, Request, Response, Model};
-
+use Utils\{Request, Response, Model};
 
 class ReviewController extends Controller
 {
@@ -19,33 +18,46 @@ class ReviewController extends Controller
         );
     }
 
+    public function get(Request $request, Response $response): void
+    {
+        $this->validateAuth($this->get, $response);
+
+        $result = Model::get($this->table, $request->get_conditions(), $request->get_order());
+
+        if ($result) {
+            $result = array_map(function ($review) {
+                $user = Model::get(
+                    'user',
+                    [
+                        "id='" . $review['userId'] . "'"
+                    ]
+                );
+                return [...$review, 'user' => $user];
+            }, $result);
+            $response->status(200)->json(['payload' => $result]);
+        } else
+            $response->status(404)->json(['message' => 'Items not found']);
+    }
+
     public function post(Request $request, Response $response): void
     {
         $user = parent::validateAuth($this->post, $response);
-        // $request->add_condition('userId');
+        $request->add_body('userId', $user['id']);
+        $request->add_body('productId', $request->get_param('productId'));
         $body = $request->get_body();
 
-        if (Model::is_soft_delete($this->table)) {
-            $existed = Model::get(
-                $this->table,
-                ["name='" . $body['name'] . "'",]
-            );
-
-            if (!$existed)
-                $result = Model::post($this->table, $body);
-            else {
-                $result = Model::put(
-                    $this->table,
-                    [...$body, 'active' => 1],
-                    ["name='" . $body['name'] . "'"]
-                );
-            }
-        } else
-            $result = Model::post($this->table, $body);
-
-        if (is_int($result))
-            $response->status(201)->json($body);
+        $result = Model::call(
+            'pcd_createReview',
+            [
+                $body['userId'],
+                $body['productId'],
+                $body['content'],
+                $body['rating']
+            ]
+        )[0]['result'];
+        if ($result === '1')
+            $response->status(201)->json(['payload' => $body, 'message' => 'Review created successfully']);
         else
-            $response->status(400)->json(array('message' => 'Item not created'));
+            $response->status(400)->json(['message' => 'Item not created']);
     }
 }

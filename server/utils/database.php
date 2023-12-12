@@ -25,8 +25,12 @@ class Model
         return $conn;
     }
 
-    public static function get(string $table, array | null $conditions = null, array | null $order = null): array | null
-    {
+    public static function get(
+        string $table,
+        array | null $conditions = null,
+        array | null $order = null,
+        int $limit = 0
+    ): array | null {
         $conn = self::connectDatabase();
         $query = "SELECT * FROM " . $table;
 
@@ -35,6 +39,11 @@ class Model
 
         if ($order)
             $query .= " ORDER BY " . implode(",", $order);
+
+        if ($limit)
+            $query .= " LIMIT " . $limit;
+
+        // echo $query, "\n";
 
         $product = $conn->execute_query($query);
         $conn->close();
@@ -87,10 +96,11 @@ class Model
         return $success;
     }
 
-    public static function delete(string $table, array $conditions, bool $delete = false): bool
+    public static function delete(string $table, array $conditions): bool
     {
         $conn = self::connectDatabase();
-        if ($delete)
+
+        if (!self::is_soft_delete($table))
             $query = "DELETE FROM " . $table;
         else
             $query = "UPDATE " .
@@ -103,5 +113,23 @@ class Model
 
         $conn->close();
         return $success;
+    }
+
+    public static function is_soft_delete(string $table): bool
+    {
+        return in_array('active', array_map(function ($row) {
+            return $row['Field'];
+        }, self::connectDatabase()->query("SHOW COLUMNS FROM " . $table)->fetch_all(MYSQLI_ASSOC)));
+    }
+
+    public static function call(string $fName, array $params)
+    {
+        $params = array_map(function ($param) {
+            return "'$param'";
+        }, $params);
+        $conn = self::connectDatabase();
+        $result = $conn->query("CALL $fName(" . implode(',', $params) . ")");
+        $conn->close();
+        return $result->fetch_all(MYSQLI_ASSOC);
     }
 }

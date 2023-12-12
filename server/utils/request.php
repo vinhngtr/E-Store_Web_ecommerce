@@ -12,6 +12,10 @@ class Request
     private $body;
     private $conditions;
     private $order;
+    private $limit;
+    private $type = [
+        "int" => ['id', 'userId', 'productId', 'brandId', 'categoryId', 'rating', 'unitPrice', 'quantity', 'orderId']
+    ];
 
     // Methods
     public function __construct(string $uri, string $method)
@@ -25,15 +29,6 @@ class Request
             $this->path = substr($uri, 0, $idx);
             $params = substr($uri, $idx + 1);
             parse_str($params, $this->params);
-            // $params = explode("&", $params);
-            // foreach ($params as $param) {
-            //     $param = explode("=", $param);
-            //     // if ($param === 'order') {
-            //     // $this->order = explode(',', $param[1]);
-            //     // echo $this->order;
-            //     // } else
-            //     $this->params[$param[0]] = $param[1];
-            // }
         }
 
         $this->method = $method;
@@ -45,6 +40,8 @@ class Request
         } else
             $this->body = null;
 
+        $this->limit = 0;
+
         $this->conditions = [];
         $this->construct_conditions();
     }
@@ -52,7 +49,16 @@ class Request
     private function construct_conditions()
     {
         array_map(function ($key) {
-            $this->conditions[] = $key . "='" . $this->params[$key] . "'";
+            switch ($key) {
+                case 'limit':
+                    $this->limit = intval($this->params[$key]);
+                    break;
+
+                default:
+                    $this->conditions[] = $key . "='" . $this->params[$key] . "'";
+
+                    break;
+            }
         }, array_keys($this->params));
     }
 
@@ -87,8 +93,24 @@ class Request
     {
         return $this->body;
     }
+
+    public function add_body(string $key, string $value): void
+    {
+        $this->body[$key] = $value;
+    }
+
     public function get_order(): array | null
     {
         return $this->order;
+    }
+
+    public function get_param($key): string | null
+    {
+        return $this->params[$key] ?? null;
+    }
+
+    public function get_limit(): int
+    {
+        return $this->limit;
     }
 }
