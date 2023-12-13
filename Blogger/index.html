@@ -1,43 +1,4 @@
-<?php
-if (isset($_POST['btn-log'])) {
-    $email_log = $_POST['email'];
-    $pass_log = $_POST['password'];
 
-    // ! tạo kết nối database để xác thực password và email nhập vào so với CSDL:
-    $db_host = "localhost";
-    $db_user = "trongvinh";
-    $db_pass = "vinhtrong782002";
-    $db_name = "list_user";
-    $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
-    if (!$conn) {
-        die("Kết nối DB không thành công: " . mysqli_connect_error());
-        exit();
-    }
-    // Chuẩn bị câu lệnh truy vấn
-    $stmt = $conn->prepare("SELECT * FROM account_user WHERE email = ?");
-    // assign return in array POST to parameter;
-    $stmt->bind_param("s", $email_log);
-    // excutive
-    $stmt->execute();
-    // assign value return to variable result
-    $result = $stmt->get_result();
-    if ($result->num_rows > 0) {
-        $user = $result->fetch_assoc();
-        if (password_verify($pass_log, $user['password'])) {
-            // ! tạo 1 page thông báo đăng nhập thành công -> button back về Home:
-            header("Location: ../index.html");
-            exit();
-        } else {
-            echo "Mật khẩu nhập vào không chính xác";
-            exit();
-        }
-    } else {
-        echo "Không tìm thấy người dùng với tài khoản này!";
-    }
-    $stmt->close();
-    $conn->close();
-}
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -48,7 +9,7 @@ if (isset($_POST['btn-log'])) {
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <title>Đăng nhập tài khoản</title>
+    <title>Blogger</title>
 </head>
 
 <body>
@@ -81,7 +42,7 @@ if (isset($_POST['btn-log'])) {
                         <button><i class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
                     <div class="info-user" style="display: grid; grid-template-columns: auto auto auto; column-gap: 24px;">
-                        <a href="../Cart/index.html" style="width: 32px;height: 32px; display: inline-block;" title="Giỏ hàng">
+                        <a href="#" style="width: 32px;height: 32px; display: inline-block;" title="Giỏ hàng">
                             <i class="fa-solid fa-cart-shopping"></i>
                         </a>
                         <a href="#" style=" width: 32px;height: 32px; display: inline-block;" title="Sản phẩm yêu thích">
@@ -118,7 +79,7 @@ if (isset($_POST['btn-log'])) {
                         </a>
                     </div>
                     <div class="blogger" style="margin-right: 24px;">
-                        <a href=".../Blogger/index.html" style="text-decoration: none;">
+                        <a href="#" style="text-decoration: none;">
                             <i class="fa-brands fa-blogger" style="padding-right: 5px;"></i>
                             <span>Blog</span>
                         </a>
@@ -144,24 +105,105 @@ if (isset($_POST['btn-log'])) {
             </div>
             <div class="hr1" style="width: 100vw; background-color: #E4E7E9; height: 1px;"></div>
         </div>
+
+        <!-- ! BODY PAGE -->
         <div class="body-page">
-            <div class="registration-form">
-                <h2 ">Đăng nhập tài khoản</h2>
-                <form id=" signupForm" action="" method="POST">
-                    <div class="inputItem">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="inputItem">
-                        <div class="methodPass">
-                            <label for="password">Mật khẩu:</label>
-                            <a href="./forgotPass.php">Quên mật khẩu</a>
-                        </div>
-                        <input type="password" id="password" name="password" required>
-                    </div>
-                    <button style="display: inline-block;" type="submit" name="btn-log">Đăng nhập</button>
-                    </form>
+            <h2 class="title">Chủ đề nổi bật</h2>
+            <div class="listDirect">
+                <a href="#">All</a>
+                <a href="#">AI</a>
+                <a href="#">Smartphone</a>
+                <a href="#">PC</a>
+                <a href="#">Hot</a>
             </div>
+            <div class="listPost">
+                <div class="itemPost">
+                    <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="imgPost" style="width: 100%;height: 100%;object-fit: cover;">
+                    <div class="contentPost">
+                        <span class="timePost">13.12.2023</span>
+                        <h3 class="titlePost">vi xử lý AMD Ryzen: Hiệu năng vượt trội, giá thành hấp dẫn</h3>
+                        <p class="bodyPost">
+                            AMD Ryzen một trong những dòng chip xử lý trung tâm của laptop lẫn PC. Chip Ryzen được xem là một trong những đối trọng nặng ký của nhà Intel mà chúng ta thường nói vui là team 'Đỏ' và 'Xanh'. 
+                        </p>
+                    </div>
+                </div>
+                <div class="itemPost">
+                    <img style="width: 100%;height: 100%;object-fit: cover;" src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=2042&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="imgPost">
+                    <div class="contentPost">
+                        <span class="timePost">13.12.2023</span>
+                        <h3 class="titlePost">Lựa chọn dòng màn hình nào là tốt nhất cho việc Lập trình</h3>
+                        <p class="bodyPost">
+                            AMD Ryzen một trong những dòng chip xử lý trung tâm của laptop lẫn PC. Chip Ryzen được xem là một trong những đối trọng nặng ký của nhà Intel mà chúng ta thường nói vui là team 'Đỏ' và 'Xanh'. 
+                        </p>
+                    </div>
+                </div>
+                <div class="itemPost">
+                    <img style="width: 100%;height: 100%;object-fit: cover;" src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="imgPost">
+                    <div class="contentPost">
+                        <span class="timePost">13.12.2023</span>
+                        <h3 class="titlePost">Sự bùng nổ của AI trong năm 2023</h3>
+                        <p class="bodyPost">
+                            AMD Ryzen một trong những dòng chip xử lý trung tâm của laptop lẫn PC. Chip Ryzen được xem là một trong những đối trọng nặng ký của nhà Intel mà chúng ta thường nói vui là team 'Đỏ' và 'Xanh'. 
+                        </p>
+                    </div>
+                </div>
+                <div class="itemPost">
+                    <img style="width: 100%;height: 100%;object-fit: cover;" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="imgPost">
+                    <div class="contentPost">
+                        <span class="timePost">13.12.2023</span>
+                        <h3 class="titlePost">Làm việc nhóm và hiệu quả mang lại từ teamwork</h3>
+                        <p class="bodyPost">
+                            AMD Ryzen một trong những dòng chip xử lý trung tâm của laptop lẫn PC. Chip Ryzen được xem là một trong những đối trọng nặng ký của nhà Intel mà chúng ta thường nói vui là team 'Đỏ' và 'Xanh'. 
+                        </p>
+                    </div>
+                </div>
+                <div class="itemPost">
+                    <img style="width: 100%;height: 100%;object-fit: cover;" src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="imgPost">
+                    <div class="contentPost">
+                        <span class="timePost">13.12.2023</span>
+                        <h3 class="titlePost">Một số dòng Macbook và màn hình nổi bật của Apple trong năm 2023</h3>
+                        <p class="bodyPost">
+                            AMD Ryzen một trong những dòng chip xử lý trung tâm của laptop lẫn PC. Chip Ryzen được xem là một trong những đối trọng nặng ký của nhà Intel mà chúng ta thường nói vui là team 'Đỏ' và 'Xanh'. 
+                        </p>
+                    </div>
+                </div>
+                <div class="itemPost">
+                    <img style="width: 100%;height: 100%;object-fit: cover;" src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="imgPost">
+                    <div class="contentPost">
+                        <span class="timePost">13.12.2023</span>
+                        <h3 class="titlePost">Trí tuệ nhân tạo và khả năng thống trị toàn cầu</h3>
+                        <p class="bodyPost">
+                            AMD Ryzen một trong những dòng chip xử lý trung tâm của laptop lẫn PC. Chip Ryzen được xem là một trong những đối trọng nặng ký của nhà Intel mà chúng ta thường nói vui là team 'Đỏ' và 'Xanh'. 
+                        </p>
+                    </div>
+                </div>
+                <div class="itemPost">
+                    <img style="width: 100%;height: 100%;object-fit: cover;" src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="imgPost">
+                    <div class="contentPost">
+                        <span class="timePost">13.12.2023</span>
+                        <h3 class="titlePost">Những dòng bàn phím được yêu thích của lập trình viên</h3>
+                        <p class="bodyPost">
+                            AMD Ryzen một trong những dòng chip xử lý trung tâm của laptop lẫn PC. Chip Ryzen được xem là một trong những đối trọng nặng ký của nhà Intel mà chúng ta thường nói vui là team 'Đỏ' và 'Xanh'. 
+                        </p>
+                    </div>
+                </div>
+                <div class="itemPost">
+                    <img style="width: 100%;height: 100%;object-fit: cover;" src="https://plus.unsplash.com/premium_photo-1670274606895-f2dc713f8a90?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="imgPost">
+                    <div class="contentPost">
+                        <span class="timePost">13.12.2023</span>
+                        <h3 class="titlePost">Hiệu quả của không gian xanh đối với làm việc tại nhà</h3>
+                        <p class="bodyPost">
+                            AMD Ryzen một trong những dòng chip xử lý trung tâm của laptop lẫn PC. Chip Ryzen được xem là một trong những đối trọng nặng ký của nhà Intel mà chúng ta thường nói vui là team 'Đỏ' và 'Xanh'. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="backgr1">
+                <div class="content-1">
+                    Làm chủ công nghệ theo cách của bạn !
+                </div>
         </div>
 
         <!-- !FOOTER PAGE -->
