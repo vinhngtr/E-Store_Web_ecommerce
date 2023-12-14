@@ -2,7 +2,7 @@
 
 namespace Utils;
 
-include_once './env.php';
+// include_once './env.php';
 
 class Auth
 {

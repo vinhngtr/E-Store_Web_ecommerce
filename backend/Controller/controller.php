@@ -7,7 +7,7 @@ use Utils\{Auth, Request, Response, Model};
 class Controller
 {
     // Properties
-    protected string $table;
+    public string $table;
     protected array | null $get;
     protected array | null $post;
     protected array | null $put;

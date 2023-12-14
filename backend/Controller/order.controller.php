@@ -25,9 +25,21 @@ class OrderController extends Controller
     public function get(Request $request, Response $response): void
     {
         $user = parent::validateAuth($this->get, $response);
-        if ($user['role'] === 'user') $request->add_condition('userId', '=', $user['id']);
+        if ($user['role'] === 'user') {
+            $request->add_condition('userId', '=', $user['id']);
+            $result = Model::get($this->table, $request->get_conditions(), $request->get_order());
+        } else {
+            if (count($request->get_conditions())) {
+                $temp = str_replace("'", "", explode('=', $request->get_conditions()[0])[1]);
+                // echo var_dump($temp);
+                $result = Model::call("pcd_selectOrderDetailAdmin", [$temp]);
+                $response->status(200)->json(array('payload' => $result));
+            }
+            // echo var_dump(str_replace("'", "", explode('=', $request->get_conditions()[0])[1]));
 
-        $result = Model::get($this->table, $request->get_conditions(), $request->get_order());
+            else
+                $result = Model::call("pcd_selectUserOrderAdmin", []);
+        }
 
         if ($result) {
             $result = array_map(function ($row) {
@@ -51,6 +63,7 @@ class OrderController extends Controller
             foreach ($body['products'] as $product) {
                 $id = Model::post('orderDetail', ['orderId' => $orderId, ...$product]);
             }
+            Model::delete('cart', ["userId=" . $user['id']]);
             $response->status(201)->json(array('message' => 'Order created'));
         } else
             $response->status(500)->json(array('message' => 'Failed to create order'));

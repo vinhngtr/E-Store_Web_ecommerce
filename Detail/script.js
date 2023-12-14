@@ -157,16 +157,12 @@ function showProduct() {
 			product.colorSizes.map((obj) => `${obj.color}$${obj.colorName}`)
 		),
 	];
-	colors.forEach((color, index) => {
+	colors.forEach((color) => {
 		color = color.split("$");
 		$(".listColor").append(
 			$(`
 				<div class="colorSelect">
-					<input type="radio" value="${
-						color[0]
-					}" name="color" class="pickColor" id="pick${color[1]}" ${
-				index ? "" : "checked"
-			}>
+					<input type="radio" value="${color[1]}" name="color" class="pickColor" id="pick${color[1]}">
 					<label for="pick${color[1]}">${color[1]}</label>
 				</div>
 			`)
@@ -210,12 +206,6 @@ function showReviews() {
 }
 
 $(".btn-cart").click(async function () {
-	let colors = $("input[type=radio]");
-	let color;
-	$.each(colors, (idx, element) => {
-		if (element.checked) color = element.value;
-	});
-	let size = $("select").find(":selected").text();
-	// console.log(size);
-	await addCart(color, size, productId, $("input[type=number]").val());
+	// await addCart(1, productId, 1);
+	await getCart(1);
 });

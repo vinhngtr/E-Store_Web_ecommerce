@@ -71,7 +71,7 @@ async function getCart() {
 	}
 }
 
-async function addCart(productId, quantity) {
+async function addCart(color, size, productId, quantity) {
 	let token = Cookies.get("token");
 
 	if (!token) location.href = "../Signin/index.html";
@@ -83,7 +83,7 @@ async function addCart(productId, quantity) {
 			beforeSend: (req) => {
 				req.setRequestHeader("Authorization", `Bearer ${token}`);
 			},
-			data: JSON.stringify({ productId, quantity }),
+			data: JSON.stringify({ color, size, productId, quantity }),
 		});
 		console.log(temp);
 	} catch (error) {

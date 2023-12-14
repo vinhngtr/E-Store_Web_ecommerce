@@ -1,0 +1,234 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="../bootstrap.css" rel="stylesheet" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="row m-0 p-0">
+			<div id="sidebar"></div>
+
+			<div
+				class="col-10 p-0"
+				style="background-color: rgb(233, 233, 226)"
+			>
+				<div id="navbar"></div>
+				<div class="container-fluid">
+					<!-- HEADER -->
+					<div class="row m-0 mb-4">
+						<div class="row">
+							<h2>Order Details</h2>
+						</div>
+						<div class="row fs-5">
+							Home > Order List > Order Details
+						</div>
+					</div>
+
+					<!-- GENERAL INFO -->
+					<div class="row mb-4 px-4">
+						<div
+							class="container-fluid bg-white rounded-4 p-4 mb-3"
+						>
+							<div class="row m-0" id="general-orderId">
+								Order ID: 123
+							</div>
+							<div class="row m-0">
+								<div class="col-6">
+									<div class="row align-items-center">
+										<div class="col flex-grow-0">
+											<img
+												src="../img/calendar-lines-svgrepo-com.svg"
+												alt="Logo"
+												width="20"
+												height="30"
+											/>
+										</div>
+										<div class="ps-0 col">Oct 11 0230</div>
+									</div>
+								</div>
+								<form class="col-6 row">
+									<div class="col">
+										<select
+											class="btn btn-outline-secondary form-control"
+										>
+											<option value="pending">
+												Pending
+											</option>
+											<option value="processing">
+												Processing
+											</option>
+											<option value="delivering">
+												Delivering
+											</option>
+											<option value="canceled">
+												Canceled
+											</option>
+											<option value="delivered">
+												Delivered
+											</option>
+										</select>
+									</div>
+
+									<button
+										class="btn btn-outline-secondary col-2 mx-2"
+									>
+										<img
+											src="../img/print-svgrepo-com.svg"
+											width="20"
+											height="30"
+										/>
+									</button>
+
+									<button
+										class="btn btn-outline-secondary col-2"
+									>
+										<div class="row justify-content-center">
+											Save
+										</div>
+									</button>
+								</form>
+							</div>
+
+							<div class="row m-0 p-0">
+								<div
+									class="col pb-2 border border-dark border-2 border-opacity-25"
+									style="border-radius: 10px"
+								>
+									<div class="row py-2">
+										<div class="col flex-grow-0">
+											<img
+												src="../img/graph-up-svgrepo-com.svg"
+												alt="Logo"
+												width="50"
+												height="50"
+											/>
+										</div>
+										<div class="col d-flex flex-column">
+											<h5 class="">Khách Hàng</h5>
+											<div class="">Họ tên:</div>
+											<div class="">Email:</div>
+											<div class="">Điện thoại:</div>
+										</div>
+									</div>
+									<div class="row px-3">
+										<button class="btn btn-primary">
+											Xem thông tin
+										</button>
+									</div>
+								</div>
+								<div
+									class="col mx-3 pb-2 border border-dark border-2 border-opacity-25"
+									style="border-radius: 10px"
+								>
+									<div class="row py-2">
+										<div class="col flex-grow-0">
+											<img
+												src="../img/graph-up-svgrepo-com.svg"
+												alt="Logo"
+												width="50"
+												height="50"
+											/>
+										</div>
+										<div class="col d-flex flex-column">
+											<h5 class="">Thông tin đơn hàng</h5>
+											<div class="">Vận chuyển:</div>
+											<div class="">
+												Phương thức thanh toán:
+											</div>
+											<div class="">Tình trạng:</div>
+										</div>
+									</div>
+									<div class="row px-3">
+										<button class="btn btn-primary">
+											Tải thông tin
+										</button>
+									</div>
+								</div>
+								<div
+									class="col pb-2 border border-dark border-2 border-opacity-25 d-flex flex-column"
+									style="border-radius: 10px"
+								>
+									<div class="row py-2">
+										<div class="col flex-grow-0">
+											<img
+												src="../img/graph-up-svgrepo-com.svg"
+												alt="Logo"
+												width="50"
+												height="50"
+											/>
+										</div>
+										<div class="col d-flex flex-column">
+											<h5 class="">Vận chuyển đến</h5>
+											<div class="">Địa chỉ:</div>
+										</div>
+									</div>
+									<div class="row px-3 mt-auto">
+										<button class="btn btn-primary">
+											Xem thông tin
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="row m-0 p-0 mt-3">
+								<div
+									class="col-4 border border-dark border-2 border-opacity-25 d-flex flex-column"
+									style="border-radius: 10px"
+								>
+									<h5 class="">Thông tin thanh toán</h5>
+									<div class="">Số thẻ:</div>
+									<div class="">Tên:</div>
+									<div class="">Số điện thoại:</div>
+								</div>
+								<div class="col m-0 p-0 ms-3">
+									<div class="row">Ghi chú</div>
+									<textarea
+										class="border border-dark border-2 border-opacity-25 w-100 mb-0"
+										placeholder="Để lại ghi chú"
+										style="border-radius: 10px"
+									></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- ORDER DETAIL -->
+					<div class="row mb-4 px-4">
+						<div
+							class="container-fluid bg-white rounded-4 p-2 d-flex flex-column align-items-center mb-3"
+						>
+							<div class="w-100 mb-3 pt-2 px-4">
+								<h4>Sản phẩm</h4>
+							</div>
+							<div class="w-100 px-4 pb-3" id="detail-list">
+								<div class="row border-bottom p-0 pb-2">
+									<div class="col-4 text-center">
+										Tên sản phẩm
+									</div>
+									<div class="col-2 text-center">Màu sắc</div>
+									<div class="col-2 text-center">
+										Kích thước
+									</div>
+									<div class="col-2 text-center">
+										Số lượng
+									</div>
+									<div class="col-2 text-center">
+										Tổng tiền
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="footer"></div>
+			</div>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+		<script src="./util.js"></script>
+		<script src="./template.js"></script>
+		<script src="./order_detail.js"></script>
+	</body>
+</html>

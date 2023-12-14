@@ -34,4 +34,52 @@ class CartController extends Controller
         else
             $response->status(404)->json(array('message' => 'Items not found'));
     }
+
+    public function post(Request $request, Response $response): void
+    {
+        $user = parent::validateAuth($this->post, $response);
+        $body = $request->get_body();
+
+        // $result = Model::post($this->table, $body);
+
+        $result = Model::call(
+            'pcd_addCart',
+            [
+                $user['id'],
+                $body['color'],
+                $body['size'],
+                $body['productId'],
+                $body['quantity']
+            ]
+        )[0]['result'];
+
+        if ($result === '1')
+            $response->status(201)->json($body);
+        else
+            $response->status(400)->json(array('message' => 'Item not created'));
+    }
+
+    public function put(Request $request, Response $response): void
+    {
+        $user = parent::validateAuth($this->post, $response);
+        $body = $request->get_body();
+
+        // $result = Model::post($this->table, $body);
+
+        $result = Model::call(
+            'pcd_updateCart',
+            [
+                $user['id'],
+                $body['color'],
+                $body['size'],
+                $body['productId'],
+                $body['quantity']
+            ]
+        )[0]['result'];
+
+        if ($result === '1')
+            $response->status(200)->json($body);
+        else
+            $response->status(400)->json(array('message' => 'Item not updated'));
+    }
 }

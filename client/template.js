@@ -1,11 +1,11 @@
-var categories = [];
+let templateCategories = [];
 
 $(document).ready(async () => {
-	categories = await getCategories();
-	console.log(categories);
+	templateCategories = await getCategories();
+	console.log(templateCategories);
 	showNavbar();
 	showFooter();
-	console.log(temp);
+	// console.log(temp);
 	// await test();
 });
 
@@ -21,10 +21,6 @@ async function test() {
 		});
 	} catch (error) {}
 }
-
-`
-				
-`;
 
 function getTopNav() {
 	return `
@@ -104,7 +100,7 @@ function getBotNav() {
                     <i class="fa-solid fa-caret-down" style="padding-left: 3px"></i>
                 </button>
                 <ul class="list-btnCate">
-                    ${categories
+                    ${templateCategories
 						.map((category) => {
 							return `
                             <li>

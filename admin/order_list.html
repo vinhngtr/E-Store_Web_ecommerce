@@ -1,0 +1,118 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="../bootstrap.css" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+		/>
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="row m-0 p-0">
+			<div id="sidebar"></div>
+
+			<div
+				class="col-10 p-0"
+				style="background-color: rgb(233, 233, 226)"
+			>
+				<div id="navbar"></div>
+
+				<div class="container-fluid">
+					<!-- HEADER -->
+					<div class="row mb-4">
+						<div class="col-6">
+							<div class="row">
+								<h2>Orders List</h2>
+							</div>
+							<div class="row fs-5">Home > Order List</div>
+						</div>
+
+						<div class="col-2">
+							<div class="row">
+								<img
+									src="../img/calendar-lines-svgrepo-com.svg"
+									alt="Logo"
+									width="20"
+									height="30"
+									class="col-3"
+								/>
+								<div class="col-9">Oct 11 0230</div>
+							</div>
+							<div class="row">
+								<select>
+									<option value="" disabled selected>
+										Chọn
+									</option>
+									<option>1</option>
+									<option>1</option>
+									<option>1</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="row mb-4 px-4">
+						<div
+							class="container-fluid bg-white rounded-4 p-2 d-flex flex-column align-items-center mb-3"
+						>
+							<div class="w-100 mb-3 pt-2 px-4">
+								<h4>Recent Orders</h4>
+							</div>
+							<div class="w-100 px-4 pb-3" id="orders-list">
+								<div class="row border-bottom p-0 pb-2">
+									<div class="col-2 text-center">
+										Mã đơn hàng
+									</div>
+									<div class="col-2 text-center">
+										Ngày đặt hàng
+									</div>
+									<div class="col-4 text-center">
+										Tên khách hàng
+									</div>
+									<div class="col-2 text-center">
+										Trạng thái
+									</div>
+									<div class="col-2 text-center">
+										Tổng tiền
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-1">
+								<button class="btn btn-light">1</button>
+							</div>
+							<div class="col-1">
+								<button class="btn btn-light">2</button>
+							</div>
+							<div class="col-1">
+								<button class="btn btn-light">3</button>
+							</div>
+							<div class="col-1">
+								<button class="btn btn-light">4</button>
+							</div>
+							<div class="col-1">
+								<button class="btn btn-light">...</button>
+							</div>
+							<div class="col-1">
+								<button class="btn btn-light">10</button>
+							</div>
+							<div class="col-2">
+								<button class="btn btn-light">NEXT ></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="footer"></div>
+			</div>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+		<script src="./util.js"></script>
+		<script src="./template.js"></script>
+		<script src="./order_list.js"></script>
+	</body>
+</html>

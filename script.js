@@ -121,49 +121,58 @@ window.addEventListener("resize", () => {
 // !--------- END FUNCTION1-----------//
 
 const listProduct = document.querySelectorAll(".name-item");
+const btnSearch = document.querySelector("#btn-search");
+btnSearch.addEventListener("click", function () {
+	let valSearch = document.getElementById("searchInput");
+});
+for (let i = 0; i < listProduct.length; i++) {
+	// console.log(listProduct[i].innerHTML);
+}
+
+// FETCH API SP VỀ FRONTEND
+// fetch('getAPI.php')
+// 	.then(res => res.json())
+// 	.then(data => {
+// 		generateListSP(data);
+// 	})
+// 	.catch(err => {
+// 		console.log("Error")
+// 	})
+
 let products = [];
-let filteredProducts = [];
-let categories = [];
 
 $(document).ready(async function () {
 	products = await getProducts();
-	filteredProducts = products.filter((product, index) => true);
-	console.log(products);
-
-	categories = await getCategories();
-	console.log(categories);
-
 	showPromotions();
 	showProducts();
-	showCategories();
+	console.log(products);
 });
 
 function showPromotions() {
-	$(`.col1 img`).attr("src", filteredProducts[0].images[0].image);
-	$(`.col1 .title`).text(filteredProducts[0].name);
+	$(`.col1 img`).attr("src", products[0].images[0].image);
+	$(`.col1 .title`).text(products[0].name);
 	$(`.col1 .price`)
 		.children()
 		.eq(0)
-		.text(numberWithSeparator(filteredProducts[0].unitPrice, ",") + " VND");
+		.text(numberWithSeparator(products[0].unitPrice, ",") + " VND");
 	$(`.col1 .price`)
 		.children()
 		.eq(1)
 		.text(
 			numberWithSeparator(
-				filteredProducts[0].unitPrice *
-					(1 - filteredProducts[0].discount),
+				products[0].unitPrice * (1 - products[0].discount),
 				","
 			) + " VND"
 		);
-	$(`.col1 .detail`).text(filteredProducts[0].description);
+	$(`.col1 .detail`).text(products[0].description);
 	$(`.col1 .btn-view a`).attr(
 		"href",
-		`./Detail/index.html?id=${filteredProducts[0].id}`
+		`./Detail/index.html?id=${products[0].id}`
 	);
 
 	$(`.col2`).html("");
-	for (let i = 1; i < Math.min(9, filteredProducts.length); i++) {
-		const product = filteredProducts[i];
+	for (let i = 1; i < 9; i++) {
+		const product = products[i];
 		$(`.col2`).append(
 			$(`
 			<div class="item">
@@ -202,8 +211,8 @@ function showPromotions() {
 
 function showProducts() {
 	$(`.listShow`).html("");
-	for (let i = 0; i < Math.min(8, filteredProducts.length); i++) {
-		const product = filteredProducts[i];
+	for (let i = 0; i < 8; i++) {
+		const product = products[i];
 		$(`.listShow`).append(`
 			<div class="item">
 				<div class="image-item" style="width: 100%">
@@ -230,15 +239,4 @@ function showProducts() {
 			</div>
 	`);
 	}
-}
-
-function showCategories() {
-	$(".list-btnCate").html("");
-	categories.forEach((category) => {
-		$(".list-btnCate").append(
-			$(
-				`<li><a href="./Classify/index.html?categoryId=${category.id}">${category.name}</a></li>`
-			)
-		);
-	});
 }

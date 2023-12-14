@@ -21,17 +21,36 @@ class UserController extends Controller
     {
         if ($request->get_route(3) === 'register') {
             $body = $request->get_body();
+            // $result = Model::post(
+            //     'user',
+            //     [
+            //         'fullName' => $body['fullName'],
+            //         'email' => $body['email'],
+            //         'password' => Auth::genHash($body['password'])
+            //     ]
+            // );
 
-            $result = Model::call(
-                'pcd_createUser',
-                [
-                    $body['fullName'],
-                    $body['email'],
-                    Auth::genHash($body['password'])
-                ]
-            )[0]['result'];
+            if (array_key_exists('role', $body) && $body['role'] == 'admin')
 
-            if ($result === '1') {
+                $result = Model::call(
+                    'pcd_createAdmin',
+                    [
+                        $body['fullName'],
+                        $body['email'],
+                        Auth::genHash($body['password'])
+                    ]
+                )[0]['id'];
+            else
+                $result = Model::call(
+                    'pcd_createUser',
+                    [
+                        $body['fullName'],
+                        $body['email'],
+                        Auth::genHash($body['password'])
+                    ]
+                )[0]['id'];
+
+            if ($result !== '0') {
                 $users = Model::call(
                     'pcd_selectUserWithCredentials',
                     [

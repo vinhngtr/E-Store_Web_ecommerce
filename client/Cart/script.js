@@ -45,6 +45,8 @@ btnUpdate.addEventListener("click", function () {
 	let totalCost = 0;
 	$.each(Prices, (index, item) => {
 		updateCart(
+			$(".cart-quantity-input")[index].dataset.color,
+			$(".cart-quantity-input")[index].dataset.size,
 			$(".cart-quantity-input")[index].dataset.id,
 			$(".cart-quantity-input")[index].value
 		);
@@ -106,7 +108,7 @@ $(document).ready(async function () {
 	if (!Cookies.get("userId")) Cookies.set("userId", 1);
 	carts = await getCart();
 	await showCart();
-	console.log(carts);
+	// console.log(carts);
 
 	$(".btn-pay").click(order);
 });
@@ -121,6 +123,10 @@ async function showCart() {
 	}
 	carts.forEach(async (item) => {
 		const product = await getProductById(item.productId);
+		const color = product.colorSizes.filter(
+			(element) => element.color == item.color
+		)[0].colorName;
+		console.log(product, color);
 		$(".cart-items").append(
 			$(`
 			<div class="cart-row">
@@ -130,7 +136,8 @@ async function showCart() {
 					}" width="100" height="100">
 					<div class="cart-info">
 						<span class="cart-item-title">${product.name}</span>
-						<span class="cart-item-color">Màu vàng</span>
+						<span class="cart-item-color">${color}</span>
+						<span class="cart-item-size">${item.size}</span>
 					</div>
 				</div>
 				<span class="cart-price cart-column">${numberWithSeparator(
@@ -138,9 +145,15 @@ async function showCart() {
 					","
 				)} VND</span>
 				<div class="cart-quantity cart-column">
-					<input class="cart-quantity-input" type="number" value="${
-						item.quantity
-					}" min="1" data-id="${item.productId}">
+					<input
+						class="cart-quantity-input"
+						type="number"
+						min="1"
+						value="${item.quantity}"
+						data-id="${item.productId}"
+						data-color="${item.color}"
+						data-size="${item.size}"
+					>
 					<button class="btn btn-danger" type="button">Xóa</button>
 				</div>
 			</div>
@@ -155,11 +168,32 @@ async function order() {
 
 	let products = [];
 	$.each(rows, (index, product) => {
-		let productId, quantity;
-		productId = $(product).children().eq(2).children().eq(0).data("id");
-		quantity = $(product).children().eq(2).children().eq(0).val();
-		products.push({ productId, quantity });
+		let color = $(product).children().eq(2).children().eq(0).data("color");
+		let size = $(product).children().eq(2).children().eq(0).data("size");
+		let productId = $(product).children().eq(2).children().eq(0).data("id");
+		let quantity = $(product).children().eq(2).children().eq(0).val();
+		products.push({ color, size, productId, quantity });
 	});
 	let res = await addOrder(products);
 	location.reload();
+}
+
+async function updateCart(color, size, productId, quantity) {
+	let token = Cookies.get("token");
+
+	if (!token) location.href = "../Signin/index.html";
+
+	try {
+		let temp = await $.ajax("http://localhost:8080/backend/carts", {
+			method: "PUT",
+			contentType: "application/json",
+			beforeSend: (req) => {
+				req.setRequestHeader("Authorization", `Bearer ${token}`);
+			},
+			data: JSON.stringify({ color, size, productId, quantity }),
+		});
+		console.log(temp);
+	} catch (error) {
+		console.log(error);
+	}
 }

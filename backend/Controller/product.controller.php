@@ -28,9 +28,15 @@ class ProductController extends Controller
 
     public function get(Request $request, Response $response): void
     {
-        parent::validateAuth($this->get, $response);
+        $user = parent::validateAuth($this->get, $response);
 
-        $result = Model::get($this->table, $request->get_conditions(), $request->get_order(), $request->get_limit());
+        if ($user && $user['role'] == 'admin' && !count($request->get_conditions())) {
+            $result = Model::call("pcd_selectAllProductsAdmin", []);
+
+            $response->status(200)->json(array('payload' => $result));
+        } else
+
+            $result = Model::get($this->table, $request->get_conditions(), $request->get_order(), $request->get_limit());
 
         if ($result) {
             $result = array_map(function ($row) {
@@ -76,7 +82,7 @@ class ProductController extends Controller
         }
 
         if ($result)
-            $response->status(201)->json($body);
+            $response->status(201)->json(['payload' => $body, 'id' => $result]);
         else
             $response->status(400)->json(array('message' => 'Item not created'));
     }

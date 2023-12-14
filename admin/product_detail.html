@@ -1,0 +1,251 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="../bootstrap.css" rel="stylesheet" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="row m-0 p-0">
+			<div id="sidebar"></div>
+
+			<div
+				class="col-10 p-0"
+				style="background-color: rgb(233, 233, 226)"
+			>
+				<div id="navbar"></div>
+
+				<div class="container-fluid">
+					<div class="row">
+						<div class="row">
+							<strong>Product Details </strong>
+						</div>
+						<div class="row">
+							<div class="col-8">
+								Home>All Products>Product Details
+							</div>
+						</div>
+
+						<div class="row">
+							<form class="col ps-5">
+								<!-- NAME -->
+								<div class="mb-3 row">
+									<label
+										for="name"
+										class="col-form-label col-3 p-0"
+										>Tên sản phẩm</label
+									>
+									<div class="col-9 p-0">
+										<input
+											type="text"
+											class="form-control"
+											id="name"
+										/>
+									</div>
+								</div>
+
+								<!-- DESCRIPTION -->
+								<div class="mb-3 row">
+									<label
+										for="description"
+										class="form-label p-0"
+										>Mô tả</label
+									>
+									<textarea
+										class="form-control p-0"
+										id="description"
+										rows="3"
+									></textarea>
+								</div>
+
+								<!-- CATEGORY -->
+								<div class="mb-3 row">
+									<label
+										for="category"
+										class="col-form-label col-3 p-0"
+										>Phân loại</label
+									>
+									<div class="col-9 p-0">
+										<select
+											class="form-select"
+											id="category"
+										></select>
+									</div>
+								</div>
+
+								<!-- BRAND -->
+								<div class="mb-3 row">
+									<label
+										for="brand"
+										class="col-form-label col-3 p-0"
+										>Thương hiệu</label
+									>
+									<div class="col-9 p-0">
+										<select
+											class="form-select"
+											id="brand"
+										></select>
+									</div>
+								</div>
+
+								<!-- DISCOUNT -->
+								<div class="mb-3 row">
+									<label
+										for="discount"
+										class="col-3 col-form-label p-0"
+										>Giảm giá (%)</label
+									>
+									<div class="col-9 p-0">
+										<input
+											type="number"
+											class="form-control"
+											id="discount"
+											min="0"
+											max="100"
+										/>
+									</div>
+								</div>
+
+								<div class="mb-3 row">
+									<!-- DISCOUNT START -->
+									<div class="col-6 p-0 pe-1">
+										<label
+											for="discountStart"
+											class="form-label"
+											>Thời gian bắt đầu giảm giá</label
+										>
+										<div class="">
+											<input
+												type="date"
+												class="form-control"
+												id="discountStart"
+											/>
+										</div>
+									</div>
+
+									<!-- DISCOUNT END -->
+									<div class="col-6 p-0 ps-1">
+										<label
+											for="discountEnd"
+											class="form-label"
+											>Thời gian kết thúc giảm giá</label
+										>
+										<div class="">
+											<input
+												type="date"
+												class="form-control"
+												id="discountEnd"
+											/>
+										</div>
+									</div>
+								</div>
+
+								<!-- COLOR -->
+								<div class="mb-3 row">
+									<div class="col-6 p-0 pe-1">
+										<label for="color" class="form-label"
+											>Màu sắc</label
+										>
+										<div class="">
+											<input
+												type="text"
+												class="form-control"
+												id="color"
+											/>
+										</div>
+									</div>
+
+									<div class="col-6 p-0 ps-1">
+										<label
+											for="colorCode"
+											class="form-label"
+											>Mã màu</label
+										>
+
+										<input
+											type="text"
+											class="form-control"
+											id="colorCode"
+										/>
+									</div>
+								</div>
+
+								<!-- SIZE -->
+								<div class="mb-3 row">
+									<div class="col-6 p-0 pe-1">
+										<label for="size" class="form-label"
+											>Kích thước</label
+										>
+										<div class="">
+											<input
+												type="text"
+												class="form-control"
+												id="size"
+											/>
+										</div>
+									</div>
+
+									<div class="col-6 p-0 ps-1">
+										<label for="price" class="form-label"
+											>Giá</label
+										>
+										<div class="">
+											<input
+												type="number"
+												class="form-control"
+												id="price"
+											/>
+										</div>
+									</div>
+								</div>
+
+								<!-- PRICE -->
+							</form>
+							<div class="col">
+								<div class="row pb-5">
+									<img
+										src="../img/graph-up-svgrepo-com.svg"
+										alt="Logo"
+										width="200"
+										height="200"
+									/>
+								</div>
+								<div class="row pb-3" style="font-size: 120%">
+									<strong>Bộ sưu tập sản phẩm</strong>
+								</div>
+								<div class="row pb-3">
+									<button class="btn btn-primary">
+										Thêm ảnh
+									</button>
+								</div>
+								<div class="row">
+									<!-- <div class="col"> -->
+									<button class="col mx-3 btn btn-success">
+										Chỉnh sửa
+									</button>
+									<!-- </div> -->
+									<!-- <div class="col"> -->
+									<button class="col mx-3 btn btn-danger">
+										Xóa
+									</button>
+									<!-- </div> -->
+									<!-- <div class="col"> -->
+									<button class="col mx-3 btn btn-warning">
+										Hủy
+									</button>
+									<!-- </div> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="footer"></div>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+		<script src="./util.js"></script>
+		<script src="./template.js"></script>
+		<script src="./product_detail.js"></script>
+	</body>
+</html>

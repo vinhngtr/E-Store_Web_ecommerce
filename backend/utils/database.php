@@ -124,11 +124,16 @@ class Model
 
     public static function call(string $fName, array $params)
     {
-        $params = array_map(function ($param) {
-            return "'$param'";
-        }, $params);
         $conn = self::connectDatabase();
-        $result = $conn->query("CALL $fName(" . implode(',', $params) . ")");
+        if (!count($params)) {
+            $result = $conn->query("CALL $fName()");
+        } else {
+            $params = array_map(function ($param) {
+                return "'$param'";
+            }, $params);
+
+            $result = $conn->query("CALL $fName(" . implode(',', $params) . ")");
+        }
         $conn->close();
         return $result->fetch_all(MYSQLI_ASSOC);
     }

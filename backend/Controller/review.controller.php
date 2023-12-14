@@ -24,7 +24,9 @@ class ReviewController extends Controller
 
         $result = Model::get($this->table, $request->get_conditions(), $request->get_order());
 
-        if ($result) {
+        echo var_dump($result);
+
+        if ($result !== null) {
             $result = array_map(function ($review) {
                 $user = Model::get(
                     'user',

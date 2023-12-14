@@ -1,0 +1,322 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="../bootstrap.css" rel="stylesheet" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="row m-0 p-0">
+			<div id="sidebar"></div>
+
+			<div
+				class="col-10 p-0"
+				style="background-color: rgb(233, 233, 226)"
+			>
+				<div id="navbar"></div>
+
+				<div class="container-fluid p-4">
+					<div class="row mb-4">
+						<div class="row">
+							<h2>Dashboard</h2>
+						</div>
+						<div class="row">
+							<div class="col-6 fs-5">Home > Dashboard</div>
+							<div class="col-6 text-end">
+								<img
+									src="../img/calendar-lines-svgrepo-com.svg"
+									alt="Logo"
+									width="20"
+									height="30"
+								/>
+								Oct 11 0230
+							</div>
+						</div>
+					</div>
+
+					<div class="row mb-4">
+						<div class="col-3" id="total-order">
+							<div
+								class="container-fluid bg-white rounded-4 p-3 d-flex flex-column align-items-center"
+							>
+								<div class="w-100 mb-3">
+									<h6>Tất cả đơn hàng</h6>
+								</div>
+								<div
+									class="d-flex justify-content-between w-100"
+								>
+									<div class="d-flex align-items-center">
+										<img
+											src="../img/order-icon.svg"
+											width="40"
+											height="40"
+										/>
+
+										<span
+											class="d-flex align-items-center ms-2 amount fw-bold"
+										>
+											Amount
+										</span>
+									</div>
+									<div class="d-flex align-items-center">
+										Tăng 0%
+									</div>
+								</div>
+								<div class="align-self-end my-2">
+									So với tháng trước
+								</div>
+							</div>
+						</div>
+						<div class="col-3" id="active-order">
+							<div
+								class="container-fluid bg-white rounded-4 p-3 d-flex flex-column align-items-center"
+							>
+								<div class="w-100 mb-3">
+									<h6>Đơn đang giao</h6>
+								</div>
+								<div
+									class="d-flex justify-content-between w-100"
+								>
+									<div class="d-flex align-items-center">
+										<img
+											src="../img/order-icon.svg"
+											width="40"
+											height="40"
+										/>
+
+										<span
+											class="d-flex align-items-center ms-2 amount fw-bold"
+										>
+											Amount
+										</span>
+									</div>
+									<div class="d-flex align-items-center">
+										Tăng 0%
+									</div>
+								</div>
+								<div class="align-self-end my-2">
+									So với tháng trước
+								</div>
+							</div>
+						</div>
+						<div class="col-3" id="complete-order">
+							<div
+								class="container-fluid bg-white rounded-4 p-3 d-flex flex-column align-items-center"
+							>
+								<div class="w-100 mb-3">
+									<h6>Đơn đã giao</h6>
+								</div>
+								<div
+									class="d-flex justify-content-between w-100"
+								>
+									<div class="d-flex align-items-center">
+										<img
+											src="../img/order-icon.svg"
+											width="40"
+											height="40"
+										/>
+
+										<span
+											class="d-flex align-items-center ms-2 amount fw-bold"
+										>
+											Amount
+										</span>
+									</div>
+									<div class="d-flex align-items-center">
+										Tăng 0%
+									</div>
+								</div>
+								<div class="align-self-end my-2">
+									So với tháng trước
+								</div>
+							</div>
+						</div>
+						<div class="col-3" id="return-order">
+							<div
+								class="container-fluid bg-white rounded-4 p-3 d-flex flex-column align-items-center"
+							>
+								<div class="w-100 mb-3">
+									<h6>Đơn bị huỷ</h6>
+								</div>
+								<div
+									class="d-flex justify-content-between w-100"
+								>
+									<div class="d-flex align-items-center">
+										<img
+											src="../img/order-icon.svg"
+											width="40"
+											height="40"
+										/>
+
+										<span
+											class="d-flex align-items-center ms-2 amount fw-bold"
+										>
+											Amount
+										</span>
+									</div>
+									<div class="d-flex align-items-center">
+										Tăng 0%
+									</div>
+								</div>
+								<div class="align-self-end my-2">
+									So với tháng trước
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row mb-4">
+						<div class="col-7" id="graph">
+							<div
+								class="container-fluid bg-white rounded-4 p-3 d-flex flex-column align-items-center h-100"
+							>
+								<div
+									class="w-100 mb-3 row border-bottom align-items-center pb-2"
+								>
+									<h6 class="col">Biểu đồ tăng trưởng</h6>
+									<div class="col text-end">
+										<button class="btn btn-outline-dark">
+											Tuần
+										</button>
+										<button class="btn btn-outline-dark">
+											Tháng
+										</button>
+										<button class="btn btn-outline-dark">
+											Năm
+										</button>
+									</div>
+								</div>
+
+								<div
+									class="d-flex justify-content-between w-100"
+								></div>
+							</div>
+						</div>
+						<div class="col-5" id="best-sellers">
+							<div
+								class="container-fluid bg-white rounded-4 p-3 d-flex flex-column align-items-center"
+							>
+								<div class="w-100 mb-3 border-bottom pb-2">
+									<h6>Bán chạy nhất</h6>
+								</div>
+								<div class="row w-100">
+									<div class="col flex-grow-0 px-1">
+										<img
+											src="../img/order-icon.svg"
+											width="40"
+											height="40"
+										/>
+									</div>
+									<div class="col">
+										<div class="row fw-bold">
+											Lorem Ipsum
+										</div>
+										<div class="row text-secondary">
+											Lorem Ipsum
+										</div>
+									</div>
+									<div class="col">
+										<div class="row">Lorem Ipsum</div>
+										<div class="row text-secondary">
+											Lorem Ipsum
+										</div>
+									</div>
+								</div>
+								<div class="row w-100">
+									<div class="col flex-grow-0 px-1">
+										<img
+											src="../img/order-icon.svg"
+											width="40"
+											height="40"
+										/>
+									</div>
+									<div class="col">
+										<div class="row fw-bold">
+											Lorem Ipsum
+										</div>
+										<div class="row text-secondary">
+											Lorem Ipsum
+										</div>
+									</div>
+									<div class="col">
+										<div class="row">Lorem Ipsum</div>
+										<div class="row text-secondary">
+											Lorem Ipsum
+										</div>
+									</div>
+								</div>
+								<div class="row w-100">
+									<div class="col flex-grow-0 px-1">
+										<img
+											src="../img/order-icon.svg"
+											width="40"
+											height="40"
+										/>
+									</div>
+									<div class="col">
+										<div class="row fw-bold">
+											Lorem Ipsum
+										</div>
+										<div class="row text-secondary">
+											Lorem Ipsum
+										</div>
+									</div>
+									<div class="col">
+										<div class="row">Lorem Ipsum</div>
+										<div class="row text-secondary">
+											Lorem Ipsum
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row mb-4">
+						<div class="col-12" id="recent-orders">
+							<div
+								class="container-fluid bg-white rounded-4 p-2 d-flex flex-column align-items-center"
+							>
+								<div class="w-100 mb-3 pt-2 px-4">
+									<h4>Đơn hàng gần đây</h4>
+								</div>
+								<div
+									class="w-100 px-4 pb-3"
+									id="recent-orders-list"
+								>
+									<div class="row border-bottom p-0 pb-2">
+										<div class="col-2 text-center">
+											Mã đơn hàng
+										</div>
+										<div class="col-2 text-center">
+											Ngày đặt hàng
+										</div>
+										<div class="col-4 text-center">
+											Tên khách hàng
+										</div>
+										<div class="col-2 text-center">
+											Tình trạng
+										</div>
+										<div class="col-2 text-center">
+											Tổng tiền
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="footer"></div>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+		<script src="./util.js"></script>
+		<script src="./template.js"></script>
+		<script src="./dashboard.js"></script>
+		<!-- <script>
+			getOrders();
+		</script> -->
+	</body>
+</html>

@@ -3,26 +3,34 @@
 // use Controller\Controller;
 // use Utils\Auth;
 
-include_once 'utils/env.php';
-include_once 'utils/request.php';
-include_once 'utils/response.php';
-include_once 'utils/auth.php';
+include_once './utils/env.php';
+include_once './utils/request.php';
+include_once './utils/response.php';
+include_once './utils/auth.php';
 
-include_once 'Controller/controller.php';
-include_once 'Controller/product.controller.php';
-include_once 'Controller/order.controller.php';
-include_once 'Controller/cart.controller.php';
-include_once 'Controller/user.controller.php';
-include_once 'Controller/review.controller.php';
+include_once './Controller/controller.php';
+include_once './Controller/product.controller.php';
+include_once './Controller/order.controller.php';
+include_once './Controller/cart.controller.php';
+include_once './Controller/user.controller.php';
+include_once './Controller/review.controller.php';
 
 // Load environment variables
 (new Utils\DotEnv(__DIR__ . '/.env'))->load();
+
+// header('Access-Control-Allow-Origin: *');
+// header('Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization');
+// echo var_dump($_SERVER);
+
+
 
 // Create Request and Response objects
 $request = new Utils\Request($_SERVER['REQUEST_URI'], $_SERVER['REQUEST_METHOD']);
 $response = new Utils\Response();
 
-header('Access-Control-Allow-Origin: *');
+
+$response = $response->header('Access-Control-Allow-Origin: *');
+
 
 if (isset($_SERVER['HTTP_AUTHORIZATION']) && $_SERVER['HTTP_AUTHORIZATION'] !== '') {
     if (!preg_match("/^Bearer \S+$/", $_SERVER['HTTP_AUTHORIZATION']))
@@ -110,6 +118,15 @@ switch ($endpoint) {
         );
         break;
 
+    case 'productImages':
+        $controller = new Controller\Controller(
+            'productImage',
+            post: ['admin'],
+            put: ['admin'],
+            delete: ['admin']
+        );
+        break;
+
     case 'reviews':
         // get
         // get post put
@@ -130,8 +147,11 @@ switch ($endpoint) {
         $response->status(400)->json(array('message' => 'Invalid request URI'));
         break;
 }
+$method = $request->get_method();
 
-switch ($request->get_method()) {
+
+
+switch ($method) {
     case 'GET':
         $controller->get($request, $response);
         break;
@@ -147,3 +167,5 @@ switch ($request->get_method()) {
     default:
         $response->status(405)->json(array('message' => 'Invalid request method'));
 }
+
+$response->status(400);
