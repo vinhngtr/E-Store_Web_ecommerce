@@ -4,9 +4,8 @@ namespace Controller;
 
 include_once 'controller.php';
 include_once 'utils/database.php';
-include_once 'utils/jwt.php';
 
-use Utils\{Request, Response, Model, JWT};
+use Utils\{Request, Response, Model};
 
 
 class ProductController extends Controller

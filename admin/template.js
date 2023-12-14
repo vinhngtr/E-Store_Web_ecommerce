@@ -103,7 +103,7 @@ function showNavbar() {
         </button>
     </div>
     <div class="col-2">
-        <button class="btn btn-outline-secondary">
+        <button class="btn btn-outline-secondary" onclick="logout()">
             Quản trị viên
         </button>
     </div>
@@ -111,6 +111,11 @@ function showNavbar() {
 	$("#navbar").addClass(
 		"row justify-content-end bg-white pt-2 border-dark border-1 border-bottom m-0 p-0"
 	);
+}
+
+function logout() {
+	Cookies.remove("token");
+	location.href = "./login.html";
 }
 
 function showFooter() {
