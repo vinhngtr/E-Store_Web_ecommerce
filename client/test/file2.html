@@ -1,4 +1,43 @@
+<!-- <?php
+if (isset($_POST['btn-log'])) {
+    $email_log = $_POST['email'];
+    $pass_log = $_POST['password'];
 
+    // ! tạo kết nối database để xác thực password và email nhập vào so với CSDL:
+    $db_host = "localhost";
+    $db_user = "trongvinh";
+    $db_pass = "vinhtrong782002";
+    $db_name = "list_user";
+    $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+    if (!$conn) {
+        die("Kết nối DB không thành công: " . mysqli_connect_error());
+        exit();
+    }
+    // Chuẩn bị câu lệnh truy vấn
+    $stmt = $conn->prepare("SELECT * FROM account_user WHERE email = ?");
+    // assign return in array POST to parameter;
+    $stmt->bind_param("s", $email_log);
+    // excutive
+    $stmt->execute();
+    // assign value return to variable result
+    $result = $stmt->get_result();
+    if ($result->num_rows > 0) {
+        $user = $result->fetch_assoc();
+        if (password_verify($pass_log, $user['password'])) {
+            // ! tạo 1 page thông báo đăng nhập thành công -> button back về Home:
+            header("Location: ../index.html");
+            exit();
+        } else {
+            echo "Mật khẩu nhập vào không chính xác";
+            exit();
+        }
+    } else {
+        echo "Không tìm thấy người dùng với tài khoản này!";
+    }
+    $stmt->close();
+    $conn->close();
+}
+?> -->
 
 <!DOCTYPE html>
 <html lang="en">

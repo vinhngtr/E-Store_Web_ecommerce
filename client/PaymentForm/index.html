@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- <base href="/"> -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../css/base.css" />
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="../css/responsive.css" />
+		<title>Thanh toán</title>
+	</head>
+	<body>
+		<div class="navigation"></div>
+
+		<div class="app__container" style="padding-bottom: 24px">
+			<div class="grid">
+				<div class="grid__row">
+					<div class="payment-form col l-9">
+						<div class="payment-form-title l-12">
+							Thông tin người nhận
+						</div>
+
+						<form action="">
+							<div
+								class="payment-form_name-and-business l-12"
+								style="display: flex"
+							>
+								<div class="payment-form_name l-6">
+									<div class="payment-form_name-header">
+										Tên người nhận
+									</div>
+									<div
+										class="payment-form_name-input-block"
+										style="display: flex"
+									>
+										<input
+											type="text"
+											class="first-name-input"
+											placeholder="Tên"
+										/>
+										<input
+											type="text"
+											class="last-name-input"
+											placeholder="Họ và tên đệm"
+										/>
+									</div>
+								</div>
+
+								<div class="payment-form_business l-6">
+									<div class="payment-form_business-header">
+										Tên doanh nghiệp (Nếu có)
+									</div>
+									<input
+										type="text"
+										class="business-input"
+										placeholder="..."
+									/>
+								</div>
+							</div>
+
+							<div class="payment-form_address l-12">
+								<div class="payment-form_address-header">
+									Địa chỉ
+								</div>
+								<input type="text" class="address-input" />
+							</div>
+
+							<div
+								class="payment-form_phone-and-email l-12"
+								style="display: flex"
+							>
+								<div class="payment-form_phone l-6">
+									<div class="payment-form_phone-header">
+										Số điện thoại người nhận
+									</div>
+									<input
+										type="text"
+										class="phone-num-input"
+									/>
+								</div>
+
+								<div class="payment-form_email l-6">
+									<div class="payment-form_email-header">
+										Email
+									</div>
+									<input type="text" class="email-input" />
+								</div>
+							</div>
+
+							<div class="payment-method-block l-12">
+								<div class="payment-method-header">
+									Hình thức thanh toán
+								</div>
+								<div class="payment-method-selection">
+									<div class="payment-method-item">
+										<label
+											class="payment-method-item-radio"
+											style="display: flex"
+											onclick="openPayment(event, 'no')"
+										>
+											<input
+												type="radio"
+												checked="checked"
+												name="payment-method"
+											/>
+											<span
+												class="checkmark-payment-method"
+											></span>
+											<!-- </label> -->
+											<div
+												class="payment-method-item-icon"
+											>
+												<img
+													src="../img/cod.png"
+													alt="icon"
+													width="20"
+													height="20"
+												/>
+											</div>
+											<div
+												class="payment-method-item-text"
+											>
+												Thanh toán tiền mặt khi nhận
+												hàng
+											</div>
+										</label>
+									</div>
+
+									<div class="payment-method-item">
+										<label
+											class="payment-method-item-radio"
+											style="display: flex"
+											onclick="openPayment(event, 'no')"
+										>
+											<input
+												type="radio"
+												name="payment-method"
+											/>
+											<span
+												class="checkmark-payment-method"
+											></span>
+											<div
+												class="payment-method-item-icon"
+											>
+												<img
+													src="../img/momo.png"
+													alt="icon"
+													width="20"
+													height="20"
+												/>
+											</div>
+											<div
+												class="payment-method-item-text"
+											>
+												Thanh toán bằng ví MoMo
+											</div>
+										</label>
+									</div>
+
+									<div class="payment-method-item">
+										<label
+											class="payment-method-item-radio"
+											style="display: flex"
+											onclick="openPayment(event, 'no')"
+										>
+											<input
+												type="radio"
+												name="payment-method"
+											/>
+											<span
+												class="checkmark-payment-method"
+											></span>
+											<div
+												class="payment-method-item-icon"
+											>
+												<img
+													src="../img/zalo-pay.png"
+													alt="icon"
+													width="20"
+													height="20"
+												/>
+											</div>
+											<div
+												class="payment-method-item-text"
+											>
+												Thanh toán bằng ví ZaloPay
+											</div>
+										</label>
+									</div>
+
+									<div class="payment-method-item">
+										<label
+											class="payment-method-item-radio paymentlinks"
+											style="display: flex"
+											onclick="openPayment(event, 'ATM')"
+										>
+											<input
+												type="radio"
+												name="payment-method"
+											/>
+											<span
+												class="checkmark-payment-method"
+											></span>
+											<div
+												class="payment-method-item-icon"
+											>
+												<img
+													src="../img/atm.png"
+													alt="icon"
+													width="20"
+													height="20"
+												/>
+											</div>
+											<div
+												class="payment-method-item-text"
+											>
+												Thẻ ATM nội địa &sol; Internet
+												Banking
+											</div>
+										</label>
+									</div>
+
+									<div
+										id="ATM"
+										class="PaymentContent ATM-content"
+									>
+										Coming Soon
+									</div>
+
+									<div class="payment-method-item">
+										<label
+											class="payment-method-item-radio paymentlinks"
+											style="display: flex"
+											onclick="openPayment(event, 'Visa')"
+										>
+											<input
+												type="radio"
+												name="payment-method"
+											/>
+											<span
+												class="checkmark-payment-method"
+											></span>
+											<div
+												class="payment-method-item-icon"
+											>
+												<img
+													src="../img/visa.png"
+													alt="icon"
+													width="20"
+													height="20"
+												/>
+											</div>
+											<div
+												class="payment-method-item-text"
+											>
+												Thanh toán bằng thẻ quốc tế
+												Visa, Master, JCB
+											</div>
+										</label>
+									</div>
+
+									<div id="Visa" class="PaymentContent">
+										<div class="payment-card-name-block">
+											<div
+												class="payment-card-name-header"
+												style="padding-top: 0"
+											>
+												Name on Card
+											</div>
+											<input
+												type="text"
+												class="payment-card-name-input"
+											/>
+										</div>
+
+										<div class="payment-card-number-block">
+											<div
+												class="payment-card-number-header"
+											>
+												Card Number
+											</div>
+											<input
+												type="text"
+												class="payment-card-number-input"
+											/>
+										</div>
+
+										<div
+											class="payment-card-expire-date-and-cvc l-12"
+											style="display: flex"
+										>
+											<div
+												class="payment-card-expire-date-block l-6"
+											>
+												<div
+													class="payment-card-expire-date-header"
+												>
+													Expire Date
+												</div>
+												<input
+													type="text"
+													class="payment-card-expire-date-input"
+													placeholder="DD/YY"
+												/>
+											</div>
+
+											<div
+												class="payment-card-cvc-block l-6"
+											>
+												<div
+													class="payment-card-cvc-header"
+												>
+													CVC
+												</div>
+												<input
+													type="text"
+													class="payment-card-cvc-input"
+												/>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div
+								class="payment-form-more-information l-12"
+								style="padding-top: 24px"
+							>
+								<div
+									class="payment-form-more-information-title"
+								>
+									Thông tin thêm
+								</div>
+								<div
+									class="payment-form-more-information-block"
+								>
+									<div
+										class="payment-form-more-information-header"
+									>
+										Lưu ý khi gửi hàng
+									</div>
+									<textarea
+										name="payment-form-more-information"
+										id="pfmi"
+										cols="30"
+										rows="5"
+										placeholder="Thêm lưu ý cho nhà cung cấp và vận chuyển"
+									></textarea>
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<div class="payment-info col l-3">
+						<div class="order-summary">
+							<div class="order-summary-title">
+								Tổng giá trị đơn hàng
+							</div>
+
+							<div class="order-summary-list">
+								<div
+									class="order-summary-unit"
+									style="display: flex"
+								>
+									<div
+										class="order-summary-unit-img l-3"
+										style="
+											background-image: url(../img/7.png);
+										"
+									></div>
+
+									<div class="order-summary-unit-content l-9">
+										<div class="order-summary-unit-name">
+											Màn hình ASUS ROX Strix 2023
+										</div>
+
+										<div
+											class="order-summary-unit-quantity-and-price"
+											style="display: flex"
+										>
+											<div
+												class="order-summary-unit-quantity"
+											>
+												1
+											</div>
+											<div
+												class="order-summary-unit-multiply-icon"
+											>
+												<i
+													class="fa-solid fa-xmark"
+													style="
+														font-size: 1.2rem;
+														color: black;
+													"
+												></i>
+											</div>
+											<div
+												class="order-summary-unit-price"
+											>
+												4.200.000đ
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="order-summary-item">
+								<div class="order-summary-text">
+									Tổng đơn hàng
+								</div>
+								<div class="order-summary-value">
+									4.200.000đ
+								</div>
+							</div>
+
+							<div class="order-summary-item">
+								<div class="order-summary-text">
+									Phí vận chuyển
+								</div>
+								<div class="order-summary-value">Free</div>
+							</div>
+
+							<div
+								class="order-summary-item"
+								style="padding-bottom: 12px"
+							>
+								<div class="order-summary-text">
+									Mã khuyến mãi
+								</div>
+								<div class="order-summary-value">300.000đ</div>
+							</div>
+
+							<div class="order-summary-divider"></div>
+
+							<div
+								class="order-summary-final"
+								style="
+									display: flex;
+									justify-content: space-between;
+								"
+							>
+								<div class="order-summary-final-text">
+									Tổng tiền
+								</div>
+								<div class="order-summary-final-value">
+									3.900.000đ
+								</div>
+							</div>
+
+							<div class="order-summary-block">
+								<div
+									class="order-summary-button"
+									style="display: flex"
+								>
+									<div class="order-summary-button-text">
+										Thanh toán ngay
+									</div>
+									<div class="order-summary-icon-block">
+										<i
+											class="order-summary-icon fa-solid fa-arrow-right"
+										></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer" style="margin-top: 16px">
+			<div class="top-footer">
+				<div class="info-shop">
+					<div class="name-shop">
+						<a href="#" style="color: white; text-decoration: none">
+							<span
+								style="
+									font-size: 50px;
+									font-weight: bold;
+									padding-right: 3px;
+								"
+								>E</span
+							>
+							<span
+								style="
+									font-size: 40px;
+									font-weight: bold;
+									padding-right: 3px;
+								"
+								>-</span
+							>
+							<span style="font-size: 32px; font-weight: bold"
+								>STORE</span
+							>
+						</a>
+					</div>
+					<div class="detailInfoShop">
+						<div class="hotline">
+							<span
+								style="
+									display: inline-block;
+									color: #77878f;
+									font-size: 16px;
+									margin-bottom: 5px;
+								"
+								>Hotline hỗ trợ trực tuyến:</span
+							>
+							<p style="color: #fff; font-size: 18px">
+								(84) 0969379924
+							</p>
+						</div>
+						<div class="address">
+							<span
+								style="
+									color: #adb7bc;
+									font-size: 16px;
+									font-style: normal;
+									font-weight: 400;
+									line-height: 24px;
+								"
+							>
+								ĐH BK HCM, TP. Thủ Đức, Hồ Chí Minh</span
+							>
+						</div>
+						<div class="gmail">
+							<a
+								style="
+									color: #fff;
+									font-style: normal;
+									font-weight: 500;
+									line-height: 24px;
+								"
+								href="mailto:vinhtrong782002@gmail.com"
+								>vinhtrong782002@gmail.com</a
+							>
+						</div>
+					</div>
+				</div>
+
+				<div class="cate-shop">
+					<div class="title-cate">
+						<h2
+							style="
+								font-size: 23px;
+								font-style: normal;
+								font-weight: 500;
+								line-height: 24px;
+								text-transform: uppercase;
+								color: #fff;
+							"
+						>
+							TOP SẢN PHẨM
+						</h2>
+					</div>
+					<div
+						class="body-cate"
+						style="
+							display: grid;
+							grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+						"
+					>
+						<p style="padding: 8px 0" class="itemOfFooter">
+							<a href="#">Màn hình PC</a>
+						</p>
+						<p style="padding: 8px 0" class="itemOfFooter">
+							<a href="#">Tai nghe</a>
+						</p>
+						<p style="padding: 8px 0" class="itemOfFooter">
+							<a href="#">Chuột</a>
+						</p>
+						<p style="padding: 8px 0" class="itemOfFooter">
+							<a href="#">Bàn phím</a>
+						</p>
+						<p style="padding: 8px 0" class="itemOfFooter">
+							<a style="color: #ebc80c" href="#"
+								>Xem tất cả sản phẩm
+								<i
+									class="fa-solid fa-arrow-right"
+									style="padding-left: 5px"
+								></i
+							></a>
+						</p>
+					</div>
+				</div>
+
+				<div class="menu-shop">
+					<div class="title-menu">
+						<h2
+							style="
+								font-size: 23px;
+								font-style: normal;
+								font-weight: 500;
+								line-height: 24px;
+								text-transform: uppercase;
+								color: #fff;
+							"
+						>
+							Menu
+						</h2>
+					</div>
+					<div
+						class="body-menu"
+						style="
+							display: grid;
+							grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+						"
+					>
+						<p style="padding: 8px 0" class="itemOfFooter">
+							<a href="./index.html">Trang chủ</a>
+						</p>
+						<p style="padding: 8px 0" class="itemOfFooter">
+							<a href="#">Tất cả sản phẩm</a>
+						</p>
+						<p style="padding: 8px 0" class="itemOfFooter">
+							<a href="#">Tài khoản của bạn</a>
+						</p>
+						<p style="padding: 8px 0" class="itemOfFooter">
+							<a href="#">Đơn hàng của bạn</a>
+						</p>
+						<p style="padding: 8px 0" class="itemOfFooter">
+							<a href="#">Bảng tin</a>
+						</p>
+						<p style="padding: 8px 0" class="itemOfFooter">
+							<a href="./About/index.html">Về chúng tôi</a>
+						</p>
+					</div>
+				</div>
+
+				<div class="research-shop">
+					<div class="title-research">
+						<h2
+							style="
+								font-size: 23px;
+								display: inline-block;
+								font-style: normal;
+								font-weight: 500;
+								line-height: 24px;
+								text-transform: uppercase;
+								color: #fff;
+							"
+						>
+							Tìm kiếm phổ biến
+						</h2>
+					</div>
+					<div
+						class="body-research"
+						style="
+							display: flex;
+							width: 270px;
+							flex-wrap: wrap;
+							gap: 8px;
+						"
+					>
+						<a href="#">
+							<span>Headphone</span>
+						</a>
+						<a href="#">
+							<span>Chuột</span>
+						</a>
+						<a href="#">
+							<span>Asus</span>
+						</a>
+						<a href="#">
+							<span>Bàn phím</span>
+						</a>
+						<a href="#">
+							<span>SSD</span>
+						</a>
+						<a href="#">
+							<span>Graphics card</span>
+						</a>
+						<a href="#">
+							<span>RAM</span>
+						</a>
+						<a href="#">
+							<span>ROM</span>
+						</a>
+						<a href="#">
+							<span>Màn hình PC</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="coppyright">
+				<p style="color: white; text-align: center">
+					E-STORE &#169; 2023. Design by GROUP-WEB-HCMUT
+				</p>
+			</div>
+		</div>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+			integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script src="../template.js"></script>
+		<script>
+			function openPayment(evt, PaymentMethod) {
+				var i, PaymentContent, paymentlinks;
+				PaymentContent =
+					document.getElementsByClassName("PaymentContent");
+				for (i = 0; i < PaymentContent.length; i++) {
+					PaymentContent[i].style.display = "none";
+				}
+				paymentlinks = document.getElementsByClassName("paymentlinks");
+				for (i = 0; i < paymentlinks.length; i++) {
+					paymentlinks[i].className = paymentlinks[
+						i
+					].className.replace(" active", "");
+				}
+				document.getElementById(PaymentMethod).style.display = "block";
+				evt.currentTarget.className += " active";
+			}
+		</script>
+	</body>
+</html>

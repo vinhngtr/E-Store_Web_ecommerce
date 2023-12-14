@@ -81,7 +81,7 @@ if (isset($_POST['btn-log'])) {
                         <button><i class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
                     <div class="info-user" style="display: grid; grid-template-columns: auto auto auto; column-gap: 24px;">
-                        <a href="../Cart/index.html" style="width: 32px;height: 32px; display: inline-block;" title="Giỏ hàng">
+                        <a href="#" style="width: 32px;height: 32px; display: inline-block;" title="Giỏ hàng">
                             <i class="fa-solid fa-cart-shopping"></i>
                         </a>
                         <a href="#" style=" width: 32px;height: 32px; display: inline-block;" title="Sản phẩm yêu thích">
@@ -118,7 +118,7 @@ if (isset($_POST['btn-log'])) {
                         </a>
                     </div>
                     <div class="blogger" style="margin-right: 24px;">
-                        <a href=".../Blogger/index.html" style="text-decoration: none;">
+                        <a href="../Error/error.html" style="text-decoration: none;">
                             <i class="fa-brands fa-blogger" style="padding-right: 5px;"></i>
                             <span>Blog</span>
                         </a>

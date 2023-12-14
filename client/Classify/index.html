@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="../css/base.css" />
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="../css/responsive.css" />
+		<title>E-Store</title>
+	</head>
+	<body>
+		<div class="app">
+			<div class="navigation"></div>
+
+			<div class="app__container" style="padding-top: 12px">
+				<div class="mx-5">
+					<div class="row m-0 p-0">
+						<div class="col-2 p-0">
+							<div class="classify">
+								<h3 class="classify__heading">
+									Phân loại sản phẩm
+								</h3>
+								<ul class="classify-list"></ul>
+							</div>
+
+							<div class="price-range">
+								<h3 class="price-range__heading">
+									Chọn mức giá
+								</h3>
+								<ul class="price-range-list">
+									<li class="price-range-item">
+										<label class="price-range-item-icon">
+											<input
+												type="radio"
+												checked="checked"
+												name="radio"
+												value="all"
+												data-text="Toàn bộ mức giá"
+											/>
+											<span
+												class="checkmark-price-range"
+											></span>
+											<div
+												href="#"
+												class="price-range-item-text"
+											>
+												Toàn bộ mức giá
+											</div>
+										</label>
+									</li>
+									<li class="price-range-item">
+										<label class="price-range-item-icon">
+											<input
+												type="radio"
+												name="radio"
+												value="0-200"
+												data-text="Dưới 200.000đ"
+											/>
+											<span
+												class="checkmark-price-range"
+											></span>
+											<div
+												href=""
+												class="price-range-item-text"
+											>
+												Dưới 200.000đ
+											</div>
+										</label>
+									</li>
+									<li class="price-range-item">
+										<label class="price-range-item-icon">
+											<input
+												type="radio"
+												name="radio"
+												value="200-500"
+												data-text="200.000đ - 500.000đ"
+											/>
+											<span
+												class="checkmark-price-range"
+											></span>
+											<div
+												href=""
+												class="price-range-item-text"
+											>
+												200.000đ - 500.000đ
+											</div>
+										</label>
+									</li>
+									<li class="price-range-item">
+										<label class="price-range-item-icon">
+											<input
+												type="radio"
+												name="radio"
+												value="500-1500"
+												data-text="500.000đ - 1.500.000đ"
+											/>
+											<span
+												class="checkmark-price-range"
+											></span>
+											<div
+												href=""
+												class="price-range-item-text"
+											>
+												500.000đ - 1.500.000đ
+											</div>
+										</label>
+									</li>
+									<li class="price-range-item">
+										<label class="price-range-item-icon">
+											<input
+												type="radio"
+												name="radio"
+												value="1500-2500"
+												data-text="1.500.000đ - 2.500.000đ"
+											/>
+											<span
+												class="checkmark-price-range"
+											></span>
+											<div
+												href=""
+												class="price-range-item-text"
+												style="text-wrap: nowrap"
+											>
+												1.500.000đ - 2.500.000đ
+											</div>
+										</label>
+									</li>
+									<li class="price-range-item">
+										<label class="price-range-item-icon">
+											<input
+												type="radio"
+												name="radio"
+												value="2500"
+												data-text="Trên 2.500.000đ"
+											/>
+											<span
+												class="checkmark-price-range"
+											></span>
+											<div
+												href=""
+												class="price-range-item-text"
+											>
+												Trên 2.500.000đ
+											</div>
+										</label>
+									</li>
+									<div class="price-range-apply">
+										<div class="price-range-apply-text">
+											Áp dụng
+										</div>
+									</div>
+								</ul>
+							</div>
+
+							<div class="high-brands">
+								<h3 class="high-brands__heading">
+									Thương hiệu nổi bật
+								</h3>
+								<div class="high-brands__list">
+									<div class="high-brands__list-left">
+										<div class="high-brands__item">
+											<div class="high-brands__item-icon">
+												<label
+													class="high-brands__item-icon"
+												>
+													<input
+														type="checkbox"
+														checked="checked"
+													/>
+													<span
+														class="checkmark"
+													></span>
+													<div
+														class="high-brands__item-text"
+													>
+														Apple
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="high-brands__item">
+											<div class="high-brands__item-icon">
+												<label
+													class="high-brands__item-icon"
+												>
+													<input
+														type="checkbox"
+														checked="checked"
+													/>
+													<span
+														class="checkmark"
+													></span>
+													<div
+														class="high-brands__item-text"
+													>
+														Microsoft
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="high-brands__item">
+											<div class="high-brands__item-icon">
+												<label
+													class="high-brands__item-icon"
+												>
+													<input
+														type="checkbox"
+														checked="checked"
+													/>
+													<span
+														class="checkmark"
+													></span>
+													<div
+														class="high-brands__item-text"
+													>
+														Dell
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="high-brands__item">
+											<div class="high-brands__item-icon">
+												<label
+													class="high-brands__item-icon"
+												>
+													<input type="checkbox" />
+													<span
+														class="checkmark"
+													></span>
+													<div
+														class="high-brands__item-text"
+													>
+														Symphony
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="high-brands__item">
+											<div class="high-brands__item-icon">
+												<label
+													class="high-brands__item-icon"
+												>
+													<input type="checkbox" />
+													<span
+														class="checkmark"
+													></span>
+													<div
+														class="high-brands__item-text"
+													>
+														Sony
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="high-brands__item">
+											<div class="high-brands__item-icon">
+												<label
+													class="high-brands__item-icon"
+												>
+													<input
+														type="checkbox"
+														checked="checked"
+													/>
+													<span
+														class="checkmark"
+													></span>
+													<div
+														class="high-brands__item-text"
+													>
+														LG
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="high-brands__item">
+											<div class="high-brands__item-icon">
+												<label
+													class="high-brands__item-icon"
+												>
+													<input type="checkbox" />
+													<span
+														class="checkmark"
+													></span>
+													<div
+														class="high-brands__item-text"
+													>
+														One Plus
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+									<!-- high-brands-right -->
+									<div class="high-brands__list-right">
+										<div class="high-brands__item">
+											<div class="high-brands__item-icon">
+												<label
+													class="high-brands__item-icon"
+												>
+													<input
+														type="checkbox"
+														checked="checked"
+													/>
+													<span
+														class="checkmark"
+													></span>
+													<div
+														class="high-brands__item-text"
+													>
+														Google
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="high-brands__item">
+											<div class="high-brands__item-icon">
+												<label
+													class="high-brands__item-icon"
+												>
+													<input
+														type="checkbox"
+														checked="checked"
+													/>
+													<span
+														class="checkmark"
+													></span>
+													<div
+														class="high-brands__item-text"
+													>
+														Samsung
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="high-brands__item">
+											<div class="high-brands__item-icon">
+												<label
+													class="high-brands__item-icon"
+												>
+													<input
+														type="checkbox"
+														checked="checked"
+													/>
+													<span
+														class="checkmark"
+													></span>
+													<div
+														class="high-brands__item-text"
+													>
+														HP
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="high-brands__item">
+											<div class="high-brands__item-icon">
+												<label
+													class="high-brands__item-icon"
+												>
+													<input type="checkbox" />
+													<span
+														class="checkmark"
+													></span>
+													<div
+														class="high-brands__item-text"
+													>
+														Xiaomi
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="high-brands__item">
+											<div class="high-brands__item-icon">
+												<label
+													class="high-brands__item-icon"
+												>
+													<input type="checkbox" />
+													<span
+														class="checkmark"
+													></span>
+													<div
+														class="high-brands__item-text"
+													>
+														Panasonic
+													</div>
+												</label>
+											</div>
+										</div>
+										<div class="high-brands__item">
+											<div class="high-brands__item-icon">
+												<label
+													class="high-brands__item-icon"
+												>
+													<input
+														type="checkbox"
+														checked="checked"
+													/>
+													<span
+														class="checkmark"
+													></span>
+													<div
+														class="high-brands__item-text"
+													>
+														Intel
+													</div>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="banner">
+								<div class="banner_image">
+									<div
+										class="banner_image-img"
+										style="
+											background-image: url(../img/2.png);
+										"
+									></div>
+								</div>
+
+								<div class="banner_logo">
+									<div
+										class="banner_logo-img"
+										style="
+											background-image: url(../img/3.png);
+										"
+									></div>
+								</div>
+
+								<div class="banner_content-info">
+									Màn hình Gaming MOBIUZ EX3210U 4K 32'' |
+									BenQ Việt Nam
+								</div>
+								<div class="temp-block"></div>
+								<div class="banner_content-price">
+									<div class="banner_content-price-text">
+										Chỉ với:
+									</div>
+									<div class="banner_content-price-num">
+										5.000.000đ
+									</div>
+								</div>
+
+								<div class="banner_button">
+									<div class="banner_button-cart">
+										<div class="banner_button-cart-icon">
+											<i
+												class="fa-solid fa-cart-shopping"
+											></i>
+										</div>
+										<div class="banner_button-cart-text">
+											Thêm vào giỏ hàng
+										</div>
+									</div>
+
+									<div class="banner_button-detail">
+										<div class="banner_button-detail-text">
+											Xem chi tiết
+										</div>
+										<div class="banner_button-detail-icon">
+											<i
+												class="fa-solid fa-arrow-right"
+											></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-10 p-0">
+							<div
+								class="search-filter m-0"
+								style="display: flex"
+							>
+								<div class="search-box m-0">
+									<input
+										type="text"
+										class="search-box-input"
+										placeholder="Tìm kiếm sản phẩm..."
+									/>
+									<a href="" class="search-box-icon">
+										<i
+											class="fa-solid fa-magnifying-glass"
+											style="font-size: 1.6rem"
+										></i>
+									</a>
+								</div>
+
+								<div class="price-arrange m-0">
+									<div class="price-arrange-text">
+										Sắp xếp:
+									</div>
+									<select name="" id="">
+										<option value="asc">
+											Giá thấp - cao
+										</option>
+										<option value="des">
+											Giá cao - thấp
+										</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="criteria-result m-0">
+								<div class="criteria">
+									<div class="criteria-text">
+										Tìm kiếm theo:
+									</div>
+									<ul class="criteria-list">
+										<li
+											class="criteria-item"
+											id="criteria-category"
+										>
+											<div class="criteria-item-text">
+												Màn hình PC
+											</div>
+											<div class="criteria-item-icon">
+												<i
+													class="fa-solid fa-xmark"
+													style="font-size: 1.6rem"
+												></i>
+											</div>
+										</li>
+										<li
+											class="criteria-item"
+											id="criteria-price"
+										>
+											<div class="criteria-item-text">
+												Toàn bộ mức giá
+											</div>
+											<div class="criteria-item-icon">
+												<i
+													class="fa-solid fa-xmark"
+													style="font-size: 1.6rem"
+												></i>
+											</div>
+										</li>
+									</ul>
+								</div>
+
+								<div class="result">
+									<div class="result-num"></div>
+									<div class="result-text">
+										Kết quả tìm được.
+									</div>
+								</div>
+							</div>
+
+							<div class="product-list">
+								<div
+									class="grid__row"
+									style="display: flex"
+								></div>
+							</div>
+
+							<div class="pagination-block">
+								<div class="pagination">
+									<a href="#">
+										<i
+											class="pagination-item-icon fas fa-angle-left"
+										></i>
+									</a>
+									<a
+										href="#"
+										class="pagination-item-num active"
+										>1</a
+									>
+									<a href="#" class="pagination-item-num"
+										>2</a
+									>
+									<a href="#" class="pagination-item-num"
+										>3</a
+									>
+									<a href="#" class="pagination-item-num"
+										>4</a
+									>
+									<a href="#" class="pagination-item-num"
+										>5</a
+									>
+									<a href="#" class="pagination-item-num"
+										>6</a
+									>
+									<a href="#">
+										<i
+											class="pagination-item-icon fas fa-angle-right"
+										></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer" style="margin-top: 16px"></div>
+		</div>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+			integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+		<script src="../template.js"></script>
+		<script src="../utils.js"></script>
+		<script src="./script.js"></script>
+	</body>
+</html>

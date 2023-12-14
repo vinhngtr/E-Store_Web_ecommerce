@@ -1,0 +1,99 @@
+.order-success {
+    border: 1px solid #d5f0d3;
+    border-radius: 2px;
+    background-color: #eaf7e9;
+    color: #2db224;
+}
+
+.success-container {
+    margin: 0 auto;
+}
+
+.success_icon {
+    font-size: 10rem;
+    color: #2db224;
+}
+
+div.success_icon {
+    background-color: #d5f0d3;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+.success_icon-block {
+    text-align: center;
+    display:inline-block;
+}
+
+.success_message-heading {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 4rem 2rem 2rem;
+}
+
+.success_message-text {
+    font-size: 2rem;
+    line-height: 2rem;
+    padding: 0;
+    width: 60%;
+    display: inline-block;
+}
+
+.order-success-buttons {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-top: 3rem;
+    justify-content: center;
+}
+
+.back-to-homepage {
+    padding: 2rem;
+    text-transform: uppercase;
+    border: 2px solid #ffe7d6;
+    border-radius: 2px;
+    display: flex;
+    font-size: 1.5rem;
+    width: 25%;
+    font-weight: 800;
+    color: #fa8232;
+    text-align: center;
+    justify-content: center;
+}
+
+.check-cart {
+    display: flex;
+    text-transform: uppercase;
+    border: 2px solid #fa8232;
+    background-color: #fa8232;
+    border-radius: 2px;
+    padding: 2rem;
+    font-weight: 800;
+    color: #fff;
+    font-size: 1.5rem;
+    justify-content: center;
+    margin: 0 2.5rem;
+}
+
+.check-cart-text {
+    padding-right: 1rem;
+}
+
+.back-to-homepage-text {
+    padding-left: 1rem;
+}
+
+.back-to-homepage:hover {
+    cursor: pointer;
+    background-color: #fa8232;
+    color: #fff;
+    border: 2px solid #fa8232;
+}
+.check-cart:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #fa8232;
+}

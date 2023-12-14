@@ -1,0 +1,141 @@
+.order-tracking_block {
+    width: 80%;
+    margin: auto;
+    padding: 12px 12px 6px 12px;
+    border: 1px solid #e4e7e9;
+    border-radius: 3px;
+}
+
+.order-tracking_heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background-color: #fdfae7;
+    border: 1px solid #f7e99e;
+    border-radius: 3px;
+}
+
+.order-tracking_code {
+    padding: 8px 0;
+}
+
+.order-tracking_info {
+    display: flex;
+}
+
+.order-tracking_code {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    font-weight: 700;
+}
+
+.order-tracking_heading-right {
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 800;
+    color: #2da5f3;
+}
+
+.order-tracking_expected-date {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    padding: 8px 0;
+    font-weight: 600;
+}
+
+.order-tracking_progress-line {
+    text-align: center;
+}
+
+.order-tracking_progress-status {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .order-tracking_set-up, 
+.order-tracking_packaging,
+.order-tracking_delivering,
+.order-tracking_delivered {
+    
+} */
+
+.order-tracking_set-up-icon-block, 
+.order-tracking_packaging-icon-block,
+.order-tracking_delivering-icon-block,
+.order-tracking_delivered-icon-block {
+    text-align: center;
+    color: #fa8232;
+    margin: 12px;
+}
+
+
+.order-tracking_set-up-icon, 
+.order-tracking_packaging-icon,
+.order-tracking_delivering-icon,
+.order-tracking_delivered-icon {
+    font-size: 3.2rem;
+}
+
+.order-tracking_set-up-text, 
+.order-tracking_packaging-text,
+.order-tracking_delivering-text,
+.order-tracking_delivered-text {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    font-weight: 600;
+}
+
+.order-tracking_divider {
+    width: 100%;
+    height: 1px;
+    background-color: #e4e7e9;
+    margin: 16px 0;
+}
+
+.order-tracking_order-activity-header {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    font-weight: 700;
+}
+
+.order-tracking_order-activity-item {
+    display: flex;
+    align-items: center;
+}
+
+.order-tracking_order-activity-icon-block {
+    padding: 4px;
+    border: 1px solid #d5edfd;
+    border-radius: 2px;
+    background-color: #eaf6fe;
+    color: #2da5f3;
+    margin-right: 12px;
+}
+
+.order-tracking_order-activity-item {
+    margin: 12px 0;
+}
+
+.order-success {
+    border: 1px solid #d5f0d3;
+    border-radius: 2px;
+    background-color: #eaf7e9;
+    color: #2db224;
+}
+
+.order-tracking_order-activity-icon {
+    font-size: 2.4rem;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+}
+
+.order-tracking_order-activity-text {
+    font-weight: 500;
+}
+
+.order-tracking_order-activity-date {
+    color: #76878f;
+}

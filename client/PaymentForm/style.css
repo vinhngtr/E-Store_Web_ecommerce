@@ -1,0 +1,367 @@
+.payment-form-title,
+.payment-form-more-information-title {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    font-weight: 600;
+    padding-bottom: 24px;
+}
+
+.payment-form_name-header,
+.payment-form_business-header,
+.payment-form_address-header,
+.payment-form_phone-header,
+.payment-form_email-header,
+.payment-method-header,
+.payment-form-more-information-header {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    font-weight: 500;
+    padding: 12px 0;
+}
+
+.payment-form_name-input-block {
+    justify-content: space-between;
+}
+
+.first-name-input {
+    width: 45%;
+    padding: 8px;
+    border: 1px solid #e4e7e9;
+    border-radius: 3px;
+    outline: none;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+.last-name-input {
+    width: 49%;
+    padding: 8px;
+    border: 1px solid #e4e7e9;
+    border-radius: 3px;
+    outline: none;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+.business-input,
+.address-input,
+.phone-num-input,
+.email-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #e4e7e9;
+    border-radius: 3px;
+    outline: none;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+.payment-form_phone,
+.payment-form_name {
+    padding-right: 12px;
+}
+
+.payment-form_email,
+.payment-form_business {
+    padding-left: 12px;
+}
+
+textarea {
+    width: 100%;
+    outline: none;
+    border: 1px solid #e4e7e9;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+textarea:focus::placeholder {
+    color: transparent;
+}
+
+.PaymentContent {
+    padding: 16px;
+    border: 1px solid #e4e7e9;
+    border-radius: 3px;
+}
+
+.payment-card-name-header,
+.payment-card-number-header,
+.payment-card-expire-date-header,
+.payment-card-cvc-header {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    font-weight: 400;
+    padding: 6px 0;
+}
+
+.payment-card-name-input,
+.payment-card-number-input,
+.payment-card-cvc-input,
+.payment-card-expire-date-input {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #e4e7e9;
+    border-radius: 3px;
+    outline: none;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+}
+
+.payment-card-expire-date-block {
+    padding-right: 12px;
+}
+
+.payment-card-cvc-block {
+    padding-left: 12px;
+}
+
+.ATM-content {
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fa8232;
+}
+
+/* The payment-method-item-radio */
+.payment-method-item-radio {
+    display: block;
+    position: relative;
+    /* padding-left: 3.2rem; */
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-align: center;
+    align-items: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+  /* Hide the browser's default radio button */
+.payment-method-item-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+  
+  /* Create a custom radio button */
+.checkmark-payment-method {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+  
+  /* On mouse-over, add a grey background color */
+.payment-method-item-radio:hover input ~ .checkmark-payment-method {
+    background-color: #ccc;
+}
+  
+  /* When the radio button is checked, add a blue background */
+.payment-method-item-radio input:checked ~ .checkmark-payment-method {
+    background-color: #fa8232;
+}
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark-payment-method:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+  /* Show the indicator (dot/circle) when checked */
+.payment-method-item-radio input:checked ~ .checkmark-payment-method:after {
+    display: block;
+}
+  
+  /* Style the indicator (dot/circle) */
+.payment-method-item-radio .checkmark-payment-method:after {
+    top: 7px;
+    left: 7px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: white;
+}
+
+.payment-method-item-icon {
+    margin-left: 28px;
+}
+
+.payment-method-item-text {
+    margin-left: 8px;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+/* Style the tab */
+.payment-method-form {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+  
+  /* Style the buttons inside the payment-method-form */
+.payment-method-form label {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+  
+  /* Change background color of labels on hover */
+.payment-method-form label:hover {
+    background-color: #ddd;
+}
+  
+  /* Create an active/current payment-method-formlink class */
+.payment-method-form label.active {
+    background-color: #ccc;
+}
+  
+  /* Style the payment-method-form content */
+.PaymentContent {
+    display: none;
+}
+
+/* Order Summary */
+
+.order-summary-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-summary-title {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    padding: 1.2rem;
+    font-weight: 600;
+}
+
+.order-summary-unit {
+    padding: 6px;
+}
+
+.order-summary-unit-content {
+    padding: 10px;
+}
+
+.order-summary-unit-quantity-and-price {
+    padding-top: 10px;
+    align-items: center;
+}
+
+.order-summary-unit-content {
+    align-items: center;
+}
+
+.order-summary-unit-name {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    font-weight: 600;
+    flex-wrap: nowrap;
+}
+
+.order-summary-unit-img {
+    height: 64px;
+    width: 64px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.order-summary-unit-quantity {
+    margin-right: 8px;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    font-weight: 500;
+    color: #5f6c72;
+}
+
+.order-summary-unit-price {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    font-weight: 600;
+    color: #2da5f3;
+    margin-left: 8px;
+}
+
+.order-summary-divider {
+    width: 80%;
+    height: 2px;
+    background-color: #e4e7e9;
+    margin-left: 10%;
+}
+
+.order-summary-text,
+.order-summary-final-text {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: #5f6c72;
+}
+
+.order-summary-value,
+.order-summary-final-value {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    font-weight: 600;
+}
+
+.order-summary-item {
+    padding: 8px 12px 8px 12px;
+}
+
+.order-summary-final {
+    padding: 12px;
+}
+
+.order-summary-block {
+    padding-top: 12px;
+}
+
+.order-summary-button {
+    margin: 0 12px;
+    padding: 8px;
+    justify-content: center;
+    border: 2px solid #fa8232;
+    color: #fff;
+    background-color: #fa8232;
+    border-radius: 3px;
+    align-items: center;
+}
+
+.order-summary-button-text {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    padding-right: 8px;
+    font-weight: 800;
+}
+
+.order-summary-icon {
+    font-size: 1.4rem;
+}
+
+.order-summary-button:hover {
+    color: #fff;
+    background-color: #fa8232;
+    cursor: pointer;
+}
+
+.order-summary {
+    border: 1px solid #e4e7e9;
+    border-radius: 3px;
+    padding-bottom: 1.8rem;
+}
